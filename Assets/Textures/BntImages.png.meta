@@ -1,0 +1,573 @@
+fileFormatVersion: 2
+guid: 72b1ea6e553bcd34fb04d66deb8b09d7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4141040200294168301
+    second: ImgFaces
+  - first:
+      213: -3072681638955191767
+    second: ImgLoadingEffect
+  - first:
+      213: 7896438052682664545
+    second: ImgScanError
+  - first:
+      213: -5190016611775425530
+    second: ImgFormComplete
+  - first:
+      213: -5197131006718388603
+    second: IcnBrandCard
+  - first:
+      213: 61711750533225471
+    second: ImgScanningEffect
+  - first:
+      213: 8130592705328672285
+    second: ImgForm
+  - first:
+      213: -7404905972746702084
+    second: ImgUnlocked
+  - first:
+      213: 7537294601354023802
+    second: ImgRotateLeft
+  - first:
+      213: -6474603294009887971
+    second: ImgRotateRight
+  - first:
+      213: 1903861930593675271
+    second: ImgFlip
+  - first:
+      213: -1170820504141212084
+    second: ImgLocked
+  - first:
+      213: -4883720018186798884
+    second: ImgNewCard
+  - first:
+      213: 2243293435671986700
+    second: ImgWorlMap
+  - first:
+      213: 6292833697617833643
+    second: IcnTglRound
+  - first:
+      213: 5458963411023977425
+    second: EmptyIcon
+  - first:
+      213: -5483416918988436103
+    second: IcnPhotoExample
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BntLoadingEffect
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 435
+        width: 329
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922f5324454ab55d0800000000000000
+      internalID: -3072681638955191767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImgScanError
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 814
+        width: 480
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a07016298c59d60800000000000000
+      internalID: 7896438052682664545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImgFormComplete
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1556
+        width: 688
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604dfb4b36b59f7b0800000000000000
+      internalID: -5190016611775425530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcnBrandCard
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 435
+        width: 520
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586d16d82e410e7b0800000000000000
+      internalID: -5197131006718388603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImgScanningEffect
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 1145
+        width: 840
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb1009928e3bd000800000000000000
+      internalID: 61711750533225471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImgForm
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 2
+        width: 300
+        height: 428
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e6f7edcfaa5d070800000000000000
+      internalID: 8130592705328672285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImgUnlocked
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 2
+        width: 225
+        height: 317
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf2b34b204d7c3990800000000000000
+      internalID: -7404905972746702084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImgRotateLeft
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a731d217189d99860800000000000000
+      internalID: 7537294601354023802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImgRotateRight
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 2
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1377f6ab969526a0800000000000000
+      internalID: -6474603294009887971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImgFlip
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 2
+        width: 475
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708ec6ab650eb6a10800000000000000
+      internalID: 1903861930593675271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImgLocked
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 2
+        width: 225
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c465bea64f860cfe0800000000000000
+      internalID: -1170820504141212084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImgNewCard
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 430
+        width: 506
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8f28db48a893cb0800000000000000
+      internalID: -4883720018186798884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImgWorlMap
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 304
+        width: 608
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02c1388e77c12f10800000000000000
+      internalID: 2243293435671986700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcnTglRound
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 262
+        width: 168
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae6e1938e2a45750800000000000000
+      internalID: 6292833697617833643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmptyIcon
+      rect:
+        serializedVersion: 2
+        x: 2020
+        y: 1120
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db50fbac4222cb40800000000000000
+      internalID: 5458963411023977425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcnPhotoExample
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1681
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97dc3545d5df6e3b0800000000000000
+      internalID: -5483416918988436103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BntIllustration
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1363
+        width: 1024
+        height: 683
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ec3ffb003d04640808a16decdf5f0c
+      internalID: 1762161249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BntIllustration: 1762161249
+      BntLoadingEffect: -3072681638955191767
+      EmptyIcon: 5458963411023977425
+      IcnBrandCard: -5197131006718388603
+      IcnPhotoExample: -5483416918988436103
+      IcnTglRound: 6292833697617833643
+      ImgFlip: 1903861930593675271
+      ImgForm: 8130592705328672285
+      ImgFormComplete: -5190016611775425530
+      ImgLocked: -1170820504141212084
+      ImgNewCard: -4883720018186798884
+      ImgRotateLeft: 7537294601354023802
+      ImgRotateRight: -6474603294009887971
+      ImgScanError: 7896438052682664545
+      ImgScanningEffect: 61711750533225471
+      ImgUnlocked: -7404905972746702084
+      ImgWorlMap: 2243293435671986700
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

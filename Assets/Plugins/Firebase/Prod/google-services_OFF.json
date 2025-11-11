@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "154771855120",
+    "project_id": "hpbprod",
+    "storage_bucket": "hpbprod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154771855120:android:261b2656a934f975b63795",
+        "android_client_info": {
+          "package_name": "com.Hpb.Hpb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBVIx4kzuie3NiFjMjoPOmAJwHgRx7u9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
