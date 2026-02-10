@@ -69,11 +69,11 @@ public class MeetingChangeAction : MonoBehaviour
         if (!dtmMeetingChange.ValidateElements())
             return;
 
-        int startHours = cmbTimeStart.GetSelectedId(0);
-        int startMinutes = cmbTimeStart.GetSelectedId(1);
+        long startHours = cmbTimeStart.GetSelectedId(0);
+        long startMinutes = cmbTimeStart.GetSelectedId(1);
 
-        int endHours = cmbTimeEnd.GetSelectedId(0);
-        int endMinutes = cmbTimeEnd.GetSelectedId(1);
+        long endHours = cmbTimeEnd.GetSelectedId(0);
+        long endMinutes = cmbTimeEnd.GetSelectedId(1);
 
         if (startHours > endHours || (startHours == endHours && startMinutes >= endMinutes))
         {
@@ -111,11 +111,11 @@ public class MeetingChangeAction : MonoBehaviour
         if (!dtmMeetingChange.ValidateElements())
             return;
 
-        int startHours = cmbTimeStart.GetSelectedId(0);
-        int startMinutes = cmbTimeStart.GetSelectedId(1);
+        long startHours = cmbTimeStart.GetSelectedId(0);
+        long startMinutes = cmbTimeStart.GetSelectedId(1);
 
-        int endHours = cmbTimeEnd.GetSelectedId(0);
-        int endMinutes = cmbTimeEnd.GetSelectedId(1);
+        long endHours = cmbTimeEnd.GetSelectedId(0);
+        long endMinutes = cmbTimeEnd.GetSelectedId(1);
 
         if (startHours > endHours || (startHours == endHours && startMinutes >= endMinutes))
         {

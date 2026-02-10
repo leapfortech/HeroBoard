@@ -10,33 +10,33 @@
       "hash": "4437bc2752cfafcd730a6d500e009afbbc97b5c6"
     },
     "com.lefortech.core.security": {
-      "version": "https://github.com/leapfortech/LeapCoreSecurity.git#1.0.5",
+      "version": "https://github.com/leapfortech/LeapCoreSecurity.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.lefortech.core.tools": "https://github.com/leapfortech/LeapCoreTools.git"
       },
-      "hash": "4392b2735d0884195929b717f09519f1efe827ce"
+      "hash": "654c4ee189ccdfe9a7782fedde5ff283d6296676"
     },
     "com.lefortech.core.tools": {
-      "version": "https://github.com/leapfortech/LeapCoreTools.git#1.1.5",
+      "version": "https://github.com/leapfortech/LeapCoreTools.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "5f98619180de29fb14b6e7ea22eab03eee6c6d31"
+      "hash": "9309d149303a29be43fd2f861423251e1cc9707b"
     },
     "com.lefortech.data.collections": {
-      "version": "https://github.com/leapfortech/LeapDataCollections.git#1.0.10",
+      "version": "https://github.com/leapfortech/LeapDataCollections.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.lefortech.core.tools": "https://github.com/leapfortech/LeapCoreTools.git",
         "com.lefortech.graphics.tools": "https://github.com/leapfortech/LeapGraphicsTools.git"
       },
-      "hash": "c29d20963ee7a0af827d08fdbd3dda58e657a7ee"
+      "hash": "8f2b4610291da402a92937aae8781a5fd57ac4ba"
     },
     "com.lefortech.data.mapper": {
-      "version": "https://github.com/leapfortech/LeapDataMapper.git#1.0.9",
+      "version": "https://github.com/leapfortech/LeapDataMapper.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -46,10 +46,10 @@
         "com.lefortech.ui.elements": "https://github.com/leapfortech/LeapUIElements.git",
         "com.lefortech.ui.page": "https://github.com/leapfortech/LeapUIPage.git"
       },
-      "hash": "26cb5983e39a12ff76e6fea9643c8e8a3a7a862c"
+      "hash": "a598d72a740d7f356b7106aa70c48b374f3801a2"
     },
     "com.lefortech.data.remote": {
-      "version": "https://github.com/leapfortech/LeapDataRemote.git#1.0.2",
+      "version": "https://github.com/leapfortech/LeapDataRemote.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -61,14 +61,21 @@
       "hash": "0829969a00cf9e0c82f4149c79e8dfa62e7b93ea"
     },
     "com.lefortech.data.web": {
-      "version": "https://github.com/leapfortech/LeapDataWeb.git#1.5.6",
+      "version": "https://github.com/leapfortech/LeapDataWeb.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.lefortech.core.tools": "https://github.com/leapfortech/LeapCoreTools.git",
         "com.lefortech.core.security": "https://github.com/leapfortech/LeapCoreSecurity.git"
       },
-      "hash": "e879e74f8f056973b8fef3e1dec8e15347cb47c5"
+      "hash": "85811f92d7fd936114c26c890d41947e3e68d87f"
+    },
+    "com.lefortech.finance.payment": {
+      "version": "https://github.com/leapfortech/LeapFinancePayment.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "36ca3b2f943194068f2b649cdb990b681aa69b14"
     },
     "com.lefortech.graphics.collections": {
       "version": "https://github.com/leapfortech/LeapGraphicsCollections.git#1.0.0",
@@ -91,7 +98,7 @@
       "hash": "330ab02fd908b2873fbe0573bbcffeedebc1d204"
     },
     "com.lefortech.identity.vision": {
-      "version": "https://github.com/leapfortech/LeapIdentityVision.git#0.2.0",
+      "version": "https://github.com/leapfortech/LeapIdentityVision.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -101,10 +108,10 @@
         "com.lefortech.vision.facetec": "https://github.com/leapfortech/LeapVisionFaceTec.git",
         "com.lefortech.vision.tools": "https://github.com/leapfortech/LeapVisionTools.git"
       },
-      "hash": "fea35d726d504e55bf3278054e7888de7d59f777"
+      "hash": "b4ebb171127e93f451d7faa917ceca00bda73460"
     },
     "com.lefortech.ui.dialog": {
-      "version": "https://github.com/leapfortech/LeapUIDialog.git#1.2.3",
+      "version": "https://github.com/leapfortech/LeapUIDialog.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -112,19 +119,19 @@
         "com.lefortech.ui.elements": "https://github.com/leapfortech/LeapUIElements.git",
         "com.lefortech.ui.page": "https://github.com/leapfortech/LeapUIPage.git"
       },
-      "hash": "e7e5d1e9fc132fee70e6969ffdd57c13ba892a1a"
+      "hash": "ad9e1839d67094406236aca6114b9bc28d231a3d"
     },
     "com.lefortech.ui.elements": {
-      "version": "https://github.com/leapfortech/LeapUIElements.git#1.4.3",
+      "version": "https://github.com/leapfortech/LeapUIElements.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.lefortech.core.tools": "https://github.com/leapfortech/LeapCoreTools.git"
       },
-      "hash": "f1ff0aa2531a844dcd9e87ec957451f2bb7c2585"
+      "hash": "b910ca11106ed56ceece4f5ed9111ec7bb1cab6e"
     },
     "com.lefortech.ui.extensions": {
-      "version": "https://github.com/leapfortech/LeapUIExtensions.git#1.1.5",
+      "version": "https://github.com/leapfortech/LeapUIExtensions.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -136,20 +143,20 @@
         "com.lefortech.ui.dialog": "https://github.com/leapfortech/LeapUIDialog.git",
         "com.lefortech.ui.page": "https://github.com/leapfortech/LeapUIPage.git"
       },
-      "hash": "e145efeb66e38da3dcf3c9cc9a4a4a0fd606c422"
+      "hash": "3c61880a975628123c7140d4a9449a57fb41de0f"
     },
     "com.lefortech.ui.page": {
-      "version": "https://github.com/leapfortech/LeapUIPage.git#1.1.5",
+      "version": "https://github.com/leapfortech/LeapUIPage.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.lefortech.core.tools": "https://github.com/leapfortech/LeapCoreTools.git#0.2.9",
         "com.lefortech.ui.elements": "https://github.com/leapfortech/LeapUIElements.git#0.5.0"
       },
-      "hash": "80b692023248f399e831d13b819e101cf285d085"
+      "hash": "5a75b3277d7b5a79595db546e8a05fc24f7652c5"
     },
     "com.lefortech.vision.facetec": {
-      "version": "https://github.com/leapfortech/LeapVisionFaceTec.git#0.5.2",
+      "version": "https://github.com/leapfortech/LeapVisionFaceTec.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -158,17 +165,17 @@
         "com.lefortech.core.security": "https://github.com/leapfortech/LeapCoreSecurity.git",
         "com.lefortech.data.web": "https://github.com/leapfortech/LeapDataWeb.git"
       },
-      "hash": "6678a359fa8231ee64b4ad0129660fd72df79fef"
+      "hash": "612b4ee8bd8d5bf382407b5b88ce4105322221e2"
     },
     "com.lefortech.vision.tools": {
-      "version": "https://github.com/leapfortech/LeapVisionTools.git#0.3.5",
+      "version": "https://github.com/leapfortech/LeapVisionTools.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.lefortech.core.tools": "https://github.com/leapfortech/LeapCoreTools.git",
         "com.lefortech.core.debug": "https://github.com/leapfortech/LeapCoreDebug.git"
       },
-      "hash": "e482d673feeb86a9ccfccf534b1f6b1f54a3178f"
+      "hash": "a36de684f2f81118e28fffb6e21a822c26019ecd"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",

@@ -314,13 +314,13 @@ public class ObdDpiAction : MonoBehaviour
             return;
         }
 
-        int cmbNationalityId = cmbNationality.GetSelectedId();
+        long cmbNationalityId = cmbNationality.GetSelectedId();
         AddNationality(cmbNationalityId);
 
         cmbNationality.Clear();
     }
 
-    private void AddNationality(int countryId)
+    private void AddNationality(long countryId)
     {
         ValueRecord record = vllCountryFlagAll.FindRecord(countryId);
         //if (record == null)

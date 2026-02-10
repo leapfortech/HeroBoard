@@ -228,7 +228,7 @@ public class ProjectAction : MonoBehaviour
 
     public void DisplayCpiRanges()
     {
-        int productTypeId = cmbProjectProductType.GetSelectedId();
+        long productTypeId = cmbProjectProductType.GetSelectedId();
 
         lstCpiRanges.ClearValues();
 

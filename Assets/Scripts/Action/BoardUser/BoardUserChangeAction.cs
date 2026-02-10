@@ -231,7 +231,7 @@ public class BoardUserChangeAction : MonoBehaviour
             return;
         }
 
-        int cmbRoleId = cmbRole.GetSelectedId();
+        long cmbRoleId = cmbRole.GetSelectedId();
         String role = vllRole.FindRecordCellString(cmbRoleId, 0);
 
         if (roles.Contains(role))
