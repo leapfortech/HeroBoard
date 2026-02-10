@@ -11,883 +11,309 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d52cfd3374160a04b888c8353641d5e7, type: 3}
   m_Name: ValueMonths
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: columns
-      Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[Leap.Data.Collections.ValueColumn,
-        Leap.Data.Collections]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 1|Leap.Data.Collections.ValueColumn, Leap.Data.Collections
-    - Name: Name
-      Entry: 1
-      Data: Name
-    - Name: oldName
-      Entry: 1
-      Data: Name
-    - Name: ColumnType
-      Entry: 3
-      Data: 10
-    - Name: Indexed
-      Entry: 5
-      Data: false
-    - Name: valueList
-      Entry: 10
-      Data: 0
-    - Name: Index
-      Entry: 3
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: columnIndexes
-      Entry: 7
-      Data: 2|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int32,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 3|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Name
-    - Name: $v
-      Entry: 3
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: columnFilters
-      Entry: 7
-      Data: 4|Leap.Data.Collections.ValueColumnFilter[], Leap.Data.Collections
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: recordFilters
-      Entry: 7
-      Data: 5|System.Collections.Generic.List`1[[Leap.Data.Collections.ValueRecordFilter,
-        Leap.Data.Collections]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: records
-      Entry: 7
-      Data: 6|System.Collections.Generic.List`1[[Leap.Data.Collections.ValueRecord,
-        Leap.Data.Collections]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 12
-    - Name: 
-      Entry: 7
-      Data: 7|Leap.Data.Collections.ValueRecord, Leap.Data.Collections
-    - Name: Id
-      Entry: 3
-      Data: 0
-    - Name: cells
-      Entry: 7
-      Data: 8|System.Collections.Generic.List`1[[Leap.Data.Collections.ValueCell,
-        Leap.Data.Collections]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 9|Leap.Data.Collections.ValueCellString, Leap.Data.Collections
-    - Name: valueRecord
-      Entry: 9
-      Data: 7
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: _value
-      Entry: 1
-      Data: Enero
-    - Name: oldValue
-      Entry: 1
-      Data: Enero
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: valueList
-      Entry: 10
-      Data: 0
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 10|Leap.Data.Collections.ValueRecord, Leap.Data.Collections
-    - Name: Id
-      Entry: 3
-      Data: 1
-    - Name: cells
-      Entry: 7
-      Data: 11|System.Collections.Generic.List`1[[Leap.Data.Collections.ValueCell,
-        Leap.Data.Collections]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 12|Leap.Data.Collections.ValueCellString, Leap.Data.Collections
-    - Name: valueRecord
-      Entry: 9
-      Data: 10
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: _value
-      Entry: 1
-      Data: Febrero
-    - Name: oldValue
-      Entry: 1
-      Data: Febrero
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: valueList
-      Entry: 10
-      Data: 0
-    - Name: index
-      Entry: 3
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 13|Leap.Data.Collections.ValueRecord, Leap.Data.Collections
-    - Name: Id
-      Entry: 3
-      Data: 2
-    - Name: cells
-      Entry: 7
-      Data: 14|System.Collections.Generic.List`1[[Leap.Data.Collections.ValueCell,
-        Leap.Data.Collections]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 15|Leap.Data.Collections.ValueCellString, Leap.Data.Collections
-    - Name: valueRecord
-      Entry: 9
-      Data: 13
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: _value
-      Entry: 1
-      Data: Marzo
-    - Name: oldValue
-      Entry: 1
-      Data: Marzo
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: valueList
-      Entry: 10
-      Data: 0
-    - Name: index
-      Entry: 3
-      Data: 2
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 16|Leap.Data.Collections.ValueRecord, Leap.Data.Collections
-    - Name: Id
-      Entry: 3
-      Data: 3
-    - Name: cells
-      Entry: 7
-      Data: 17|System.Collections.Generic.List`1[[Leap.Data.Collections.ValueCell,
-        Leap.Data.Collections]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 18|Leap.Data.Collections.ValueCellString, Leap.Data.Collections
-    - Name: valueRecord
-      Entry: 9
-      Data: 16
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: _value
-      Entry: 1
-      Data: Abril
-    - Name: oldValue
-      Entry: 1
-      Data: Abril
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: valueList
-      Entry: 10
-      Data: 0
-    - Name: index
-      Entry: 3
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 19|Leap.Data.Collections.ValueRecord, Leap.Data.Collections
-    - Name: Id
-      Entry: 3
-      Data: 4
-    - Name: cells
-      Entry: 7
-      Data: 20|System.Collections.Generic.List`1[[Leap.Data.Collections.ValueCell,
-        Leap.Data.Collections]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 21|Leap.Data.Collections.ValueCellString, Leap.Data.Collections
-    - Name: valueRecord
-      Entry: 9
-      Data: 19
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: _value
-      Entry: 1
-      Data: Mayo
-    - Name: oldValue
-      Entry: 1
-      Data: Mayo
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: valueList
-      Entry: 10
-      Data: 0
-    - Name: index
-      Entry: 3
-      Data: 4
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 22|Leap.Data.Collections.ValueRecord, Leap.Data.Collections
-    - Name: Id
-      Entry: 3
-      Data: 5
-    - Name: cells
-      Entry: 7
-      Data: 23|System.Collections.Generic.List`1[[Leap.Data.Collections.ValueCell,
-        Leap.Data.Collections]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 24|Leap.Data.Collections.ValueCellString, Leap.Data.Collections
-    - Name: valueRecord
-      Entry: 9
-      Data: 22
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: _value
-      Entry: 1
-      Data: Junio
-    - Name: oldValue
-      Entry: 1
-      Data: Junio
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: valueList
-      Entry: 10
-      Data: 0
-    - Name: index
-      Entry: 3
-      Data: 5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 25|Leap.Data.Collections.ValueRecord, Leap.Data.Collections
-    - Name: Id
-      Entry: 3
-      Data: 6
-    - Name: cells
-      Entry: 7
-      Data: 26|System.Collections.Generic.List`1[[Leap.Data.Collections.ValueCell,
-        Leap.Data.Collections]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 27|Leap.Data.Collections.ValueCellString, Leap.Data.Collections
-    - Name: valueRecord
-      Entry: 9
-      Data: 25
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: _value
-      Entry: 1
-      Data: Julio
-    - Name: oldValue
-      Entry: 1
-      Data: Julio
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: valueList
-      Entry: 10
-      Data: 0
-    - Name: index
-      Entry: 3
-      Data: 6
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 28|Leap.Data.Collections.ValueRecord, Leap.Data.Collections
-    - Name: Id
-      Entry: 3
-      Data: 7
-    - Name: cells
-      Entry: 7
-      Data: 29|System.Collections.Generic.List`1[[Leap.Data.Collections.ValueCell,
-        Leap.Data.Collections]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 30|Leap.Data.Collections.ValueCellString, Leap.Data.Collections
-    - Name: valueRecord
-      Entry: 9
-      Data: 28
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: _value
-      Entry: 1
-      Data: Agosto
-    - Name: oldValue
-      Entry: 1
-      Data: Agosto
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: valueList
-      Entry: 10
-      Data: 0
-    - Name: index
-      Entry: 3
-      Data: 7
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 31|Leap.Data.Collections.ValueRecord, Leap.Data.Collections
-    - Name: Id
-      Entry: 3
-      Data: 8
-    - Name: cells
-      Entry: 7
-      Data: 32|System.Collections.Generic.List`1[[Leap.Data.Collections.ValueCell,
-        Leap.Data.Collections]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 33|Leap.Data.Collections.ValueCellString, Leap.Data.Collections
-    - Name: valueRecord
-      Entry: 9
-      Data: 31
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: _value
-      Entry: 1
-      Data: Septiembre
-    - Name: oldValue
-      Entry: 1
-      Data: Septiembre
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: valueList
-      Entry: 10
-      Data: 0
-    - Name: index
-      Entry: 3
-      Data: 8
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 34|Leap.Data.Collections.ValueRecord, Leap.Data.Collections
-    - Name: Id
-      Entry: 3
-      Data: 9
-    - Name: cells
-      Entry: 7
-      Data: 35|System.Collections.Generic.List`1[[Leap.Data.Collections.ValueCell,
-        Leap.Data.Collections]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 36|Leap.Data.Collections.ValueCellString, Leap.Data.Collections
-    - Name: valueRecord
-      Entry: 9
-      Data: 34
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: _value
-      Entry: 1
-      Data: Octubre
-    - Name: oldValue
-      Entry: 1
-      Data: Octubre
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: valueList
-      Entry: 10
-      Data: 0
-    - Name: index
-      Entry: 3
-      Data: 9
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 37|Leap.Data.Collections.ValueRecord, Leap.Data.Collections
-    - Name: Id
-      Entry: 3
-      Data: 10
-    - Name: cells
-      Entry: 7
-      Data: 38|System.Collections.Generic.List`1[[Leap.Data.Collections.ValueCell,
-        Leap.Data.Collections]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 39|Leap.Data.Collections.ValueCellString, Leap.Data.Collections
-    - Name: valueRecord
-      Entry: 9
-      Data: 37
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: _value
-      Entry: 1
-      Data: Noviembre
-    - Name: oldValue
-      Entry: 1
-      Data: Noviembre
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: valueList
-      Entry: 10
-      Data: 0
-    - Name: index
-      Entry: 3
-      Data: 10
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 40|Leap.Data.Collections.ValueRecord, Leap.Data.Collections
-    - Name: Id
-      Entry: 3
-      Data: 11
-    - Name: cells
-      Entry: 7
-      Data: 41|System.Collections.Generic.List`1[[Leap.Data.Collections.ValueCell,
-        Leap.Data.Collections]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 42|Leap.Data.Collections.ValueCellString, Leap.Data.Collections
-    - Name: valueRecord
-      Entry: 9
-      Data: 40
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: _value
-      Entry: 1
-      Data: Diciembre
-    - Name: oldValue
-      Entry: 1
-      Data: Diciembre
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: valueList
-      Entry: 10
-      Data: 0
-    - Name: index
-      Entry: 3
-      Data: 11
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: idIndexer
-      Entry: 7
-      Data: 43|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Leap.Data.Collections.ValueRecord,
-        Leap.Data.Collections]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 44|System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 12
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 0
-    - Name: $v
-      Entry: 9
-      Data: 7
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 1
-    - Name: $v
-      Entry: 9
-      Data: 10
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 2
-    - Name: $v
-      Entry: 9
-      Data: 13
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 3
-    - Name: $v
-      Entry: 9
-      Data: 16
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 4
-    - Name: $v
-      Entry: 9
-      Data: 19
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 5
-    - Name: $v
-      Entry: 9
-      Data: 22
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 6
-    - Name: $v
-      Entry: 9
-      Data: 25
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 7
-    - Name: $v
-      Entry: 9
-      Data: 28
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 8
-    - Name: $v
-      Entry: 9
-      Data: 31
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 9
-    - Name: $v
-      Entry: 9
-      Data: 34
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 10
-    - Name: $v
-      Entry: 9
-      Data: 37
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 11
-    - Name: $v
-      Entry: 9
-      Data: 40
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: cellIndexers
-      Entry: 7
-      Data: 45|System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String,
-        mscorlib],[Leap.Data.Collections.ValueRecord, Leap.Data.Collections]], mscorlib]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 46|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.Data.Collections.ValueRecord,
-        Leap.Data.Collections]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 3
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+  m_EditorClassIdentifier: Leap.Data.Collections::Leap.Data.Collections.ValueList
   valueType: 20
   tableName: 
   valueSource: 20
   recordType: 10
   sourceList: {fileID: 0}
   clientsList: []
+  columns:
+  - Name: Name
+    oldName: Name
+    ColumnType: 10
+    Indexed: 0
+    valueList: {fileID: 11400000}
+    Index: 0
   columnNames:
   - Name
+  columnIndexes:
+    keys:
+    - Name
+    values: 00000000
   statusName: Status
   statusValue: 1
+  columnFilters: []
+  recordFilters: []
+  records:
+  - Id: 0
+    cells:
+    - rid: 2395602045112418341
+    valueList: {fileID: 11400000}
+    index: 0
+  - Id: 1
+    cells:
+    - rid: 2395602045112418343
+    valueList: {fileID: 11400000}
+    index: 1
+  - Id: 2
+    cells:
+    - rid: 2395602045112418345
+    valueList: {fileID: 11400000}
+    index: 2
+  - Id: 3
+    cells:
+    - rid: 2395602045112418347
+    valueList: {fileID: 11400000}
+    index: 3
+  - Id: 4
+    cells:
+    - rid: 2395602045112418349
+    valueList: {fileID: 11400000}
+    index: 4
+  - Id: 5
+    cells:
+    - rid: 2395602045112418351
+    valueList: {fileID: 11400000}
+    index: 5
+  - Id: 6
+    cells:
+    - rid: 2395602045112418353
+    valueList: {fileID: 11400000}
+    index: 6
+  - Id: 7
+    cells:
+    - rid: 2395602045112418355
+    valueList: {fileID: 11400000}
+    index: 7
+  - Id: 8
+    cells:
+    - rid: 2395602045112418357
+    valueList: {fileID: 11400000}
+    index: 8
+  - Id: 9
+    cells:
+    - rid: 2395602045112418359
+    valueList: {fileID: 11400000}
+    index: 9
+  - Id: 10
+    cells:
+    - rid: 2395602045112418361
+    valueList: {fileID: 11400000}
+    index: 10
+  - Id: 11
+    cells:
+    - rid: 2395602045112418363
+    valueList: {fileID: 11400000}
+    index: 11
+  idIndexer:
+    keys: 00000000000000000100000000000000020000000000000003000000000000000400000000000000050000000000000006000000000000000700000000000000080000000000000009000000000000000a000000000000000b00000000000000
+    values:
+    - rid: 2395602045112418340
+    - rid: 2395602045112418342
+    - rid: 2395602045112418344
+    - rid: 2395602045112418346
+    - rid: 2395602045112418348
+    - rid: 2395602045112418350
+    - rid: 2395602045112418352
+    - rid: 2395602045112418354
+    - rid: 2395602045112418356
+    - rid: 2395602045112418358
+    - rid: 2395602045112418360
+    - rid: 2395602045112418362
+  cellIndexers:
+  - keys: []
+    values: []
   MinValue: 0
   MaxValue: 0
   StepValue: 1
   IntegerPrefix: 
+  IntegerPadCount: 0
+  IntegerPadChar: 48
   MinYear: 0
   RangeYear: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 2395602045112418340
+      type: {class: ValueRecord, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        Id: 0
+        cells:
+        - rid: 2395602045112418341
+        valueList: {fileID: 11400000}
+        index: 0
+    - rid: 2395602045112418341
+      type: {class: ValueCellString, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        valueRecord:
+          rid: 2395602045112418340
+        index: 0
+        _value: Enero
+        oldValue: Enero
+    - rid: 2395602045112418342
+      type: {class: ValueRecord, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        Id: 1
+        cells:
+        - rid: 2395602045112418343
+        valueList: {fileID: 11400000}
+        index: 1
+    - rid: 2395602045112418343
+      type: {class: ValueCellString, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        valueRecord:
+          rid: 2395602045112418342
+        index: 0
+        _value: Febrero
+        oldValue: Febrero
+    - rid: 2395602045112418344
+      type: {class: ValueRecord, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        Id: 2
+        cells:
+        - rid: 2395602045112418345
+        valueList: {fileID: 11400000}
+        index: 2
+    - rid: 2395602045112418345
+      type: {class: ValueCellString, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        valueRecord:
+          rid: 2395602045112418344
+        index: 0
+        _value: Marzo
+        oldValue: Marzo
+    - rid: 2395602045112418346
+      type: {class: ValueRecord, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        Id: 3
+        cells:
+        - rid: 2395602045112418347
+        valueList: {fileID: 11400000}
+        index: 3
+    - rid: 2395602045112418347
+      type: {class: ValueCellString, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        valueRecord:
+          rid: 2395602045112418346
+        index: 0
+        _value: Abril
+        oldValue: Abril
+    - rid: 2395602045112418348
+      type: {class: ValueRecord, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        Id: 4
+        cells:
+        - rid: 2395602045112418349
+        valueList: {fileID: 11400000}
+        index: 4
+    - rid: 2395602045112418349
+      type: {class: ValueCellString, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        valueRecord:
+          rid: 2395602045112418348
+        index: 0
+        _value: Mayo
+        oldValue: Mayo
+    - rid: 2395602045112418350
+      type: {class: ValueRecord, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        Id: 5
+        cells:
+        - rid: 2395602045112418351
+        valueList: {fileID: 11400000}
+        index: 5
+    - rid: 2395602045112418351
+      type: {class: ValueCellString, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        valueRecord:
+          rid: 2395602045112418350
+        index: 0
+        _value: Junio
+        oldValue: Junio
+    - rid: 2395602045112418352
+      type: {class: ValueRecord, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        Id: 6
+        cells:
+        - rid: 2395602045112418353
+        valueList: {fileID: 11400000}
+        index: 6
+    - rid: 2395602045112418353
+      type: {class: ValueCellString, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        valueRecord:
+          rid: 2395602045112418352
+        index: 0
+        _value: Julio
+        oldValue: Julio
+    - rid: 2395602045112418354
+      type: {class: ValueRecord, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        Id: 7
+        cells:
+        - rid: 2395602045112418355
+        valueList: {fileID: 11400000}
+        index: 7
+    - rid: 2395602045112418355
+      type: {class: ValueCellString, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        valueRecord:
+          rid: 2395602045112418354
+        index: 0
+        _value: Agosto
+        oldValue: Agosto
+    - rid: 2395602045112418356
+      type: {class: ValueRecord, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        Id: 8
+        cells:
+        - rid: 2395602045112418357
+        valueList: {fileID: 11400000}
+        index: 8
+    - rid: 2395602045112418357
+      type: {class: ValueCellString, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        valueRecord:
+          rid: 2395602045112418356
+        index: 0
+        _value: Septiembre
+        oldValue: Septiembre
+    - rid: 2395602045112418358
+      type: {class: ValueRecord, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        Id: 9
+        cells:
+        - rid: 2395602045112418359
+        valueList: {fileID: 11400000}
+        index: 9
+    - rid: 2395602045112418359
+      type: {class: ValueCellString, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        valueRecord:
+          rid: 2395602045112418358
+        index: 0
+        _value: Octubre
+        oldValue: Octubre
+    - rid: 2395602045112418360
+      type: {class: ValueRecord, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        Id: 10
+        cells:
+        - rid: 2395602045112418361
+        valueList: {fileID: 11400000}
+        index: 10
+    - rid: 2395602045112418361
+      type: {class: ValueCellString, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        valueRecord:
+          rid: 2395602045112418360
+        index: 0
+        _value: Noviembre
+        oldValue: Noviembre
+    - rid: 2395602045112418362
+      type: {class: ValueRecord, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        Id: 11
+        cells:
+        - rid: 2395602045112418363
+        valueList: {fileID: 11400000}
+        index: 11
+    - rid: 2395602045112418363
+      type: {class: ValueCellString, ns: Leap.Data.Collections, asm: Leap.Data.Collections}
+      data:
+        valueRecord:
+          rid: 2395602045112418362
+        index: 0
+        _value: Diciembre
+        oldValue: Diciembre
