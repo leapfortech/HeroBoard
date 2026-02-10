@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HeroWebSettings
   m_EditorClassIdentifier: 
   webDefinition:
-    name: hpbServices
+    name: heroServices
     devUrl: heroserverdev.azurewebsites.net/services
     qaUrl: heroserverdev.azurewebsites.net/services
     prodUrl: heroserverdev.azurewebsites.net/services
