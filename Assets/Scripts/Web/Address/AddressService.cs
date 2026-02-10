@@ -21,19 +21,16 @@ public class AddressService : MonoBehaviour
     private AddressEvent onRetreived = null;
 
     [SerializeField]
-    private UnityStringsEvent onHouseholdBills = null;
-
-    [SerializeField]
     private AddressInfoEvent onInfoRetreived = null;
 
     [SerializeField]
-    private UnityIntEvent onRegistered = null;
+    private UnityLongEvent onRegistered = null;
 
     [SerializeField]
-    private UnityIntEvent onAdded = null;
+    private UnityLongEvent onAdded = null;
 
     [SerializeField]
-    private UnityIntEvent onUpdated = null;
+    private UnityLongEvent onUpdated = null;
 
     [Title("Error")]
     [SerializeField]
@@ -41,7 +38,7 @@ public class AddressService : MonoBehaviour
 
 
     // GET
-    public void GetAddress(int appUserId)
+    public void GetAddress(long appUserId)
     {
        AddressGetOperation addressGetOp = new AddressGetOperation();
         try
@@ -61,29 +58,7 @@ public class AddressService : MonoBehaviour
             WebManager.Instance.OnSendError(ex.Message);
         }
     }
-
-    public void GetHouseholdBills(int appUserId)
-    {
-        HouseholdBillGetOperation householdBillGetOp = new HouseholdBillGetOperation();
-        try
-        {
-            householdBillGetOp.appUserId = appUserId;
-            householdBillGetOp["on-complete"] = (Action<HouseholdBillGetOperation, HttpResponse>)((op, response) =>
-            {
-                if (response != null && !response.HasError)
-                    onHouseholdBills.Invoke(op.householdBills);
-                else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
-            });
-            householdBillGetOp.Send();
-        }
-        catch (Exception ex)
-        {
-            WebManager.Instance.OnSendError(ex.Message);
-        }
-    }
-
-    public void GetAddressInfo(int appUserId, int status = 1)
+    public void GetAddressInfo(long appUserId, int status = 1)
     {
         AddressInfoGetOperation addressInfoGetOp = new AddressInfoGetOperation();
         try
@@ -115,7 +90,7 @@ public class AddressService : MonoBehaviour
             addressRegisterPostOp["on-complete"] = (Action<AddressRegisterOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)
-                    onRegistered.Invoke(Convert.ToInt32(op.id));
+                    onRegistered.Invoke(Convert.ToInt64(op.id));
                 else
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
@@ -137,7 +112,7 @@ public class AddressService : MonoBehaviour
             addressPostOp["on-complete"] = (Action<AddressPostOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)
-                    onAdded.Invoke(Convert.ToInt32(op.id));
+                    onAdded.Invoke(Convert.ToInt64(op.id));
                 else
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
@@ -159,7 +134,7 @@ public class AddressService : MonoBehaviour
             addressPutOp["on-complete"] = (Action<AddressPutOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)
-                    onUpdated.Invoke(Convert.ToInt32(op.id));
+                    onUpdated.Invoke(Convert.ToInt64(op.id));
                 else
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
@@ -171,7 +146,7 @@ public class AddressService : MonoBehaviour
         }
     }
 
-    public void UpdateAddress(int appUserId, Address address)
+    public void UpdateAddress(long appUserId, Address address)
     {
         AddressAppUserPutOperation addressPutOp = new AddressAppUserPutOperation();
         try
@@ -181,7 +156,7 @@ public class AddressService : MonoBehaviour
             addressPutOp["on-complete"] = (Action<AddressAppUserPutOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)
-                    onUpdated.Invoke(Convert.ToInt32(op.id));
+                    onUpdated.Invoke(Convert.ToInt64(op.id));
                 else
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
@@ -202,7 +177,7 @@ public class AddressService : MonoBehaviour
             addressFullPutOp["on-complete"] = (Action<AddressInfoPutOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)
-                    onUpdated.Invoke(Convert.ToInt32(op.id));
+                    onUpdated.Invoke(Convert.ToInt64(op.id));
                 else
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });

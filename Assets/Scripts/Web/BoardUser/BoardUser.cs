@@ -2,8 +2,8 @@
 
 public class BoardUser
 {
-    public int Id { get; set; }
-    public int WebSysUserId { get; set; }
+    public long Id { get; set; }
+    public long WebSysUserId { get; set; }
     public String FirstName1 { get; set; }
     public String FirstName2 { get; set; }
     public String LastName1 { get; set; }
@@ -17,7 +17,8 @@ public class BoardUser
     {
     }
 
-    public BoardUser(int id, int webSysUserId, String firstName1, String firstName2, String lastName1, String lastName2, int boardUserStatusId)
+    public BoardUser(long id, long webSysUserId, String firstName1, String firstName2, String lastName1,
+                     String lastName2, int boardUserStatusId)
     {
         Id = id;
         WebSysUserId = webSysUserId;

@@ -42,7 +42,7 @@ public class BoardUserFullsByStatusGetOperation : HttpOperation
 public class BoardUserByIdGetOperation : HttpOperation
 {
     [HttpQueryString]
-    public int id;
+    public long id;
 
     [HttpResponseJsonBody]
     public BoardUser boardUser;
@@ -105,7 +105,7 @@ public class BoardUserPutOperation : HttpOperation
 public class BoardUserStatusPutOperation : HttpOperation
 {
     [HttpQueryString("id")]
-    public int boardUserId;
+    public long boardUserId;
 
     [HttpQueryString("appUserStatusId")]
     public int boardUserStatusId;

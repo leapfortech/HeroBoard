@@ -4,8 +4,8 @@ using Sirenix.OdinInspector;
 
 public class IdentityFull
 {
-    public int Id { get; set; }
-    public int AppUserId { get; set; }
+    public long Id { get; set; }
+    public long AppUserId { get; set; }
     public String FirstName1 { get; set; }
     public String FirstName2 { get; set; }
     public String FirstName3 { get; set; }
@@ -47,7 +47,7 @@ public class IdentityFull
     {
     }
 
-    public IdentityFull(int id, int appUserId, String firstName1, String firstName2, String firstName3, String lastName1, String lastName2, String lastNameMarried,
+    public IdentityFull(long id, long appUserId, String firstName1, String firstName2, String firstName3, String lastName1, String lastName2, String lastNameMarried,
                         String gender, DateTime birthDate, String birthCountry, String birthState, String birthCity, String nationalities, String maritalStatus,
                         String occupation, String nit, String dpiCui, DateTime dpiIssueDate, DateTime dpiDueDate, String dpiVersion, String dpiSerie, String dpiMrz,
                         String phonePrefix, String phone, String email, int isPep, int hasPepIdentity, int isCpe, int investments,

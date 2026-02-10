@@ -134,7 +134,7 @@ public class AppUserService : MonoBehaviour
         }
     }
 
-    public void GetAppUser(int appUserId)
+    public void GetAppUser(long appUserId)
     {
         AppUserByIdGetOperation appUserGetOp = new AppUserByIdGetOperation();
         try
@@ -198,7 +198,7 @@ public class AppUserService : MonoBehaviour
         }
     }
 
-    public void UpdateStatus(int appUserId, int status)
+    public void UpdateStatus(long appUserId, int status)
     {
         AppUserStatusPutOperation statusPutOp = new AppUserStatusPutOperation();
         try

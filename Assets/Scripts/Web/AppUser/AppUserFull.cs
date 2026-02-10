@@ -4,7 +4,7 @@ using Sirenix.OdinInspector;
 
 public class AppUserFull
 {
-    public int Id { get; set; }
+    public long Id { get; set; }
     public String AuthUserId { get; set; }
     public String Email { get; set; }
     public String PhonePrefix { get; set; }
@@ -18,8 +18,8 @@ public class AppUserFull
 
     }
 
-    public AppUserFull(int id, String authUserId, String email, String phonePrefix, String phone,
-                        DateTime createDateTime, DateTime updateDateTime, int appUserStatusId)
+    public AppUserFull(long id, String authUserId, String email, String phonePrefix, String phone,
+                       DateTime createDateTime, DateTime updateDateTime, int appUserStatusId)
     {
         Id = id;
         AuthUserId = authUserId;

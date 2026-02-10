@@ -2,12 +2,12 @@ using System;
 
 public class Referred
 {
-    public int Id { get; set; }
+    public long Id { get; set; }
     public String Code { get; set; }
-    public int AppUserId { get; set; }
+    public long AppUserId { get; set; }
     public String FirstName { get; set; }
     public String LastName { get; set; }
-    public int PhoneCountryId { get; set; }
+    public long PhoneCountryId { get; set; }
     public String Phone { get; set; }
     public String Email { get; set; }
     public DateTime CreateDateTime { get; set; }
@@ -19,7 +19,7 @@ public class Referred
     {
     }
 
-    public Referred(int id, String code, int appUserId, String firstName, String lastName, int phoneCountryId,
+    public Referred(long id, String code, long appUserId, String firstName, String lastName, long phoneCountryId,
                     String phone, String email, DateTime createDateTime, DateTime updateDateTime, int status)
     {
         Id = id;

@@ -53,8 +53,8 @@ public class BoardUserAction : MonoBehaviour
     BoardUserFullEvent onBoardUserFull = null;
 
     public bool Selected { get; set; } = false;
-    public int Id { get; set; } = -1;
-    private Dictionary<int, int> Idx = new Dictionary<int, int>();
+    public long Id { get; set; } = -1;
+    private Dictionary<long, int> Idx = new Dictionary<long, int>();
 
     private BoardUserService boardUserService = null;
     private BoardUserFull[] boardUserFulls = null;

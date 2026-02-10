@@ -2,7 +2,7 @@ using System;
 
 public class ReferrerFull
 {
-    public int IdentityId { get; set; }
+    public long IdentityId { get; set; }
     public String Cui { get; set; }
     public String FirstName1 { get; set; }
     public String FirstName2 { get; set; }
@@ -18,7 +18,7 @@ public class ReferrerFull
     {
     }
 
-    public ReferrerFull(int identityId, String cui, String firstName1, String firstName2,
+    public ReferrerFull(long identityId, String cui, String firstName1, String firstName2,
                         String lastName1, String lastName2, String phonePrefix, String phone, String email)
     {
         IdentityId = identityId;

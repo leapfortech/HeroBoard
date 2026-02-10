@@ -93,7 +93,7 @@ public class AppUsersCountByStatusGetOperation : HttpOperation
 public class AppUserByIdGetOperation : HttpOperation
 {
     [HttpQueryString]
-    public int id;
+    public long id;
 
     [HttpResponseJsonBody]
     public AppUser appUser;
@@ -131,7 +131,7 @@ public class AppUserPhonePutOperation : HttpOperation
 public class AppUserStatusPutOperation : HttpOperation
 {
     [HttpQueryString("id")]
-    public int appUserId;
+    public long appUserId;
 
     [HttpQueryString("appUserStatusId")]
     public int appUserStatusId;

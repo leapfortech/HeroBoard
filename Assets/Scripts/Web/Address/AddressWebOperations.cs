@@ -18,24 +18,10 @@ using System;
 public class AddressGetOperation : HttpOperation
 {
     [HttpQueryString]
-    public int appUserId;
+    public long appUserId;
 
     [HttpResponseJsonBody]
     public Address address;
-}
-
-[HttpGET]
-[HttpPathExt(WebServiceType.Main, "/address/HouseholdBills")]
-[HttpProvider(typeof(HttpUnityWebAzureClient))]
-[HttpAccept("application/json")]
-[HttpFirebaseAuthorization]
-public class HouseholdBillGetOperation : HttpOperation
-{
-    [HttpQueryString]
-    public int appUserId;
-
-    [HttpResponseTextBody]
-    public String[] householdBills;
 }
 
 [HttpGET]
@@ -46,7 +32,7 @@ public class HouseholdBillGetOperation : HttpOperation
 public class AddressInfoGetOperation : HttpOperation
 {
     [HttpQueryString]
-    public int appUserId;
+    public long appUserId;
 
     [HttpQueryString]
     public int status = 1;
@@ -113,7 +99,7 @@ public class AddressPutOperation : HttpOperation
 public class AddressAppUserPutOperation : HttpOperation
 {
     [HttpQueryString]
-    public int appUserId;
+    public long appUserId;
 
     [HttpRequestJsonBody]
     public Address address;

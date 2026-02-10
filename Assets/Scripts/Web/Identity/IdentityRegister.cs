@@ -2,16 +2,16 @@
 
 public class IdentityRegister
 {
-    public IdentityInfo IdentityFull { get; set; }
+    public Identity Identity { get; set; }
     public String Portrait { get; set; }
 
     public IdentityRegister()
     {
     }
 
-    public IdentityRegister(IdentityInfo identityFull, String portrait)
+    public IdentityRegister(Identity identity, String portrait)
     {
-        IdentityFull = identityFull;
+        Identity = identity;
         Portrait = portrait;
     }
 }

@@ -5,21 +5,21 @@ using Sirenix.OdinInspector;
 
 public class Identity
 {
-    public int Id { get; set; }
-    public int AppUserId { get; set; }
+    public long Id { get; set; }
+    public long AppUserId { get; set; }
     public String FirstName1 { get; set; }
     public String FirstName2 { get; set; }
     public String FirstName3 { get; set; }
     public String LastName1 { get; set; }
     public String LastName2 { get; set; }
     public String LastNameMarried { get; set; }
-    public int GenderId { get; set; }
+    public long GenderId { get; set; }
     public DateTime BirthDate { get; set; }
-    public int BirthCountryId { get; set; }
-    public int BirthStateId { get; set; }
-    public int BirthCityId { get; set; }
+    public long BirthCountryId { get; set; }
+    public long BirthStateId { get; set; }
+    public long BirthCityId { get; set; }
     public String NationalityIds { get; set; }
-    public int MaritalStatusId { get; set; }
+    public long MaritalStatusId { get; set; }
     public String Occupation { get; set; }
     public String Nit { get; set; }
     public String DpiCui { get; set; }
@@ -28,7 +28,7 @@ public class Identity
     public String DpiVersion { get; set; }
     public String DpiSerie { get; set; }
     public String DpiMrz { get; set; }
-    public int PhoneCountryId { get; set; }
+    public long PhoneCountryId { get; set; }
     public String Phone { get; set; }
     public String Email { get; set; }
     public int IsPep { get; set; }
@@ -41,10 +41,10 @@ public class Identity
     {
     }
 
-    public Identity(int id, int appUserId, String firstName1, String firstName2, String firstName3, String lastName1, String lastName2, String lastNameMarried,
-                    int genderId, DateTime birthDate, int birthCountryId, int birthStateId, int birthCityId, String nationalityIds, int maritalStatusId,
+    public Identity(long id, long appUserId, String firstName1, String firstName2, String firstName3, String lastName1, String lastName2, String lastNameMarried,
+                    long genderId, DateTime birthDate, long birthCountryId, long birthStateId, long birthCityId, String nationalityIds, long maritalStatusId,
                     String occupation, String nit, String dpiCui, DateTime dpiIssueDate, DateTime dpiDueDate, String dpiVersion, String dpiSerie, String dpiMrz,
-                    int phoneCountryId, String phone, String email, int isPep, int hasPepIdentity, int isCpe, int status)
+                    long phoneCountryId, String phone, String email, int isPep, int hasPepIdentity, int isCpe, int status)
     {
         Id = id;
         AppUserId = appUserId;

@@ -9,7 +9,7 @@ public class RegisterBoardRequest
     public String Roles { get; set; } = "BD";
     public String Email { get; set; }
     public String Password { get; set; }
-    public int PhoneCountryId { get; set; }
+    public long PhoneCountryId { get; set; }
     public String Phone { get; set; }
 
 
@@ -17,7 +17,9 @@ public class RegisterBoardRequest
     {
     }
 
-    public RegisterBoardRequest(String firstName1, String firstName2, String lastName1, String lastName2, String roles, String email, String password, int phoneCountryId, String phone, int news, String referredCode)
+    public RegisterBoardRequest(String firstName1, String firstName2, String lastName1, String lastName2,
+                                String roles, String email, String password, long phoneCountryId, String phone,
+                                int news, String referredCode)
     {
         FirstName1 = firstName1;
         FirstName2 = firstName2;
@@ -30,7 +32,8 @@ public class RegisterBoardRequest
         Phone = phone;
     }
 
-    public RegisterBoardRequest(String firstName1, String firstName2, String lastName1, String lastName2, String roles, String email, String password, int phoneCountryId, String phone)
+    public RegisterBoardRequest(String firstName1, String firstName2, String lastName1, String lastName2,
+                                String roles, String email, String password, long phoneCountryId, String phone)
     {
         FirstName1 = firstName1;
         FirstName2 = firstName2;
@@ -43,7 +46,8 @@ public class RegisterBoardRequest
         Phone = phone;
     }
 
-    public RegisterBoardRequest(String firstName1, String firstName2, String lastName1, String lastName2, String roles, String email, int phoneCountryId, String phone)
+    public RegisterBoardRequest(String firstName1, String firstName2, String lastName1, String lastName2,
+                                String roles, String email, long phoneCountryId, String phone)
     {
         FirstName1 = firstName1;
         FirstName2 = firstName2;

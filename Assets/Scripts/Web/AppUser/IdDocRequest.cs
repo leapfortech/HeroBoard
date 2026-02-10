@@ -2,9 +2,9 @@
 
 public class IdDocRequest
 {
-    public int AppUserId { get; set; }
+    public long AppUserId { get; set; }
     public String IdDocNumber { get; set; }
-    public int IdDocStateId { get; set; }
+    public long IdDocStateId { get; set; }
     public DateTime IdDocDate { get; set; }
     public String IdDocFront { get; set; }
     public String IdDocBack { get; set; }
@@ -13,7 +13,8 @@ public class IdDocRequest
     {
     }
 
-    public IdDocRequest(int appUserId, String idDocNumber, int idDocStateId, DateTime idDocDate, String idDocFront, String idDocBack)
+    public IdDocRequest(long appUserId, String idDocNumber, long idDocStateId, DateTime idDocDate,
+                        String idDocFront, String idDocBack)
     {
         AppUserId = appUserId;
         IdDocNumber = idDocNumber;

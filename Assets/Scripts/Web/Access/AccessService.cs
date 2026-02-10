@@ -20,7 +20,7 @@ public class AccessService : MonoBehaviour
     private UnityLoginEvent onLogged = null;
 
     [SerializeField]
-    private UnityIntEvent onRegistered = null;
+    private UnityLongEvent onRegistered = null;
 
     [Title("Error")]
     [SerializeField]
@@ -57,7 +57,7 @@ public class AccessService : MonoBehaviour
             registerPostOp["on-complete"] = (Action<AccessRegisterBoardPostOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)
-                    onRegistered.Invoke(int.Parse(op.customerId));
+                    onRegistered.Invoke(long.Parse(op.customerId));
                 else
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });

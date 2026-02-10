@@ -21,11 +21,6 @@ public class IdentityService : MonoBehaviour
     [Serializable]
     public class IdentityFullsEvent : UnityEvent<List<IdentityFull>> { }
 
-    [Serializable]
-    public class IdentityInfoEvent : UnityEvent<IdentityInfo> { }
-
-    [Serializable]
-    public class IdentityBoardInfoEvent : UnityEvent<IdentityBoardInfo> { }
 
     [SerializeField]
     private IdentityEvent onIdentityRetreived = null;
@@ -37,19 +32,13 @@ public class IdentityService : MonoBehaviour
     private IdentityFullsEvent onIdentityFullsRetreived = null;
 
     [SerializeField]
-    private IdentityInfoEvent onIdentityInfoRetreived = null;
-
-    [SerializeField]
-    private IdentityBoardInfoEvent onIdentityBoardInfoRetreived = null;
-
-    [SerializeField]
     private UnityStringEvent onPortraitRetreived = null;
 
     [SerializeField]
-    private UnityIntEvent onRegistered = null;
+    private UnityLongEvent onRegistered = null;
 
     [SerializeField]
-    private UnityIntEvent onIdentityUpdated = null;
+    private UnityLongEvent onIdentityUpdated = null;
 
     [SerializeField]
     private UnityEvent onPortraitUpdated = null;
@@ -101,7 +90,7 @@ public class IdentityService : MonoBehaviour
         }
     }
 
-    public void GetById(int id)
+    public void GetById(long id)
     {
         IdentityGetOperation identityGetOp = new IdentityGetOperation();
         try
@@ -122,7 +111,7 @@ public class IdentityService : MonoBehaviour
         }
     }
 
-    public void GetByAppUserId(int appUserId, int status = 1)
+    public void GetByAppUserId(long appUserId, int status = 1)
     {
         IdentityAppUserGetOperation identityAppUserGetOp = new IdentityAppUserGetOperation();
         try
@@ -144,51 +133,7 @@ public class IdentityService : MonoBehaviour
         }
     }
 
-    public void GetInfoByAppUserId(int appUserId, int status = 1)
-    {
-        IdentityInfoAppUserGetOperation identityInfoAppUserGetOp = new IdentityInfoAppUserGetOperation();
-        try
-        {
-            identityInfoAppUserGetOp.appUserId = appUserId;
-            identityInfoAppUserGetOp.status = status;
-            identityInfoAppUserGetOp["on-complete"] = (Action<IdentityInfoAppUserGetOperation, HttpResponse>)((op, response) =>
-            {
-                if (response != null && !response.HasError)
-                    onIdentityInfoRetreived.Invoke(op.identityInfo);
-                else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
-            });
-            identityInfoAppUserGetOp.Send();
-        }
-        catch (Exception ex)
-        {
-            WebManager.Instance.OnSendError(ex.Message);
-        }
-    }
-
-    public void GetBoardInfoByAppUserId(int appUserId, int status = 1)
-    {
-        IdentityBoardInfoAppUserGetOperation identityBoardInfoAppUserGetOp = new IdentityBoardInfoAppUserGetOperation();
-        try
-        {
-            identityBoardInfoAppUserGetOp.appUserId = appUserId;
-            identityBoardInfoAppUserGetOp.status = status;
-            identityBoardInfoAppUserGetOp["on-complete"] = (Action<IdentityBoardInfoAppUserGetOperation, HttpResponse>)((op, response) =>
-            {
-                if (response != null && !response.HasError)
-                    onIdentityBoardInfoRetreived.Invoke(op.identityBoardInfo);
-                else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
-            });
-            identityBoardInfoAppUserGetOp.Send();
-        }
-        catch (Exception ex)
-        {
-            WebManager.Instance.OnSendError(ex.Message);
-        }
-    }
-
-    public void GetPortraitByAppUserId(int appUserId)
+    public void GetPortraitByAppUserId(long appUserId)
     {
         PortraitAppUserGetOperation portraitAppUserGetOp = new PortraitAppUserGetOperation();
         try
@@ -219,7 +164,7 @@ public class IdentityService : MonoBehaviour
             identityRegisterPostOp["on-complete"] = (Action<IdentityRegisterPostOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)
-                    onRegistered.Invoke(Convert.ToInt32(op.id));
+                    onRegistered.Invoke(Convert.ToInt64(op.id));
                 else
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
@@ -241,7 +186,7 @@ public class IdentityService : MonoBehaviour
             identityPutOperation["on-complete"] = (Action<IdentityPutOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)
-                    onIdentityUpdated.Invoke(Convert.ToInt32(op.id));
+                    onIdentityUpdated.Invoke(Convert.ToInt64(op.id));
                 else
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
@@ -253,7 +198,7 @@ public class IdentityService : MonoBehaviour
         }
     }
 
-    public void UpdatePortrait(int appUserId, String portrait)
+    public void UpdatePortrait(long appUserId, String portrait)
     {
         IdentityPortraitPutOperation identityPortraitPutOp = new IdentityPortraitPutOperation();
         try
@@ -275,12 +220,12 @@ public class IdentityService : MonoBehaviour
         }
     }
 
-    public void UpdateInfo(IdentityInfo identityInfo)
+    public void UpdateInfo(Identity identity)
     {
         IdentityInfoPutOperation identityFullPutOp = new IdentityInfoPutOperation();
         try
         {
-            identityFullPutOp.identityInfo = identityInfo;
+            identityFullPutOp.identity = identity;
             identityFullPutOp["on-complete"] = (Action<IdentityInfoPutOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)

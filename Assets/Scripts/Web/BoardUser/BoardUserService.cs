@@ -78,7 +78,7 @@ public class BoardUserService : MonoBehaviour
         }
     }
 
-    public void GetById(int boardUserId)
+    public void GetById(long boardUserId)
     {
         BoardUserByIdGetOperation boardUserGetOp = new BoardUserByIdGetOperation();
         try
@@ -182,7 +182,7 @@ public class BoardUserService : MonoBehaviour
         }
     }
 
-    public void UpdateStatus(int appUserId, int status)
+    public void UpdateStatus(long appUserId, int status)
     {
         AppUserStatusPutOperation statusPutOp = new AppUserStatusPutOperation();
         try

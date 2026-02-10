@@ -25,13 +25,13 @@ public class ReferredService : MonoBehaviour
     private ReferredFullsEvent onFullsRetreived = null;
 
     [SerializeField]
-    private UnityIntEvent onIdRetreived = null;
+    private UnityLongEvent onIdRetreived = null;
 
     [SerializeField]
     private UnityStringEvent onRegistered = null;
 
     [SerializeField]
-    private UnityIntEvent onUpdated = null;
+    private UnityLongEvent onUpdated = null;
 
 
     [Title("Error")]
@@ -80,7 +80,7 @@ public class ReferredService : MonoBehaviour
         }
     }
 
-    public void GetByAppUser(int appUserId)
+    public void GetByAppUser(long appUserId)
     {
         ReferredGetOperation referredGetOp = new ReferredGetOperation();
         try
@@ -131,7 +131,7 @@ public class ReferredService : MonoBehaviour
             idByCodeGetOp["on-complete"] = (Action<IdByCodeGetOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)
-                    onIdRetreived.Invoke(Convert.ToInt32(op.response));
+                    onIdRetreived.Invoke(Convert.ToInt64(op.response));
                 else
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });

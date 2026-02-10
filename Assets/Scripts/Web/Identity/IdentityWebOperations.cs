@@ -45,7 +45,7 @@ public class IdentityFullsGetOperation : HttpOperation
 public class IdentityGetOperation : HttpOperation
 {
     [HttpQueryString]
-    public int id;
+    public long id;
 
     [HttpResponseJsonBody]
     public Identity identity;
@@ -59,47 +59,13 @@ public class IdentityGetOperation : HttpOperation
 public class IdentityAppUserGetOperation : HttpOperation
 {
     [HttpQueryString]
-    public int appUserId;
+    public long appUserId;
 
     [HttpQueryString]
     public int status;
 
     [HttpResponseJsonBody]
     public Identity identity;
-}
-
-[HttpGET]
-[HttpPathExt(WebServiceType.Main, "/identity/InfoByAppUserId")]
-[HttpProvider(typeof(HttpUnityWebAzureClient))]
-[HttpAccept("application/json")]
-[HttpFirebaseAuthorization]
-public class IdentityInfoAppUserGetOperation : HttpOperation
-{
-    [HttpQueryString]
-    public int appUserId;
-
-    [HttpQueryString]
-    public int status;
-
-    [HttpResponseJsonBody]
-    public IdentityInfo identityInfo;
-}
-
-[HttpGET]
-[HttpPathExt(WebServiceType.Main, "/identity/BoardInfoByAppUserId")]
-[HttpProvider(typeof(HttpUnityWebAzureClient))]
-[HttpAccept("application/json")]
-[HttpFirebaseAuthorization]
-public class IdentityBoardInfoAppUserGetOperation : HttpOperation
-{
-    [HttpQueryString]
-    public int appUserId;
-
-    [HttpQueryString]
-    public int status;
-
-    [HttpResponseJsonBody]
-    public IdentityBoardInfo identityBoardInfo;
 }
 
 [HttpGET]
@@ -110,7 +76,7 @@ public class IdentityBoardInfoAppUserGetOperation : HttpOperation
 public class PortraitAppUserGetOperation : HttpOperation
 {
     [HttpQueryString]
-    public int appUserId;
+    public long appUserId;
 
     [HttpResponseTextBody]
     public String portrait;
@@ -155,7 +121,7 @@ public class IdentityPutOperation : HttpOperation
 public class IdentityPortraitPutOperation : HttpOperation
 {
     [HttpQueryString]
-    public int appUserId;
+    public long appUserId;
 
     [HttpRequestTextBody]
     public String portrait;
@@ -170,7 +136,7 @@ public class IdentityPortraitPutOperation : HttpOperation
 public class IdentityInfoPutOperation : HttpOperation
 {
     [HttpRequestJsonBody]
-    public IdentityInfo identityInfo;
+    public Identity identity;
 
     [HttpResponseTextBody]
     public String id;

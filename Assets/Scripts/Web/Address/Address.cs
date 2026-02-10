@@ -4,18 +4,13 @@ using Sirenix.OdinInspector;
 
 public class Address
 {
-    public int Id { get; set; }
-    //[ShowInInspector]
-    //public int ElectricitySupplierId { get; set; } = -1;
-    //[ShowInInspector]
-    //public String ElectricityClientCode { get; set; }
-
+    public long Id { get; set; }
     [ShowInInspector]
-    public int CountryId { get; set; } = -1;
+    public long CountryId { get; set; } = -1;
     [ShowInInspector]
-    public int StateId { get; set; } = -1;
+    public long StateId { get; set; } = -1;
     [ShowInInspector]
-    public int CityId { get; set; } = -1;
+    public long CityId { get; set; } = -1;
     [ShowInInspector]
     public String Address1 { get; set; }
     [ShowInInspector]
@@ -34,8 +29,8 @@ public class Address
     {
     }
 
-    public Address(int id, int countryId, int stateId, int cityId, String address1, String address2, String zone,
-                   String zipCode, float? latitude, float? longitude, int status)
+    public Address(long id, long countryId, long stateId, long cityId, String address1, String address2,
+                   String zone, String zipCode, float? latitude, float? longitude, int status)
     {
         Id = id;
         CountryId = countryId;
