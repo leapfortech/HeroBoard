@@ -18,14 +18,6 @@ public class NotificationReceiver : MonoBehaviour
     [SerializeField]
     UnityEvent onAppUserLocked = null;
 
-    [Title("Onboarding")]
-    [SerializeField]
-    UnityIntEvent onOnboardingUpdate = null;
-
-    [Title("Investment")]
-    [SerializeField]
-    UnityIntEvent onInvestmentUpdate = null;
-
     [Title("Notification")]
     [SerializeField]
     UnityIntEvent onNotification = null;
@@ -50,20 +42,6 @@ public class NotificationReceiver : MonoBehaviour
         if (data.Action == "RemoteLogin")
         {
             onRemoteLogin.Invoke(data.Information.Split('^'));  // with Title
-        }
-        else if (data.Action == "Onboarding")
-        {
-            if (data.Information == "Update")
-            {
-                onOnboardingUpdate.Invoke(Convert.ToInt32(data.Parameter));   // AppUserId
-            }
-        }
-        else if (data.Action == "Investment")
-        {
-            if (data.Information == "Update")
-            {
-                onInvestmentUpdate.Invoke(Convert.ToInt32(data.Parameter));   // AppUserId
-            }
         }
         else if (data.Action == "PersonLocking")
         {
