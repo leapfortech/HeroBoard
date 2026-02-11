@@ -17,6 +17,8 @@ public class BoardUserChangeAction : MonoBehaviour
     [SerializeField]
     Text lblBoardUser = null;
     [SerializeField]
+    InputField ifdAlias = null;
+    [SerializeField]
     InputField ifdEmail = null;
     [SerializeField]
     InputField ifdPassword = null;
@@ -42,6 +44,8 @@ public class BoardUserChangeAction : MonoBehaviour
     DataMapper dtmRegisterBoardRequest = null;
     [SerializeField]
     DataMapper dtmBoardUserUpdate = null;
+    [SerializeField]
+    DataMapper dtmIdentityUpdate = null;
     [SerializeField]
     DataMapper dtmWebSysUserUpdate = null;
 
@@ -73,6 +77,7 @@ public class BoardUserChangeAction : MonoBehaviour
     {
         dtmRegisterBoardRequest.ClearElements();
         dtmBoardUserUpdate.ClearElements();
+        dtmIdentityUpdate.ClearElements();
         dtmWebSysUserUpdate.ClearElements();
         ifdConfirm.Clear();
 
@@ -107,6 +112,7 @@ public class BoardUserChangeAction : MonoBehaviour
 
     private void _DisplayAdd()
     {
+        ifdAlias.Interactable = true;
         ifdEmail.Interactable = true;
         ifdPassword.gameObject.SetActive(true);
         ifdConfirm.gameObject.SetActive(true);
@@ -146,6 +152,7 @@ public class BoardUserChangeAction : MonoBehaviour
         btnChange.Title = "Guardar";
 
         dtmBoardUserUpdate.PopulateClass(boardUserFull.BoardUser);
+        dtmIdentityUpdate.PopulateClass(boardUserFull.Identity);
         dtmWebSysUserUpdate.PopulateClass(boardUserFull.WebSysUser);
 
         roles = new List<String>(boardUserFull.WebSysUser.Roles.Split('|'));
@@ -156,6 +163,7 @@ public class BoardUserChangeAction : MonoBehaviour
 
     private void _DisplayUpdate()
     {
+        ifdAlias.Interactable = false;
         ifdEmail.Interactable = false;
         ifdPassword.gameObject.SetActive(false);
         ifdConfirm.gameObject.SetActive(false);
@@ -192,6 +200,8 @@ public class BoardUserChangeAction : MonoBehaviour
     {
         if (!dtmBoardUserUpdate.ValidateElements())
             return;
+        if (!dtmIdentityUpdate.ValidateElements())
+            return;
         if (!dtmWebSysUserUpdate.ValidateElements())
             return;
 
@@ -205,6 +215,7 @@ public class BoardUserChangeAction : MonoBehaviour
 
         BoardUserFull updBoardUserFull = new BoardUserFull();
         updBoardUserFull.BoardUser = dtmBoardUserUpdate.BuildClass<BoardUser>();
+        updBoardUserFull.Identity = dtmIdentityUpdate.BuildClass<Identity>();
         updBoardUserFull.WebSysUser = dtmWebSysUserUpdate.BuildClass<WebSysUser>();
 
         updBoardUserFull.BoardUser.Id = boardUserFull.BoardUser.Id;

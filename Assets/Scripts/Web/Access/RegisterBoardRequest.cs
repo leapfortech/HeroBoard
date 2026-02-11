@@ -2,6 +2,7 @@
 
 public class RegisterBoardRequest
 {
+    public String Alias { get; set; }
     public String FirstName1 { get; set; }
     public String FirstName2 { get; set; }
     public String LastName1 { get; set; }
@@ -17,10 +18,11 @@ public class RegisterBoardRequest
     {
     }
 
-    public RegisterBoardRequest(String firstName1, String firstName2, String lastName1, String lastName2,
+    public RegisterBoardRequest(String alias, String firstName1, String firstName2, String lastName1, String lastName2,
                                 String roles, String email, String password, long phoneCountryId, String phone,
                                 int news, String referredCode)
     {
+        Alias = alias;
         FirstName1 = firstName1;
         FirstName2 = firstName2;
         LastName1 = lastName1;
@@ -32,9 +34,10 @@ public class RegisterBoardRequest
         Phone = phone;
     }
 
-    public RegisterBoardRequest(String firstName1, String firstName2, String lastName1, String lastName2,
+    public RegisterBoardRequest(String alias, String firstName1, String firstName2, String lastName1, String lastName2,
                                 String roles, String email, String password, long phoneCountryId, String phone)
     {
+        Alias = alias;
         FirstName1 = firstName1;
         FirstName2 = firstName2;
         LastName1 = lastName1;
@@ -46,9 +49,10 @@ public class RegisterBoardRequest
         Phone = phone;
     }
 
-    public RegisterBoardRequest(String firstName1, String firstName2, String lastName1, String lastName2,
+    public RegisterBoardRequest(String alias, String firstName1, String firstName2, String lastName1, String lastName2,
                                 String roles, String email, long phoneCountryId, String phone)
     {
+        Alias= alias;
         FirstName1 = firstName1;
         FirstName2 = firstName2;
         LastName1 = lastName1;
