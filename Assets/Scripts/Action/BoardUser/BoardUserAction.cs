@@ -126,7 +126,7 @@ public class BoardUserAction : MonoBehaviour
 
             lstBoardUserValue = new ListScrollerValue(4, true);
             lstBoardUserValue.SetText(0, boardUserFulls[idx].WebSysUser.AuthUserId);
-            lstBoardUserValue.SetText(1, boardUserFulls[idx].BoardUser.GetCompleteName());
+            lstBoardUserValue.SetText(1, boardUserFulls[idx].Identity.GetFullName());
             //lstBoardUserValue.SetText(1, vllRole.FindRecordCellString(boardUserFulls[idx].WebSysUser.Roles, 0));
 
             lstBoardUsers.AddValue(lstBoardUserValue);
@@ -146,7 +146,7 @@ public class BoardUserAction : MonoBehaviour
         boardUserFull = boardUserFulls[idx];
         Id = boardUserFull.BoardUser.Id;
 
-        txtName.TextValue = boardUserFull.BoardUser.GetCompleteName();
+        txtName.TextValue = boardUserFull.Identity.GetFullName();
         txtAuthUserId.TextValue = boardUserFull.WebSysUser.AuthUserId;
         txtEmail.TextValue = boardUserFull.WebSysUser.Email;
         txtPhone.TextValue = $"{vllCountry.FindRecordCellString(boardUserFull.WebSysUser.PhoneCountryId, 2)} {boardUserFull.WebSysUser.Phone}";  // "PhonePrefix"
