@@ -21,8 +21,6 @@ public class AppUserService : MonoBehaviour
     [Serializable]
     public class AppUserFullsEvent : UnityEvent<List<AppUserFull>> { }
 
-    [Serializable]
-    public class AppUserResponseEvent : UnityEvent<AppUserResponse> { }
 
     [SerializeField]
     private AppUserEvent onAppUserRetreived = null;

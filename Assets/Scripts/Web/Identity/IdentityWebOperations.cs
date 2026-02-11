@@ -82,36 +82,6 @@ public class PortraitAppUserGetOperation : HttpOperation
     public String portrait;
 }
 
-[HttpPOST]
-[HttpPathExt(WebServiceType.Main, "/identity/Register")]
-[HttpProvider(typeof(HttpUnityWebAzureClient))]
-[HttpContentType("application/json")]
-[HttpAccept("text/plain")]
-[HttpFirebaseAuthorization]
-public class IdentityRegisterPostOperation : HttpOperation
-{
-    [HttpRequestJsonBody]
-    public IdentityRegister identityRegister;
-
-    [HttpResponseTextBody]
-    public String id;
-}
-
-[HttpPUT]
-[HttpPathExt(WebServiceType.Main, "/identity")]
-[HttpProvider(typeof(HttpUnityWebAzureClient))]
-[HttpContentType("application/json")]
-[HttpAccept("text/plain")]
-[HttpFirebaseAuthorization]
-public class IdentityPutOperation : HttpOperation
-{
-    [HttpRequestJsonBody]
-    public Identity identity;
-
-    [HttpResponseTextBody]
-    public String id;
-}
-
 [HttpPUT]
 [HttpPathExt(WebServiceType.Main, "/identity/Portrait")]
 [HttpProvider(typeof(HttpUnityWebAzureClient))]
@@ -125,19 +95,4 @@ public class IdentityPortraitPutOperation : HttpOperation
 
     [HttpRequestTextBody]
     public String portrait;
-}
-
-[HttpPUT]
-[HttpPathExt(WebServiceType.Main, "/identity/Info")]
-[HttpProvider(typeof(HttpUnityWebAzureClient))]
-[HttpContentType("application/json")]
-[HttpAccept("text/plain")]
-[HttpFirebaseAuthorization]
-public class IdentityInfoPutOperation : HttpOperation
-{
-    [HttpRequestJsonBody]
-    public Identity identity;
-
-    [HttpResponseTextBody]
-    public String id;
 }

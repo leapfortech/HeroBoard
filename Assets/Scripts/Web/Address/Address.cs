@@ -4,7 +4,8 @@ using Sirenix.OdinInspector;
 
 public class Address
 {
-    public long Id { get; set; }
+    public long Id { get; set; } = -1;
+
     [ShowInInspector]
     public long CountryId { get; set; } = -1;
     [ShowInInspector]
@@ -17,11 +18,9 @@ public class Address
     public String Address2 { get; set; }
     [ShowInInspector]
     public String Zone { get; set; }
-    [ShowInInspector]
     public String ZipCode { get; set; }
     public float? Latitude { get; set; }
     public float? Longitude { get; set; }
-    [ShowInInspector]
     public int Status { get; set; } = -1;
 
 

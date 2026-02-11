@@ -14,14 +14,8 @@ public class AddressService : MonoBehaviour
     [Serializable]
     public class AddressEvent : UnityEvent<Address> { }
 
-    [Serializable]
-    public class AddressInfoEvent : UnityEvent<AddressInfo> { }
-
     [SerializeField]
     private AddressEvent onRetreived = null;
-
-    [SerializeField]
-    private AddressInfoEvent onInfoRetreived = null;
 
     [SerializeField]
     private UnityLongEvent onRegistered = null;
@@ -38,12 +32,12 @@ public class AddressService : MonoBehaviour
 
 
     // GET
-    public void GetAddress(long appUserId)
+    public void GetAddress()
     {
-       AddressGetOperation addressGetOp = new AddressGetOperation();
+        AddressGetOperation addressGetOp = new AddressGetOperation();
         try
         {
-            addressGetOp.appUserId = appUserId;
+            addressGetOp.appUserId = StateManager.Instance.AppUser.Id;
             addressGetOp["on-complete"] = (Action<AddressGetOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)
@@ -58,39 +52,19 @@ public class AddressService : MonoBehaviour
             WebManager.Instance.OnSendError(ex.Message);
         }
     }
-    public void GetAddressInfo(long appUserId, int status = 1)
-    {
-        AddressInfoGetOperation addressInfoGetOp = new AddressInfoGetOperation();
-        try
-        {
-            addressInfoGetOp.appUserId = appUserId;
-            addressInfoGetOp.status = status;
-            addressInfoGetOp["on-complete"] = (Action<AddressInfoGetOperation, HttpResponse>)((op, response) =>
-            {
-                if (response != null && !response.HasError)
-                    onInfoRetreived.Invoke(op.addressInfo);
-                else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
-            });
-            addressInfoGetOp.Send();
-        }
-        catch (Exception ex)
-        {
-            WebManager.Instance.OnSendError(ex.Message);
-        }
-    }
 
     // REGISTER
-    public void Register(AddressInfo addressFull)
+    public void RegisterAppUser(Address address)
     {
-        AddressRegisterOperation addressRegisterPostOp = new AddressRegisterOperation();
+        AddressAppUserRegisterOperation addressRegisterPostOp = new AddressAppUserRegisterOperation();
         try
         {
-            addressRegisterPostOp.addressInfo = addressFull;
-            addressRegisterPostOp["on-complete"] = (Action<AddressRegisterOperation, HttpResponse>)((op, response) =>
+            addressRegisterPostOp.appUserId = StateManager.Instance.AppUser.Id;
+            addressRegisterPostOp.address = address;
+            addressRegisterPostOp["on-complete"] = (Action<AddressAppUserRegisterOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)
-                    onRegistered.Invoke(Convert.ToInt64(op.id));
+                    onRegistered.Invoke(Convert.ToInt32(op.id));
                 else
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
@@ -108,11 +82,11 @@ public class AddressService : MonoBehaviour
         AddressPostOperation addressPostOp = new AddressPostOperation();
         try
         {
-            addressPostOp.address = address;
+            addressPostOp.Address = address;
             addressPostOp["on-complete"] = (Action<AddressPostOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)
-                    onAdded.Invoke(Convert.ToInt64(op.id));
+                    onAdded.Invoke(Convert.ToInt32(op.id));
                 else
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
@@ -125,11 +99,13 @@ public class AddressService : MonoBehaviour
     }
 
     // UPDATE
-    public void UpdateAddress(Address address)
+
+    public void UpdateAddress(long appUserId, Address address)
     {
         AddressPutOperation addressPutOp = new AddressPutOperation();
         try
         {
+            addressPutOp.appUserId = appUserId;
             addressPutOp.address = address;
             addressPutOp["on-complete"] = (Action<AddressPutOperation, HttpResponse>)((op, response) =>
             {
@@ -139,49 +115,6 @@ public class AddressService : MonoBehaviour
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
             addressPutOp.Send();
-        }
-        catch (Exception ex)
-        {
-            WebManager.Instance.OnSendError(ex.Message);
-        }
-    }
-
-    public void UpdateAddress(long appUserId, Address address)
-    {
-        AddressAppUserPutOperation addressPutOp = new AddressAppUserPutOperation();
-        try
-        {
-            addressPutOp.appUserId = appUserId;
-            addressPutOp.address = address;
-            addressPutOp["on-complete"] = (Action<AddressAppUserPutOperation, HttpResponse>)((op, response) =>
-            {
-                if (response != null && !response.HasError)
-                    onUpdated.Invoke(Convert.ToInt64(op.id));
-                else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
-            });
-            addressPutOp.Send();
-        }
-        catch (Exception ex)
-        {
-            WebManager.Instance.OnSendError(ex.Message);
-        }
-    }
-
-    public void UpdateAddressInfo(AddressInfo addressInfo)
-    {
-        AddressInfoPutOperation addressFullPutOp = new AddressInfoPutOperation();
-        try
-        {
-            addressFullPutOp.addressInfo = addressInfo;
-            addressFullPutOp["on-complete"] = (Action<AddressInfoPutOperation, HttpResponse>)((op, response) =>
-            {
-                if (response != null && !response.HasError)
-                    onUpdated.Invoke(Convert.ToInt64(op.id));
-                else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
-            });
-            addressFullPutOp.Send();
         }
         catch (Exception ex)
         {

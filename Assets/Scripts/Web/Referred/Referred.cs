@@ -5,13 +5,8 @@ public class Referred
     public long Id { get; set; }
     public String Code { get; set; }
     public long AppUserId { get; set; }
-    public String FirstName { get; set; }
-    public String LastName { get; set; }
-    public long PhoneCountryId { get; set; }
-    public String Phone { get; set; }
-    public String Email { get; set; }
+    public long IdentityId { get; set; }
     public DateTime CreateDateTime { get; set; }
-    public DateTime UpdateDateTime { get; set; }
     public int Status { get; set; }
 
 
@@ -19,19 +14,13 @@ public class Referred
     {
     }
 
-    public Referred(long id, String code, long appUserId, String firstName, String lastName, long phoneCountryId,
-                    String phone, String email, DateTime createDateTime, DateTime updateDateTime, int status)
+    public Referred(long id, String code, long appUserId, long identityId, DateTime createDateTime, int status)
     {
         Id = id;
         Code = code;
         AppUserId = appUserId;
-        FirstName = firstName;
-        LastName = lastName;
-        PhoneCountryId = phoneCountryId;
-        Phone = phone;
-        Email = email;
+        IdentityId = identityId;
         CreateDateTime = createDateTime;
-        UpdateDateTime = updateDateTime;
         Status = status;
     }
 }

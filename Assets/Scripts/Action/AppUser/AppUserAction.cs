@@ -29,10 +29,6 @@ public class AppUserAction : MonoBehaviour
     [Title("Sprites")]
     [SerializeField]
     Sprite sprEmpty = null;
-    [SerializeField]
-    Sprite sprOnboarded = null;
-    [SerializeField]
-    Sprite sprInvesting = null;
 
     [Title("Data")]
     [SerializeField]
@@ -95,8 +91,9 @@ public class AppUserAction : MonoBehaviour
         for (int i = 0; i < appUserFulls.Count; i++)
         {
             a = appUserFulls[i];
-            StateManager.Instance.IdentityFulls.Add(new IdentityFull(-1, a.Id, "-", null, null, "-", null, null, "-", DateTime.Now, "-", null, a.AuthUserId, null, "-", "-", "-", "-", DateTime.Now, DateTime.Now, "-", "-", "-",
-                                                                         a.PhonePrefix, a.Phone, a.Email, 0, 0, 0, 0, a.CreateDateTime, a.UpdateDateTime, a.AppUserStatusId, 0));
+            StateManager.Instance.IdentityFulls.Add(new IdentityFull(-1, "-", null, "-", null, "-", DateTime.Now, "-", "-", 
+                                                                     a.PhonePrefix, a.Phone, a.Email, a.CreateDateTime,
+                                                                     a.UpdateDateTime, a.AppUserStatusId, 0));
         }
 
         if (StateManager.Instance.IdentityFulls.Count == 0)
@@ -107,7 +104,8 @@ public class AppUserAction : MonoBehaviour
             return;
         }
 
-        StateManager.Instance.IdentityFulls.Sort((idf1, idf2) => { return idf1.AppUserId.CompareTo(idf2.AppUserId); });
+        //RM
+        //StateManager.Instance.IdentityFulls.Sort((idf1, idf2) => { return idf1.AppUserId.CompareTo(idf2.AppUserId); });
 
         lstAppUsers.ClearValues();
 
@@ -119,17 +117,17 @@ public class AppUserAction : MonoBehaviour
 
             if (identityFull.AppUserStatusId == 0)
             {
-                lstAppUserValue.SetText(0, identityFull.BirthCity);
+                lstAppUserValue.SetText(0, "-");  //identityFull.BirthCity);
                 lstAppUserValue.SetText(1, $"{identityFull.Email}");
                 lstAppUserValue.SetSprite(2, sprEmpty);
                 lstAppUserValue.SetSprite(3, sprEmpty);
             }
             else
             {
-                lstAppUserValue.SetText(0, identityFull.DpiCui);
+                lstAppUserValue.SetText(0, "-");  //identityFull.DpiCui);
                 lstAppUserValue.SetText(1, $"{identityFull.FirstNames} {identityFull.LastNames}");
-                lstAppUserValue.SetSprite(2, (identityFull.AppUserStatusId == 1 || identityFull.AppUserStatusId == 5) ? identityFull.Investments == 0 ? sprOnboarded : sprInvesting : sprEmpty);
-                lstAppUserValue.SetSprite(3, (identityFull.AppUserStatusId == 1 || identityFull.AppUserStatusId == 5) ? sprEmpty : sprOnboarded);
+                lstAppUserValue.SetSprite(2, sprEmpty); //RM
+                lstAppUserValue.SetSprite(3, sprEmpty); //RM
             }
 
             lstAppUsers.AddValue(lstAppUserValue);

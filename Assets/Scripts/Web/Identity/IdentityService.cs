@@ -35,12 +35,6 @@ public class IdentityService : MonoBehaviour
     private UnityStringEvent onPortraitRetreived = null;
 
     [SerializeField]
-    private UnityLongEvent onRegistered = null;
-
-    [SerializeField]
-    private UnityLongEvent onIdentityUpdated = null;
-
-    [SerializeField]
     private UnityEvent onPortraitUpdated = null;
 
     [Title("Error")]
@@ -155,49 +149,8 @@ public class IdentityService : MonoBehaviour
     }
 
     // REGISTER
-    public void Register(IdentityRegister identityRegister)
-    {
-        IdentityRegisterPostOperation identityRegisterPostOp = new IdentityRegisterPostOperation();
-        try
-        {
-            identityRegisterPostOp.identityRegister = identityRegister;
-            identityRegisterPostOp["on-complete"] = (Action<IdentityRegisterPostOperation, HttpResponse>)((op, response) =>
-            {
-                if (response != null && !response.HasError)
-                    onRegistered.Invoke(Convert.ToInt64(op.id));
-                else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
-            });
-            identityRegisterPostOp.Send();
-        }
-        catch (Exception ex)
-        {
-            WebManager.Instance.OnSendError(ex.Message);
-        }
-    }
 
     // UPDATE
-    public void UpdateIdentity(Identity identity)
-    {
-        IdentityPutOperation identityPutOperation = new IdentityPutOperation();
-        try
-        {
-            identityPutOperation.identity = identity;
-            identityPutOperation["on-complete"] = (Action<IdentityPutOperation, HttpResponse>)((op, response) =>
-            {
-                if (response != null && !response.HasError)
-                    onIdentityUpdated.Invoke(Convert.ToInt64(op.id));
-                else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
-            });
-            identityPutOperation.Send();
-        }
-        catch (Exception ex)
-        {
-            WebManager.Instance.OnSendError(ex.Message);
-        }
-    }
-
     public void UpdatePortrait(long appUserId, String portrait)
     {
         IdentityPortraitPutOperation identityPortraitPutOp = new IdentityPortraitPutOperation();
@@ -213,27 +166,6 @@ public class IdentityService : MonoBehaviour
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
             identityPortraitPutOp.Send();
-        }
-        catch (Exception ex)
-        {
-            WebManager.Instance.OnSendError(ex.Message);
-        }
-    }
-
-    public void UpdateInfo(Identity identity)
-    {
-        IdentityInfoPutOperation identityFullPutOp = new IdentityInfoPutOperation();
-        try
-        {
-            identityFullPutOp.identity = identity;
-            identityFullPutOp["on-complete"] = (Action<IdentityInfoPutOperation, HttpResponse>)((op, response) =>
-            {
-                if (response != null && !response.HasError)
-                    onIdentityUpdated.Invoke(Convert.ToInt32(op.id));
-                else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
-            });
-            identityFullPutOp.Send();
         }
         catch (Exception ex)
         {

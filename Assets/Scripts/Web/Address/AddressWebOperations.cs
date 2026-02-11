@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-using hg.ApiWebKit.core.http;
+﻿using hg.ApiWebKit.core.http;
 using hg.ApiWebKit.core.attributes;
 using hg.ApiWebKit.providers;
 using hg.ApiWebKit.mappers;
@@ -24,34 +22,20 @@ public class AddressGetOperation : HttpOperation
     public Address address;
 }
 
-[HttpGET]
-[HttpPathExt(WebServiceType.Main, "/address/InfoByAppUserId")]
-[HttpProvider(typeof(HttpUnityWebAzureClient))]
-[HttpAccept("application/json")]
-[HttpFirebaseAuthorization]
-public class AddressInfoGetOperation : HttpOperation
-{
-    [HttpQueryString]
-    public long appUserId;
-
-    [HttpQueryString]
-    public int status = 1;
-
-    [HttpResponseJsonBody]
-    public AddressInfo addressInfo;
-}
-
 // REGISTER
 [HttpPOST]
-[HttpPathExt(WebServiceType.Main, "/address/Register")]
+[HttpPathExt(WebServiceType.Main, "/address/RegisterByAppUser")]
 [HttpProvider(typeof(HttpUnityWebAzureClient))]
 [HttpContentType("application/json")]
 [HttpAccept("application/json")]
 [HttpFirebaseAuthorization]
-public class AddressRegisterOperation : HttpOperation
+public class AddressAppUserRegisterOperation : HttpOperation
 {
+    [HttpQueryString]
+    public long appUserId;
+
     [HttpRequestJsonBody]
-    public AddressInfo addressInfo;
+    public Address address;
 
     [HttpResponseTextBody]
     public String id;
@@ -67,57 +51,25 @@ public class AddressRegisterOperation : HttpOperation
 public class AddressPostOperation : HttpOperation
 {
     [HttpRequestJsonBody]
-    public Address address;
+    public Address Address;
 
     [HttpResponseTextBody]
     public String id;
 }
-
 
 // UPDATE
-[HttpPUT]
-[HttpPathExt(WebServiceType.Main, "/address")]
-[HttpProvider(typeof(HttpUnityWebAzureClient))]
-[HttpContentType("application/json")]
-[HttpAccept("text/plain")]
-[HttpFirebaseAuthorization]
-public class AddressPutOperation : HttpOperation
-{
-    [HttpRequestJsonBody]
-    public Address address;
-
-    [HttpResponseTextBody]
-    public String id;
-}
-
 [HttpPUT]
 [HttpPathExt(WebServiceType.Main, "/address/ByAppUser")]
 [HttpProvider(typeof(HttpUnityWebAzureClient))]
 [HttpContentType("application/json")]
 [HttpAccept("text/plain")]
 [HttpFirebaseAuthorization]
-public class AddressAppUserPutOperation : HttpOperation
+public class AddressPutOperation : HttpOperation
 {
     [HttpQueryString]
     public long appUserId;
-
     [HttpRequestJsonBody]
     public Address address;
-
-    [HttpResponseTextBody]
-    public String id;
-}
-
-[HttpPUT]
-[HttpPathExt(WebServiceType.Main, "/address/Info")]
-[HttpProvider(typeof(HttpUnityWebAzureClient))]
-[HttpContentType("application/json")]
-[HttpAccept("text/plain")]
-[HttpFirebaseAuthorization]
-public class AddressInfoPutOperation : HttpOperation
-{
-    [HttpRequestJsonBody]
-    public AddressInfo addressInfo;
 
     [HttpResponseTextBody]
     public String id;

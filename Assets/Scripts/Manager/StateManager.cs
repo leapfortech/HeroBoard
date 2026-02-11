@@ -74,7 +74,7 @@ public class StateManager : SingletonBehaviour<StateManager>
             identityFulls = value;
             identityFullDict = new Dictionary<long, IdentityFull>(identityFulls.Count);
             for (int i = 0; i < identityFulls.Count; i++)
-                identityFullDict.Add(identityFulls[i].AppUserId, identityFulls[i]);
+                identityFullDict.Add(identityFulls[i].Id, identityFulls[i]); //RM BEFORE AppUserId
         }
     }
     Dictionary<long, IdentityFull> identityFullDict = new Dictionary<long, IdentityFull>();
