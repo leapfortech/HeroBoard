@@ -14,11 +14,11 @@ public class AddressService : MonoBehaviour
     [Serializable]
     public class AddressEvent : UnityEvent<Address> { }
 
-    [SerializeField]
-    private AddressEvent onRetreived = null;
+    //[SerializeField]
+    //private AddressEvent onRetreived = null;
 
-    [SerializeField]
-    private UnityLongEvent onRegistered = null;
+    //[SerializeField]
+    //private UnityLongEvent onRegistered = null;
 
     [SerializeField]
     private UnityLongEvent onAdded = null;
@@ -32,49 +32,49 @@ public class AddressService : MonoBehaviour
 
 
     // GET
-    public void GetAddress()
-    {
-        AddressGetOperation addressGetOp = new AddressGetOperation();
-        try
-        {
-            addressGetOp.appUserId = StateManager.Instance.AppUser.Id;
-            addressGetOp["on-complete"] = (Action<AddressGetOperation, HttpResponse>)((op, response) =>
-            {
-                if (response != null && !response.HasError)
-                    onRetreived.Invoke(op.address);
-                else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
-            });
-            addressGetOp.Send();
-        }
-        catch (Exception ex)
-        {
-            WebManager.Instance.OnSendError(ex.Message);
-        }
-    }
+    //public void GetAddress()
+    //{
+    //    AddressGetOperation addressGetOp = new AddressGetOperation();
+    //    try
+    //    {
+    //        addressGetOp.appUserId = StateManager.Instance.AppUser.Id;
+    //        addressGetOp["on-complete"] = (Action<AddressGetOperation, HttpResponse>)((op, response) =>
+    //        {
+    //            if (response != null && !response.HasError)
+    //                onRetreived.Invoke(op.address);
+    //            else
+    //                onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+    //        });
+    //        addressGetOp.Send();
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        WebManager.Instance.OnSendError(ex.Message);
+    //    }
+    //}
 
     // REGISTER
-    public void RegisterAppUser(Address address)
-    {
-        AddressAppUserRegisterOperation addressRegisterPostOp = new AddressAppUserRegisterOperation();
-        try
-        {
-            addressRegisterPostOp.appUserId = StateManager.Instance.AppUser.Id;
-            addressRegisterPostOp.address = address;
-            addressRegisterPostOp["on-complete"] = (Action<AddressAppUserRegisterOperation, HttpResponse>)((op, response) =>
-            {
-                if (response != null && !response.HasError)
-                    onRegistered.Invoke(Convert.ToInt32(op.id));
-                else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
-            });
-            addressRegisterPostOp.Send();
-        }
-        catch (Exception ex)
-        {
-            WebManager.Instance.OnSendError(ex.Message);
-        }
-    }
+    //public void RegisterAppUser(Address address)
+    //{
+    //    AddressAppUserRegisterOperation addressRegisterPostOp = new AddressAppUserRegisterOperation();
+    //    try
+    //    {
+    //        addressRegisterPostOp.appUserId = StateManager.Instance.AppUser.Id;
+    //        addressRegisterPostOp.address = address;
+    //        addressRegisterPostOp["on-complete"] = (Action<AddressAppUserRegisterOperation, HttpResponse>)((op, response) =>
+    //        {
+    //            if (response != null && !response.HasError)
+    //                onRegistered.Invoke(Convert.ToInt32(op.id));
+    //            else
+    //                onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+    //        });
+    //        addressRegisterPostOp.Send();
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        WebManager.Instance.OnSendError(ex.Message);
+    //    }
+    //}
 
     // ADD
     public void Add(Address address)

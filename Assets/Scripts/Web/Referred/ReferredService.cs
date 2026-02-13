@@ -101,26 +101,26 @@ public class ReferredService : MonoBehaviour
         }
     }
 
-    public void GetHistory(DateTime startDate, DateTime endDate)
-    {
-        HistoryGetOperation historyGetOp = new HistoryGetOperation();
-        try
-        {
-            historyGetOp.referredHistoryRequest = new ReferredHistoryRequest(StateManager.Instance.AppUser.Id, startDate, endDate);
-            historyGetOp["on-complete"] = (Action<HistoryGetOperation, HttpResponse>)((op, response) =>
-            {
-                if (response != null && !response.HasError)
-                    onRetreived.Invoke(op.referreds);
-                else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
-            });
-            historyGetOp.Send();
-        }
-        catch (Exception ex)
-        {
-            WebManager.Instance.OnSendError(ex.Message);
-        }
-    }
+    //public void GetHistory(DateTime startDate, DateTime endDate)
+    //{
+    //    HistoryGetOperation historyGetOp = new HistoryGetOperation();
+    //    try
+    //    {
+    //        historyGetOp.referredHistoryRequest = new ReferredHistoryRequest(StateManager.Instance.AppUser.Id, startDate, endDate);
+    //        historyGetOp["on-complete"] = (Action<HistoryGetOperation, HttpResponse>)((op, response) =>
+    //        {
+    //            if (response != null && !response.HasError)
+    //                onRetreived.Invoke(op.referreds);
+    //            else
+    //                onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+    //        });
+    //        historyGetOp.Send();
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        WebManager.Instance.OnSendError(ex.Message);
+    //    }
+    //}
 
     public void GetIdByCode(String code)
     {

@@ -64,35 +64,35 @@ public class StateManager : SingletonBehaviour<StateManager>
    
 
     // IdentityFull
-    [Title("IdentityFull")]
-    [ShowInInspector, HideReferenceObjectPicker, ReadOnly]
-    public List<IdentityFull> IdentityFulls
-    {
-        get => identityFulls;
-        set
-        {
-            identityFulls = value;
-            identityFullDict = new Dictionary<long, IdentityFull>(identityFulls.Count);
-            for (int i = 0; i < identityFulls.Count; i++)
-                identityFullDict.Add(identityFulls[i].Id, identityFulls[i]); //RM BEFORE AppUserId
-        }
-    }
-    Dictionary<long, IdentityFull> identityFullDict = new Dictionary<long, IdentityFull>();
-    List<IdentityFull> identityFulls = new List<IdentityFull>();
-    public IdentityFull GetIdentityFull(int appUserId) => identityFullDict.TryGetValue(appUserId, out IdentityFull identityFull) ? identityFull : null;
+    //[Title("IdentityFull")]
+    //[ShowInInspector, HideReferenceObjectPicker, ReadOnly]
+    //public List<IdentityFull> IdentityFulls
+    //{
+    //    get => identityFulls;
+    //    set
+    //    {
+    //        identityFulls = value;
+    //        identityFullDict = new Dictionary<long, IdentityFull>(identityFulls.Count);
+    //        for (int i = 0; i < identityFulls.Count; i++)
+    //            identityFullDict.Add(identityFulls[i].Id, identityFulls[i]); //RM BEFORE AppUserId
+    //    }
+    //}
+    //Dictionary<long, IdentityFull> identityFullDict = new Dictionary<long, IdentityFull>();
+    //List<IdentityFull> identityFulls = new List<IdentityFull>();
+    //public IdentityFull GetIdentityFull(int appUserId) => identityFullDict.TryGetValue(appUserId, out IdentityFull identityFull) ? identityFull : null;
 
-    // Onboarding
-    public AppUserNamed[] AppUsers { get; set; } = null;
-    public int AppUserIdx { get; set; } = -1;
-    public AppUserNamed AppUser => AppUserIdx == -1 ? null : AppUsers[AppUserIdx];
+    //// Onboarding
+    //public AppUserNamed[] AppUsers { get; set; } = null;
+    //public int AppUserIdx { get; set; } = -1;
+    //public AppUserNamed AppUser => AppUserIdx == -1 ? null : AppUsers[AppUserIdx];
 
 
-    public Identity AppUserIdentity { get; set; } = null;
-    public Address AppUserAddress { get; set; } = null;
+    //public Identity AppUserIdentity { get; set; } = null;
+    //public Address AppUserAddress { get; set; } = null;
 
-    public void ClearOnboardings()
-    {
-        AppUserIdentity = null;
-        AppUserAddress = null;
-    }
+    //public void ClearOnboardings()
+    //{
+    //    AppUserIdentity = null;
+    //    AppUserAddress = null;
+    //}
 }

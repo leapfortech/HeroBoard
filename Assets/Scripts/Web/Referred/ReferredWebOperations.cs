@@ -46,20 +46,20 @@ public class ReferredGetOperation : HttpOperation
     public List<Referred> referreds;
 }
 
-[HttpPOST]
-[HttpPathExt(WebServiceType.Main, "/referred/History")]
-[HttpProvider(typeof(HttpUnityWebAzureClient))]
-[HttpContentType("application/json")]
-[HttpAccept("application/json")]
-[HttpFirebaseAuthorization]
-public class HistoryGetOperation : HttpOperation
-{
-    [HttpRequestJsonBody]
-    public ReferredHistoryRequest referredHistoryRequest;
+//[HttpPOST]
+//[HttpPathExt(WebServiceType.Main, "/referred/History")]
+//[HttpProvider(typeof(HttpUnityWebAzureClient))]
+//[HttpContentType("application/json")]
+//[HttpAccept("application/json")]
+//[HttpFirebaseAuthorization]
+//public class HistoryGetOperation : HttpOperation
+//{
+//    [HttpRequestJsonBody]
+//    public ReferredHistoryRequest referredHistoryRequest;
 
-    [HttpResponseJsonBody]
-    public List<Referred> referreds;
-}
+//    [HttpResponseJsonBody]
+//    public List<Referred> referreds;
+//}
 
 [HttpGET]
 [HttpPathExt(WebServiceType.Main, "/referred/IdByCode")]
