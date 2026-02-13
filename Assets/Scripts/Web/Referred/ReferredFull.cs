@@ -5,8 +5,12 @@ public class ReferredFull
     public long Id { get; set; }
     public String Code { get; set; }
     public long AppUserId { get; set; }
-    public String FirstNames { get; set; }
-    public String LastNames { get; set; }
+    public String FirstName1 { get; set; }
+    public String FirstName2 { get; set; }
+    public String FirstNames => String.IsNullOrEmpty(FirstName2) ? FirstName1 : (FirstName1 + " " + FirstName2);
+    public String LastName1 { get; set; }
+    public String LastName2 { get; set; }
+    public String LastNames => String.IsNullOrEmpty(LastName2) ? LastName1 : (LastName1 + " " + LastName2);
     public String PhonePrefix { get; set; }
     public String Phone { get; set; }
     public String Email { get; set; }
@@ -17,18 +21,25 @@ public class ReferredFull
     {
     }
 
-    public ReferredFull(long id, String code, long appUserId, String firstNames, String lastNames, String phonePrefix, String phone,
-                        String email, DateTime createDateTime, ReferrerFull referrer)
+    public ReferredFull(long id, String code, long appUserId, String firstName1, String firstName2, String lastName1, String lastName2,
+                        String phonePrefix, String phone, String email, DateTime createDateTime, ReferrerFull referrer)
     {
         Id = id;
         Code = code;
         AppUserId = appUserId;
-        FirstNames = firstNames;
-        LastNames = lastNames;
+        FirstName1 = firstName1;
+        FirstName2 = firstName2;
+        LastName1 = lastName1;
+        LastName2 = lastName2;
         PhonePrefix = phonePrefix;
         Phone = phone;
         Email = email;
         CreateDateTime = createDateTime;
         Referrer = referrer;
+    }
+
+    public String GetFullName()
+    {
+        return FirstName1 + (String.IsNullOrEmpty(FirstName2) ? "" : (" " + FirstName2)) + " " + LastName1 + (String.IsNullOrEmpty(LastName2) ? "" : (" " + LastName2));
     }
 }

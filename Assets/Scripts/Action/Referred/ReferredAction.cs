@@ -80,7 +80,7 @@ public class ReferredAction : MonoBehaviour
         {
             lstReferredValue = new ListScrollerValue(2, true);
             lstReferredValue.SetText(0, referreds[i].Code);
-            lstReferredValue.SetText(1, $"{referreds[i].FirstNames} {referreds[i].LastNames}");
+            lstReferredValue.SetText(1, referreds[i].GetFullName());
 
             lstReferreds.AddValue(lstReferredValue);
         }

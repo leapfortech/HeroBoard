@@ -3,7 +3,6 @@ using System;
 public class ReferrerFull
 {
     public long IdentityId { get; set; }
-    public String Cui { get; set; }
     public String FirstName1 { get; set; }
     public String FirstName2 { get; set; }
     public String FirstNames => String.IsNullOrEmpty(FirstName2) ? FirstName1 : (FirstName1 + " " + FirstName2);
@@ -18,11 +17,10 @@ public class ReferrerFull
     {
     }
 
-    public ReferrerFull(long identityId, String cui, String firstName1, String firstName2,
+    public ReferrerFull(long identityId, String firstName1, String firstName2,
                         String lastName1, String lastName2, String phonePrefix, String phone, String email)
     {
         IdentityId = identityId;
-        Cui = cui;
         FirstName1 = firstName1;
         FirstName2 = firstName2;
         LastName1 = lastName1;
