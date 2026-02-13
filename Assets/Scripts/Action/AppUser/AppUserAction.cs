@@ -74,7 +74,7 @@ public class AppUserAction : MonoBehaviour
 
     public void GetAppUsers()
     {
-        appUserService.GetFullsByStatus(0);
+        appUserService.GetFullsByStatus(1);
     }
 
     public void FillAppUsers(List<AppUserFull> appUserFulls)
@@ -105,7 +105,7 @@ public class AppUserAction : MonoBehaviour
         }
 
         //RM
-        //StateManager.Instance.IdentityFulls.Sort((idf1, idf2) => { return idf1.AppUserId.CompareTo(idf2.AppUserId); });
+        StateManager.Instance.IdentityFulls.Sort((idf1, idf2) => { return idf1.Id.CompareTo(idf2.Id); });
 
         lstAppUsers.ClearValues();
 
@@ -115,20 +115,25 @@ public class AppUserAction : MonoBehaviour
             lstAppUserValue = new ListScrollerValue(4, true);
             IdentityFull identityFull = StateManager.Instance.IdentityFulls[i];
 
-            if (identityFull.AppUserStatusId == 0)
-            {
-                lstAppUserValue.SetText(0, "-");  //identityFull.BirthCity);
-                lstAppUserValue.SetText(1, $"{identityFull.Email}");
-                lstAppUserValue.SetSprite(2, sprEmpty);
-                lstAppUserValue.SetSprite(3, sprEmpty);
-            }
-            else
-            {
-                lstAppUserValue.SetText(0, "-");  //identityFull.DpiCui);
-                lstAppUserValue.SetText(1, $"{identityFull.FirstNames} {identityFull.LastNames}");
-                lstAppUserValue.SetSprite(2, sprEmpty); //RM
-                lstAppUserValue.SetSprite(3, sprEmpty); //RM
-            }
+            lstAppUserValue.SetText(0, identityFull.OriginCountry);  //identityFull.BirthCity);
+            lstAppUserValue.SetText(1, $"{identityFull.Email}");
+            lstAppUserValue.SetSprite(2, sprEmpty);
+            lstAppUserValue.SetSprite(3, sprEmpty);
+
+            //if (identityFull.AppUserStatusId == 0)
+            //{
+            //    lstAppUserValue.SetText(0, identityFull.OriginCountry);  //identityFull.BirthCity);
+            //    lstAppUserValue.SetText(1, $"{identityFull.Email}");
+            //    lstAppUserValue.SetSprite(2, sprEmpty);
+            //    lstAppUserValue.SetSprite(3, sprEmpty);
+            //}
+            //else
+            //{
+            //    lstAppUserValue.SetText(0, identityFull.OriginCountry);  //identityFull.DpiCui);
+            //    lstAppUserValue.SetText(1, $"{identityFull.FirstNames} {identityFull.LastNames}");
+            //    lstAppUserValue.SetSprite(2, sprEmpty); //RM
+            //    lstAppUserValue.SetSprite(3, sprEmpty); //RM
+            //}
 
             lstAppUsers.AddValue(lstAppUserValue);
         }
