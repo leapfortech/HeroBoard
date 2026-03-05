@@ -9,766 +9,162 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3de87f6fc1759f14aa8909fd36d95640, type: 3}
+  m_Script: {fileID: 11500000, guid: da39ce696ab95824ea9721acb2aff629, type: 3}
   m_Name: ImgVerifB
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: states
-      Entry: 7
-      Data: 0|Leap.UI.Elements.State[], Leap.UI.Elements
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 1|Leap.UI.Elements.State, Leap.UI.Elements
-    - Name: stateName
-      Entry: 1
-      Data: Normal
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: floats
-      Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 15
-    - Name: 
-      Entry: 7
-      Data: 3|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Oversize'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'O: Oversize'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 4|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'B: Width'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'B: Card'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 5|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Photo: Big: TopLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 6|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Photo: Big: TopRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 7|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Photo: Big: BottomLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 8|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Photo: Big: BottomRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 9|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Height
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'H: Card'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 10|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Width
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'W: Card'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 11|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: X'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 12|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 13|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 14|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'I: Size'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 15|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Title'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 16|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 17|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFloats
-      Entry: 7
-      Data: 18|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 19|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 15
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Oversize'
-    - Name: $v
-      Entry: 9
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'B: Width'
-    - Name: $v
-      Entry: 9
-      Data: 4
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 7
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 8
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Height
-    - Name: $v
-      Entry: 9
-      Data: 9
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Width
-    - Name: $v
-      Entry: 9
-      Data: 10
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: X'
-    - Name: $v
-      Entry: 9
-      Data: 11
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: $v
-      Entry: 9
-      Data: 12
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: $v
-      Entry: 9
-      Data: 13
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'I: Size'
-    - Name: $v
-      Entry: 9
-      Data: 14
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Title'
-    - Name: $v
-      Entry: 9
-      Data: 15
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: $v
-      Entry: 9
-      Data: 16
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: $v
-      Entry: 9
-      Data: 17
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: colors
-      Entry: 7
-      Data: 20|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 21|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Color
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Bkg'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 22|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Border
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Border'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictColors
-      Entry: 7
-      Data: 23|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 24|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Color
-    - Name: $v
-      Entry: 9
-      Data: 21
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Border
-    - Name: $v
-      Entry: 9
-      Data: 22
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: fonts
-      Entry: 7
-      Data: 25|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 26|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Title
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 27|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Text
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFonts
-      Entry: 7
-      Data: 28|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 24
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Title
-    - Name: $v
-      Entry: 9
-      Data: 26
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Text
-    - Name: $v
-      Entry: 9
-      Data: 27
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: sprites
-      Entry: 7
-      Data: 29|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 30|Leap.UI.Elements.StylePropertySprite, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Sprite
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 31|Leap.UI.Elements.StylePropertySprite, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Empty
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 32|Leap.UI.Elements.StylePropertySprite, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Icon
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictSprites
-      Entry: 7
-      Data: 33|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 34|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Sprite
-    - Name: $v
-      Entry: 9
-      Data: 30
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Empty
-    - Name: $v
-      Entry: 9
-      Data: 31
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Icon
-    - Name: $v
-      Entry: 9
-      Data: 32
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+  m_EditorClassIdentifier: Leap.UI.Elements::Leap.UI.Elements.Style
   type: 7
+  states:
+  - stateName: Normal
+    index: 0
+    style: {fileID: 11400000}
+    floats:
+    - style: {fileID: 11400000}
+      ModelProperty: 'O: Oversize'
+      ThemeProperty: 'O: Oversize'
+    - style: {fileID: 11400000}
+      ModelProperty: 'B: Width'
+      ThemeProperty: 'B: Card'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: TopLeft'
+      ThemeProperty: 'C: Photo: Big: TopLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: TopRight'
+      ThemeProperty: 'C: Photo: Big: TopRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: BottomLeft'
+      ThemeProperty: 'C: Photo: Big: BottomLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: BottomRight'
+      ThemeProperty: 'C: Photo: Big: BottomRight'
+    - style: {fileID: 11400000}
+      ModelProperty: Height
+      ThemeProperty: 'H: Card'
+    - style: {fileID: 11400000}
+      ModelProperty: Width
+      ThemeProperty: 'W: Card'
+    DictFloats:
+      keys:
+      - 'O: Oversize'
+      - 'B: Width'
+      - 'C: TopLeft'
+      - 'C: TopRight'
+      - 'C: BottomLeft'
+      - 'C: BottomRight'
+      - Height
+      - Width
+      values:
+      - rid: 7896456248313249999
+      - rid: 7896456248313250000
+      - rid: 7896456248313250001
+      - rid: 7896456248313250002
+      - rid: 7896456248313250003
+      - rid: 7896456248313250004
+      - rid: 7896456248313250005
+      - rid: 7896456248313250006
+    colors:
+    - style: {fileID: 11400000}
+      ModelProperty: Color
+      ThemeProperty: 'Card: Bkg'
+    - style: {fileID: 11400000}
+      ModelProperty: Border
+      ThemeProperty: 'Card: Border'
+    DictColors:
+      keys:
+      - Color
+      - Border
+      values:
+      - rid: 7896456248313250007
+      - rid: 7896456248313250008
+    fonts: []
+    DictFonts:
+      keys: []
+      values: []
+    sprites:
+    - style: {fileID: 11400000}
+      ModelProperty: Sprite
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: Empty
+      ThemeProperty: 
+    DictSprites:
+      keys:
+      - Sprite
+      - Empty
+      values:
+      - rid: 7896456248313250009
+      - rid: 7896456248313250010
+  references:
+    version: 2
+    RefIds:
+    - rid: 7896456248313249999
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'O: Oversize'
+        ThemeProperty: 'O: Oversize'
+    - rid: 7896456248313250000
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'B: Width'
+        ThemeProperty: 'B: Card'
+    - rid: 7896456248313250001
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: TopLeft'
+        ThemeProperty: 'C: Photo: Big: TopLeft'
+    - rid: 7896456248313250002
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: TopRight'
+        ThemeProperty: 'C: Photo: Big: TopRight'
+    - rid: 7896456248313250003
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: BottomLeft'
+        ThemeProperty: 'C: Photo: Big: BottomLeft'
+    - rid: 7896456248313250004
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: BottomRight'
+        ThemeProperty: 'C: Photo: Big: BottomRight'
+    - rid: 7896456248313250005
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Height
+        ThemeProperty: 'H: Card'
+    - rid: 7896456248313250006
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Width
+        ThemeProperty: 'W: Card'
+    - rid: 7896456248313250007
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Color
+        ThemeProperty: 'Card: Bkg'
+    - rid: 7896456248313250008
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Border
+        ThemeProperty: 'Card: Border'
+    - rid: 7896456248313250009
+      type: {class: StylePropertySprite, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Sprite
+        ThemeProperty: 
+    - rid: 7896456248313250010
+      type: {class: StylePropertySprite, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Empty
+        ThemeProperty: 

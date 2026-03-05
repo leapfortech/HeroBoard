@@ -9,6069 +9,1847 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3de87f6fc1759f14aa8909fd36d95640, type: 3}
+  m_Script: {fileID: 11500000, guid: da39ce696ab95824ea9721acb2aff629, type: 3}
   m_Name: CmbCrdPct60
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: states
-      Entry: 7
-      Data: 0|Leap.UI.Elements.State[], Leap.UI.Elements
-    - Name: 
-      Entry: 12
-      Data: 4
-    - Name: 
-      Entry: 7
-      Data: 1|Leap.UI.Elements.State, Leap.UI.Elements
-    - Name: stateName
-      Entry: 1
-      Data: Normal
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: floats
-      Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 38
-    - Name: 
-      Entry: 7
-      Data: 3|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Width
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'W: Card: Pct60'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 4|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Height
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'H: Card'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 5|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Height: Underline'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'H: Card: ULine'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 6|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'B: Witdh'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'B: Card: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 7|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: TopLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: TopLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 8|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: TopRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: TopRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 9|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: BottomLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 10|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: BottomRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: BottomRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 11|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: Underline'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: ULine'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 12|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Left'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Title: Left'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 13|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Bottom'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Title: Bottom'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 14|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Left'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Left'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 15|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Right'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Right'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 16|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Bottom'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Bottom'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 17|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Underline: Left'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: ULine: Left'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 18|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Underline: Right'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: ULine: Right'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 19|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Title'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'F: Card: Title'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 20|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Placeholder'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'F: Card: Placeholder'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 21|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Text'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'F: Card: Text'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 22|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Width'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: W: Card'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 23|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Height'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: H: Card'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 24|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: TopLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: TopLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 25|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: TopRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: TopRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 26|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: BottomLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 27|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: BottomRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: BottomRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 28|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: B: Width'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: B: Card: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 29|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: S: Card: Icon'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 30|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'B: Width'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 31|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 32|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 33|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 34|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 35|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: X'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 36|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 37|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 38|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'I: Size'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 39|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 40|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFloats
-      Entry: 7
-      Data: 41|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 42|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 38
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Width
-    - Name: $v
-      Entry: 9
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Height
-    - Name: $v
-      Entry: 9
-      Data: 4
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Height: Underline'
-    - Name: $v
-      Entry: 9
-      Data: 5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'B: Witdh'
-    - Name: $v
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 7
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 8
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 9
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 10
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: Underline'
-    - Name: $v
-      Entry: 9
-      Data: 11
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Left'
-    - Name: $v
-      Entry: 9
-      Data: 12
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Bottom'
-    - Name: $v
-      Entry: 9
-      Data: 13
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Left'
-    - Name: $v
-      Entry: 9
-      Data: 14
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Right'
-    - Name: $v
-      Entry: 9
-      Data: 15
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Bottom'
-    - Name: $v
-      Entry: 9
-      Data: 16
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Underline: Left'
-    - Name: $v
-      Entry: 9
-      Data: 17
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Underline: Right'
-    - Name: $v
-      Entry: 9
-      Data: 18
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Title'
-    - Name: $v
-      Entry: 9
-      Data: 19
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Placeholder'
-    - Name: $v
-      Entry: 9
-      Data: 20
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Text'
-    - Name: $v
-      Entry: 9
-      Data: 21
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Width'
-    - Name: $v
-      Entry: 9
-      Data: 22
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Height'
-    - Name: $v
-      Entry: 9
-      Data: 23
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 24
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 25
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 26
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 27
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: B: Width'
-    - Name: $v
-      Entry: 9
-      Data: 28
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: $v
-      Entry: 9
-      Data: 29
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'B: Width'
-    - Name: $v
-      Entry: 9
-      Data: 30
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 31
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 32
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 33
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 34
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: X'
-    - Name: $v
-      Entry: 9
-      Data: 35
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: $v
-      Entry: 9
-      Data: 36
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: $v
-      Entry: 9
-      Data: 37
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'I: Size'
-    - Name: $v
-      Entry: 9
-      Data: 38
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: $v
-      Entry: 9
-      Data: 39
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: $v
-      Entry: 9
-      Data: 40
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: colors
-      Entry: 7
-      Data: 43|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 9
-    - Name: 
-      Entry: 7
-      Data: 44|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Background
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Bkg: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 45|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Border
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Border: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 46|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Title
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Title: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 47|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Placeholder
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: PHolder: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 48|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Text
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Text: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 49|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Underline
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: ULine: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 50|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Background'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Btn: Bkg: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 51|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Border'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Btn: Border: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 52|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Btn: Icon: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictColors
-      Entry: 7
-      Data: 53|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 42
-    - Name: 
-      Entry: 12
-      Data: 9
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Background
-    - Name: $v
-      Entry: 9
-      Data: 44
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Border
-    - Name: $v
-      Entry: 9
-      Data: 45
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Title
-    - Name: $v
-      Entry: 9
-      Data: 46
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Placeholder
-    - Name: $v
-      Entry: 9
-      Data: 47
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Text
-    - Name: $v
-      Entry: 9
-      Data: 48
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Underline
-    - Name: $v
-      Entry: 9
-      Data: 49
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Background'
-    - Name: $v
-      Entry: 9
-      Data: 50
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Border'
-    - Name: $v
-      Entry: 9
-      Data: 51
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: $v
-      Entry: 9
-      Data: 52
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: fonts
-      Entry: 7
-      Data: 54|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 55|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Title
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Title: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 56|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Placeholder
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: PHolder: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 57|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Text
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Text: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFonts
-      Entry: 7
-      Data: 58|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 59|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Title
-    - Name: $v
-      Entry: 9
-      Data: 55
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Placeholder
-    - Name: $v
-      Entry: 9
-      Data: 56
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Text
-    - Name: $v
-      Entry: 9
-      Data: 57
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: sprites
-      Entry: 7
-      Data: 60|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 61|Leap.UI.Elements.StylePropertySprite, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Icon
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: Icon'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictSprites
-      Entry: 7
-      Data: 62|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 42
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Icon
-    - Name: $v
-      Entry: 9
-      Data: 61
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 63|Leap.UI.Elements.State, Leap.UI.Elements
-    - Name: stateName
-      Entry: 1
-      Data: Pressed
-    - Name: index
-      Entry: 3
-      Data: 1
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: floats
-      Entry: 7
-      Data: 64|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 38
-    - Name: 
-      Entry: 7
-      Data: 65|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Width
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'W: Card: Pct60'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 66|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Height
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'H: Card'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 67|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Height: Underline'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'H: Card: ULine: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 68|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'B: Witdh'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'B: Card: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 69|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: TopLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: TopLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 70|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: TopRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: TopRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 71|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: BottomLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 72|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: BottomRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: BottomRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 73|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: Underline'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: ULine'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 74|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Left'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Title: Left'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 75|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Bottom'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Title: Bottom'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 76|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Left'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Left'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 77|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Right'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Right'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 78|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Bottom'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Bottom'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 79|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Underline: Left'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: ULine: Left'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 80|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Underline: Right'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: ULine: Right'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 81|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Title'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'F: Card: Title'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 82|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Placeholder'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'F: Card: Placeholder'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 83|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Text'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'F: Card: Text'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 84|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Width'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: W: Card'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 85|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Height'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: H: Card'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 86|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: TopLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: TopLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 87|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: TopRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: TopRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 88|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: BottomLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 89|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: BottomRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: BottomRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 90|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: B: Width'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: B: Card: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 91|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: S: Card: Icon'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 92|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'B: Width'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 93|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 94|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 95|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 96|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 97|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: X'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 98|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 99|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 100|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'I: Size'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 101|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 102|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFloats
-      Entry: 7
-      Data: 103|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 42
-    - Name: 
-      Entry: 12
-      Data: 38
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Width
-    - Name: $v
-      Entry: 9
-      Data: 65
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Height
-    - Name: $v
-      Entry: 9
-      Data: 66
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Height: Underline'
-    - Name: $v
-      Entry: 9
-      Data: 67
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'B: Witdh'
-    - Name: $v
-      Entry: 9
-      Data: 68
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 69
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 70
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 71
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 72
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: Underline'
-    - Name: $v
-      Entry: 9
-      Data: 73
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Left'
-    - Name: $v
-      Entry: 9
-      Data: 74
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Bottom'
-    - Name: $v
-      Entry: 9
-      Data: 75
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Left'
-    - Name: $v
-      Entry: 9
-      Data: 76
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Right'
-    - Name: $v
-      Entry: 9
-      Data: 77
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Bottom'
-    - Name: $v
-      Entry: 9
-      Data: 78
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Underline: Left'
-    - Name: $v
-      Entry: 9
-      Data: 79
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Underline: Right'
-    - Name: $v
-      Entry: 9
-      Data: 80
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Title'
-    - Name: $v
-      Entry: 9
-      Data: 81
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Placeholder'
-    - Name: $v
-      Entry: 9
-      Data: 82
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Text'
-    - Name: $v
-      Entry: 9
-      Data: 83
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Width'
-    - Name: $v
-      Entry: 9
-      Data: 84
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Height'
-    - Name: $v
-      Entry: 9
-      Data: 85
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 86
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 87
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 88
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 89
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: B: Width'
-    - Name: $v
-      Entry: 9
-      Data: 90
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: $v
-      Entry: 9
-      Data: 91
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'B: Width'
-    - Name: $v
-      Entry: 9
-      Data: 92
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 93
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 94
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 95
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 96
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: X'
-    - Name: $v
-      Entry: 9
-      Data: 97
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: $v
-      Entry: 9
-      Data: 98
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: $v
-      Entry: 9
-      Data: 99
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'I: Size'
-    - Name: $v
-      Entry: 9
-      Data: 100
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: $v
-      Entry: 9
-      Data: 101
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: $v
-      Entry: 9
-      Data: 102
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: colors
-      Entry: 7
-      Data: 104|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 9
-    - Name: 
-      Entry: 7
-      Data: 105|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Background
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Bkg: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 106|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Border
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Border: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 107|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Title
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Title: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 108|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Placeholder
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: PHolder: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 109|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Text
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Text: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 110|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Underline
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: ULine: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 111|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Background'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Btn: Bkg: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 112|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Border'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Btn: Border: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 113|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Btn: Icon: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictColors
-      Entry: 7
-      Data: 114|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 42
-    - Name: 
-      Entry: 12
-      Data: 9
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Background
-    - Name: $v
-      Entry: 9
-      Data: 105
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Border
-    - Name: $v
-      Entry: 9
-      Data: 106
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Title
-    - Name: $v
-      Entry: 9
-      Data: 107
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Placeholder
-    - Name: $v
-      Entry: 9
-      Data: 108
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Text
-    - Name: $v
-      Entry: 9
-      Data: 109
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Underline
-    - Name: $v
-      Entry: 9
-      Data: 110
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Background'
-    - Name: $v
-      Entry: 9
-      Data: 111
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Border'
-    - Name: $v
-      Entry: 9
-      Data: 112
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: $v
-      Entry: 9
-      Data: 113
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: fonts
-      Entry: 7
-      Data: 115|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 116|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Title
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Title: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 117|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Placeholder
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: PHolder: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 118|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Text
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Text: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFonts
-      Entry: 7
-      Data: 119|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 59
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Title
-    - Name: $v
-      Entry: 9
-      Data: 116
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Placeholder
-    - Name: $v
-      Entry: 9
-      Data: 117
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Text
-    - Name: $v
-      Entry: 9
-      Data: 118
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: sprites
-      Entry: 7
-      Data: 120|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 121|Leap.UI.Elements.StylePropertySprite, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Icon
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: Icon'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictSprites
-      Entry: 7
-      Data: 122|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 42
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Icon
-    - Name: $v
-      Entry: 9
-      Data: 121
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 123|Leap.UI.Elements.State, Leap.UI.Elements
-    - Name: stateName
-      Entry: 1
-      Data: Error
-    - Name: index
-      Entry: 3
-      Data: 2
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: floats
-      Entry: 7
-      Data: 124|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 38
-    - Name: 
-      Entry: 7
-      Data: 125|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Width
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'W: Card: Pct60'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 126|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Height
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'H: Card'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 127|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Height: Underline'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'H: Card: ULine: Danger'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 128|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'B: Witdh'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'B: Card: Danger'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 129|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: TopLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: TopLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 130|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: TopRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: TopRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 131|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: BottomLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 132|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: BottomRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: BottomRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 133|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: Underline'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: ULine'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 134|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Left'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Title: Left'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 135|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Bottom'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Title: Bottom'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 136|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Left'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Left'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 137|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Right'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Right'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 138|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Bottom'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Bottom'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 139|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Underline: Left'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: ULine: Left'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 140|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Underline: Right'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: ULine: Right'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 141|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Title'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'F: Card: Title'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 142|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Placeholder'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'F: Card: Placeholder'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 143|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Text'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'F: Card: Text'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 144|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Width'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: W: Card'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 145|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Height'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: H: Card'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 146|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: TopLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: TopLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 147|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: TopRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: TopRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 148|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: BottomLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 149|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: BottomRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: BottomRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 150|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: B: Width'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: B: Card: Danger'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 151|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: S: Card: Icon'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 152|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'B: Width'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 153|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 154|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 155|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 156|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 157|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: X'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 158|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 159|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 160|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'I: Size'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 161|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 162|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFloats
-      Entry: 7
-      Data: 163|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 42
-    - Name: 
-      Entry: 12
-      Data: 38
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Width
-    - Name: $v
-      Entry: 9
-      Data: 125
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Height
-    - Name: $v
-      Entry: 9
-      Data: 126
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Height: Underline'
-    - Name: $v
-      Entry: 9
-      Data: 127
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'B: Witdh'
-    - Name: $v
-      Entry: 9
-      Data: 128
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 129
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 130
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 131
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 132
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: Underline'
-    - Name: $v
-      Entry: 9
-      Data: 133
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Left'
-    - Name: $v
-      Entry: 9
-      Data: 134
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Bottom'
-    - Name: $v
-      Entry: 9
-      Data: 135
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Left'
-    - Name: $v
-      Entry: 9
-      Data: 136
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Right'
-    - Name: $v
-      Entry: 9
-      Data: 137
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Bottom'
-    - Name: $v
-      Entry: 9
-      Data: 138
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Underline: Left'
-    - Name: $v
-      Entry: 9
-      Data: 139
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Underline: Right'
-    - Name: $v
-      Entry: 9
-      Data: 140
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Title'
-    - Name: $v
-      Entry: 9
-      Data: 141
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Placeholder'
-    - Name: $v
-      Entry: 9
-      Data: 142
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Text'
-    - Name: $v
-      Entry: 9
-      Data: 143
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Width'
-    - Name: $v
-      Entry: 9
-      Data: 144
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Height'
-    - Name: $v
-      Entry: 9
-      Data: 145
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 146
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 147
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 148
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 149
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: B: Width'
-    - Name: $v
-      Entry: 9
-      Data: 150
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: $v
-      Entry: 9
-      Data: 151
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'B: Width'
-    - Name: $v
-      Entry: 9
-      Data: 152
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 153
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 154
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 155
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 156
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: X'
-    - Name: $v
-      Entry: 9
-      Data: 157
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: $v
-      Entry: 9
-      Data: 158
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: $v
-      Entry: 9
-      Data: 159
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'I: Size'
-    - Name: $v
-      Entry: 9
-      Data: 160
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: $v
-      Entry: 9
-      Data: 161
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: $v
-      Entry: 9
-      Data: 162
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: colors
-      Entry: 7
-      Data: 164|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 9
-    - Name: 
-      Entry: 7
-      Data: 165|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Background
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Bkg: Danger'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 166|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Border
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Border: Danger'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 167|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Title
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Title: Danger'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 168|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Placeholder
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: PHolder: Danger'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 169|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Text
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Text: Danger'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 170|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Underline
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: ULine: Danger'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 171|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Background'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Btn: Bkg: Danger'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 172|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Border'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Btn: Border: Danger'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 173|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Btn: Icon: Danger'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictColors
-      Entry: 7
-      Data: 174|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 42
-    - Name: 
-      Entry: 12
-      Data: 9
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Background
-    - Name: $v
-      Entry: 9
-      Data: 165
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Border
-    - Name: $v
-      Entry: 9
-      Data: 166
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Title
-    - Name: $v
-      Entry: 9
-      Data: 167
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Placeholder
-    - Name: $v
-      Entry: 9
-      Data: 168
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Text
-    - Name: $v
-      Entry: 9
-      Data: 169
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Underline
-    - Name: $v
-      Entry: 9
-      Data: 170
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Background'
-    - Name: $v
-      Entry: 9
-      Data: 171
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Border'
-    - Name: $v
-      Entry: 9
-      Data: 172
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: $v
-      Entry: 9
-      Data: 173
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: fonts
-      Entry: 7
-      Data: 175|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 176|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Title
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Title: Danger'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 177|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Placeholder
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: PHolder: Danger'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 178|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Text
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Text: Danger'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFonts
-      Entry: 7
-      Data: 179|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 59
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Title
-    - Name: $v
-      Entry: 9
-      Data: 176
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Placeholder
-    - Name: $v
-      Entry: 9
-      Data: 177
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Text
-    - Name: $v
-      Entry: 9
-      Data: 178
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: sprites
-      Entry: 7
-      Data: 180|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 181|Leap.UI.Elements.StylePropertySprite, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Icon
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: Icon'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictSprites
-      Entry: 7
-      Data: 182|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 42
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Icon
-    - Name: $v
-      Entry: 9
-      Data: 181
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 183|Leap.UI.Elements.State, Leap.UI.Elements
-    - Name: stateName
-      Entry: 1
-      Data: Disabled
-    - Name: index
-      Entry: 3
-      Data: 3
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: floats
-      Entry: 7
-      Data: 184|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 38
-    - Name: 
-      Entry: 7
-      Data: 185|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Width
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'W: Card: Pct60'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 186|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Height
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'H: Card'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 187|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Height: Underline'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'H: Card: ULine: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 188|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'B: Witdh'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'B: Card: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 189|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: TopLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: TopLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 190|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: TopRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: TopRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 191|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: BottomLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 192|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: BottomRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: BottomRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 193|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'R: Underline'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Card: ULine'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 194|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Left'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Title: Left'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 195|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Bottom'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Title: Bottom'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 196|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Left'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Left'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 197|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Right'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Right'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 198|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Bottom'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: Bottom'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 199|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Underline: Left'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: ULine: Left'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 200|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Underline: Right'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Card: ULine: Right'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 201|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Title'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'F: Card: Title'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 202|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Placeholder'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'F: Card: Placeholder'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 203|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Text'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'F: Card: Text'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 204|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Width'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: W: Card'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 205|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Height'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: H: Card'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 206|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: TopLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: TopLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 207|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: TopRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: TopRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 208|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: BottomLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 209|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: R: BottomRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: R: Card: BottomRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 210|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: B: Width'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: B: Card: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 211|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: S: Card: Icon'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 212|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'B: Width'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 213|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 214|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 215|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 216|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 217|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: X'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 218|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 219|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 220|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'I: Size'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 221|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 222|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFloats
-      Entry: 7
-      Data: 223|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 42
-    - Name: 
-      Entry: 12
-      Data: 38
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Width
-    - Name: $v
-      Entry: 9
-      Data: 185
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Height
-    - Name: $v
-      Entry: 9
-      Data: 186
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Height: Underline'
-    - Name: $v
-      Entry: 9
-      Data: 187
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'B: Witdh'
-    - Name: $v
-      Entry: 9
-      Data: 188
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 189
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 190
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 191
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 192
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'R: Underline'
-    - Name: $v
-      Entry: 9
-      Data: 193
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Left'
-    - Name: $v
-      Entry: 9
-      Data: 194
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Bottom'
-    - Name: $v
-      Entry: 9
-      Data: 195
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Left'
-    - Name: $v
-      Entry: 9
-      Data: 196
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Right'
-    - Name: $v
-      Entry: 9
-      Data: 197
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Bottom'
-    - Name: $v
-      Entry: 9
-      Data: 198
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Underline: Left'
-    - Name: $v
-      Entry: 9
-      Data: 199
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Underline: Right'
-    - Name: $v
-      Entry: 9
-      Data: 200
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Title'
-    - Name: $v
-      Entry: 9
-      Data: 201
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Placeholder'
-    - Name: $v
-      Entry: 9
-      Data: 202
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Text'
-    - Name: $v
-      Entry: 9
-      Data: 203
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Width'
-    - Name: $v
-      Entry: 9
-      Data: 204
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Height'
-    - Name: $v
-      Entry: 9
-      Data: 205
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 206
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 207
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 208
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: R: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 209
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: B: Width'
-    - Name: $v
-      Entry: 9
-      Data: 210
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: $v
-      Entry: 9
-      Data: 211
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'B: Width'
-    - Name: $v
-      Entry: 9
-      Data: 212
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 213
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 214
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 215
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 216
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: X'
-    - Name: $v
-      Entry: 9
-      Data: 217
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: $v
-      Entry: 9
-      Data: 218
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: $v
-      Entry: 9
-      Data: 219
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'I: Size'
-    - Name: $v
-      Entry: 9
-      Data: 220
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: $v
-      Entry: 9
-      Data: 221
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: $v
-      Entry: 9
-      Data: 222
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: colors
-      Entry: 7
-      Data: 224|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 9
-    - Name: 
-      Entry: 7
-      Data: 225|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Background
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Bkg: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 226|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Border
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Border: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 227|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Title
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Title: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 228|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Placeholder
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: PHolder: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 229|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Text
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Text: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 230|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Underline
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: ULine: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 231|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Background'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Btn: Bkg: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 232|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Border'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Btn: Border: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 233|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Btn: Icon: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictColors
-      Entry: 7
-      Data: 234|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 42
-    - Name: 
-      Entry: 12
-      Data: 9
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Background
-    - Name: $v
-      Entry: 9
-      Data: 225
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Border
-    - Name: $v
-      Entry: 9
-      Data: 226
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Title
-    - Name: $v
-      Entry: 9
-      Data: 227
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Placeholder
-    - Name: $v
-      Entry: 9
-      Data: 228
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Text
-    - Name: $v
-      Entry: 9
-      Data: 229
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Underline
-    - Name: $v
-      Entry: 9
-      Data: 230
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Background'
-    - Name: $v
-      Entry: 9
-      Data: 231
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Border'
-    - Name: $v
-      Entry: 9
-      Data: 232
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'Button: Icon'
-    - Name: $v
-      Entry: 9
-      Data: 233
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: fonts
-      Entry: 7
-      Data: 235|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 236|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Title
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Title: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 237|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Placeholder
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: PHolder: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 238|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Text
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Card: Text: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFonts
-      Entry: 7
-      Data: 239|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 59
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Title
-    - Name: $v
-      Entry: 9
-      Data: 236
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Placeholder
-    - Name: $v
-      Entry: 9
-      Data: 237
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Text
-    - Name: $v
-      Entry: 9
-      Data: 238
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: sprites
-      Entry: 7
-      Data: 240|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 241|Leap.UI.Elements.StylePropertySprite, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Icon
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Btn: Icon'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictSprites
-      Entry: 7
-      Data: 242|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 42
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Icon
-    - Name: $v
-      Entry: 9
-      Data: 241
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+  m_EditorClassIdentifier: Leap.UI.Elements::Leap.UI.Elements.Style
   type: 9
+  states:
+  - stateName: Normal
+    index: 0
+    style: {fileID: 11400000}
+    floats:
+    - style: {fileID: 11400000}
+      ModelProperty: Height
+      ThemeProperty: 'H: Card'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Height: Underline'
+      ThemeProperty: 'H: Card: ULine'
+    - style: {fileID: 11400000}
+      ModelProperty: 'B: Witdh'
+      ThemeProperty: 'B: Card: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: TopLeft'
+      ThemeProperty: 'C: Card: TopLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: TopRight'
+      ThemeProperty: 'C: Card: TopRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: BottomLeft'
+      ThemeProperty: 'C: Card: BottomLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: BottomRight'
+      ThemeProperty: 'C: Card: BottomRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: Underline'
+      ThemeProperty: 'C: Card: ULine'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Title: Left'
+      ThemeProperty: 'M: Card: Title: Left'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Title: Bottom'
+      ThemeProperty: 'M: Card: Title: Bottom'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Left'
+      ThemeProperty: 'M: Card: Left'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Right'
+      ThemeProperty: 'M: Card: Right'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Bottom'
+      ThemeProperty: 'M: Card: Bottom'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Underline: Left'
+      ThemeProperty: 'M: Card: ULine: Left'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Underline: Right'
+      ThemeProperty: 'M: Card: ULine: Right'
+    - style: {fileID: 11400000}
+      ModelProperty: 'F: Title'
+      ThemeProperty: 'F: Card: Title'
+    - style: {fileID: 11400000}
+      ModelProperty: 'F: Placeholder'
+      ThemeProperty: 'F: Card: Placeholder'
+    - style: {fileID: 11400000}
+      ModelProperty: 'F: Text'
+      ThemeProperty: 'F: Card: Text'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Width'
+      ThemeProperty: 'Btn: W: Card'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Height'
+      ThemeProperty: 'Btn: H: Card'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: TopLeft'
+      ThemeProperty: 'Btn: R: Card: TopLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: TopRight'
+      ThemeProperty: 'Btn: R: Card: TopRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: BottomLeft'
+      ThemeProperty: 'Btn: R: Card: BottomLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: BottomRight'
+      ThemeProperty: 'Btn: R: Card: BottomRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: B: Width'
+      ThemeProperty: 'Btn: B: Card: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Icon'
+      ThemeProperty: 'Btn: S: Card: Icon'
+    - style: {fileID: 11400000}
+      ModelProperty: Width
+      ThemeProperty: 'W: Card: Pct60'
+    DictFloats:
+      keys:
+      - Height
+      - 'Height: Underline'
+      - 'B: Witdh'
+      - 'R: TopLeft'
+      - 'R: TopRight'
+      - 'R: BottomLeft'
+      - 'R: BottomRight'
+      - 'R: Underline'
+      - 'M: Title: Left'
+      - 'M: Title: Bottom'
+      - 'M: Left'
+      - 'M: Right'
+      - 'M: Bottom'
+      - 'M: Underline: Left'
+      - 'M: Underline: Right'
+      - 'F: Title'
+      - 'F: Placeholder'
+      - 'F: Text'
+      - 'Button: Width'
+      - 'Button: Height'
+      - 'Button: R: TopLeft'
+      - 'Button: R: TopRight'
+      - 'Button: R: BottomLeft'
+      - 'Button: R: BottomRight'
+      - 'Button: B: Width'
+      - 'Button: Icon'
+      - Width
+      values:
+      - rid: 7896456248313250451
+      - rid: 7896456248313250452
+      - rid: 7896456248313250453
+      - rid: 7896456248313250454
+      - rid: 7896456248313250455
+      - rid: 7896456248313250456
+      - rid: 7896456248313250457
+      - rid: 7896456248313250458
+      - rid: 7896456248313250459
+      - rid: 7896456248313250460
+      - rid: 7896456248313250461
+      - rid: 7896456248313250462
+      - rid: 7896456248313250463
+      - rid: 7896456248313250464
+      - rid: 7896456248313250465
+      - rid: 7896456248313250466
+      - rid: 7896456248313250467
+      - rid: 7896456248313250468
+      - rid: 7896456248313250469
+      - rid: 7896456248313250470
+      - rid: 7896456248313250471
+      - rid: 7896456248313250472
+      - rid: 7896456248313250473
+      - rid: 7896456248313250474
+      - rid: 7896456248313250475
+      - rid: 7896456248313250476
+      - rid: 7896456248313250477
+    colors:
+    - style: {fileID: 11400000}
+      ModelProperty: Background
+      ThemeProperty: 'Card: Bkg: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: Border
+      ThemeProperty: 'Card: Border: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: Title
+      ThemeProperty: 'Card: Title: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: Placeholder
+      ThemeProperty: 'Card: PHolder: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: Text
+      ThemeProperty: 'Card: Text: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: Underline
+      ThemeProperty: 'Card: ULine: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Background'
+      ThemeProperty: 'Card: Btn: Bkg: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Border'
+      ThemeProperty: 'Card: Btn: Border: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Icon'
+      ThemeProperty: 'Card: Btn: Icon: Default'
+    DictColors:
+      keys:
+      - Background
+      - Border
+      - Title
+      - Placeholder
+      - Text
+      - Underline
+      - 'Button: Background'
+      - 'Button: Border'
+      - 'Button: Icon'
+      values:
+      - rid: 7896456248313250478
+      - rid: 7896456248313250479
+      - rid: 7896456248313250480
+      - rid: 7896456248313250481
+      - rid: 7896456248313250482
+      - rid: 7896456248313250483
+      - rid: 7896456248313250484
+      - rid: 7896456248313250485
+      - rid: 7896456248313250486
+    fonts:
+    - style: {fileID: 11400000}
+      ModelProperty: Title
+      ThemeProperty: 'Card: Title: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: Placeholder
+      ThemeProperty: 'Card: PHolder: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: Text
+      ThemeProperty: 'Card: Text: Default'
+    DictFonts:
+      keys:
+      - Title
+      - Placeholder
+      - Text
+      values:
+      - rid: 7896456248313250487
+      - rid: 7896456248313250488
+      - rid: 7896456248313250489
+    sprites:
+    - style: {fileID: 11400000}
+      ModelProperty: Icon
+      ThemeProperty: 'Btn: Icon'
+    DictSprites:
+      keys:
+      - Icon
+      values:
+      - rid: 7896456248313250490
+  - stateName: Pressed
+    index: 1
+    style: {fileID: 11400000}
+    floats:
+    - style: {fileID: 11400000}
+      ModelProperty: Height
+      ThemeProperty: 'H: Card'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Height: Underline'
+      ThemeProperty: 'H: Card: ULine: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: 'B: Witdh'
+      ThemeProperty: 'B: Card: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: TopLeft'
+      ThemeProperty: 'C: Card: TopLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: TopRight'
+      ThemeProperty: 'C: Card: TopRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: BottomLeft'
+      ThemeProperty: 'C: Card: BottomLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: BottomRight'
+      ThemeProperty: 'C: Card: BottomRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: Underline'
+      ThemeProperty: 'C: Card: ULine'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Title: Left'
+      ThemeProperty: 'M: Card: Title: Left'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Title: Bottom'
+      ThemeProperty: 'M: Card: Title: Bottom'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Left'
+      ThemeProperty: 'M: Card: Left'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Right'
+      ThemeProperty: 'M: Card: Right'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Bottom'
+      ThemeProperty: 'M: Card: Bottom'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Underline: Left'
+      ThemeProperty: 'M: Card: ULine: Left'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Underline: Right'
+      ThemeProperty: 'M: Card: ULine: Right'
+    - style: {fileID: 11400000}
+      ModelProperty: 'F: Title'
+      ThemeProperty: 'F: Card: Title'
+    - style: {fileID: 11400000}
+      ModelProperty: 'F: Placeholder'
+      ThemeProperty: 'F: Card: Placeholder'
+    - style: {fileID: 11400000}
+      ModelProperty: 'F: Text'
+      ThemeProperty: 'F: Card: Text'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Width'
+      ThemeProperty: 'Btn: W: Card'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Height'
+      ThemeProperty: 'Btn: H: Card'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: TopLeft'
+      ThemeProperty: 'Btn: R: Card: TopLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: TopRight'
+      ThemeProperty: 'Btn: R: Card: TopRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: BottomLeft'
+      ThemeProperty: 'Btn: R: Card: BottomLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: BottomRight'
+      ThemeProperty: 'Btn: R: Card: BottomRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: B: Width'
+      ThemeProperty: 'Btn: B: Card: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Icon'
+      ThemeProperty: 'Btn: S: Card: Icon'
+    - style: {fileID: 11400000}
+      ModelProperty: Width
+      ThemeProperty: 'W: Card: Pct60'
+    DictFloats:
+      keys:
+      - Height
+      - 'Height: Underline'
+      - 'B: Witdh'
+      - 'R: TopLeft'
+      - 'R: TopRight'
+      - 'R: BottomLeft'
+      - 'R: BottomRight'
+      - 'R: Underline'
+      - 'M: Title: Left'
+      - 'M: Title: Bottom'
+      - 'M: Left'
+      - 'M: Right'
+      - 'M: Bottom'
+      - 'M: Underline: Left'
+      - 'M: Underline: Right'
+      - 'F: Title'
+      - 'F: Placeholder'
+      - 'F: Text'
+      - 'Button: Width'
+      - 'Button: Height'
+      - 'Button: R: TopLeft'
+      - 'Button: R: TopRight'
+      - 'Button: R: BottomLeft'
+      - 'Button: R: BottomRight'
+      - 'Button: B: Width'
+      - 'Button: Icon'
+      - Width
+      values:
+      - rid: 7896456248313250491
+      - rid: 7896456248313250492
+      - rid: 7896456248313250493
+      - rid: 7896456248313250494
+      - rid: 7896456248313250495
+      - rid: 7896456248313250496
+      - rid: 7896456248313250497
+      - rid: 7896456248313250498
+      - rid: 7896456248313250499
+      - rid: 7896456248313250500
+      - rid: 7896456248313250501
+      - rid: 7896456248313250502
+      - rid: 7896456248313250503
+      - rid: 7896456248313250504
+      - rid: 7896456248313250505
+      - rid: 7896456248313250506
+      - rid: 7896456248313250507
+      - rid: 7896456248313250508
+      - rid: 7896456248313250509
+      - rid: 7896456248313250510
+      - rid: 7896456248313250511
+      - rid: 7896456248313250512
+      - rid: 7896456248313250513
+      - rid: 7896456248313250514
+      - rid: 7896456248313250515
+      - rid: 7896456248313250516
+      - rid: 7896456248313250517
+    colors:
+    - style: {fileID: 11400000}
+      ModelProperty: Background
+      ThemeProperty: 'Card: Bkg: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: Border
+      ThemeProperty: 'Card: Border: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: Title
+      ThemeProperty: 'Card: Title: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: Placeholder
+      ThemeProperty: 'Card: PHolder: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: Text
+      ThemeProperty: 'Card: Text: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: Underline
+      ThemeProperty: 'Card: ULine: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Background'
+      ThemeProperty: 'Card: Btn: Bkg: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Border'
+      ThemeProperty: 'Card: Btn: Border: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Icon'
+      ThemeProperty: 'Card: Btn: Icon: Pressed'
+    DictColors:
+      keys:
+      - Background
+      - Border
+      - Title
+      - Placeholder
+      - Text
+      - Underline
+      - 'Button: Background'
+      - 'Button: Border'
+      - 'Button: Icon'
+      values:
+      - rid: 7896456248313250518
+      - rid: 7896456248313250519
+      - rid: 7896456248313250520
+      - rid: 7896456248313250521
+      - rid: 7896456248313250522
+      - rid: 7896456248313250523
+      - rid: 7896456248313250524
+      - rid: 7896456248313250525
+      - rid: 7896456248313250526
+    fonts:
+    - style: {fileID: 11400000}
+      ModelProperty: Title
+      ThemeProperty: 'Card: Title: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: Placeholder
+      ThemeProperty: 'Card: PHolder: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: Text
+      ThemeProperty: 'Card: Text: Pressed'
+    DictFonts:
+      keys:
+      - Title
+      - Placeholder
+      - Text
+      values:
+      - rid: 7896456248313250527
+      - rid: 7896456248313250528
+      - rid: 7896456248313250529
+    sprites:
+    - style: {fileID: 11400000}
+      ModelProperty: Icon
+      ThemeProperty: 'Btn: Icon'
+    DictSprites:
+      keys:
+      - Icon
+      values:
+      - rid: 7896456248313250530
+  - stateName: Error
+    index: 2
+    style: {fileID: 11400000}
+    floats:
+    - style: {fileID: 11400000}
+      ModelProperty: Height
+      ThemeProperty: 'H: Card'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Height: Underline'
+      ThemeProperty: 'H: Card: ULine: Danger'
+    - style: {fileID: 11400000}
+      ModelProperty: 'B: Witdh'
+      ThemeProperty: 'B: Card: Danger'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: TopLeft'
+      ThemeProperty: 'C: Card: TopLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: TopRight'
+      ThemeProperty: 'C: Card: TopRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: BottomLeft'
+      ThemeProperty: 'C: Card: BottomLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: BottomRight'
+      ThemeProperty: 'C: Card: BottomRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: Underline'
+      ThemeProperty: 'C: Card: ULine'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Title: Left'
+      ThemeProperty: 'M: Card: Title: Left'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Title: Bottom'
+      ThemeProperty: 'M: Card: Title: Bottom'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Left'
+      ThemeProperty: 'M: Card: Left'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Right'
+      ThemeProperty: 'M: Card: Right'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Bottom'
+      ThemeProperty: 'M: Card: Bottom'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Underline: Left'
+      ThemeProperty: 'M: Card: ULine: Left'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Underline: Right'
+      ThemeProperty: 'M: Card: ULine: Right'
+    - style: {fileID: 11400000}
+      ModelProperty: 'F: Title'
+      ThemeProperty: 'F: Card: Title'
+    - style: {fileID: 11400000}
+      ModelProperty: 'F: Placeholder'
+      ThemeProperty: 'F: Card: Placeholder'
+    - style: {fileID: 11400000}
+      ModelProperty: 'F: Text'
+      ThemeProperty: 'F: Card: Text'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Width'
+      ThemeProperty: 'Btn: W: Card'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Height'
+      ThemeProperty: 'Btn: H: Card'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: TopLeft'
+      ThemeProperty: 'Btn: R: Card: TopLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: TopRight'
+      ThemeProperty: 'Btn: R: Card: TopRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: BottomLeft'
+      ThemeProperty: 'Btn: R: Card: BottomLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: BottomRight'
+      ThemeProperty: 'Btn: R: Card: BottomRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: B: Width'
+      ThemeProperty: 'Btn: B: Card: Danger'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Icon'
+      ThemeProperty: 'Btn: S: Card: Icon'
+    - style: {fileID: 11400000}
+      ModelProperty: Width
+      ThemeProperty: 'W: Card: Pct60'
+    DictFloats:
+      keys:
+      - Height
+      - 'Height: Underline'
+      - 'B: Witdh'
+      - 'R: TopLeft'
+      - 'R: TopRight'
+      - 'R: BottomLeft'
+      - 'R: BottomRight'
+      - 'R: Underline'
+      - 'M: Title: Left'
+      - 'M: Title: Bottom'
+      - 'M: Left'
+      - 'M: Right'
+      - 'M: Bottom'
+      - 'M: Underline: Left'
+      - 'M: Underline: Right'
+      - 'F: Title'
+      - 'F: Placeholder'
+      - 'F: Text'
+      - 'Button: Width'
+      - 'Button: Height'
+      - 'Button: R: TopLeft'
+      - 'Button: R: TopRight'
+      - 'Button: R: BottomLeft'
+      - 'Button: R: BottomRight'
+      - 'Button: B: Width'
+      - 'Button: Icon'
+      - Width
+      values:
+      - rid: 7896456248313250531
+      - rid: 7896456248313250532
+      - rid: 7896456248313250533
+      - rid: 7896456248313250534
+      - rid: 7896456248313250535
+      - rid: 7896456248313250536
+      - rid: 7896456248313250537
+      - rid: 7896456248313250538
+      - rid: 7896456248313250539
+      - rid: 7896456248313250540
+      - rid: 7896456248313250541
+      - rid: 7896456248313250542
+      - rid: 7896456248313250543
+      - rid: 7896456248313250544
+      - rid: 7896456248313250545
+      - rid: 7896456248313250546
+      - rid: 7896456248313250547
+      - rid: 7896456248313250548
+      - rid: 7896456248313250549
+      - rid: 7896456248313250550
+      - rid: 7896456248313250551
+      - rid: 7896456248313250552
+      - rid: 7896456248313250553
+      - rid: 7896456248313250554
+      - rid: 7896456248313250555
+      - rid: 7896456248313250556
+      - rid: 7896456248313250557
+    colors:
+    - style: {fileID: 11400000}
+      ModelProperty: Background
+      ThemeProperty: 'Card: Bkg: Danger'
+    - style: {fileID: 11400000}
+      ModelProperty: Border
+      ThemeProperty: 'Card: Border: Danger'
+    - style: {fileID: 11400000}
+      ModelProperty: Title
+      ThemeProperty: 'Card: Title: Danger'
+    - style: {fileID: 11400000}
+      ModelProperty: Placeholder
+      ThemeProperty: 'Card: PHolder: Danger'
+    - style: {fileID: 11400000}
+      ModelProperty: Text
+      ThemeProperty: 'Card: Text: Danger'
+    - style: {fileID: 11400000}
+      ModelProperty: Underline
+      ThemeProperty: 'Card: ULine: Danger'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Background'
+      ThemeProperty: 'Card: Btn: Bkg: Danger'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Border'
+      ThemeProperty: 'Card: Btn: Border: Danger'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Icon'
+      ThemeProperty: 'Card: Btn: Icon: Danger'
+    DictColors:
+      keys:
+      - Background
+      - Border
+      - Title
+      - Placeholder
+      - Text
+      - Underline
+      - 'Button: Background'
+      - 'Button: Border'
+      - 'Button: Icon'
+      values:
+      - rid: 7896456248313250558
+      - rid: 7896456248313250559
+      - rid: 7896456248313250560
+      - rid: 7896456248313250561
+      - rid: 7896456248313250562
+      - rid: 7896456248313250563
+      - rid: 7896456248313250564
+      - rid: 7896456248313250565
+      - rid: 7896456248313250566
+    fonts:
+    - style: {fileID: 11400000}
+      ModelProperty: Title
+      ThemeProperty: 'Card: Title: Danger'
+    - style: {fileID: 11400000}
+      ModelProperty: Placeholder
+      ThemeProperty: 'Card: PHolder: Danger'
+    - style: {fileID: 11400000}
+      ModelProperty: Text
+      ThemeProperty: 'Card: Text: Danger'
+    DictFonts:
+      keys:
+      - Title
+      - Placeholder
+      - Text
+      values:
+      - rid: 7896456248313250567
+      - rid: 7896456248313250568
+      - rid: 7896456248313250569
+    sprites:
+    - style: {fileID: 11400000}
+      ModelProperty: Icon
+      ThemeProperty: 'Btn: Icon'
+    DictSprites:
+      keys:
+      - Icon
+      values:
+      - rid: 7896456248313250570
+  - stateName: Disabled
+    index: 3
+    style: {fileID: 11400000}
+    floats:
+    - style: {fileID: 11400000}
+      ModelProperty: Height
+      ThemeProperty: 'H: Card'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Height: Underline'
+      ThemeProperty: 'H: Card: ULine: Disabled'
+    - style: {fileID: 11400000}
+      ModelProperty: 'B: Witdh'
+      ThemeProperty: 'B: Card: Disabled'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: TopLeft'
+      ThemeProperty: 'C: Card: TopLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: TopRight'
+      ThemeProperty: 'C: Card: TopRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: BottomLeft'
+      ThemeProperty: 'C: Card: BottomLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: BottomRight'
+      ThemeProperty: 'C: Card: BottomRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'R: Underline'
+      ThemeProperty: 'C: Card: ULine'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Title: Left'
+      ThemeProperty: 'M: Card: Title: Left'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Title: Bottom'
+      ThemeProperty: 'M: Card: Title: Bottom'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Left'
+      ThemeProperty: 'M: Card: Left'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Right'
+      ThemeProperty: 'M: Card: Right'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Bottom'
+      ThemeProperty: 'M: Card: Bottom'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Underline: Left'
+      ThemeProperty: 'M: Card: ULine: Left'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Underline: Right'
+      ThemeProperty: 'M: Card: ULine: Right'
+    - style: {fileID: 11400000}
+      ModelProperty: 'F: Title'
+      ThemeProperty: 'F: Card: Title'
+    - style: {fileID: 11400000}
+      ModelProperty: 'F: Placeholder'
+      ThemeProperty: 'F: Card: Placeholder'
+    - style: {fileID: 11400000}
+      ModelProperty: 'F: Text'
+      ThemeProperty: 'F: Card: Text'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Width'
+      ThemeProperty: 'Btn: W: Card'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Height'
+      ThemeProperty: 'Btn: H: Card'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: TopLeft'
+      ThemeProperty: 'Btn: R: Card: TopLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: TopRight'
+      ThemeProperty: 'Btn: R: Card: TopRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: BottomLeft'
+      ThemeProperty: 'Btn: R: Card: BottomLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: R: BottomRight'
+      ThemeProperty: 'Btn: R: Card: BottomRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: B: Width'
+      ThemeProperty: 'Btn: B: Card: Disabled'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Icon'
+      ThemeProperty: 'Btn: S: Card: Icon'
+    - style: {fileID: 11400000}
+      ModelProperty: Width
+      ThemeProperty: 'W: Card: Pct60'
+    DictFloats:
+      keys:
+      - Height
+      - 'Height: Underline'
+      - 'B: Witdh'
+      - 'R: TopLeft'
+      - 'R: TopRight'
+      - 'R: BottomLeft'
+      - 'R: BottomRight'
+      - 'R: Underline'
+      - 'M: Title: Left'
+      - 'M: Title: Bottom'
+      - 'M: Left'
+      - 'M: Right'
+      - 'M: Bottom'
+      - 'M: Underline: Left'
+      - 'M: Underline: Right'
+      - 'F: Title'
+      - 'F: Placeholder'
+      - 'F: Text'
+      - 'Button: Width'
+      - 'Button: Height'
+      - 'Button: R: TopLeft'
+      - 'Button: R: TopRight'
+      - 'Button: R: BottomLeft'
+      - 'Button: R: BottomRight'
+      - 'Button: B: Width'
+      - 'Button: Icon'
+      - Width
+      values:
+      - rid: 7896456248313250571
+      - rid: 7896456248313250572
+      - rid: 7896456248313250573
+      - rid: 7896456248313250574
+      - rid: 7896456248313250575
+      - rid: 7896456248313250576
+      - rid: 7896456248313250577
+      - rid: 7896456248313250578
+      - rid: 7896456248313250579
+      - rid: 7896456248313250580
+      - rid: 7896456248313250581
+      - rid: 7896456248313250582
+      - rid: 7896456248313250583
+      - rid: 7896456248313250584
+      - rid: 7896456248313250585
+      - rid: 7896456248313250586
+      - rid: 7896456248313250587
+      - rid: 7896456248313250588
+      - rid: 7896456248313250589
+      - rid: 7896456248313250590
+      - rid: 7896456248313250591
+      - rid: 7896456248313250592
+      - rid: 7896456248313250593
+      - rid: 7896456248313250594
+      - rid: 7896456248313250595
+      - rid: 7896456248313250596
+      - rid: 7896456248313250597
+    colors:
+    - style: {fileID: 11400000}
+      ModelProperty: Background
+      ThemeProperty: 'Card: Bkg: Disabled'
+    - style: {fileID: 11400000}
+      ModelProperty: Border
+      ThemeProperty: 'Card: Border: Disabled'
+    - style: {fileID: 11400000}
+      ModelProperty: Title
+      ThemeProperty: 'Card: Title: Disabled'
+    - style: {fileID: 11400000}
+      ModelProperty: Placeholder
+      ThemeProperty: 'Card: PHolder: Disabled'
+    - style: {fileID: 11400000}
+      ModelProperty: Text
+      ThemeProperty: 'Card: Text: Disabled'
+    - style: {fileID: 11400000}
+      ModelProperty: Underline
+      ThemeProperty: 'Card: ULine: Disabled'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Background'
+      ThemeProperty: 'Card: Btn: Bkg: Disabled'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Border'
+      ThemeProperty: 'Card: Btn: Border: Disabled'
+    - style: {fileID: 11400000}
+      ModelProperty: 'Button: Icon'
+      ThemeProperty: 'Card: Btn: Icon: Disabled'
+    DictColors:
+      keys:
+      - Background
+      - Border
+      - Title
+      - Placeholder
+      - Text
+      - Underline
+      - 'Button: Background'
+      - 'Button: Border'
+      - 'Button: Icon'
+      values:
+      - rid: 7896456248313250598
+      - rid: 7896456248313250599
+      - rid: 7896456248313250600
+      - rid: 7896456248313250601
+      - rid: 7896456248313250602
+      - rid: 7896456248313250603
+      - rid: 7896456248313250604
+      - rid: 7896456248313250605
+      - rid: 7896456248313250606
+    fonts:
+    - style: {fileID: 11400000}
+      ModelProperty: Title
+      ThemeProperty: 'Card: Title: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: Placeholder
+      ThemeProperty: 'Card: PHolder: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: Text
+      ThemeProperty: 'Card: Text: Default'
+    DictFonts:
+      keys:
+      - Title
+      - Placeholder
+      - Text
+      values:
+      - rid: 7896456248313250607
+      - rid: 7896456248313250608
+      - rid: 7896456248313250609
+    sprites:
+    - style: {fileID: 11400000}
+      ModelProperty: Icon
+      ThemeProperty: 'Btn: Icon'
+    DictSprites:
+      keys:
+      - Icon
+      values:
+      - rid: 7896456248313250610
+  references:
+    version: 2
+    RefIds:
+    - rid: 7896456248313250451
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Height
+        ThemeProperty: 'H: Card'
+    - rid: 7896456248313250452
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Height: Underline'
+        ThemeProperty: 'H: Card: ULine'
+    - rid: 7896456248313250453
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'B: Witdh'
+        ThemeProperty: 'B: Card: Default'
+    - rid: 7896456248313250454
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: TopLeft'
+        ThemeProperty: 'C: Card: TopLeft'
+    - rid: 7896456248313250455
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: TopRight'
+        ThemeProperty: 'C: Card: TopRight'
+    - rid: 7896456248313250456
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: BottomLeft'
+        ThemeProperty: 'C: Card: BottomLeft'
+    - rid: 7896456248313250457
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: BottomRight'
+        ThemeProperty: 'C: Card: BottomRight'
+    - rid: 7896456248313250458
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: Underline'
+        ThemeProperty: 'C: Card: ULine'
+    - rid: 7896456248313250459
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Title: Left'
+        ThemeProperty: 'M: Card: Title: Left'
+    - rid: 7896456248313250460
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Title: Bottom'
+        ThemeProperty: 'M: Card: Title: Bottom'
+    - rid: 7896456248313250461
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Left'
+        ThemeProperty: 'M: Card: Left'
+    - rid: 7896456248313250462
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Right'
+        ThemeProperty: 'M: Card: Right'
+    - rid: 7896456248313250463
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Bottom'
+        ThemeProperty: 'M: Card: Bottom'
+    - rid: 7896456248313250464
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Underline: Left'
+        ThemeProperty: 'M: Card: ULine: Left'
+    - rid: 7896456248313250465
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Underline: Right'
+        ThemeProperty: 'M: Card: ULine: Right'
+    - rid: 7896456248313250466
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'F: Title'
+        ThemeProperty: 'F: Card: Title'
+    - rid: 7896456248313250467
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'F: Placeholder'
+        ThemeProperty: 'F: Card: Placeholder'
+    - rid: 7896456248313250468
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'F: Text'
+        ThemeProperty: 'F: Card: Text'
+    - rid: 7896456248313250469
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Width'
+        ThemeProperty: 'Btn: W: Card'
+    - rid: 7896456248313250470
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Height'
+        ThemeProperty: 'Btn: H: Card'
+    - rid: 7896456248313250471
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: TopLeft'
+        ThemeProperty: 'Btn: R: Card: TopLeft'
+    - rid: 7896456248313250472
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: TopRight'
+        ThemeProperty: 'Btn: R: Card: TopRight'
+    - rid: 7896456248313250473
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: BottomLeft'
+        ThemeProperty: 'Btn: R: Card: BottomLeft'
+    - rid: 7896456248313250474
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: BottomRight'
+        ThemeProperty: 'Btn: R: Card: BottomRight'
+    - rid: 7896456248313250475
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: B: Width'
+        ThemeProperty: 'Btn: B: Card: Default'
+    - rid: 7896456248313250476
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Icon'
+        ThemeProperty: 'Btn: S: Card: Icon'
+    - rid: 7896456248313250477
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Width
+        ThemeProperty: 'W: Card: Pct60'
+    - rid: 7896456248313250478
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Background
+        ThemeProperty: 'Card: Bkg: Default'
+    - rid: 7896456248313250479
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Border
+        ThemeProperty: 'Card: Border: Default'
+    - rid: 7896456248313250480
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Title
+        ThemeProperty: 'Card: Title: Default'
+    - rid: 7896456248313250481
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Placeholder
+        ThemeProperty: 'Card: PHolder: Default'
+    - rid: 7896456248313250482
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Text
+        ThemeProperty: 'Card: Text: Default'
+    - rid: 7896456248313250483
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Underline
+        ThemeProperty: 'Card: ULine: Default'
+    - rid: 7896456248313250484
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Background'
+        ThemeProperty: 'Card: Btn: Bkg: Default'
+    - rid: 7896456248313250485
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Border'
+        ThemeProperty: 'Card: Btn: Border: Default'
+    - rid: 7896456248313250486
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Icon'
+        ThemeProperty: 'Card: Btn: Icon: Default'
+    - rid: 7896456248313250487
+      type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Title
+        ThemeProperty: 'Card: Title: Default'
+    - rid: 7896456248313250488
+      type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Placeholder
+        ThemeProperty: 'Card: PHolder: Default'
+    - rid: 7896456248313250489
+      type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Text
+        ThemeProperty: 'Card: Text: Default'
+    - rid: 7896456248313250490
+      type: {class: StylePropertySprite, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Icon
+        ThemeProperty: 'Btn: Icon'
+    - rid: 7896456248313250491
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Height
+        ThemeProperty: 'H: Card'
+    - rid: 7896456248313250492
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Height: Underline'
+        ThemeProperty: 'H: Card: ULine: Pressed'
+    - rid: 7896456248313250493
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'B: Witdh'
+        ThemeProperty: 'B: Card: Pressed'
+    - rid: 7896456248313250494
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: TopLeft'
+        ThemeProperty: 'C: Card: TopLeft'
+    - rid: 7896456248313250495
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: TopRight'
+        ThemeProperty: 'C: Card: TopRight'
+    - rid: 7896456248313250496
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: BottomLeft'
+        ThemeProperty: 'C: Card: BottomLeft'
+    - rid: 7896456248313250497
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: BottomRight'
+        ThemeProperty: 'C: Card: BottomRight'
+    - rid: 7896456248313250498
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: Underline'
+        ThemeProperty: 'C: Card: ULine'
+    - rid: 7896456248313250499
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Title: Left'
+        ThemeProperty: 'M: Card: Title: Left'
+    - rid: 7896456248313250500
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Title: Bottom'
+        ThemeProperty: 'M: Card: Title: Bottom'
+    - rid: 7896456248313250501
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Left'
+        ThemeProperty: 'M: Card: Left'
+    - rid: 7896456248313250502
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Right'
+        ThemeProperty: 'M: Card: Right'
+    - rid: 7896456248313250503
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Bottom'
+        ThemeProperty: 'M: Card: Bottom'
+    - rid: 7896456248313250504
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Underline: Left'
+        ThemeProperty: 'M: Card: ULine: Left'
+    - rid: 7896456248313250505
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Underline: Right'
+        ThemeProperty: 'M: Card: ULine: Right'
+    - rid: 7896456248313250506
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'F: Title'
+        ThemeProperty: 'F: Card: Title'
+    - rid: 7896456248313250507
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'F: Placeholder'
+        ThemeProperty: 'F: Card: Placeholder'
+    - rid: 7896456248313250508
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'F: Text'
+        ThemeProperty: 'F: Card: Text'
+    - rid: 7896456248313250509
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Width'
+        ThemeProperty: 'Btn: W: Card'
+    - rid: 7896456248313250510
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Height'
+        ThemeProperty: 'Btn: H: Card'
+    - rid: 7896456248313250511
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: TopLeft'
+        ThemeProperty: 'Btn: R: Card: TopLeft'
+    - rid: 7896456248313250512
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: TopRight'
+        ThemeProperty: 'Btn: R: Card: TopRight'
+    - rid: 7896456248313250513
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: BottomLeft'
+        ThemeProperty: 'Btn: R: Card: BottomLeft'
+    - rid: 7896456248313250514
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: BottomRight'
+        ThemeProperty: 'Btn: R: Card: BottomRight'
+    - rid: 7896456248313250515
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: B: Width'
+        ThemeProperty: 'Btn: B: Card: Pressed'
+    - rid: 7896456248313250516
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Icon'
+        ThemeProperty: 'Btn: S: Card: Icon'
+    - rid: 7896456248313250517
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Width
+        ThemeProperty: 'W: Card: Pct60'
+    - rid: 7896456248313250518
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Background
+        ThemeProperty: 'Card: Bkg: Pressed'
+    - rid: 7896456248313250519
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Border
+        ThemeProperty: 'Card: Border: Pressed'
+    - rid: 7896456248313250520
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Title
+        ThemeProperty: 'Card: Title: Pressed'
+    - rid: 7896456248313250521
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Placeholder
+        ThemeProperty: 'Card: PHolder: Pressed'
+    - rid: 7896456248313250522
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Text
+        ThemeProperty: 'Card: Text: Pressed'
+    - rid: 7896456248313250523
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Underline
+        ThemeProperty: 'Card: ULine: Pressed'
+    - rid: 7896456248313250524
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Background'
+        ThemeProperty: 'Card: Btn: Bkg: Pressed'
+    - rid: 7896456248313250525
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Border'
+        ThemeProperty: 'Card: Btn: Border: Pressed'
+    - rid: 7896456248313250526
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Icon'
+        ThemeProperty: 'Card: Btn: Icon: Pressed'
+    - rid: 7896456248313250527
+      type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Title
+        ThemeProperty: 'Card: Title: Pressed'
+    - rid: 7896456248313250528
+      type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Placeholder
+        ThemeProperty: 'Card: PHolder: Pressed'
+    - rid: 7896456248313250529
+      type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Text
+        ThemeProperty: 'Card: Text: Pressed'
+    - rid: 7896456248313250530
+      type: {class: StylePropertySprite, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Icon
+        ThemeProperty: 'Btn: Icon'
+    - rid: 7896456248313250531
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Height
+        ThemeProperty: 'H: Card'
+    - rid: 7896456248313250532
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Height: Underline'
+        ThemeProperty: 'H: Card: ULine: Danger'
+    - rid: 7896456248313250533
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'B: Witdh'
+        ThemeProperty: 'B: Card: Danger'
+    - rid: 7896456248313250534
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: TopLeft'
+        ThemeProperty: 'C: Card: TopLeft'
+    - rid: 7896456248313250535
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: TopRight'
+        ThemeProperty: 'C: Card: TopRight'
+    - rid: 7896456248313250536
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: BottomLeft'
+        ThemeProperty: 'C: Card: BottomLeft'
+    - rid: 7896456248313250537
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: BottomRight'
+        ThemeProperty: 'C: Card: BottomRight'
+    - rid: 7896456248313250538
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: Underline'
+        ThemeProperty: 'C: Card: ULine'
+    - rid: 7896456248313250539
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Title: Left'
+        ThemeProperty: 'M: Card: Title: Left'
+    - rid: 7896456248313250540
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Title: Bottom'
+        ThemeProperty: 'M: Card: Title: Bottom'
+    - rid: 7896456248313250541
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Left'
+        ThemeProperty: 'M: Card: Left'
+    - rid: 7896456248313250542
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Right'
+        ThemeProperty: 'M: Card: Right'
+    - rid: 7896456248313250543
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Bottom'
+        ThemeProperty: 'M: Card: Bottom'
+    - rid: 7896456248313250544
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Underline: Left'
+        ThemeProperty: 'M: Card: ULine: Left'
+    - rid: 7896456248313250545
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Underline: Right'
+        ThemeProperty: 'M: Card: ULine: Right'
+    - rid: 7896456248313250546
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'F: Title'
+        ThemeProperty: 'F: Card: Title'
+    - rid: 7896456248313250547
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'F: Placeholder'
+        ThemeProperty: 'F: Card: Placeholder'
+    - rid: 7896456248313250548
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'F: Text'
+        ThemeProperty: 'F: Card: Text'
+    - rid: 7896456248313250549
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Width'
+        ThemeProperty: 'Btn: W: Card'
+    - rid: 7896456248313250550
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Height'
+        ThemeProperty: 'Btn: H: Card'
+    - rid: 7896456248313250551
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: TopLeft'
+        ThemeProperty: 'Btn: R: Card: TopLeft'
+    - rid: 7896456248313250552
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: TopRight'
+        ThemeProperty: 'Btn: R: Card: TopRight'
+    - rid: 7896456248313250553
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: BottomLeft'
+        ThemeProperty: 'Btn: R: Card: BottomLeft'
+    - rid: 7896456248313250554
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: BottomRight'
+        ThemeProperty: 'Btn: R: Card: BottomRight'
+    - rid: 7896456248313250555
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: B: Width'
+        ThemeProperty: 'Btn: B: Card: Danger'
+    - rid: 7896456248313250556
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Icon'
+        ThemeProperty: 'Btn: S: Card: Icon'
+    - rid: 7896456248313250557
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Width
+        ThemeProperty: 'W: Card: Pct60'
+    - rid: 7896456248313250558
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Background
+        ThemeProperty: 'Card: Bkg: Danger'
+    - rid: 7896456248313250559
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Border
+        ThemeProperty: 'Card: Border: Danger'
+    - rid: 7896456248313250560
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Title
+        ThemeProperty: 'Card: Title: Danger'
+    - rid: 7896456248313250561
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Placeholder
+        ThemeProperty: 'Card: PHolder: Danger'
+    - rid: 7896456248313250562
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Text
+        ThemeProperty: 'Card: Text: Danger'
+    - rid: 7896456248313250563
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Underline
+        ThemeProperty: 'Card: ULine: Danger'
+    - rid: 7896456248313250564
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Background'
+        ThemeProperty: 'Card: Btn: Bkg: Danger'
+    - rid: 7896456248313250565
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Border'
+        ThemeProperty: 'Card: Btn: Border: Danger'
+    - rid: 7896456248313250566
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Icon'
+        ThemeProperty: 'Card: Btn: Icon: Danger'
+    - rid: 7896456248313250567
+      type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Title
+        ThemeProperty: 'Card: Title: Danger'
+    - rid: 7896456248313250568
+      type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Placeholder
+        ThemeProperty: 'Card: PHolder: Danger'
+    - rid: 7896456248313250569
+      type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Text
+        ThemeProperty: 'Card: Text: Danger'
+    - rid: 7896456248313250570
+      type: {class: StylePropertySprite, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Icon
+        ThemeProperty: 'Btn: Icon'
+    - rid: 7896456248313250571
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Height
+        ThemeProperty: 'H: Card'
+    - rid: 7896456248313250572
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Height: Underline'
+        ThemeProperty: 'H: Card: ULine: Disabled'
+    - rid: 7896456248313250573
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'B: Witdh'
+        ThemeProperty: 'B: Card: Disabled'
+    - rid: 7896456248313250574
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: TopLeft'
+        ThemeProperty: 'C: Card: TopLeft'
+    - rid: 7896456248313250575
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: TopRight'
+        ThemeProperty: 'C: Card: TopRight'
+    - rid: 7896456248313250576
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: BottomLeft'
+        ThemeProperty: 'C: Card: BottomLeft'
+    - rid: 7896456248313250577
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: BottomRight'
+        ThemeProperty: 'C: Card: BottomRight'
+    - rid: 7896456248313250578
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'R: Underline'
+        ThemeProperty: 'C: Card: ULine'
+    - rid: 7896456248313250579
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Title: Left'
+        ThemeProperty: 'M: Card: Title: Left'
+    - rid: 7896456248313250580
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Title: Bottom'
+        ThemeProperty: 'M: Card: Title: Bottom'
+    - rid: 7896456248313250581
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Left'
+        ThemeProperty: 'M: Card: Left'
+    - rid: 7896456248313250582
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Right'
+        ThemeProperty: 'M: Card: Right'
+    - rid: 7896456248313250583
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Bottom'
+        ThemeProperty: 'M: Card: Bottom'
+    - rid: 7896456248313250584
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Underline: Left'
+        ThemeProperty: 'M: Card: ULine: Left'
+    - rid: 7896456248313250585
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Underline: Right'
+        ThemeProperty: 'M: Card: ULine: Right'
+    - rid: 7896456248313250586
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'F: Title'
+        ThemeProperty: 'F: Card: Title'
+    - rid: 7896456248313250587
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'F: Placeholder'
+        ThemeProperty: 'F: Card: Placeholder'
+    - rid: 7896456248313250588
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'F: Text'
+        ThemeProperty: 'F: Card: Text'
+    - rid: 7896456248313250589
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Width'
+        ThemeProperty: 'Btn: W: Card'
+    - rid: 7896456248313250590
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Height'
+        ThemeProperty: 'Btn: H: Card'
+    - rid: 7896456248313250591
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: TopLeft'
+        ThemeProperty: 'Btn: R: Card: TopLeft'
+    - rid: 7896456248313250592
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: TopRight'
+        ThemeProperty: 'Btn: R: Card: TopRight'
+    - rid: 7896456248313250593
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: BottomLeft'
+        ThemeProperty: 'Btn: R: Card: BottomLeft'
+    - rid: 7896456248313250594
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: R: BottomRight'
+        ThemeProperty: 'Btn: R: Card: BottomRight'
+    - rid: 7896456248313250595
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: B: Width'
+        ThemeProperty: 'Btn: B: Card: Disabled'
+    - rid: 7896456248313250596
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Icon'
+        ThemeProperty: 'Btn: S: Card: Icon'
+    - rid: 7896456248313250597
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Width
+        ThemeProperty: 'W: Card: Pct60'
+    - rid: 7896456248313250598
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Background
+        ThemeProperty: 'Card: Bkg: Disabled'
+    - rid: 7896456248313250599
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Border
+        ThemeProperty: 'Card: Border: Disabled'
+    - rid: 7896456248313250600
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Title
+        ThemeProperty: 'Card: Title: Disabled'
+    - rid: 7896456248313250601
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Placeholder
+        ThemeProperty: 'Card: PHolder: Disabled'
+    - rid: 7896456248313250602
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Text
+        ThemeProperty: 'Card: Text: Disabled'
+    - rid: 7896456248313250603
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Underline
+        ThemeProperty: 'Card: ULine: Disabled'
+    - rid: 7896456248313250604
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Background'
+        ThemeProperty: 'Card: Btn: Bkg: Disabled'
+    - rid: 7896456248313250605
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Border'
+        ThemeProperty: 'Card: Btn: Border: Disabled'
+    - rid: 7896456248313250606
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'Button: Icon'
+        ThemeProperty: 'Card: Btn: Icon: Disabled'
+    - rid: 7896456248313250607
+      type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Title
+        ThemeProperty: 'Card: Title: Default'
+    - rid: 7896456248313250608
+      type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Placeholder
+        ThemeProperty: 'Card: PHolder: Default'
+    - rid: 7896456248313250609
+      type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Text
+        ThemeProperty: 'Card: Text: Default'
+    - rid: 7896456248313250610
+      type: {class: StylePropertySprite, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Icon
+        ThemeProperty: 'Btn: Icon'

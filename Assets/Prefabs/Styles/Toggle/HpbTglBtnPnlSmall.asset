@@ -9,2783 +9,959 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3de87f6fc1759f14aa8909fd36d95640, type: 3}
+  m_Script: {fileID: 11500000, guid: da39ce696ab95824ea9721acb2aff629, type: 3}
   m_Name: HpbTglBtnPnlSmall
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: states
-      Entry: 7
-      Data: 0|Leap.UI.Elements.State[], Leap.UI.Elements
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 1|Leap.UI.Elements.State, Leap.UI.Elements
-    - Name: stateName
-      Entry: 1
-      Data: Normal
-    - Name: index
-      Entry: 3
-      Data: 0
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: floats
-      Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 20
-    - Name: 
-      Entry: 7
-      Data: 3|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Size
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 4|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'A: Size'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 5|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: Size'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 6|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'B: Width'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'B: Button: Off: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 7|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'K: Size'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 8|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'K: C: Size'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 9|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'K: B: Width'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 10|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Main: Title: Y'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 11|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 12|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Title'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'F: Button: Off'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 13|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'O: Panel: Alignment'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 14|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'O: Panel: Icon: Place'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 15|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Width
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'W: Button'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 16|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Height
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'H: Button'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 17|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Panel: TopLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 18|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Panel: TopRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 19|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Panel: BottomLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 20|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Panel: BottomRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 21|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: X'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Panel'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 22|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'I: Size'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'I: Button: Size'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFloats
-      Entry: 7
-      Data: 23|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 24|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 20
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Size
-    - Name: $v
-      Entry: 9
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'A: Size'
-    - Name: $v
-      Entry: 9
-      Data: 4
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: Size'
-    - Name: $v
-      Entry: 9
-      Data: 5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'B: Width'
-    - Name: $v
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'K: Size'
-    - Name: $v
-      Entry: 9
-      Data: 7
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'K: C: Size'
-    - Name: $v
-      Entry: 9
-      Data: 8
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'K: B: Width'
-    - Name: $v
-      Entry: 9
-      Data: 9
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: $v
-      Entry: 9
-      Data: 10
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: $v
-      Entry: 9
-      Data: 11
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Title'
-    - Name: $v
-      Entry: 9
-      Data: 12
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: $v
-      Entry: 9
-      Data: 13
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: $v
-      Entry: 9
-      Data: 14
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Width
-    - Name: $v
-      Entry: 9
-      Data: 15
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Height
-    - Name: $v
-      Entry: 9
-      Data: 16
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 17
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 18
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 19
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 20
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: X'
-    - Name: $v
-      Entry: 9
-      Data: 21
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'I: Size'
-    - Name: $v
-      Entry: 9
-      Data: 22
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: colors
-      Entry: 7
-      Data: 25|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 6
-    - Name: 
-      Entry: 7
-      Data: 26|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Background
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Button: Bkg: Off: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 27|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Border
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Button: Border: Off: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 28|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Mark Background
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 29|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Mark Border
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 30|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Title
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Button: Title: Off: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 31|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Icon
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Button: Icon: Off: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictColors
-      Entry: 7
-      Data: 32|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 24
-    - Name: 
-      Entry: 12
-      Data: 6
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Background
-    - Name: $v
-      Entry: 9
-      Data: 26
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Border
-    - Name: $v
-      Entry: 9
-      Data: 27
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Mark Background
-    - Name: $v
-      Entry: 9
-      Data: 28
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Mark Border
-    - Name: $v
-      Entry: 9
-      Data: 29
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Title
-    - Name: $v
-      Entry: 9
-      Data: 30
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Icon
-    - Name: $v
-      Entry: 9
-      Data: 31
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: fonts
-      Entry: 7
-      Data: 33|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 34|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Title
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Button: Title: Off'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 35|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Text
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFonts
-      Entry: 7
-      Data: 36|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 37|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Title
-    - Name: $v
-      Entry: 9
-      Data: 34
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Text
-    - Name: $v
-      Entry: 9
-      Data: 35
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: sprites
-      Entry: 7
-      Data: 38|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 39|Leap.UI.Elements.StylePropertySprite, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Icon
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictSprites
-      Entry: 7
-      Data: 40|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 41|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Icon
-    - Name: $v
-      Entry: 9
-      Data: 39
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 42|Leap.UI.Elements.State, Leap.UI.Elements
-    - Name: stateName
-      Entry: 1
-      Data: Activated
-    - Name: index
-      Entry: 3
-      Data: 1
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: floats
-      Entry: 7
-      Data: 43|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 20
-    - Name: 
-      Entry: 7
-      Data: 44|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Size
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 45|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'A: Size'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 46|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: Size'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 47|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'B: Width'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'B: Button: On: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 48|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'K: Size'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 49|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'K: C: Size'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 50|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'K: B: Width'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 51|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Main: Title: Y'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 52|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 53|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Title'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'F: Button: On'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 54|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'O: Panel: Alignment'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 55|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'O: Panel: Icon: Place'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 56|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Width
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'W: Button'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 57|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Height
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'H: Button'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 58|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Panel: TopLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 59|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Panel: TopRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 60|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Panel: BottomLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 61|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Panel: BottomRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 62|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: X'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Panel'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 63|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'I: Size'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'I: Button: Size'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFloats
-      Entry: 7
-      Data: 64|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 24
-    - Name: 
-      Entry: 12
-      Data: 20
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Size
-    - Name: $v
-      Entry: 9
-      Data: 44
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'A: Size'
-    - Name: $v
-      Entry: 9
-      Data: 45
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: Size'
-    - Name: $v
-      Entry: 9
-      Data: 46
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'B: Width'
-    - Name: $v
-      Entry: 9
-      Data: 47
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'K: Size'
-    - Name: $v
-      Entry: 9
-      Data: 48
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'K: C: Size'
-    - Name: $v
-      Entry: 9
-      Data: 49
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'K: B: Width'
-    - Name: $v
-      Entry: 9
-      Data: 50
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: $v
-      Entry: 9
-      Data: 51
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: $v
-      Entry: 9
-      Data: 52
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Title'
-    - Name: $v
-      Entry: 9
-      Data: 53
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: $v
-      Entry: 9
-      Data: 54
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: $v
-      Entry: 9
-      Data: 55
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Width
-    - Name: $v
-      Entry: 9
-      Data: 56
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Height
-    - Name: $v
-      Entry: 9
-      Data: 57
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 58
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 59
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 60
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 61
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: X'
-    - Name: $v
-      Entry: 9
-      Data: 62
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'I: Size'
-    - Name: $v
-      Entry: 9
-      Data: 63
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: colors
-      Entry: 7
-      Data: 65|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 6
-    - Name: 
-      Entry: 7
-      Data: 66|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Background
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Button: Bkg: On: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 67|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Border
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Button: Border: On: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 68|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Mark Background
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 69|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Mark Border
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 70|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Title
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Button: Title: On: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 71|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Icon
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Button: Icon: On: Pressed'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictColors
-      Entry: 7
-      Data: 72|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 24
-    - Name: 
-      Entry: 12
-      Data: 6
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Background
-    - Name: $v
-      Entry: 9
-      Data: 66
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Border
-    - Name: $v
-      Entry: 9
-      Data: 67
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Mark Background
-    - Name: $v
-      Entry: 9
-      Data: 68
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Mark Border
-    - Name: $v
-      Entry: 9
-      Data: 69
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Title
-    - Name: $v
-      Entry: 9
-      Data: 70
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Icon
-    - Name: $v
-      Entry: 9
-      Data: 71
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: fonts
-      Entry: 7
-      Data: 73|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 74|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Title
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Button: Title: On'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 75|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Text
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFonts
-      Entry: 7
-      Data: 76|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 37
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Title
-    - Name: $v
-      Entry: 9
-      Data: 74
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Text
-    - Name: $v
-      Entry: 9
-      Data: 75
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: sprites
-      Entry: 7
-      Data: 77|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 78|Leap.UI.Elements.StylePropertySprite, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Icon
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictSprites
-      Entry: 7
-      Data: 79|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 41
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Icon
-    - Name: $v
-      Entry: 9
-      Data: 78
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 80|Leap.UI.Elements.State, Leap.UI.Elements
-    - Name: stateName
-      Entry: 1
-      Data: Disabled
-    - Name: index
-      Entry: 3
-      Data: 2
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: floats
-      Entry: 7
-      Data: 81|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 20
-    - Name: 
-      Entry: 7
-      Data: 82|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Size
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 83|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'A: Size'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 84|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: Size'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 85|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'B: Width'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'B: Button: Off: Default'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 86|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'K: Size'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 87|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'K: C: Size'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 88|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'K: B: Width'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 89|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Main: Title: Y'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 90|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 91|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'F: Title'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'F: Button: Off'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 92|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'O: Panel: Alignment'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 93|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'O: Panel: Icon: Place'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 94|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Width
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'W: Button'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 95|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Height
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'H: Button'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 96|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Panel: TopLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 97|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Panel: TopRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 98|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Panel: BottomLeft'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 99|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'C: Panel: BottomRight'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 100|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'M: X'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'M: Panel'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 101|Leap.UI.Elements.StylePropertyFloat, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: 'I: Size'
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'I: Button: Size'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFloats
-      Entry: 7
-      Data: 102|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFloat,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 24
-    - Name: 
-      Entry: 12
-      Data: 20
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Size
-    - Name: $v
-      Entry: 9
-      Data: 82
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'A: Size'
-    - Name: $v
-      Entry: 9
-      Data: 83
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: Size'
-    - Name: $v
-      Entry: 9
-      Data: 84
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'B: Width'
-    - Name: $v
-      Entry: 9
-      Data: 85
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'K: Size'
-    - Name: $v
-      Entry: 9
-      Data: 86
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'K: C: Size'
-    - Name: $v
-      Entry: 9
-      Data: 87
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'K: B: Width'
-    - Name: $v
-      Entry: 9
-      Data: 88
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Title: Baseline'
-    - Name: $v
-      Entry: 9
-      Data: 89
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: Spacing'
-    - Name: $v
-      Entry: 9
-      Data: 90
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'F: Title'
-    - Name: $v
-      Entry: 9
-      Data: 91
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Alignment'
-    - Name: $v
-      Entry: 9
-      Data: 92
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'O: Icon: Place'
-    - Name: $v
-      Entry: 9
-      Data: 93
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Width
-    - Name: $v
-      Entry: 9
-      Data: 94
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Height
-    - Name: $v
-      Entry: 9
-      Data: 95
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopLeft'
-    - Name: $v
-      Entry: 9
-      Data: 96
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: TopRight'
-    - Name: $v
-      Entry: 9
-      Data: 97
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomLeft'
-    - Name: $v
-      Entry: 9
-      Data: 98
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'C: BottomRight'
-    - Name: $v
-      Entry: 9
-      Data: 99
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'M: X'
-    - Name: $v
-      Entry: 9
-      Data: 100
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: 'I: Size'
-    - Name: $v
-      Entry: 9
-      Data: 101
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: colors
-      Entry: 7
-      Data: 103|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 6
-    - Name: 
-      Entry: 7
-      Data: 104|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Background
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Button: Bkg: Off: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 105|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Border
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Button: Border: Off: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 106|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Mark Background
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 107|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Mark Border
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 108|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Title
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Button: Title: Off: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 109|Leap.UI.Elements.StylePropertyColor, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Icon
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Button: Icon: Off: Disabled'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictColors
-      Entry: 7
-      Data: 110|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyColor,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 24
-    - Name: 
-      Entry: 12
-      Data: 6
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Background
-    - Name: $v
-      Entry: 9
-      Data: 104
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Border
-    - Name: $v
-      Entry: 9
-      Data: 105
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Mark Background
-    - Name: $v
-      Entry: 9
-      Data: 106
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Mark Border
-    - Name: $v
-      Entry: 9
-      Data: 107
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Title
-    - Name: $v
-      Entry: 9
-      Data: 108
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Icon
-    - Name: $v
-      Entry: 9
-      Data: 109
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: fonts
-      Entry: 7
-      Data: 111|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 112|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Title
-    - Name: ThemeProperty
-      Entry: 1
-      Data: 'Button: Title: Off'
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 113|Leap.UI.Elements.StylePropertyFont, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Text
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictFonts
-      Entry: 7
-      Data: 114|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertyFont,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 37
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Title
-    - Name: $v
-      Entry: 9
-      Data: 112
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Text
-    - Name: $v
-      Entry: 9
-      Data: 113
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: sprites
-      Entry: 7
-      Data: 115|System.Collections.Generic.List`1[[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 116|Leap.UI.Elements.StylePropertySprite, Leap.UI.Elements
-    - Name: style
-      Entry: 10
-      Data: 0
-    - Name: ModelProperty
-      Entry: 1
-      Data: Icon
-    - Name: ThemeProperty
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: DictSprites
-      Entry: 7
-      Data: 117|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[Leap.UI.Elements.StylePropertySprite,
-        Leap.UI.Elements]], mscorlib
-    - Name: comparer
-      Entry: 9
-      Data: 41
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Icon
-    - Name: $v
-      Entry: 9
-      Data: 116
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+  m_EditorClassIdentifier: Leap.UI.Elements::Leap.UI.Elements.Style
   type: 6
+  states:
+  - stateName: Normal
+    index: 0
+    style: {fileID: 11400000}
+    floats:
+    - style: {fileID: 11400000}
+      ModelProperty: Size
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'A: Size'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: Size'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'B: Width'
+      ThemeProperty: 'B: Button: Off: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: 'K: Size'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'K: C: Size'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'K: B: Width'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Title: Baseline'
+      ThemeProperty: 'M: Main: Title: Y'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Spacing'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'F: Title'
+      ThemeProperty: 'F: Button: Off'
+    - style: {fileID: 11400000}
+      ModelProperty: 'O: Alignment'
+      ThemeProperty: 'O: Panel: Alignment'
+    - style: {fileID: 11400000}
+      ModelProperty: 'O: Icon: Place'
+      ThemeProperty: 'O: Panel: Icon: Place'
+    - style: {fileID: 11400000}
+      ModelProperty: Width
+      ThemeProperty: 'W: Button'
+    - style: {fileID: 11400000}
+      ModelProperty: Height
+      ThemeProperty: 'H: Button'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: TopLeft'
+      ThemeProperty: 'C: Panel: TopLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: TopRight'
+      ThemeProperty: 'C: Panel: TopRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: BottomLeft'
+      ThemeProperty: 'C: Panel: BottomLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: BottomRight'
+      ThemeProperty: 'C: Panel: BottomRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: X'
+      ThemeProperty: 'M: Panel'
+    - style: {fileID: 11400000}
+      ModelProperty: 'I: Size'
+      ThemeProperty: 'I: Button: Size'
+    DictFloats:
+      keys:
+      - Size
+      - 'A: Size'
+      - 'C: Size'
+      - 'B: Width'
+      - 'K: Size'
+      - 'K: C: Size'
+      - 'K: B: Width'
+      - 'M: Title: Baseline'
+      - 'M: Spacing'
+      - 'F: Title'
+      - 'O: Alignment'
+      - 'O: Icon: Place'
+      - Width
+      - Height
+      - 'C: TopLeft'
+      - 'C: TopRight'
+      - 'C: BottomLeft'
+      - 'C: BottomRight'
+      - 'M: X'
+      - 'I: Size'
+      values:
+      - rid: 7896456248315347407
+      - rid: 7896456248315347408
+      - rid: 7896456248315347409
+      - rid: 7896456248315347410
+      - rid: 7896456248315347411
+      - rid: 7896456248315347412
+      - rid: 7896456248315347413
+      - rid: 7896456248315347414
+      - rid: 7896456248315347415
+      - rid: 7896456248315347416
+      - rid: 7896456248315347417
+      - rid: 7896456248315347418
+      - rid: 7896456248315347419
+      - rid: 7896456248315347420
+      - rid: 7896456248315347421
+      - rid: 7896456248315347422
+      - rid: 7896456248315347423
+      - rid: 7896456248315347424
+      - rid: 7896456248315347425
+      - rid: 7896456248315347426
+    colors:
+    - style: {fileID: 11400000}
+      ModelProperty: Background
+      ThemeProperty: 'Button: Bkg: Off: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: Border
+      ThemeProperty: 'Button: Border: Off: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: Mark Background
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: Mark Border
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: Title
+      ThemeProperty: 'Button: Title: Off: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: Icon
+      ThemeProperty: 'Button: Icon: Off: Default'
+    DictColors:
+      keys:
+      - Background
+      - Border
+      - Mark Background
+      - Mark Border
+      - Title
+      - Icon
+      values:
+      - rid: 7896456248315347427
+      - rid: 7896456248315347428
+      - rid: 7896456248315347429
+      - rid: 7896456248315347430
+      - rid: 7896456248315347431
+      - rid: 7896456248315347432
+    fonts:
+    - style: {fileID: 11400000}
+      ModelProperty: Title
+      ThemeProperty: 'Button: Title: Off'
+    DictFonts:
+      keys:
+      - Title
+      values:
+      - rid: 7896456248315347433
+    sprites: []
+    DictSprites:
+      keys: []
+      values: []
+  - stateName: Activated
+    index: 1
+    style: {fileID: 11400000}
+    floats:
+    - style: {fileID: 11400000}
+      ModelProperty: Size
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'A: Size'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: Size'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'B: Width'
+      ThemeProperty: 'B: Button: On: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: 'K: Size'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'K: C: Size'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'K: B: Width'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Title: Baseline'
+      ThemeProperty: 'M: Main: Title: Y'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Spacing'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'F: Title'
+      ThemeProperty: 'F: Button: On'
+    - style: {fileID: 11400000}
+      ModelProperty: 'O: Alignment'
+      ThemeProperty: 'O: Panel: Alignment'
+    - style: {fileID: 11400000}
+      ModelProperty: 'O: Icon: Place'
+      ThemeProperty: 'O: Panel: Icon: Place'
+    - style: {fileID: 11400000}
+      ModelProperty: Width
+      ThemeProperty: 'W: Button'
+    - style: {fileID: 11400000}
+      ModelProperty: Height
+      ThemeProperty: 'H: Button'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: TopLeft'
+      ThemeProperty: 'C: Panel: TopLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: TopRight'
+      ThemeProperty: 'C: Panel: TopRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: BottomLeft'
+      ThemeProperty: 'C: Panel: BottomLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: BottomRight'
+      ThemeProperty: 'C: Panel: BottomRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: X'
+      ThemeProperty: 'M: Panel'
+    - style: {fileID: 11400000}
+      ModelProperty: 'I: Size'
+      ThemeProperty: 'I: Button: Size'
+    DictFloats:
+      keys:
+      - Size
+      - 'A: Size'
+      - 'C: Size'
+      - 'B: Width'
+      - 'K: Size'
+      - 'K: C: Size'
+      - 'K: B: Width'
+      - 'M: Title: Baseline'
+      - 'M: Spacing'
+      - 'F: Title'
+      - 'O: Alignment'
+      - 'O: Icon: Place'
+      - Width
+      - Height
+      - 'C: TopLeft'
+      - 'C: TopRight'
+      - 'C: BottomLeft'
+      - 'C: BottomRight'
+      - 'M: X'
+      - 'I: Size'
+      values:
+      - rid: 7896456248315347434
+      - rid: 7896456248315347435
+      - rid: 7896456248315347436
+      - rid: 7896456248315347437
+      - rid: 7896456248315347438
+      - rid: 7896456248315347439
+      - rid: 7896456248315347440
+      - rid: 7896456248315347441
+      - rid: 7896456248315347442
+      - rid: 7896456248315347443
+      - rid: 7896456248315347444
+      - rid: 7896456248315347445
+      - rid: 7896456248315347446
+      - rid: 7896456248315347447
+      - rid: 7896456248315347448
+      - rid: 7896456248315347449
+      - rid: 7896456248315347450
+      - rid: 7896456248315347451
+      - rid: 7896456248315347452
+      - rid: 7896456248315347453
+    colors:
+    - style: {fileID: 11400000}
+      ModelProperty: Background
+      ThemeProperty: 'Button: Bkg: On: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: Border
+      ThemeProperty: 'Button: Border: On: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: Mark Background
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: Mark Border
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: Title
+      ThemeProperty: 'Button: Title: On: Pressed'
+    - style: {fileID: 11400000}
+      ModelProperty: Icon
+      ThemeProperty: 'Button: Icon: On: Pressed'
+    DictColors:
+      keys:
+      - Background
+      - Border
+      - Mark Background
+      - Mark Border
+      - Title
+      - Icon
+      values:
+      - rid: 7896456248315347454
+      - rid: 7896456248315347455
+      - rid: 7896456248315347456
+      - rid: 7896456248315347457
+      - rid: 7896456248315347458
+      - rid: 7896456248315347459
+    fonts:
+    - style: {fileID: 11400000}
+      ModelProperty: Title
+      ThemeProperty: 'Button: Title: On'
+    DictFonts:
+      keys:
+      - Title
+      values:
+      - rid: 7896456248315347460
+    sprites: []
+    DictSprites:
+      keys: []
+      values: []
+  - stateName: Disabled
+    index: 2
+    style: {fileID: 11400000}
+    floats:
+    - style: {fileID: 11400000}
+      ModelProperty: Size
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'A: Size'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: Size'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'B: Width'
+      ThemeProperty: 'B: Button: Off: Default'
+    - style: {fileID: 11400000}
+      ModelProperty: 'K: Size'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'K: C: Size'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'K: B: Width'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Title: Baseline'
+      ThemeProperty: 'M: Main: Title: Y'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: Spacing'
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: 'F: Title'
+      ThemeProperty: 'F: Button: Off'
+    - style: {fileID: 11400000}
+      ModelProperty: 'O: Alignment'
+      ThemeProperty: 'O: Panel: Alignment'
+    - style: {fileID: 11400000}
+      ModelProperty: 'O: Icon: Place'
+      ThemeProperty: 'O: Panel: Icon: Place'
+    - style: {fileID: 11400000}
+      ModelProperty: Width
+      ThemeProperty: 'W: Button'
+    - style: {fileID: 11400000}
+      ModelProperty: Height
+      ThemeProperty: 'H: Button'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: TopLeft'
+      ThemeProperty: 'C: Panel: TopLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: TopRight'
+      ThemeProperty: 'C: Panel: TopRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: BottomLeft'
+      ThemeProperty: 'C: Panel: BottomLeft'
+    - style: {fileID: 11400000}
+      ModelProperty: 'C: BottomRight'
+      ThemeProperty: 'C: Panel: BottomRight'
+    - style: {fileID: 11400000}
+      ModelProperty: 'M: X'
+      ThemeProperty: 'M: Panel'
+    - style: {fileID: 11400000}
+      ModelProperty: 'I: Size'
+      ThemeProperty: 'I: Button: Size'
+    DictFloats:
+      keys:
+      - Size
+      - 'A: Size'
+      - 'C: Size'
+      - 'B: Width'
+      - 'K: Size'
+      - 'K: C: Size'
+      - 'K: B: Width'
+      - 'M: Title: Baseline'
+      - 'M: Spacing'
+      - 'F: Title'
+      - 'O: Alignment'
+      - 'O: Icon: Place'
+      - Width
+      - Height
+      - 'C: TopLeft'
+      - 'C: TopRight'
+      - 'C: BottomLeft'
+      - 'C: BottomRight'
+      - 'M: X'
+      - 'I: Size'
+      values:
+      - rid: 7896456248315347461
+      - rid: 7896456248315347462
+      - rid: 7896456248315347463
+      - rid: 7896456248315347464
+      - rid: 7896456248315347465
+      - rid: 7896456248315347466
+      - rid: 7896456248315347467
+      - rid: 7896456248315347468
+      - rid: 7896456248315347469
+      - rid: 7896456248315347470
+      - rid: 7896456248315347471
+      - rid: 7896456248315347472
+      - rid: 7896456248315347473
+      - rid: 7896456248315347474
+      - rid: 7896456248315347475
+      - rid: 7896456248315347476
+      - rid: 7896456248315347477
+      - rid: 7896456248315347478
+      - rid: 7896456248315347479
+      - rid: 7896456248315347480
+    colors:
+    - style: {fileID: 11400000}
+      ModelProperty: Background
+      ThemeProperty: 'Button: Bkg: Off: Disabled'
+    - style: {fileID: 11400000}
+      ModelProperty: Border
+      ThemeProperty: 'Button: Border: Off: Disabled'
+    - style: {fileID: 11400000}
+      ModelProperty: Mark Background
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: Mark Border
+      ThemeProperty: 
+    - style: {fileID: 11400000}
+      ModelProperty: Title
+      ThemeProperty: 'Button: Title: Off: Disabled'
+    - style: {fileID: 11400000}
+      ModelProperty: Icon
+      ThemeProperty: 'Button: Icon: Off: Disabled'
+    DictColors:
+      keys:
+      - Background
+      - Border
+      - Mark Background
+      - Mark Border
+      - Title
+      - Icon
+      values:
+      - rid: 7896456248315347481
+      - rid: 7896456248315347482
+      - rid: 7896456248315347483
+      - rid: 7896456248315347484
+      - rid: 7896456248315347485
+      - rid: 7896456248315347486
+    fonts:
+    - style: {fileID: 11400000}
+      ModelProperty: Title
+      ThemeProperty: 'Button: Title: Off'
+    DictFonts:
+      keys:
+      - Title
+      values:
+      - rid: 7896456248315347487
+    sprites: []
+    DictSprites:
+      keys: []
+      values: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 7896456248315347407
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Size
+        ThemeProperty: 
+    - rid: 7896456248315347408
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'A: Size'
+        ThemeProperty: 
+    - rid: 7896456248315347409
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: Size'
+        ThemeProperty: 
+    - rid: 7896456248315347410
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'B: Width'
+        ThemeProperty: 'B: Button: Off: Default'
+    - rid: 7896456248315347411
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'K: Size'
+        ThemeProperty: 
+    - rid: 7896456248315347412
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'K: C: Size'
+        ThemeProperty: 
+    - rid: 7896456248315347413
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'K: B: Width'
+        ThemeProperty: 
+    - rid: 7896456248315347414
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Title: Baseline'
+        ThemeProperty: 'M: Main: Title: Y'
+    - rid: 7896456248315347415
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Spacing'
+        ThemeProperty: 
+    - rid: 7896456248315347416
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'F: Title'
+        ThemeProperty: 'F: Button: Off'
+    - rid: 7896456248315347417
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'O: Alignment'
+        ThemeProperty: 'O: Panel: Alignment'
+    - rid: 7896456248315347418
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'O: Icon: Place'
+        ThemeProperty: 'O: Panel: Icon: Place'
+    - rid: 7896456248315347419
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Width
+        ThemeProperty: 'W: Button'
+    - rid: 7896456248315347420
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Height
+        ThemeProperty: 'H: Button'
+    - rid: 7896456248315347421
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: TopLeft'
+        ThemeProperty: 'C: Panel: TopLeft'
+    - rid: 7896456248315347422
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: TopRight'
+        ThemeProperty: 'C: Panel: TopRight'
+    - rid: 7896456248315347423
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: BottomLeft'
+        ThemeProperty: 'C: Panel: BottomLeft'
+    - rid: 7896456248315347424
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: BottomRight'
+        ThemeProperty: 'C: Panel: BottomRight'
+    - rid: 7896456248315347425
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: X'
+        ThemeProperty: 'M: Panel'
+    - rid: 7896456248315347426
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'I: Size'
+        ThemeProperty: 'I: Button: Size'
+    - rid: 7896456248315347427
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Background
+        ThemeProperty: 'Button: Bkg: Off: Default'
+    - rid: 7896456248315347428
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Border
+        ThemeProperty: 'Button: Border: Off: Default'
+    - rid: 7896456248315347429
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Mark Background
+        ThemeProperty: 
+    - rid: 7896456248315347430
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Mark Border
+        ThemeProperty: 
+    - rid: 7896456248315347431
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Title
+        ThemeProperty: 'Button: Title: Off: Default'
+    - rid: 7896456248315347432
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Icon
+        ThemeProperty: 'Button: Icon: Off: Default'
+    - rid: 7896456248315347433
+      type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Title
+        ThemeProperty: 'Button: Title: Off'
+    - rid: 7896456248315347434
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Size
+        ThemeProperty: 
+    - rid: 7896456248315347435
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'A: Size'
+        ThemeProperty: 
+    - rid: 7896456248315347436
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: Size'
+        ThemeProperty: 
+    - rid: 7896456248315347437
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'B: Width'
+        ThemeProperty: 'B: Button: On: Pressed'
+    - rid: 7896456248315347438
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'K: Size'
+        ThemeProperty: 
+    - rid: 7896456248315347439
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'K: C: Size'
+        ThemeProperty: 
+    - rid: 7896456248315347440
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'K: B: Width'
+        ThemeProperty: 
+    - rid: 7896456248315347441
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Title: Baseline'
+        ThemeProperty: 'M: Main: Title: Y'
+    - rid: 7896456248315347442
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Spacing'
+        ThemeProperty: 
+    - rid: 7896456248315347443
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'F: Title'
+        ThemeProperty: 'F: Button: On'
+    - rid: 7896456248315347444
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'O: Alignment'
+        ThemeProperty: 'O: Panel: Alignment'
+    - rid: 7896456248315347445
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'O: Icon: Place'
+        ThemeProperty: 'O: Panel: Icon: Place'
+    - rid: 7896456248315347446
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Width
+        ThemeProperty: 'W: Button'
+    - rid: 7896456248315347447
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Height
+        ThemeProperty: 'H: Button'
+    - rid: 7896456248315347448
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: TopLeft'
+        ThemeProperty: 'C: Panel: TopLeft'
+    - rid: 7896456248315347449
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: TopRight'
+        ThemeProperty: 'C: Panel: TopRight'
+    - rid: 7896456248315347450
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: BottomLeft'
+        ThemeProperty: 'C: Panel: BottomLeft'
+    - rid: 7896456248315347451
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: BottomRight'
+        ThemeProperty: 'C: Panel: BottomRight'
+    - rid: 7896456248315347452
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: X'
+        ThemeProperty: 'M: Panel'
+    - rid: 7896456248315347453
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'I: Size'
+        ThemeProperty: 'I: Button: Size'
+    - rid: 7896456248315347454
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Background
+        ThemeProperty: 'Button: Bkg: On: Pressed'
+    - rid: 7896456248315347455
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Border
+        ThemeProperty: 'Button: Border: On: Pressed'
+    - rid: 7896456248315347456
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Mark Background
+        ThemeProperty: 
+    - rid: 7896456248315347457
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Mark Border
+        ThemeProperty: 
+    - rid: 7896456248315347458
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Title
+        ThemeProperty: 'Button: Title: On: Pressed'
+    - rid: 7896456248315347459
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Icon
+        ThemeProperty: 'Button: Icon: On: Pressed'
+    - rid: 7896456248315347460
+      type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Title
+        ThemeProperty: 'Button: Title: On'
+    - rid: 7896456248315347461
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Size
+        ThemeProperty: 
+    - rid: 7896456248315347462
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'A: Size'
+        ThemeProperty: 
+    - rid: 7896456248315347463
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: Size'
+        ThemeProperty: 
+    - rid: 7896456248315347464
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'B: Width'
+        ThemeProperty: 'B: Button: Off: Default'
+    - rid: 7896456248315347465
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'K: Size'
+        ThemeProperty: 
+    - rid: 7896456248315347466
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'K: C: Size'
+        ThemeProperty: 
+    - rid: 7896456248315347467
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'K: B: Width'
+        ThemeProperty: 
+    - rid: 7896456248315347468
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Title: Baseline'
+        ThemeProperty: 'M: Main: Title: Y'
+    - rid: 7896456248315347469
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: Spacing'
+        ThemeProperty: 
+    - rid: 7896456248315347470
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'F: Title'
+        ThemeProperty: 'F: Button: Off'
+    - rid: 7896456248315347471
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'O: Alignment'
+        ThemeProperty: 'O: Panel: Alignment'
+    - rid: 7896456248315347472
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'O: Icon: Place'
+        ThemeProperty: 'O: Panel: Icon: Place'
+    - rid: 7896456248315347473
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Width
+        ThemeProperty: 'W: Button'
+    - rid: 7896456248315347474
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Height
+        ThemeProperty: 'H: Button'
+    - rid: 7896456248315347475
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: TopLeft'
+        ThemeProperty: 'C: Panel: TopLeft'
+    - rid: 7896456248315347476
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: TopRight'
+        ThemeProperty: 'C: Panel: TopRight'
+    - rid: 7896456248315347477
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: BottomLeft'
+        ThemeProperty: 'C: Panel: BottomLeft'
+    - rid: 7896456248315347478
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'C: BottomRight'
+        ThemeProperty: 'C: Panel: BottomRight'
+    - rid: 7896456248315347479
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'M: X'
+        ThemeProperty: 'M: Panel'
+    - rid: 7896456248315347480
+      type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: 'I: Size'
+        ThemeProperty: 'I: Button: Size'
+    - rid: 7896456248315347481
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Background
+        ThemeProperty: 'Button: Bkg: Off: Disabled'
+    - rid: 7896456248315347482
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Border
+        ThemeProperty: 'Button: Border: Off: Disabled'
+    - rid: 7896456248315347483
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Mark Background
+        ThemeProperty: 
+    - rid: 7896456248315347484
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Mark Border
+        ThemeProperty: 
+    - rid: 7896456248315347485
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Title
+        ThemeProperty: 'Button: Title: Off: Disabled'
+    - rid: 7896456248315347486
+      type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Icon
+        ThemeProperty: 'Button: Icon: Off: Disabled'
+    - rid: 7896456248315347487
+      type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        style: {fileID: 11400000}
+        ModelProperty: Title
+        ThemeProperty: 'Button: Title: Off'

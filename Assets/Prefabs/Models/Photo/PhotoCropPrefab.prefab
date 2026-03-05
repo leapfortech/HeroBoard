@@ -228,7 +228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: 8f5d007ed0da98348a4c8cbd5c05e56b, type: 3}
       propertyPath: m_OutlineWidth
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: 8f5d007ed0da98348a4c8cbd5c05e56b, type: 3}
       propertyPath: m_OutlineColor.b
@@ -441,7 +441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: 8f5d007ed0da98348a4c8cbd5c05e56b, type: 3}
       propertyPath: m_OutlineWidth
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: 8f5d007ed0da98348a4c8cbd5c05e56b, type: 3}
       propertyPath: m_OutlineColor.b
@@ -654,7 +654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: 8f5d007ed0da98348a4c8cbd5c05e56b, type: 3}
       propertyPath: m_OutlineWidth
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: 8f5d007ed0da98348a4c8cbd5c05e56b, type: 3}
       propertyPath: m_OutlineColor.b
@@ -1661,11 +1661,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5495360666246659268, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: spacing
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -5495360666246659268, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: marginHorizontal
-      value: 0
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 1594617360122771297, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_Pivot.x
@@ -1757,7 +1757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4366689725311377401, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -12.5
       objectReference: {fileID: 0}
     - target: {fileID: 5359977072881784954, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_Name
@@ -1781,7 +1781,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -106
+      value: -118.5
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1789,7 +1789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 53
+      value: 59.25
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1833,7 +1833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_OutlineWidth
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_OutlineColor.b
@@ -2185,7 +2185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: 8f5d007ed0da98348a4c8cbd5c05e56b, type: 3}
       propertyPath: m_OutlineWidth
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: 8f5d007ed0da98348a4c8cbd5c05e56b, type: 3}
       propertyPath: m_OutlineColor.b
@@ -2338,7 +2338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: b12c0fa24b9dec1489974d27b8c44ee5, type: 3}
       propertyPath: m_OutlineWidth
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: b12c0fa24b9dec1489974d27b8c44ee5, type: 3}
       propertyPath: m_OutlineColor.b
@@ -2346,19 +2346,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: b12c0fa24b9dec1489974d27b8c44ee5, type: 3}
       propertyPath: m_RectangleCornerRadius.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: b12c0fa24b9dec1489974d27b8c44ee5, type: 3}
       propertyPath: m_RectangleCornerRadius.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: b12c0fa24b9dec1489974d27b8c44ee5, type: 3}
       propertyPath: m_RectangleCornerRadius.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: b12c0fa24b9dec1489974d27b8c44ee5, type: 3}
       propertyPath: m_RectangleCornerRadius.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2391,11 +2391,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5495360666246659268, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: spacing
-      value: 2
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -5495360666246659268, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: marginHorizontal
-      value: 0
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 1594617360122771297, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_Pivot.x
@@ -2487,7 +2487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4366689725311377401, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1
+      value: -12.5
       objectReference: {fileID: 0}
     - target: {fileID: 5359977072881784954, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_Name
@@ -2515,7 +2515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -107
+      value: -118.5
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_SizeDelta.y
@@ -2523,7 +2523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 53.5
+      value: 59.25
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2571,7 +2571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_OutlineWidth
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_OutlineColor.a
