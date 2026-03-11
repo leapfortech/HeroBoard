@@ -18,66 +18,26 @@ MonoBehaviour:
     index: 0
     style: {fileID: 11400000}
     floats:
-    - style: {fileID: 11400000}
-      ModelProperty: Size
-      ThemeProperty: 'S: Card: Main'
-    - style: {fileID: 11400000}
-      ModelProperty: 'A: Size'
-      ThemeProperty: 'S: Card: Main: Area'
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: Size'
-      ThemeProperty: 'C: Card: Main'
-    - style: {fileID: 11400000}
-      ModelProperty: 'B: Width'
-      ThemeProperty: 'B: Card: Main: On'
-    - style: {fileID: 11400000}
-      ModelProperty: 'K: Size'
-      ThemeProperty: 'K: Card: Main: Size: Default'
-    - style: {fileID: 11400000}
-      ModelProperty: 'K: C: Size'
-      ThemeProperty: 'C: Card: Main: Mark'
-    - style: {fileID: 11400000}
-      ModelProperty: 'K: B: Width'
-      ThemeProperty: 'B: Card: Main: Mark'
-    - style: {fileID: 11400000}
-      ModelProperty: 'M: Title: Baseline'
-      ThemeProperty: 'M: Card: Main: Title: Y'
-    - style: {fileID: 11400000}
-      ModelProperty: 'M: Spacing'
-      ThemeProperty: 'M: Card: Main: Spacing'
-    - style: {fileID: 11400000}
-      ModelProperty: 'F: Title'
-      ThemeProperty: 'F: Card: Main: On'
-    - style: {fileID: 11400000}
-      ModelProperty: 'O: Alignment'
-      ThemeProperty: 'O: Card: Main: Alignment'
-    - style: {fileID: 11400000}
-      ModelProperty: 'O: Icon: Place'
-      ThemeProperty: 'O: Card: Main: Toggle: Place'
-    - style: {fileID: 11400000}
-      ModelProperty: Width
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Height
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: TopLeft'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: TopRight'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: BottomLeft'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: BottomRight'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'M: X'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'I: Size'
-      ThemeProperty: 
+    - rid: 7896456371668254750
+    - rid: 7896456371668254751
+    - rid: 7896456371668254752
+    - rid: 7896456371668254753
+    - rid: 7896456371668254754
+    - rid: 7896456371668254755
+    - rid: 7896456371668254756
+    - rid: 7896456371668254757
+    - rid: 7896456371668254758
+    - rid: 7896456371668254759
+    - rid: 7896456371668254760
+    - rid: 7896456371668254761
+    - rid: 7896456371668254762
+    - rid: 7896456371668254763
+    - rid: 7896456371668254764
+    - rid: 7896456371668254765
+    - rid: 7896456371668254766
+    - rid: 7896456371668254767
+    - rid: 7896456371668254768
+    - rid: 7896456371668254769
     DictFloats:
       keys:
       - Size
@@ -101,45 +61,33 @@ MonoBehaviour:
       - 'M: X'
       - 'I: Size'
       values:
-      - rid: 7896456248318492678
-      - rid: 7896456248318492679
-      - rid: 7896456248318492680
-      - rid: 7896456248318492681
-      - rid: 7896456248318492682
-      - rid: 7896456248318492683
-      - rid: 7896456248318492684
-      - rid: 7896456248318492685
-      - rid: 7896456248318492686
-      - rid: 7896456248318492687
-      - rid: 7896456248318492688
-      - rid: 7896456248318492689
-      - rid: 7896456248318492690
-      - rid: 7896456248318492691
-      - rid: 7896456248318492692
-      - rid: 7896456248318492693
-      - rid: 7896456248318492694
-      - rid: 7896456248318492695
-      - rid: 7896456248318492696
-      - rid: 7896456248318492697
+      - rid: 7896456371668254750
+      - rid: 7896456371668254751
+      - rid: 7896456371668254752
+      - rid: 7896456371668254753
+      - rid: 7896456371668254754
+      - rid: 7896456371668254755
+      - rid: 7896456371668254756
+      - rid: 7896456371668254757
+      - rid: 7896456371668254758
+      - rid: 7896456371668254759
+      - rid: 7896456371668254760
+      - rid: 7896456371668254761
+      - rid: 7896456371668254762
+      - rid: 7896456371668254763
+      - rid: 7896456371668254764
+      - rid: 7896456371668254765
+      - rid: 7896456371668254766
+      - rid: 7896456371668254767
+      - rid: 7896456371668254768
+      - rid: 7896456371668254769
     colors:
-    - style: {fileID: 11400000}
-      ModelProperty: Background
-      ThemeProperty: 'Bnt: Button: Bkg: NF: Off: Default'
-    - style: {fileID: 11400000}
-      ModelProperty: Border
-      ThemeProperty: 'Bnt: Button: Border: NF: On: Default'
-    - style: {fileID: 11400000}
-      ModelProperty: Mark Background
-      ThemeProperty: 'Bnt: Button: Border: NF: On: Default'
-    - style: {fileID: 11400000}
-      ModelProperty: Mark Border
-      ThemeProperty: 'Bnt: Button: Border: NF: On: Default'
-    - style: {fileID: 11400000}
-      ModelProperty: Title
-      ThemeProperty: 'Card: Main: Title: On: Default'
-    - style: {fileID: 11400000}
-      ModelProperty: Icon
-      ThemeProperty: 
+    - rid: 7896456371668254770
+    - rid: 7896456371668254771
+    - rid: 7896456371668254772
+    - rid: 7896456371668254773
+    - rid: 7896456371668254774
+    - rid: 7896456371668254775
     DictColors:
       keys:
       - Background
@@ -149,21 +97,19 @@ MonoBehaviour:
       - Title
       - Icon
       values:
-      - rid: 7896456248318492698
-      - rid: 7896456248318492699
-      - rid: 7896456248318492700
-      - rid: 7896456248318492701
-      - rid: 7896456248318492702
-      - rid: 7896456248318492703
+      - rid: 7896456371668254770
+      - rid: 7896456371668254771
+      - rid: 7896456371668254772
+      - rid: 7896456371668254773
+      - rid: 7896456371668254774
+      - rid: 7896456371668254775
     fonts:
-    - style: {fileID: 11400000}
-      ModelProperty: Title
-      ThemeProperty: 'Card: Main: Title: On'
+    - rid: 7896456371668254776
     DictFonts:
       keys:
       - Title
       values:
-      - rid: 7896456248318492704
+      - rid: 7896456371668254776
     sprites: []
     DictSprites:
       keys: []
@@ -172,66 +118,26 @@ MonoBehaviour:
     index: 1
     style: {fileID: 11400000}
     floats:
-    - style: {fileID: 11400000}
-      ModelProperty: Size
-      ThemeProperty: 'S: Card: Main'
-    - style: {fileID: 11400000}
-      ModelProperty: 'A: Size'
-      ThemeProperty: 'S: Card: Main: Area'
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: Size'
-      ThemeProperty: 'C: Card: Main'
-    - style: {fileID: 11400000}
-      ModelProperty: 'B: Width'
-      ThemeProperty: 'B: Card: Main: On'
-    - style: {fileID: 11400000}
-      ModelProperty: 'K: Size'
-      ThemeProperty: 'K: Card: Main: Size: Pressed'
-    - style: {fileID: 11400000}
-      ModelProperty: 'K: C: Size'
-      ThemeProperty: 'C: Card: Main: Mark'
-    - style: {fileID: 11400000}
-      ModelProperty: 'K: B: Width'
-      ThemeProperty: 'B: Card: Main: Mark'
-    - style: {fileID: 11400000}
-      ModelProperty: 'M: Title: Baseline'
-      ThemeProperty: 'M: Card: Main: Title: Y'
-    - style: {fileID: 11400000}
-      ModelProperty: 'M: Spacing'
-      ThemeProperty: 'M: Card: Main: Spacing'
-    - style: {fileID: 11400000}
-      ModelProperty: 'F: Title'
-      ThemeProperty: 'F: Card: Main: On'
-    - style: {fileID: 11400000}
-      ModelProperty: 'O: Alignment'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'O: Icon: Place'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Width
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Height
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: TopLeft'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: TopRight'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: BottomLeft'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: BottomRight'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'M: X'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'I: Size'
-      ThemeProperty: 
+    - rid: 7896456371668254777
+    - rid: 7896456371668254778
+    - rid: 7896456371668254779
+    - rid: 7896456371668254780
+    - rid: 7896456371668254781
+    - rid: 7896456371668254782
+    - rid: 7896456371668254783
+    - rid: 7896456371668254784
+    - rid: 7896456371668254785
+    - rid: 7896456371668254786
+    - rid: 7896456371668254787
+    - rid: 7896456371668254788
+    - rid: 7896456371668254789
+    - rid: 7896456371668254790
+    - rid: 7896456371668254791
+    - rid: 7896456371668254792
+    - rid: 7896456371668254793
+    - rid: 7896456371668254794
+    - rid: 7896456371668254795
+    - rid: 7896456371668254796
     DictFloats:
       keys:
       - Size
@@ -255,45 +161,33 @@ MonoBehaviour:
       - 'M: X'
       - 'I: Size'
       values:
-      - rid: 7896456248318492705
-      - rid: 7896456248318492706
-      - rid: 7896456248318492707
-      - rid: 7896456248318492708
-      - rid: 7896456248318492709
-      - rid: 7896456248318492710
-      - rid: 7896456248318492711
-      - rid: 7896456248318492712
-      - rid: 7896456248318492713
-      - rid: 7896456248318492714
-      - rid: 7896456248318492715
-      - rid: 7896456248318492716
-      - rid: 7896456248318492717
-      - rid: 7896456248318492718
-      - rid: 7896456248318492719
-      - rid: 7896456248318492720
-      - rid: 7896456248318492721
-      - rid: 7896456248318492722
-      - rid: 7896456248318492723
-      - rid: 7896456248318492724
+      - rid: 7896456371668254777
+      - rid: 7896456371668254778
+      - rid: 7896456371668254779
+      - rid: 7896456371668254780
+      - rid: 7896456371668254781
+      - rid: 7896456371668254782
+      - rid: 7896456371668254783
+      - rid: 7896456371668254784
+      - rid: 7896456371668254785
+      - rid: 7896456371668254786
+      - rid: 7896456371668254787
+      - rid: 7896456371668254788
+      - rid: 7896456371668254789
+      - rid: 7896456371668254790
+      - rid: 7896456371668254791
+      - rid: 7896456371668254792
+      - rid: 7896456371668254793
+      - rid: 7896456371668254794
+      - rid: 7896456371668254795
+      - rid: 7896456371668254796
     colors:
-    - style: {fileID: 11400000}
-      ModelProperty: Background
-      ThemeProperty: 'Bnt: Button: Bkg: NF: Off: Default'
-    - style: {fileID: 11400000}
-      ModelProperty: Border
-      ThemeProperty: 'Bnt: Button: Border: NF: On: Default'
-    - style: {fileID: 11400000}
-      ModelProperty: Mark Background
-      ThemeProperty: 'Bnt: Button: Border: NF: On: Default'
-    - style: {fileID: 11400000}
-      ModelProperty: Mark Border
-      ThemeProperty: 'Bnt: Button: Border: NF: On: Default'
-    - style: {fileID: 11400000}
-      ModelProperty: Title
-      ThemeProperty: 'Card: Main: Title: On: Pressed'
-    - style: {fileID: 11400000}
-      ModelProperty: Icon
-      ThemeProperty: 
+    - rid: 7896456371668254797
+    - rid: 7896456371668254798
+    - rid: 7896456371668254799
+    - rid: 7896456371668254800
+    - rid: 7896456371668254801
+    - rid: 7896456371668254802
     DictColors:
       keys:
       - Background
@@ -303,21 +197,19 @@ MonoBehaviour:
       - Title
       - Icon
       values:
-      - rid: 7896456248318492725
-      - rid: 7896456248318492726
-      - rid: 7896456248318492727
-      - rid: 7896456248318492728
-      - rid: 7896456248318492729
-      - rid: 7896456248318492730
+      - rid: 7896456371668254797
+      - rid: 7896456371668254798
+      - rid: 7896456371668254799
+      - rid: 7896456371668254800
+      - rid: 7896456371668254801
+      - rid: 7896456371668254802
     fonts:
-    - style: {fileID: 11400000}
-      ModelProperty: Title
-      ThemeProperty: 'Card: Main: Title: On'
+    - rid: 7896456371668254803
     DictFonts:
       keys:
       - Title
       values:
-      - rid: 7896456248318492731
+      - rid: 7896456371668254803
     sprites: []
     DictSprites:
       keys: []
@@ -326,66 +218,26 @@ MonoBehaviour:
     index: 2
     style: {fileID: 11400000}
     floats:
-    - style: {fileID: 11400000}
-      ModelProperty: Size
-      ThemeProperty: 'S: Card: Main'
-    - style: {fileID: 11400000}
-      ModelProperty: 'A: Size'
-      ThemeProperty: 'S: Card: Main: Area'
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: Size'
-      ThemeProperty: 'C: Card: Main'
-    - style: {fileID: 11400000}
-      ModelProperty: 'B: Width'
-      ThemeProperty: 'B: Card: Main: Off'
-    - style: {fileID: 11400000}
-      ModelProperty: 'K: Size'
-      ThemeProperty: 'K: Card: Main: Size: Default'
-    - style: {fileID: 11400000}
-      ModelProperty: 'K: C: Size'
-      ThemeProperty: 'C: Card: Main: Mark'
-    - style: {fileID: 11400000}
-      ModelProperty: 'K: B: Width'
-      ThemeProperty: 'B: Card: Main: Mark'
-    - style: {fileID: 11400000}
-      ModelProperty: 'M: Title: Baseline'
-      ThemeProperty: 'M: Card: Main: Title: Y'
-    - style: {fileID: 11400000}
-      ModelProperty: 'M: Spacing'
-      ThemeProperty: 'M: Card: Main: Spacing'
-    - style: {fileID: 11400000}
-      ModelProperty: 'F: Title'
-      ThemeProperty: 'F: Card: Main: Off'
-    - style: {fileID: 11400000}
-      ModelProperty: 'O: Alignment'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'O: Icon: Place'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Width
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Height
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: TopLeft'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: TopRight'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: BottomLeft'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: BottomRight'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'M: X'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'I: Size'
-      ThemeProperty: 
+    - rid: 7896456371668254804
+    - rid: 7896456371668254805
+    - rid: 7896456371668254806
+    - rid: 7896456371668254807
+    - rid: 7896456371668254808
+    - rid: 7896456371668254809
+    - rid: 7896456371668254810
+    - rid: 7896456371668254811
+    - rid: 7896456371668254812
+    - rid: 7896456371668254813
+    - rid: 7896456371668254814
+    - rid: 7896456371668254815
+    - rid: 7896456371668254816
+    - rid: 7896456371668254817
+    - rid: 7896456371668254818
+    - rid: 7896456371668254819
+    - rid: 7896456371668254820
+    - rid: 7896456371668254821
+    - rid: 7896456371668254822
+    - rid: 7896456371668254823
     DictFloats:
       keys:
       - Size
@@ -409,45 +261,33 @@ MonoBehaviour:
       - 'M: X'
       - 'I: Size'
       values:
-      - rid: 7896456248318492732
-      - rid: 7896456248318492733
-      - rid: 7896456248318492734
-      - rid: 7896456248318492735
-      - rid: 7896456248318492736
-      - rid: 7896456248318492737
-      - rid: 7896456248318492738
-      - rid: 7896456248318492739
-      - rid: 7896456248318492740
-      - rid: 7896456248318492741
-      - rid: 7896456248318492742
-      - rid: 7896456248318492743
-      - rid: 7896456248318492744
-      - rid: 7896456248318492745
-      - rid: 7896456248318492746
-      - rid: 7896456248318492747
-      - rid: 7896456248318492748
-      - rid: 7896456248318492749
-      - rid: 7896456248318492750
-      - rid: 7896456248318492751
+      - rid: 7896456371668254804
+      - rid: 7896456371668254805
+      - rid: 7896456371668254806
+      - rid: 7896456371668254807
+      - rid: 7896456371668254808
+      - rid: 7896456371668254809
+      - rid: 7896456371668254810
+      - rid: 7896456371668254811
+      - rid: 7896456371668254812
+      - rid: 7896456371668254813
+      - rid: 7896456371668254814
+      - rid: 7896456371668254815
+      - rid: 7896456371668254816
+      - rid: 7896456371668254817
+      - rid: 7896456371668254818
+      - rid: 7896456371668254819
+      - rid: 7896456371668254820
+      - rid: 7896456371668254821
+      - rid: 7896456371668254822
+      - rid: 7896456371668254823
     colors:
-    - style: {fileID: 11400000}
-      ModelProperty: Background
-      ThemeProperty: 'Bnt: Button: Bkg: NF: Off: Default'
-    - style: {fileID: 11400000}
-      ModelProperty: Border
-      ThemeProperty: 'Card: Main: Border: On: Disabled'
-    - style: {fileID: 11400000}
-      ModelProperty: Mark Background
-      ThemeProperty: 'Card: Main: Mark: Bkg: On: Disabled'
-    - style: {fileID: 11400000}
-      ModelProperty: Mark Border
-      ThemeProperty: 'Card: Main: Mark: Border: On: Disabled'
-    - style: {fileID: 11400000}
-      ModelProperty: Title
-      ThemeProperty: 'Card: Main: Title: On: Disabled'
-    - style: {fileID: 11400000}
-      ModelProperty: Icon
-      ThemeProperty: 
+    - rid: 7896456371668254824
+    - rid: 7896456371668254825
+    - rid: 7896456371668254826
+    - rid: 7896456371668254827
+    - rid: 7896456371668254828
+    - rid: 7896456371668254829
     DictColors:
       keys:
       - Background
@@ -457,21 +297,19 @@ MonoBehaviour:
       - Title
       - Icon
       values:
-      - rid: 7896456248318492752
-      - rid: 7896456248318492753
-      - rid: 7896456248318492754
-      - rid: 7896456248318492755
-      - rid: 7896456248318492756
-      - rid: 7896456248318492757
+      - rid: 7896456371668254824
+      - rid: 7896456371668254825
+      - rid: 7896456371668254826
+      - rid: 7896456371668254827
+      - rid: 7896456371668254828
+      - rid: 7896456371668254829
     fonts:
-    - style: {fileID: 11400000}
-      ModelProperty: Title
-      ThemeProperty: 'Card: Main: Title: Off'
+    - rid: 7896456371668254830
     DictFonts:
       keys:
       - Title
       values:
-      - rid: 7896456248318492758
+      - rid: 7896456371668254830
     sprites: []
     DictSprites:
       keys: []
@@ -479,487 +317,487 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 7896456248318492678
+    - rid: 7896456371668254750
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Size
         ThemeProperty: 'S: Card: Main'
-    - rid: 7896456248318492679
+    - rid: 7896456371668254751
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'A: Size'
         ThemeProperty: 'S: Card: Main: Area'
-    - rid: 7896456248318492680
+    - rid: 7896456371668254752
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: Size'
         ThemeProperty: 'C: Card: Main'
-    - rid: 7896456248318492681
+    - rid: 7896456371668254753
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'B: Width'
         ThemeProperty: 'B: Card: Main: On'
-    - rid: 7896456248318492682
+    - rid: 7896456371668254754
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'K: Size'
         ThemeProperty: 'K: Card: Main: Size: Default'
-    - rid: 7896456248318492683
+    - rid: 7896456371668254755
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'K: C: Size'
         ThemeProperty: 'C: Card: Main: Mark'
-    - rid: 7896456248318492684
+    - rid: 7896456371668254756
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'K: B: Width'
         ThemeProperty: 'B: Card: Main: Mark'
-    - rid: 7896456248318492685
+    - rid: 7896456371668254757
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'M: Title: Baseline'
         ThemeProperty: 'M: Card: Main: Title: Y'
-    - rid: 7896456248318492686
+    - rid: 7896456371668254758
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'M: Spacing'
         ThemeProperty: 'M: Card: Main: Spacing'
-    - rid: 7896456248318492687
+    - rid: 7896456371668254759
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'F: Title'
         ThemeProperty: 'F: Card: Main: On'
-    - rid: 7896456248318492688
+    - rid: 7896456371668254760
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'O: Alignment'
         ThemeProperty: 'O: Card: Main: Alignment'
-    - rid: 7896456248318492689
+    - rid: 7896456371668254761
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'O: Icon: Place'
         ThemeProperty: 'O: Card: Main: Toggle: Place'
-    - rid: 7896456248318492690
+    - rid: 7896456371668254762
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Width
         ThemeProperty: 
-    - rid: 7896456248318492691
+    - rid: 7896456371668254763
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Height
         ThemeProperty: 
-    - rid: 7896456248318492692
+    - rid: 7896456371668254764
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: TopLeft'
         ThemeProperty: 
-    - rid: 7896456248318492693
+    - rid: 7896456371668254765
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: TopRight'
         ThemeProperty: 
-    - rid: 7896456248318492694
+    - rid: 7896456371668254766
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: BottomLeft'
         ThemeProperty: 
-    - rid: 7896456248318492695
+    - rid: 7896456371668254767
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: BottomRight'
         ThemeProperty: 
-    - rid: 7896456248318492696
+    - rid: 7896456371668254768
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'M: X'
         ThemeProperty: 
-    - rid: 7896456248318492697
+    - rid: 7896456371668254769
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'I: Size'
         ThemeProperty: 
-    - rid: 7896456248318492698
+    - rid: 7896456371668254770
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Background
         ThemeProperty: 'Bnt: Button: Bkg: NF: Off: Default'
-    - rid: 7896456248318492699
+    - rid: 7896456371668254771
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Border
         ThemeProperty: 'Bnt: Button: Border: NF: On: Default'
-    - rid: 7896456248318492700
+    - rid: 7896456371668254772
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Mark Background
         ThemeProperty: 'Bnt: Button: Border: NF: On: Default'
-    - rid: 7896456248318492701
+    - rid: 7896456371668254773
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Mark Border
         ThemeProperty: 'Bnt: Button: Border: NF: On: Default'
-    - rid: 7896456248318492702
+    - rid: 7896456371668254774
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Title
         ThemeProperty: 'Card: Main: Title: On: Default'
-    - rid: 7896456248318492703
+    - rid: 7896456371668254775
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Icon
         ThemeProperty: 
-    - rid: 7896456248318492704
+    - rid: 7896456371668254776
       type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Title
         ThemeProperty: 'Card: Main: Title: On'
-    - rid: 7896456248318492705
+    - rid: 7896456371668254777
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Size
         ThemeProperty: 'S: Card: Main'
-    - rid: 7896456248318492706
+    - rid: 7896456371668254778
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'A: Size'
         ThemeProperty: 'S: Card: Main: Area'
-    - rid: 7896456248318492707
+    - rid: 7896456371668254779
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: Size'
         ThemeProperty: 'C: Card: Main'
-    - rid: 7896456248318492708
+    - rid: 7896456371668254780
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'B: Width'
         ThemeProperty: 'B: Card: Main: On'
-    - rid: 7896456248318492709
+    - rid: 7896456371668254781
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'K: Size'
         ThemeProperty: 'K: Card: Main: Size: Pressed'
-    - rid: 7896456248318492710
+    - rid: 7896456371668254782
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'K: C: Size'
         ThemeProperty: 'C: Card: Main: Mark'
-    - rid: 7896456248318492711
+    - rid: 7896456371668254783
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'K: B: Width'
         ThemeProperty: 'B: Card: Main: Mark'
-    - rid: 7896456248318492712
+    - rid: 7896456371668254784
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'M: Title: Baseline'
         ThemeProperty: 'M: Card: Main: Title: Y'
-    - rid: 7896456248318492713
+    - rid: 7896456371668254785
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'M: Spacing'
         ThemeProperty: 'M: Card: Main: Spacing'
-    - rid: 7896456248318492714
+    - rid: 7896456371668254786
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'F: Title'
         ThemeProperty: 'F: Card: Main: On'
-    - rid: 7896456248318492715
+    - rid: 7896456371668254787
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'O: Alignment'
         ThemeProperty: 
-    - rid: 7896456248318492716
+    - rid: 7896456371668254788
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'O: Icon: Place'
         ThemeProperty: 
-    - rid: 7896456248318492717
+    - rid: 7896456371668254789
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Width
         ThemeProperty: 
-    - rid: 7896456248318492718
+    - rid: 7896456371668254790
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Height
         ThemeProperty: 
-    - rid: 7896456248318492719
+    - rid: 7896456371668254791
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: TopLeft'
         ThemeProperty: 
-    - rid: 7896456248318492720
+    - rid: 7896456371668254792
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: TopRight'
         ThemeProperty: 
-    - rid: 7896456248318492721
+    - rid: 7896456371668254793
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: BottomLeft'
         ThemeProperty: 
-    - rid: 7896456248318492722
+    - rid: 7896456371668254794
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: BottomRight'
         ThemeProperty: 
-    - rid: 7896456248318492723
+    - rid: 7896456371668254795
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'M: X'
         ThemeProperty: 
-    - rid: 7896456248318492724
+    - rid: 7896456371668254796
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'I: Size'
         ThemeProperty: 
-    - rid: 7896456248318492725
+    - rid: 7896456371668254797
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Background
         ThemeProperty: 'Bnt: Button: Bkg: NF: Off: Default'
-    - rid: 7896456248318492726
+    - rid: 7896456371668254798
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Border
         ThemeProperty: 'Bnt: Button: Border: NF: On: Default'
-    - rid: 7896456248318492727
+    - rid: 7896456371668254799
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Mark Background
         ThemeProperty: 'Bnt: Button: Border: NF: On: Default'
-    - rid: 7896456248318492728
+    - rid: 7896456371668254800
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Mark Border
         ThemeProperty: 'Bnt: Button: Border: NF: On: Default'
-    - rid: 7896456248318492729
+    - rid: 7896456371668254801
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Title
         ThemeProperty: 'Card: Main: Title: On: Pressed'
-    - rid: 7896456248318492730
+    - rid: 7896456371668254802
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Icon
         ThemeProperty: 
-    - rid: 7896456248318492731
+    - rid: 7896456371668254803
       type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Title
         ThemeProperty: 'Card: Main: Title: On'
-    - rid: 7896456248318492732
+    - rid: 7896456371668254804
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Size
         ThemeProperty: 'S: Card: Main'
-    - rid: 7896456248318492733
+    - rid: 7896456371668254805
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'A: Size'
         ThemeProperty: 'S: Card: Main: Area'
-    - rid: 7896456248318492734
+    - rid: 7896456371668254806
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: Size'
         ThemeProperty: 'C: Card: Main'
-    - rid: 7896456248318492735
+    - rid: 7896456371668254807
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'B: Width'
         ThemeProperty: 'B: Card: Main: Off'
-    - rid: 7896456248318492736
+    - rid: 7896456371668254808
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'K: Size'
         ThemeProperty: 'K: Card: Main: Size: Default'
-    - rid: 7896456248318492737
+    - rid: 7896456371668254809
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'K: C: Size'
         ThemeProperty: 'C: Card: Main: Mark'
-    - rid: 7896456248318492738
+    - rid: 7896456371668254810
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'K: B: Width'
         ThemeProperty: 'B: Card: Main: Mark'
-    - rid: 7896456248318492739
+    - rid: 7896456371668254811
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'M: Title: Baseline'
         ThemeProperty: 'M: Card: Main: Title: Y'
-    - rid: 7896456248318492740
+    - rid: 7896456371668254812
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'M: Spacing'
         ThemeProperty: 'M: Card: Main: Spacing'
-    - rid: 7896456248318492741
+    - rid: 7896456371668254813
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'F: Title'
         ThemeProperty: 'F: Card: Main: Off'
-    - rid: 7896456248318492742
+    - rid: 7896456371668254814
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'O: Alignment'
         ThemeProperty: 
-    - rid: 7896456248318492743
+    - rid: 7896456371668254815
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'O: Icon: Place'
         ThemeProperty: 
-    - rid: 7896456248318492744
+    - rid: 7896456371668254816
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Width
         ThemeProperty: 
-    - rid: 7896456248318492745
+    - rid: 7896456371668254817
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Height
         ThemeProperty: 
-    - rid: 7896456248318492746
+    - rid: 7896456371668254818
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: TopLeft'
         ThemeProperty: 
-    - rid: 7896456248318492747
+    - rid: 7896456371668254819
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: TopRight'
         ThemeProperty: 
-    - rid: 7896456248318492748
+    - rid: 7896456371668254820
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: BottomLeft'
         ThemeProperty: 
-    - rid: 7896456248318492749
+    - rid: 7896456371668254821
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: BottomRight'
         ThemeProperty: 
-    - rid: 7896456248318492750
+    - rid: 7896456371668254822
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'M: X'
         ThemeProperty: 
-    - rid: 7896456248318492751
+    - rid: 7896456371668254823
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'I: Size'
         ThemeProperty: 
-    - rid: 7896456248318492752
+    - rid: 7896456371668254824
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Background
         ThemeProperty: 'Bnt: Button: Bkg: NF: Off: Default'
-    - rid: 7896456248318492753
+    - rid: 7896456371668254825
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Border
         ThemeProperty: 'Card: Main: Border: On: Disabled'
-    - rid: 7896456248318492754
+    - rid: 7896456371668254826
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Mark Background
         ThemeProperty: 'Card: Main: Mark: Bkg: On: Disabled'
-    - rid: 7896456248318492755
+    - rid: 7896456371668254827
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Mark Border
         ThemeProperty: 'Card: Main: Mark: Border: On: Disabled'
-    - rid: 7896456248318492756
+    - rid: 7896456371668254828
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Title
         ThemeProperty: 'Card: Main: Title: On: Disabled'
-    - rid: 7896456248318492757
+    - rid: 7896456371668254829
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Icon
         ThemeProperty: 
-    - rid: 7896456248318492758
+    - rid: 7896456371668254830
       type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}

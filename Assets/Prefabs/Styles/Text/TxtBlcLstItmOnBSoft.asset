@@ -18,42 +18,32 @@ MonoBehaviour:
     index: 0
     style: {fileID: 11400000}
     floats:
-    - style: {fileID: 11400000}
-      ModelProperty: 'F: Text'
-      ThemeProperty: 'Blc: List: Item: Onboarding Soft'
-    - style: {fileID: 11400000}
-      ModelProperty: Width
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Height
-      ThemeProperty: 
+    - rid: 7896456371665371350
+    - rid: 7896456371665371351
+    - rid: 7896456371665371352
     DictFloats:
       keys:
       - 'F: Text'
       - Width
       - Height
       values:
-      - rid: 7896456248315347134
-      - rid: 7896456248315347135
-      - rid: 7896456248315347136
+      - rid: 7896456371665371350
+      - rid: 7896456371665371351
+      - rid: 7896456371665371352
     colors:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'Blc: List: Item: Onboarding Soft'
+    - rid: 7896456371665371353
     DictColors:
       keys:
       - Text
       values:
-      - rid: 7896456248315347137
+      - rid: 7896456371665371353
     fonts:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'Blc: List: Item: Onboarding Soft'
+    - rid: 7896456371665371354
     DictFonts:
       keys:
       - Text
       values:
-      - rid: 7896456248315347138
+      - rid: 7896456371665371354
     sprites: []
     DictSprites:
       keys: []
@@ -61,31 +51,31 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 7896456248315347134
+    - rid: 7896456371665371350
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'F: Text'
         ThemeProperty: 'Blc: List: Item: Onboarding Soft'
-    - rid: 7896456248315347135
+    - rid: 7896456371665371351
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Width
         ThemeProperty: 
-    - rid: 7896456248315347136
+    - rid: 7896456371665371352
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Height
         ThemeProperty: 
-    - rid: 7896456248315347137
+    - rid: 7896456371665371353
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Text
         ThemeProperty: 'Blc: List: Item: Onboarding Soft'
-    - rid: 7896456248315347138
+    - rid: 7896456371665371354
       type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}

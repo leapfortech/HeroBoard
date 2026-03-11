@@ -18,42 +18,32 @@ MonoBehaviour:
     index: 0
     style: {fileID: 11400000}
     floats:
-    - style: {fileID: 11400000}
-      ModelProperty: 'F: Text'
-      ThemeProperty: 'Blc: Home: Footnote'
-    - style: {fileID: 11400000}
-      ModelProperty: Width
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Height
-      ThemeProperty: 
+    - rid: 7896456371665371310
+    - rid: 7896456371665371311
+    - rid: 7896456371665371312
     DictFloats:
       keys:
       - 'F: Text'
       - Width
       - Height
       values:
-      - rid: 7896456248315347094
-      - rid: 7896456248315347095
-      - rid: 7896456248315347096
+      - rid: 7896456371665371310
+      - rid: 7896456371665371311
+      - rid: 7896456371665371312
     colors:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'Blc: Home: Footnote'
+    - rid: 7896456371665371313
     DictColors:
       keys:
       - Text
       values:
-      - rid: 7896456248315347097
+      - rid: 7896456371665371313
     fonts:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'Blc: Home: Footnote'
+    - rid: 7896456371665371314
     DictFonts:
       keys:
       - Text
       values:
-      - rid: 7896456248315347098
+      - rid: 7896456371665371314
     sprites: []
     DictSprites:
       keys: []
@@ -61,31 +51,31 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 7896456248315347094
+    - rid: 7896456371665371310
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'F: Text'
         ThemeProperty: 'Blc: Home: Footnote'
-    - rid: 7896456248315347095
+    - rid: 7896456371665371311
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Width
         ThemeProperty: 
-    - rid: 7896456248315347096
+    - rid: 7896456371665371312
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Height
         ThemeProperty: 
-    - rid: 7896456248315347097
+    - rid: 7896456371665371313
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Text
         ThemeProperty: 'Blc: Home: Footnote'
-    - rid: 7896456248315347098
+    - rid: 7896456371665371314
       type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}

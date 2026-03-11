@@ -18,42 +18,32 @@ MonoBehaviour:
     index: 0
     style: {fileID: 11400000}
     floats:
-    - style: {fileID: 11400000}
-      ModelProperty: 'F: Text'
-      ThemeProperty: Subtitle
-    - style: {fileID: 11400000}
-      ModelProperty: Width
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Height
-      ThemeProperty: 
+    - rid: 7896456371665371375
+    - rid: 7896456371665371376
+    - rid: 7896456371665371377
     DictFloats:
       keys:
       - 'F: Text'
       - Width
       - Height
       values:
-      - rid: 7896456248315347159
-      - rid: 7896456248315347160
-      - rid: 7896456248315347161
+      - rid: 7896456371665371375
+      - rid: 7896456371665371376
+      - rid: 7896456371665371377
     colors:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'Hpb: Title: Hpb'
+    - rid: 7896456371665371378
     DictColors:
       keys:
       - Text
       values:
-      - rid: 7896456248315347162
+      - rid: 7896456371665371378
     fonts:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: Subtitle
+    - rid: 7896456371665371379
     DictFonts:
       keys:
       - Text
       values:
-      - rid: 7896456248315347163
+      - rid: 7896456371665371379
     sprites: []
     DictSprites:
       keys: []
@@ -61,31 +51,31 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 7896456248315347159
+    - rid: 7896456371665371375
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'F: Text'
         ThemeProperty: Subtitle
-    - rid: 7896456248315347160
+    - rid: 7896456371665371376
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Width
         ThemeProperty: 
-    - rid: 7896456248315347161
+    - rid: 7896456371665371377
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Height
         ThemeProperty: 
-    - rid: 7896456248315347162
+    - rid: 7896456371665371378
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Text
         ThemeProperty: 'Hpb: Title: Hpb'
-    - rid: 7896456248315347163
+    - rid: 7896456371665371379
       type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}

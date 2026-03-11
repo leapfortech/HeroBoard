@@ -18,42 +18,32 @@ MonoBehaviour:
     index: 0
     style: {fileID: 11400000}
     floats:
-    - style: {fileID: 11400000}
-      ModelProperty: 'F: Text'
-      ThemeProperty: 'Blc: CashOut: Pace'
-    - style: {fileID: 11400000}
-      ModelProperty: Width
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Height
-      ThemeProperty: 
+    - rid: 7896456371665371265
+    - rid: 7896456371665371266
+    - rid: 7896456371665371267
     DictFloats:
       keys:
       - 'F: Text'
       - Width
       - Height
       values:
-      - rid: 7896456248315347049
-      - rid: 7896456248315347050
-      - rid: 7896456248315347051
+      - rid: 7896456371665371265
+      - rid: 7896456371665371266
+      - rid: 7896456371665371267
     colors:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'Blc: CashOut: Pace'
+    - rid: 7896456371665371268
     DictColors:
       keys:
       - Text
       values:
-      - rid: 7896456248315347052
+      - rid: 7896456371665371268
     fonts:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'Blc: CashOut: Pace'
+    - rid: 7896456371665371269
     DictFonts:
       keys:
       - Text
       values:
-      - rid: 7896456248315347053
+      - rid: 7896456371665371269
     sprites: []
     DictSprites:
       keys: []
@@ -61,31 +51,31 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 7896456248315347049
+    - rid: 7896456371665371265
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'F: Text'
         ThemeProperty: 'Blc: CashOut: Pace'
-    - rid: 7896456248315347050
+    - rid: 7896456371665371266
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Width
         ThemeProperty: 
-    - rid: 7896456248315347051
+    - rid: 7896456371665371267
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Height
         ThemeProperty: 
-    - rid: 7896456248315347052
+    - rid: 7896456371665371268
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Text
         ThemeProperty: 'Blc: CashOut: Pace'
-    - rid: 7896456248315347053
+    - rid: 7896456371665371269
       type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}

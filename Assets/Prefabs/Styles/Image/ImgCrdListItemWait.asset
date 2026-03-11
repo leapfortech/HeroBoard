@@ -18,30 +18,14 @@ MonoBehaviour:
     index: 0
     style: {fileID: 11400000}
     floats:
-    - style: {fileID: 11400000}
-      ModelProperty: 'O: Oversize'
-      ThemeProperty: 'O: Oversize'
-    - style: {fileID: 11400000}
-      ModelProperty: 'B: Width'
-      ThemeProperty: 'B: Card: List: Item: Bkg'
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: TopLeft'
-      ThemeProperty: 'C: Card: List: Item: Bkg: TopLeft'
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: TopRight'
-      ThemeProperty: 'C: Card: List: Item: Bkg: TopRight'
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: BottomLeft'
-      ThemeProperty: 'C: Card: List: Item: Bkg: BottomLeft'
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: BottomRight'
-      ThemeProperty: 'C: Card: List: Item: Bkg: BottomRight'
-    - style: {fileID: 11400000}
-      ModelProperty: Height
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Width
-      ThemeProperty: 
+    - rid: 7896456371663536251
+    - rid: 7896456371663536252
+    - rid: 7896456371663536253
+    - rid: 7896456371663536254
+    - rid: 7896456371663536255
+    - rid: 7896456371663536256
+    - rid: 7896456371663536257
+    - rid: 7896456371663536258
     DictFloats:
       keys:
       - 'O: Oversize'
@@ -53,116 +37,108 @@ MonoBehaviour:
       - Height
       - Width
       values:
-      - rid: 7896456248313249891
-      - rid: 7896456248313249892
-      - rid: 7896456248313249893
-      - rid: 7896456248313249894
-      - rid: 7896456248313249895
-      - rid: 7896456248313249896
-      - rid: 7896456248313249897
-      - rid: 7896456248313249898
+      - rid: 7896456371663536251
+      - rid: 7896456371663536252
+      - rid: 7896456371663536253
+      - rid: 7896456371663536254
+      - rid: 7896456371663536255
+      - rid: 7896456371663536256
+      - rid: 7896456371663536257
+      - rid: 7896456371663536258
     colors:
-    - style: {fileID: 11400000}
-      ModelProperty: Color
-      ThemeProperty: 'Panel: Overlay: Warning'
-    - style: {fileID: 11400000}
-      ModelProperty: Border
-      ThemeProperty: 'Card: List: Item: Bkg: Border'
+    - rid: 7896456371663536259
+    - rid: 7896456371663536260
     DictColors:
       keys:
       - Color
       - Border
       values:
-      - rid: 7896456248313249899
-      - rid: 7896456248313249900
+      - rid: 7896456371663536259
+      - rid: 7896456371663536260
     fonts: []
     DictFonts:
       keys: []
       values: []
     sprites:
-    - style: {fileID: 11400000}
-      ModelProperty: Sprite
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Empty
-      ThemeProperty: 
+    - rid: 7896456371663536261
+    - rid: 7896456371663536262
     DictSprites:
       keys:
       - Sprite
       - Empty
       values:
-      - rid: 7896456248313249901
-      - rid: 7896456248313249902
+      - rid: 7896456371663536261
+      - rid: 7896456371663536262
   references:
     version: 2
     RefIds:
-    - rid: 7896456248313249891
+    - rid: 7896456371663536251
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'O: Oversize'
         ThemeProperty: 'O: Oversize'
-    - rid: 7896456248313249892
+    - rid: 7896456371663536252
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'B: Width'
         ThemeProperty: 'B: Card: List: Item: Bkg'
-    - rid: 7896456248313249893
+    - rid: 7896456371663536253
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: TopLeft'
         ThemeProperty: 'C: Card: List: Item: Bkg: TopLeft'
-    - rid: 7896456248313249894
+    - rid: 7896456371663536254
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: TopRight'
         ThemeProperty: 'C: Card: List: Item: Bkg: TopRight'
-    - rid: 7896456248313249895
+    - rid: 7896456371663536255
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: BottomLeft'
         ThemeProperty: 'C: Card: List: Item: Bkg: BottomLeft'
-    - rid: 7896456248313249896
+    - rid: 7896456371663536256
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: BottomRight'
         ThemeProperty: 'C: Card: List: Item: Bkg: BottomRight'
-    - rid: 7896456248313249897
+    - rid: 7896456371663536257
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Height
         ThemeProperty: 
-    - rid: 7896456248313249898
+    - rid: 7896456371663536258
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Width
         ThemeProperty: 
-    - rid: 7896456248313249899
+    - rid: 7896456371663536259
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Color
         ThemeProperty: 'Panel: Overlay: Warning'
-    - rid: 7896456248313249900
+    - rid: 7896456371663536260
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Border
         ThemeProperty: 'Card: List: Item: Bkg: Border'
-    - rid: 7896456248313249901
+    - rid: 7896456371663536261
       type: {class: StylePropertySprite, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Sprite
         ThemeProperty: 
-    - rid: 7896456248313249902
+    - rid: 7896456371663536262
       type: {class: StylePropertySprite, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}

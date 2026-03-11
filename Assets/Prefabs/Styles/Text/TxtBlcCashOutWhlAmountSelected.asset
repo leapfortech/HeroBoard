@@ -18,42 +18,32 @@ MonoBehaviour:
     index: 0
     style: {fileID: 11400000}
     floats:
-    - style: {fileID: 11400000}
-      ModelProperty: 'F: Text'
-      ThemeProperty: 'Blc: CashOut: Wheel: Amount: Selected'
-    - style: {fileID: 11400000}
-      ModelProperty: Width
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Height
-      ThemeProperty: 
+    - rid: 7896456371665371295
+    - rid: 7896456371665371296
+    - rid: 7896456371665371297
     DictFloats:
       keys:
       - 'F: Text'
       - Width
       - Height
       values:
-      - rid: 7896456248315347079
-      - rid: 7896456248315347080
-      - rid: 7896456248315347081
+      - rid: 7896456371665371295
+      - rid: 7896456371665371296
+      - rid: 7896456371665371297
     colors:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'Blc: CashOut: Wheel: Item: Selected'
+    - rid: 7896456371665371298
     DictColors:
       keys:
       - Text
       values:
-      - rid: 7896456248315347082
+      - rid: 7896456371665371298
     fonts:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'Blc: CashOut: Wheel: Item: Selected'
+    - rid: 7896456371665371299
     DictFonts:
       keys:
       - Text
       values:
-      - rid: 7896456248315347083
+      - rid: 7896456371665371299
     sprites: []
     DictSprites:
       keys: []
@@ -61,31 +51,31 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 7896456248315347079
+    - rid: 7896456371665371295
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'F: Text'
         ThemeProperty: 'Blc: CashOut: Wheel: Amount: Selected'
-    - rid: 7896456248315347080
+    - rid: 7896456371665371296
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Width
         ThemeProperty: 
-    - rid: 7896456248315347081
+    - rid: 7896456371665371297
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Height
         ThemeProperty: 
-    - rid: 7896456248315347082
+    - rid: 7896456371665371298
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Text
         ThemeProperty: 'Blc: CashOut: Wheel: Item: Selected'
-    - rid: 7896456248315347083
+    - rid: 7896456371665371299
       type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}

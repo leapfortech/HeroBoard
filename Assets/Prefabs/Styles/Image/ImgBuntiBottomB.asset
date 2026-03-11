@@ -18,30 +18,14 @@ MonoBehaviour:
     index: 0
     style: {fileID: 11400000}
     floats:
-    - style: {fileID: 11400000}
-      ModelProperty: 'O: Oversize'
-      ThemeProperty: 'O: Oversize'
-    - style: {fileID: 11400000}
-      ModelProperty: 'B: Width'
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: TopLeft'
-      ThemeProperty: 'Bunti: C: Card: C: Bottom'
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: TopRight'
-      ThemeProperty: 'Bunti: C: Card: C: Bottom'
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: BottomLeft'
-      ThemeProperty: 'Bunti: C: Card: C: Top'
-    - style: {fileID: 11400000}
-      ModelProperty: 'C: BottomRight'
-      ThemeProperty: 'Bunti: C: Card: C: Top'
-    - style: {fileID: 11400000}
-      ModelProperty: Height
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Width
-      ThemeProperty: 'W: Page: Card: Bottom'
+    - rid: 7896456371663536191
+    - rid: 7896456371663536192
+    - rid: 7896456371663536193
+    - rid: 7896456371663536194
+    - rid: 7896456371663536195
+    - rid: 7896456371663536196
+    - rid: 7896456371663536197
+    - rid: 7896456371663536198
     DictFloats:
       keys:
       - 'O: Oversize'
@@ -53,116 +37,108 @@ MonoBehaviour:
       - Height
       - Width
       values:
-      - rid: 7896456248313249831
-      - rid: 7896456248313249832
-      - rid: 7896456248313249833
-      - rid: 7896456248313249834
-      - rid: 7896456248313249835
-      - rid: 7896456248313249836
-      - rid: 7896456248313249837
-      - rid: 7896456248313249838
+      - rid: 7896456371663536191
+      - rid: 7896456371663536192
+      - rid: 7896456371663536193
+      - rid: 7896456371663536194
+      - rid: 7896456371663536195
+      - rid: 7896456371663536196
+      - rid: 7896456371663536197
+      - rid: 7896456371663536198
     colors:
-    - style: {fileID: 11400000}
-      ModelProperty: Color
-      ThemeProperty: 'Bunti: Bkg: A'
-    - style: {fileID: 11400000}
-      ModelProperty: Border
-      ThemeProperty: 'Bunti: Border: A'
+    - rid: 7896456371663536199
+    - rid: 7896456371663536200
     DictColors:
       keys:
       - Color
       - Border
       values:
-      - rid: 7896456248313249839
-      - rid: 7896456248313249840
+      - rid: 7896456371663536199
+      - rid: 7896456371663536200
     fonts: []
     DictFonts:
       keys: []
       values: []
     sprites:
-    - style: {fileID: 11400000}
-      ModelProperty: Sprite
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Empty
-      ThemeProperty: 
+    - rid: 7896456371663536201
+    - rid: 7896456371663536202
     DictSprites:
       keys:
       - Sprite
       - Empty
       values:
-      - rid: 7896456248313249841
-      - rid: 7896456248313249842
+      - rid: 7896456371663536201
+      - rid: 7896456371663536202
   references:
     version: 2
     RefIds:
-    - rid: 7896456248313249831
+    - rid: 7896456371663536191
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'O: Oversize'
         ThemeProperty: 'O: Oversize'
-    - rid: 7896456248313249832
+    - rid: 7896456371663536192
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'B: Width'
         ThemeProperty: 
-    - rid: 7896456248313249833
+    - rid: 7896456371663536193
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: TopLeft'
         ThemeProperty: 'Bunti: C: Card: C: Bottom'
-    - rid: 7896456248313249834
+    - rid: 7896456371663536194
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: TopRight'
         ThemeProperty: 'Bunti: C: Card: C: Bottom'
-    - rid: 7896456248313249835
+    - rid: 7896456371663536195
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: BottomLeft'
         ThemeProperty: 'Bunti: C: Card: C: Top'
-    - rid: 7896456248313249836
+    - rid: 7896456371663536196
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'C: BottomRight'
         ThemeProperty: 'Bunti: C: Card: C: Top'
-    - rid: 7896456248313249837
+    - rid: 7896456371663536197
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Height
         ThemeProperty: 
-    - rid: 7896456248313249838
+    - rid: 7896456371663536198
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Width
         ThemeProperty: 'W: Page: Card: Bottom'
-    - rid: 7896456248313249839
+    - rid: 7896456371663536199
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Color
         ThemeProperty: 'Bunti: Bkg: A'
-    - rid: 7896456248313249840
+    - rid: 7896456371663536200
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Border
         ThemeProperty: 'Bunti: Border: A'
-    - rid: 7896456248313249841
+    - rid: 7896456371663536201
       type: {class: StylePropertySprite, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Sprite
         ThemeProperty: 
-    - rid: 7896456248313249842
+    - rid: 7896456371663536202
       type: {class: StylePropertySprite, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}

@@ -18,42 +18,32 @@ MonoBehaviour:
     index: 0
     style: {fileID: 11400000}
     floats:
-    - style: {fileID: 11400000}
-      ModelProperty: 'F: Text'
-      ThemeProperty: 'Blc: Home: Major: Disabled'
-    - style: {fileID: 11400000}
-      ModelProperty: Width
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Height
-      ThemeProperty: 
+    - rid: 7896456371665371330
+    - rid: 7896456371665371331
+    - rid: 7896456371665371332
     DictFloats:
       keys:
       - 'F: Text'
       - Width
       - Height
       values:
-      - rid: 7896456248315347114
-      - rid: 7896456248315347115
-      - rid: 7896456248315347116
+      - rid: 7896456371665371330
+      - rid: 7896456371665371331
+      - rid: 7896456371665371332
     colors:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'Blc: Home: Major: Disabled'
+    - rid: 7896456371665371333
     DictColors:
       keys:
       - Text
       values:
-      - rid: 7896456248315347117
+      - rid: 7896456371665371333
     fonts:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'Blc: Home: Major: Disabled'
+    - rid: 7896456371665371334
     DictFonts:
       keys:
       - Text
       values:
-      - rid: 7896456248315347118
+      - rid: 7896456371665371334
     sprites: []
     DictSprites:
       keys: []
@@ -61,31 +51,31 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 7896456248315347114
+    - rid: 7896456371665371330
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'F: Text'
         ThemeProperty: 'Blc: Home: Major: Disabled'
-    - rid: 7896456248315347115
+    - rid: 7896456371665371331
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Width
         ThemeProperty: 
-    - rid: 7896456248315347116
+    - rid: 7896456371665371332
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Height
         ThemeProperty: 
-    - rid: 7896456248315347117
+    - rid: 7896456371665371333
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Text
         ThemeProperty: 'Blc: Home: Major: Disabled'
-    - rid: 7896456248315347118
+    - rid: 7896456371665371334
       type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}

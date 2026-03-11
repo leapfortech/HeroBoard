@@ -18,42 +18,32 @@ MonoBehaviour:
     index: 0
     style: {fileID: 11400000}
     floats:
-    - style: {fileID: 11400000}
-      ModelProperty: 'F: Text'
-      ThemeProperty: 'F: App: Version'
-    - style: {fileID: 11400000}
-      ModelProperty: Width
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Height
-      ThemeProperty: 
+    - rid: 7896456371663537136
+    - rid: 7896456371663537137
+    - rid: 7896456371663537138
     DictFloats:
       keys:
       - 'F: Text'
       - Width
       - Height
       values:
-      - rid: 7896456248313250776
-      - rid: 7896456248313250777
-      - rid: 7896456248313250778
+      - rid: 7896456371663537136
+      - rid: 7896456371663537137
+      - rid: 7896456371663537138
     colors:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'App: Version'
+    - rid: 7896456371663537139
     DictColors:
       keys:
       - Text
       values:
-      - rid: 7896456248313250779
+      - rid: 7896456371663537139
     fonts:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'App: Version'
+    - rid: 7896456371663537140
     DictFonts:
       keys:
       - Text
       values:
-      - rid: 7896456248313250780
+      - rid: 7896456371663537140
     sprites: []
     DictSprites:
       keys: []
@@ -61,31 +51,31 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 7896456248313250776
+    - rid: 7896456371663537136
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'F: Text'
         ThemeProperty: 'F: App: Version'
-    - rid: 7896456248313250777
+    - rid: 7896456371663537137
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Width
         ThemeProperty: 
-    - rid: 7896456248313250778
+    - rid: 7896456371663537138
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Height
         ThemeProperty: 
-    - rid: 7896456248313250779
+    - rid: 7896456371663537139
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Text
         ThemeProperty: 'App: Version'
-    - rid: 7896456248313250780
+    - rid: 7896456371663537140
       type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}

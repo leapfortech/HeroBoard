@@ -18,42 +18,32 @@ MonoBehaviour:
     index: 0
     style: {fileID: 11400000}
     floats:
-    - style: {fileID: 11400000}
-      ModelProperty: 'F: Text'
-      ThemeProperty: 'Card: Wheel: Item: Selected'
-    - style: {fileID: 11400000}
-      ModelProperty: Width
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Height
-      ThemeProperty: 
+    - rid: 7896456371665371365
+    - rid: 7896456371665371366
+    - rid: 7896456371665371367
     DictFloats:
       keys:
       - 'F: Text'
       - Width
       - Height
       values:
-      - rid: 7896456248315347149
-      - rid: 7896456248315347150
-      - rid: 7896456248315347151
+      - rid: 7896456371665371365
+      - rid: 7896456371665371366
+      - rid: 7896456371665371367
     colors:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'Card: Wheel: Item: Selected'
+    - rid: 7896456371665371368
     DictColors:
       keys:
       - Text
       values:
-      - rid: 7896456248315347152
+      - rid: 7896456371665371368
     fonts:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'Card: Wheel: Item: Selected'
+    - rid: 7896456371665371369
     DictFonts:
       keys:
       - Text
       values:
-      - rid: 7896456248315347153
+      - rid: 7896456371665371369
     sprites: []
     DictSprites:
       keys: []
@@ -61,31 +51,31 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 7896456248315347149
+    - rid: 7896456371665371365
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'F: Text'
         ThemeProperty: 'Card: Wheel: Item: Selected'
-    - rid: 7896456248315347150
+    - rid: 7896456371665371366
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Width
         ThemeProperty: 
-    - rid: 7896456248315347151
+    - rid: 7896456371665371367
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Height
         ThemeProperty: 
-    - rid: 7896456248315347152
+    - rid: 7896456371665371368
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Text
         ThemeProperty: 'Card: Wheel: Item: Selected'
-    - rid: 7896456248315347153
+    - rid: 7896456371665371369
       type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}

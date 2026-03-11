@@ -163,20 +163,24 @@ PrefabInstance:
       value: 0.6313726
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
+      propertyPath: m_OutlineWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239635718222987032, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
       propertyPath: m_RectangleCornerRadius.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
       propertyPath: m_RectangleCornerRadius.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
       propertyPath: m_RectangleCornerRadius.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
       propertyPath: m_RectangleCornerRadius.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

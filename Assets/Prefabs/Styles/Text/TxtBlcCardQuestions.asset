@@ -18,42 +18,32 @@ MonoBehaviour:
     index: 0
     style: {fileID: 11400000}
     floats:
-    - style: {fileID: 11400000}
-      ModelProperty: 'F: Text'
-      ThemeProperty: 'Blc: Card: Questions'
-    - style: {fileID: 11400000}
-      ModelProperty: Width
-      ThemeProperty: 
-    - style: {fileID: 11400000}
-      ModelProperty: Height
-      ThemeProperty: 
+    - rid: 7896456371665371245
+    - rid: 7896456371665371246
+    - rid: 7896456371665371247
     DictFloats:
       keys:
       - 'F: Text'
       - Width
       - Height
       values:
-      - rid: 7896456248315347029
-      - rid: 7896456248315347030
-      - rid: 7896456248315347031
+      - rid: 7896456371665371245
+      - rid: 7896456371665371246
+      - rid: 7896456371665371247
     colors:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'Blc: Card: Questions'
+    - rid: 7896456371665371248
     DictColors:
       keys:
       - Text
       values:
-      - rid: 7896456248315347032
+      - rid: 7896456371665371248
     fonts:
-    - style: {fileID: 11400000}
-      ModelProperty: Text
-      ThemeProperty: 'Blc: Card: Questions'
+    - rid: 7896456371665371249
     DictFonts:
       keys:
       - Text
       values:
-      - rid: 7896456248315347033
+      - rid: 7896456371665371249
     sprites: []
     DictSprites:
       keys: []
@@ -61,31 +51,31 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 7896456248315347029
+    - rid: 7896456371665371245
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: 'F: Text'
         ThemeProperty: 'Blc: Card: Questions'
-    - rid: 7896456248315347030
+    - rid: 7896456371665371246
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Width
         ThemeProperty: 
-    - rid: 7896456248315347031
+    - rid: 7896456371665371247
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Height
         ThemeProperty: 
-    - rid: 7896456248315347032
+    - rid: 7896456371665371248
       type: {class: StylePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Text
         ThemeProperty: 'Blc: Card: Questions'
-    - rid: 7896456248315347033
+    - rid: 7896456371665371249
       type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
