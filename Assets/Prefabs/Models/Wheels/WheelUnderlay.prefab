@@ -130,19 +130,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: c3f0d76cb59db894a838a3c1428e119f, type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0.14901961
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: c3f0d76cb59db894a838a3c1428e119f, type: 3}
       propertyPath: m_Color.b
-      value: 0.8745098
+      value: 0.2901961
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: c3f0d76cb59db894a838a3c1428e119f, type: 3}
       propertyPath: m_Color.g
-      value: 0.8784314
+      value: 0.7058824
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: c3f0d76cb59db894a838a3c1428e119f, type: 3}
       propertyPath: m_Color.r
-      value: 0.88235295
+      value: 0.96862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239635718222987032, guid: c3f0d76cb59db894a838a3c1428e119f, type: 3}
+      propertyPath: m_OutlineWidth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: c3f0d76cb59db894a838a3c1428e119f, type: 3}
       propertyPath: m_OutlineColor.b

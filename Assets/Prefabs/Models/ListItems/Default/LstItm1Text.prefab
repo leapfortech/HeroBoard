@@ -105,7 +105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 82dab54e5336f1d4ca787b8742acccd9, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 120
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 82dab54e5336f1d4ca787b8742acccd9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -901,7 +901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896361883356, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 120
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896361883356, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
       propertyPath: m_LocalPosition.x
@@ -961,14 +961,18 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 6b96d6950a9c30743a2e826ee8684ac4, type: 3}
     - target: {fileID: 5239635718222987032, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.92941177
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.92156863
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
       propertyPath: m_Color.r
+      value: 0.91764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239635718222987032, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
+      propertyPath: m_OutlineWidth
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
@@ -981,19 +985,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
       propertyPath: m_RectangleCornerRadius.w
-      value: 160
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
       propertyPath: m_RectangleCornerRadius.x
-      value: 160
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
       propertyPath: m_RectangleCornerRadius.y
-      value: 160
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: 597e82e429f0b94449ce14c6b6d39050, type: 3}
       propertyPath: m_RectangleCornerRadius.z
-      value: 160
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
