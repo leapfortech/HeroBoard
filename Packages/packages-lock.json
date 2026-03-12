@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.lefortech.core.debug": {
-      "version": "https://github.com/leapfortech/LeapCoreDebug.git#1.0.0",
+      "version": "https://github.com/leapfortech/LeapCoreDebug.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -78,7 +78,7 @@
       "hash": "36ca3b2f943194068f2b649cdb990b681aa69b14"
     },
     "com.lefortech.graphics.collections": {
-      "version": "https://github.com/leapfortech/LeapGraphicsCollections.git#1.0.0",
+      "version": "https://github.com/leapfortech/LeapGraphicsCollections.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -86,10 +86,10 @@
         "com.lefortech.graphics.tools": "https://github.com/leapfortech/LeapGraphicsTools.git",
         "com.lefortech.data.collections": "https://github.com/leapfortech/LeapDataCollections.git"
       },
-      "hash": "6a57dda57048b18986ab456f3e5113dc6d5efc63"
+      "hash": "b744157ccc41c6dcef42c6ebabd47f2bc76ae17f"
     },
     "com.lefortech.graphics.tools": {
-      "version": "https://github.com/leapfortech/LeapGraphicsTools.git#1.2.2",
+      "version": "https://github.com/leapfortech/LeapGraphicsTools.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
