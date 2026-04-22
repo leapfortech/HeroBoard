@@ -262,116 +262,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IcnDlgClose
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 282
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 985fdf9bca1cb13f0800000000000000
-      internalID: -928935950522911351
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcnDlgCombo
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 282
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 305662e7ac2a635e0800000000000000
-      internalID: -1930176399698139901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcnCrdClose
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 194
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 962dd5615deefd440800000000000000
-      internalID: 4962947913356268137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcnCrdHelp
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 194
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8462e04e34925bb0800000000000000
-      internalID: -4948730045429291890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcnCrdMore
-      rect:
-        serializedVersion: 2
-        x: 174
-        y: 194
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6752370c80416caa0800000000000000
-      internalID: -6141199014052027018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: IcnCrdCombo
       rect:
         serializedVersion: 2
@@ -438,28 +328,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IcnHelp
-      rect:
-        serializedVersion: 2
-        x: 174
-        y: 106
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8508cfe26815005d0800000000000000
-      internalID: -3098386906875133864
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: IcnCombo
       rect:
         serializedVersion: 2
@@ -477,28 +345,6 @@ TextureImporter:
       bones: []
       spriteID: ad68c04c9dbfa3f70800000000000000
       internalID: 9167916904181696218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcnNext
-      rect:
-        serializedVersion: 2
-        x: 346
-        y: 106
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0b07e9ed32958a00800000000000000
-      internalID: 758172906896689930
       vertices: []
       indices: 
       edges: []
@@ -526,7 +372,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IcnNotifications
+      name: IcnWhatsApp
       rect:
         serializedVersion: 2
         x: 104
@@ -548,7 +394,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IcnSandwich
+      name: IcnSdw
       rect:
         serializedVersion: 2
         x: 206
@@ -570,101 +416,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IcnDlgCalendarUp
+      name: IcnLogout
       rect:
         serializedVersion: 2
-        x: 174
-        y: 282
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fe5f3de916b4b1b0800000000000000
-      internalID: -5641684210717597964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcnDlgCalendarDown
-      rect:
-        serializedVersion: 2
-        x: 260
-        y: 282
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 259eb1aa74e9619f0800000000000000
-      internalID: -498036678144038574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcnDlgCalendarMore
-      rect:
-        serializedVersion: 2
-        x: 346
-        y: 282
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7afba4279fbf49e90800000000000000
-      internalID: -7019708870380830809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcnForward
-      rect:
-        serializedVersion: 2
-        x: 346
-        y: 194
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fdf809341ff258341b295b94b2f6d1d9
-      internalID: 702150948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcnCrdTrash
-      rect:
-        serializedVersion: 2
-        x: 260
+        x: 262
         y: 370
-        width: 84
-        height: 84
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -673,30 +431,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6842ce3f945c9144b03f3b6f4e55fd8
-      internalID: -1702373267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcnStdA_1
-      rect:
-        serializedVersion: 2
-        x: 346
-        y: 370
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d796ccd97fb750f4a9922f7f1c582cdb
-      internalID: -1250368355
+      spriteID: a766fcd3688421d44b2fefdafcaea0ce
+      internalID: 1286467999
       vertices: []
       indices: 
       edges: []
@@ -724,20 +460,20 @@ TextureImporter:
       IcnCrdCombo: 7390322643690234451
       IcnCrdHelp: -4948730045429291890
       IcnCrdMore: -6141199014052027018
-      IcnCrdTrash: -1702373267
-      IcnDlgCalendarDown: -498036678144038574
       IcnDlgCalendarMore: -7019708870380830809
       IcnDlgCalendarUp: -5641684210717597964
       IcnDlgClose: -928935950522911351
       IcnDlgCombo: -1930176399698139901
-      IcnForward: 702150948
       IcnHelp: -3098386906875133864
       IcnHome: 5265411331539666565
+      IcnHomeNotification: 758172906896689930
+      IcnHomePres: 1531134420
+      IcnHomeProjects: -498036678144038574
       IcnHrdBack: -8766130645902694012
-      IcnNext: 758172906896689930
-      IcnNotifications: -2080969668547338783
-      IcnSandwich: -6039079115491458498
-      IcnStdA_1: -1250368355
+      IcnLogout: 1286467999
+      IcnSdw: -6039079115491458498
+      IcnSdwPres: 362222042
+      IcnWhatsApp: -2080969668547338783
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
