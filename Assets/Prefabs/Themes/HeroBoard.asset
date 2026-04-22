@@ -530,6 +530,15 @@ MonoBehaviour:
         Reference: 1
         Value: 0
         Property: 'Area: Slim'
+    - rid: 6444590012555329968
+      type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197126
+        Name: 'HM: W: Dialog: List : Scroller'
+        Reference: 0
+        Value: 560
+        Property: 
     - rid: 7896456370744197125
       type: {class: ThemeElement, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -2011,6 +2020,7 @@ MonoBehaviour:
         - rid: 6168643361070645547
         - rid: 6168643444634289146
         - rid: 6168643444634289147
+        - rid: 6444590012555329968
         DictFloats:
           keys:
           - 'W: FullScreen'
@@ -2687,6 +2697,7 @@ MonoBehaviour:
           - 'B: Lst: Nav: Pressed'
           - 'W: Small: Area'
           - 'H: Small: Area'
+          - 'HM: W: Dialog: List : Scroller'
           values:
           - rid: 7896456370744197400
           - rid: 7896456370744197401
@@ -3362,6 +3373,7 @@ MonoBehaviour:
           - rid: 6168643361070645547
           - rid: 6168643444634289146
           - rid: 6168643444634289147
+          - rid: 6444590012555329968
         colors:
         - rid: 7896456370744198068
         - rid: 7896456370744198069
@@ -13365,7 +13377,7 @@ MonoBehaviour:
           rid: 7896456370744197125
         Name: 'Corner: Arched'
         Reference: 0
-        Value: 29
+        Value: 30
         Property: 
     - rid: 7896456370744197185
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -15669,7 +15681,7 @@ MonoBehaviour:
           rid: 7896456370744197126
         Name: 'W: Dialog'
         Reference: 1
-        Value: 856
+        Value: 560
         Property: 'Text: Card'
     - rid: 7896456370744197441
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -29494,7 +29506,7 @@ MonoBehaviour:
         Name: 'Dialog: Header: Title'
         Reference: 1
         Value: 0
-        Property: 'Font: Large'
+        Property: 'Font: Important'
     - rid: 7896456370759402305
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -43894,7 +43906,7 @@ MonoBehaviour:
         Name: 'C: Dialog: TopLeft'
         Reference: 1
         Value: 0
-        Property: 'Corner: Angular'
+        Property: 'Corner: Arched'
     - rid: 7896456370759403905
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -43903,7 +43915,7 @@ MonoBehaviour:
         Name: 'C: Dialog: TopRight'
         Reference: 1
         Value: 0
-        Property: 'Corner: Angular'
+        Property: 'Corner: Arched'
     - rid: 7896456370759403906
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -43912,7 +43924,7 @@ MonoBehaviour:
         Name: 'C: Dialog: BottomLeft'
         Reference: 1
         Value: 0
-        Property: 'Corner: Angular'
+        Property: 'Corner: Arched'
     - rid: 7896456370759403907
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -43921,7 +43933,7 @@ MonoBehaviour:
         Name: 'C: Dialog: BottomRight'
         Reference: 1
         Value: 0
-        Property: 'Corner: Angular'
+        Property: 'Corner: Arched'
     - rid: 7896456370759403908
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -43930,7 +43942,7 @@ MonoBehaviour:
         Name: 'C: Dialog: Header: TopLeft'
         Reference: 1
         Value: 0
-        Property: 'Corner: Angular'
+        Property: 'Corner: Arched'
     - rid: 7896456370759403909
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -43939,7 +43951,7 @@ MonoBehaviour:
         Name: 'C: Dialog: Header: TopRight'
         Reference: 1
         Value: 0
-        Property: 'Corner: Angular'
+        Property: 'Corner: Arched'
     - rid: 7896456370759403910
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -43975,7 +43987,7 @@ MonoBehaviour:
         Name: 'C: Dialog: List: TopLeft'
         Reference: 1
         Value: 0
-        Property: Zero
+        Property: 'Corner: Soft'
     - rid: 7896456370759403914
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -43984,7 +43996,7 @@ MonoBehaviour:
         Name: 'C: Dialog: List: TopRight'
         Reference: 1
         Value: 0
-        Property: Zero
+        Property: 'Corner: Soft'
     - rid: 7896456370759403915
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -43993,7 +44005,7 @@ MonoBehaviour:
         Name: 'C: Dialog: List: BottomLeft'
         Reference: 1
         Value: 0
-        Property: Zero
+        Property: 'Corner: Soft'
     - rid: 7896456370759403916
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -44002,7 +44014,7 @@ MonoBehaviour:
         Name: 'C: Dialog: List: BottomRight'
         Reference: 1
         Value: 0
-        Property: Zero
+        Property: 'Corner: Soft'
     - rid: 7896456370759403917
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -45109,7 +45121,7 @@ MonoBehaviour:
         Name: 'Dialog: Bkg'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'WhiteScale: C'
+        Property: 'WhiteScale: D'
     - rid: 7896456370759404040
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -45154,7 +45166,7 @@ MonoBehaviour:
         Name: 'Dialog: Border'
         Reference: 1
         Value: {r: 1, g: 0, b: 1, a: 1}
-        Property: 'WhiteScale: A'
+        Property: 'WhiteScale: D'
     - rid: 7896456370759404045
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -45199,7 +45211,7 @@ MonoBehaviour:
         Name: 'Dialog: Header: Bkg'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'WhiteScale: C'
+        Property: 'WhiteScale: D'
     - rid: 7896456370759404050
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -45244,7 +45256,7 @@ MonoBehaviour:
         Name: 'Dialog: Header: Border'
         Reference: 1
         Value: {r: 1, g: 0, b: 1, a: 1}
-        Property: 'WhiteScale: A'
+        Property: 'WhiteScale: D'
     - rid: 7896456370759404055
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -45334,7 +45346,7 @@ MonoBehaviour:
         Name: 'Dialog: List: Bkg'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'WhiteScale: B'
+        Property: 'WhiteScale: A'
     - rid: 7896456370759404065
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -45352,7 +45364,7 @@ MonoBehaviour:
         Name: 'Dialog: Wheel: Bkg'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Dominant: Default'
+        Property: 'WhiteScale: A'
     - rid: 7896456370759404067
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -45361,7 +45373,7 @@ MonoBehaviour:
         Name: 'Dialog: Wheel: Border'
         Reference: 1
         Value: {r: 1, g: 0, b: 1, a: 1}
-        Property: 'Dominant: Default'
+        Property: 'WhiteScale: A'
     - rid: 7896456370759404068
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:

@@ -633,19 +633,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: a9f5af4a21dcbce498cda57da7cf09d4, type: 3}
       propertyPath: m_RectangleCornerRadius.w
-      value: 14
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: a9f5af4a21dcbce498cda57da7cf09d4, type: 3}
       propertyPath: m_RectangleCornerRadius.x
-      value: 14
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: a9f5af4a21dcbce498cda57da7cf09d4, type: 3}
       propertyPath: m_RectangleCornerRadius.y
-      value: 14
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: a9f5af4a21dcbce498cda57da7cf09d4, type: 3}
       propertyPath: m_RectangleCornerRadius.z
-      value: 14
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1525,7 +1525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: b12c0fa24b9dec1489974d27b8c44ee5, type: 3}
       propertyPath: m_RectangleCornerRadius.w
-      value: 14
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: b12c0fa24b9dec1489974d27b8c44ee5, type: 3}
       propertyPath: m_RectangleCornerRadius.x
@@ -1537,7 +1537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5239635718222987032, guid: b12c0fa24b9dec1489974d27b8c44ee5, type: 3}
       propertyPath: m_RectangleCornerRadius.z
-      value: 14
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1819,7 +1819,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896743369556, guid: 1b65ebf1a70277a448271046c11c5719, type: 3}
       propertyPath: m_fontSize
-      value: 28
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896743369556, guid: 1b65ebf1a70277a448271046c11c5719, type: 3}
       propertyPath: m_fontAsset
@@ -1839,7 +1839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896743369556, guid: 1b65ebf1a70277a448271046c11c5719, type: 3}
       propertyPath: m_fontSizeBase
-      value: 28
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896743369556, guid: 1b65ebf1a70277a448271046c11c5719, type: 3}
       propertyPath: m_sharedMaterial
