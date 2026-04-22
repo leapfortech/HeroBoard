@@ -15129,7 +15129,7 @@ MonoBehaviour:
           rid: 7896456370744197125
         Name: 'Main: Extra Light'
         Reference: 0
-        Value: {fileID: 11400000, guid: 7bdbda1f8452e2046906b43250a65f14, type: 2}
+        Value: {fileID: 11400000, guid: 8c0f1d5a8ed48924ca335bede924aa03, type: 2}
         Property: 
     - rid: 7896456370744197381
       type: {class: ThemePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -15138,7 +15138,7 @@ MonoBehaviour:
           rid: 7896456370744197125
         Name: 'Main: Light'
         Reference: 0
-        Value: {fileID: 11400000, guid: ace62226dff433341902033b651d26ad, type: 2}
+        Value: {fileID: 11400000, guid: 1a909d57ebf5582478be5a84df9ee42c, type: 2}
         Property: 
     - rid: 7896456370744197382
       type: {class: ThemePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -15147,7 +15147,7 @@ MonoBehaviour:
           rid: 7896456370744197125
         Name: 'Main: Regular'
         Reference: 0
-        Value: {fileID: 11400000, guid: 5d1e8a7163af6354493d1e65fc6cd63c, type: 2}
+        Value: {fileID: 11400000, guid: 1e308feedcbaaf643b9a3751ef4ed653, type: 2}
         Property: 
     - rid: 7896456370744197383
       type: {class: ThemePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -15156,7 +15156,7 @@ MonoBehaviour:
           rid: 7896456370744197125
         Name: 'Main: Medium'
         Reference: 0
-        Value: {fileID: 11400000, guid: 1d48dd5757801f845b2a7776b38b6118, type: 2}
+        Value: {fileID: 11400000, guid: 2d56e54ea2c77174894e52c3f1e5a4ad, type: 2}
         Property: 
     - rid: 7896456370744197384
       type: {class: ThemePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -15165,7 +15165,7 @@ MonoBehaviour:
           rid: 7896456370744197125
         Name: 'Main: Semi Bold'
         Reference: 0
-        Value: {fileID: 11400000, guid: bec7acf10862e5444aeb02f65cef7aa4, type: 2}
+        Value: {fileID: 11400000, guid: be2a5b9a14347294bb82542e97a794be, type: 2}
         Property: 
     - rid: 7896456370744197385
       type: {class: ThemePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -15174,7 +15174,7 @@ MonoBehaviour:
           rid: 7896456370744197125
         Name: 'Main: Bold'
         Reference: 0
-        Value: {fileID: 11400000, guid: 2a6250f2f85634d43b84b7087114bda8, type: 2}
+        Value: {fileID: 11400000, guid: b5305de5103379545b4ab9ebbfa16d0d, type: 2}
         Property: 
     - rid: 7896456370744197386
       type: {class: ThemePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -15183,7 +15183,7 @@ MonoBehaviour:
           rid: 7896456370744197125
         Name: 'Main: Extra Bold'
         Reference: 0
-        Value: {fileID: 11400000, guid: ffdea3fb585b81849a8f2430297cab39, type: 2}
+        Value: {fileID: 11400000, guid: 75ad960750372f146932a4706bb1e28e, type: 2}
         Property: 
     - rid: 7896456370744197387
       type: {class: ThemePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -15192,7 +15192,7 @@ MonoBehaviour:
           rid: 7896456370744197125
         Name: 'Main Italic: Light'
         Reference: 0
-        Value: {fileID: 11400000, guid: 7d39f04c03d1561489798b4a884531f0, type: 2}
+        Value: {fileID: 11400000, guid: 9fb72c99f3ef06046a694d058ecf0e97, type: 2}
         Property: 
     - rid: 7896456370744197388
       type: {class: ThemePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -15201,7 +15201,7 @@ MonoBehaviour:
           rid: 7896456370744197125
         Name: 'Main Italic: Regular'
         Reference: 0
-        Value: {fileID: 11400000, guid: ead863e2f54876646b2493290ffc917e, type: 2}
+        Value: {fileID: 11400000, guid: c4e74bc2bc4989544a497b280dcc8574, type: 2}
         Property: 
     - rid: 7896456370744197389
       type: {class: ThemePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -15210,7 +15210,7 @@ MonoBehaviour:
           rid: 7896456370744197125
         Name: 'Main Italic: Bold'
         Reference: 0
-        Value: {fileID: 11400000, guid: 7c54b600896d1f340a9a35c152e07315, type: 2}
+        Value: {fileID: 11400000, guid: eca879ece3a752943b592420dc0b9981, type: 2}
         Property: 
     - rid: 7896456370744197390
       type: {class: ThemePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -17315,36 +17315,36 @@ MonoBehaviour:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Dialog: Main: TopLeft'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: -50
+        Property: 'Corner: Soft'
     - rid: 7896456370744197624
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Dialog: Main: TopRight'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: -50
+        Property: 'Corner: Soft'
     - rid: 7896456370744197625
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Dialog: Main: BottomLeft'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: -50
+        Property: 'Corner: Soft'
     - rid: 7896456370744197626
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Dialog: Main: BottomRight'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: -50
+        Property: 'Corner: Soft'
     - rid: 7896456370744197627
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -17387,72 +17387,72 @@ MonoBehaviour:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Dialog: Back: TopLeft'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: 'Corner: Arched'
+        Property: 'Corner: Soft'
     - rid: 7896456370744197632
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Dialog: Back: TopRight'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: 'Corner: Arched'
+        Property: 'Corner: Soft'
     - rid: 7896456370744197633
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Dialog: Back: BottomLeft'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: 'Corner: Arched'
+        Property: 'Corner: Soft'
     - rid: 7896456370744197634
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Dialog: Back: BottomRight'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: 'Corner: Arched'
+        Property: 'Corner: Soft'
     - rid: 7896456370744197635
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Dialog: Pct: TopLeft'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: 'Corner: Arched'
+        Property: 'Corner: Soft'
     - rid: 7896456370744197636
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Dialog: Pct: TopRight'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: 'Corner: Arched'
+        Property: 'Corner: Soft'
     - rid: 7896456370744197637
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Dialog: Pct: BottomLeft'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: 'Corner: Arched'
+        Property: 'Corner: Soft'
     - rid: 7896456370744197638
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Dialog: Pct: BottomRight'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: 'Corner: Arched'
+        Property: 'Corner: Soft'
     - rid: 7896456370744197639
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -24103,7 +24103,7 @@ MonoBehaviour:
         Name: 'Dialog: Main: Bkg: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'CmpA: Default'
+        Property: 'Subdominant: Default'
     - rid: 7896456370759401706
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -24112,7 +24112,7 @@ MonoBehaviour:
         Name: 'Dialog: Main: Bkg: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'CmpA: Obscure'
+        Property: 'Subdominant: Obscure'
     - rid: 7896456370759401707
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -24121,7 +24121,7 @@ MonoBehaviour:
         Name: 'Dialog: Main: Bkg: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: C'
+        Property: 'Auxiliar: Obscure'
     - rid: 7896456370759401708
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -24175,7 +24175,7 @@ MonoBehaviour:
         Name: 'Dialog: Main: Icon: Disabled'
         Reference: 1
         Value: {r: 1, g: 0, b: 1, a: 1}
-        Property: 'WhiteScale: E'
+        Property: 'WhiteScale: A'
     - rid: 7896456370759401714
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -24202,7 +24202,7 @@ MonoBehaviour:
         Name: 'Dialog: Main: Title: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'WhiteScale: E'
+        Property: 'WhiteScale: A'
     - rid: 7896456370759401717
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -31465,7 +31465,7 @@ MonoBehaviour:
         Name: 'Dialog: Header: Title'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'BlackScale: Default'
+        Property: 'Identity: Dark'
     - rid: 7896456370759402524
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37297,7 +37297,7 @@ MonoBehaviour:
         Name: 'Main: Bkg: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'WhiteScale: Default'
+        Property: 'WhiteScale: A'
     - rid: 7896456370759403172
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37315,7 +37315,7 @@ MonoBehaviour:
         Name: 'Main: Bkg: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'WhiteScale: B'
+        Property: 'WhiteScale: C'
     - rid: 7896456370759403174
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37351,7 +37351,7 @@ MonoBehaviour:
         Name: 'Main: Border: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Dominant: Default'
+        Property: 'Subdominant: Dim'
     - rid: 7896456370759403178
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37360,7 +37360,7 @@ MonoBehaviour:
         Name: 'Main: Border: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Dominant: Obscure'
+        Property: 'Subdominant: Dark'
     - rid: 7896456370759403179
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37369,7 +37369,7 @@ MonoBehaviour:
         Name: 'Main: Border: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: Foggy'
+        Property: 'GreyScale: Default'
     - rid: 7896456370759403180
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37432,7 +37432,7 @@ MonoBehaviour:
         Name: 'Main: Mark: Bkg: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: Default'
+        Property: 'Dominant: Tinted'
     - rid: 7896456370759403187
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37450,7 +37450,7 @@ MonoBehaviour:
         Name: 'Main: Mark: Border: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: Transparent
+        Property: 'Dominant: Default'
     - rid: 7896456370759403189
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37459,7 +37459,7 @@ MonoBehaviour:
         Name: 'Main: Mark: Border: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: Transparent
+        Property: 'Dominant: Obscure'
     - rid: 7896456370759403190
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37468,7 +37468,7 @@ MonoBehaviour:
         Name: 'Main: Mark: Border: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: Transparent
+        Property: 'Dominant: Tinted'
     - rid: 7896456370759403191
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37540,7 +37540,7 @@ MonoBehaviour:
         Name: 'Main: Title: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'CmpA: Default'
+        Property: 'BlackScale: Default'
     - rid: 7896456370759403199
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37549,7 +37549,7 @@ MonoBehaviour:
         Name: 'Main: Title: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'CmpA: Default'
+        Property: 'BlackScale: A'
     - rid: 7896456370759403200
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37558,7 +37558,7 @@ MonoBehaviour:
         Name: 'Main: Title: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: Default'
+        Property: 'BlackScale: E'
     - rid: 7896456370759403201
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37567,7 +37567,7 @@ MonoBehaviour:
         Name: 'Check: Bkg: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'WhiteScale: Default'
+        Property: 'WhiteScale: A'
     - rid: 7896456370759403202
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37585,7 +37585,7 @@ MonoBehaviour:
         Name: 'Check: Bkg: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'WhiteScale: B'
+        Property: 'WhiteScale: C'
     - rid: 7896456370759403204
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37621,7 +37621,7 @@ MonoBehaviour:
         Name: 'Check: Border: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Dominant: Default'
+        Property: 'Subdominant: Dim'
     - rid: 7896456370759403208
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37630,7 +37630,7 @@ MonoBehaviour:
         Name: 'Check: Border: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Dominant: Default'
+        Property: 'Subdominant: Dark'
     - rid: 7896456370759403209
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37684,7 +37684,7 @@ MonoBehaviour:
         Name: 'Check: Mark: Bkg: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Dominant: Default'
+        Property: 'WhiteScale: Default'
     - rid: 7896456370759403215
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37702,7 +37702,7 @@ MonoBehaviour:
         Name: 'Check: Mark: Bkg: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: Default'
+        Property: 'Dominant: Tinted'
     - rid: 7896456370759403217
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37720,7 +37720,7 @@ MonoBehaviour:
         Name: 'Check: Mark: Border: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: Transparent
+        Property: 'WhiteScale: Default'
     - rid: 7896456370759403219
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37729,7 +37729,7 @@ MonoBehaviour:
         Name: 'Check: Mark: Border: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: Transparent
+        Property: 'Dominant: Obscure'
     - rid: 7896456370759403220
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37738,7 +37738,7 @@ MonoBehaviour:
         Name: 'Check: Mark: Border: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: Transparent
+        Property: 'Dominant: Tinted'
     - rid: 7896456370759403221
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37810,7 +37810,7 @@ MonoBehaviour:
         Name: 'Check: Title: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'CmpA: Default'
+        Property: 'BlackScale: Default'
     - rid: 7896456370759403229
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37819,7 +37819,7 @@ MonoBehaviour:
         Name: 'Check: Title: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'CmpA: Default'
+        Property: 'BlackScale: A'
     - rid: 7896456370759403230
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -37828,7 +37828,7 @@ MonoBehaviour:
         Name: 'Check: Title: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: Default'
+        Property: 'BlackScale: E'
     - rid: 7896456370759403231
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38467,7 +38467,7 @@ MonoBehaviour:
         Name: 'Card: Main: Bkg: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Subdominant: Fade'
+        Property: 'WhiteScale: A'
     - rid: 7896456370759403302
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38476,7 +38476,7 @@ MonoBehaviour:
         Name: 'Card: Main: Bkg: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Subdominant: Fade'
+        Property: 'WhiteScale: Default'
     - rid: 7896456370759403303
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38485,7 +38485,7 @@ MonoBehaviour:
         Name: 'Card: Main: Bkg: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'WhiteScale: B'
+        Property: 'WhiteScale: C'
     - rid: 7896456370759403304
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38521,7 +38521,7 @@ MonoBehaviour:
         Name: 'Card: Main: Border: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: D'
+        Property: 'Subdominant: Dim'
     - rid: 7896456370759403308
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38530,7 +38530,7 @@ MonoBehaviour:
         Name: 'Card: Main: Border: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: D'
+        Property: 'Subdominant: Dark'
     - rid: 7896456370759403309
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38539,7 +38539,7 @@ MonoBehaviour:
         Name: 'Card: Main: Border: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: D'
+        Property: 'GreyScale: Default'
     - rid: 7896456370759403310
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38584,7 +38584,7 @@ MonoBehaviour:
         Name: 'Card: Main: Mark: Bkg: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Dominant: Default'
+        Property: 'WhiteScale: Default'
     - rid: 7896456370759403315
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38593,7 +38593,7 @@ MonoBehaviour:
         Name: 'Card: Main: Mark: Bkg: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Dominant: Default'
+        Property: 'Dominant: Obscure'
     - rid: 7896456370759403316
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38602,7 +38602,7 @@ MonoBehaviour:
         Name: 'Card: Main: Mark: Bkg: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: Default'
+        Property: 'Dominant: Tinted'
     - rid: 7896456370759403317
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38620,7 +38620,7 @@ MonoBehaviour:
         Name: 'Card: Main: Mark: Border: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: Transparent
+        Property: 'Dominant: Default'
     - rid: 7896456370759403319
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38629,7 +38629,7 @@ MonoBehaviour:
         Name: 'Card: Main: Mark: Border: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: Transparent
+        Property: 'Dominant: Obscure'
     - rid: 7896456370759403320
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38638,7 +38638,7 @@ MonoBehaviour:
         Name: 'Card: Main: Mark: Border: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: Transparent
+        Property: 'Dominant: Tinted'
     - rid: 7896456370759403321
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38710,7 +38710,7 @@ MonoBehaviour:
         Name: 'Card: Main: Title: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'CmpA: Default'
+        Property: 'BlackScale: Default'
     - rid: 7896456370759403329
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38719,7 +38719,7 @@ MonoBehaviour:
         Name: 'Card: Main: Title: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'CmpA: Default'
+        Property: 'BlackScale: A'
     - rid: 7896456370759403330
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38737,7 +38737,7 @@ MonoBehaviour:
         Name: 'Card: Check: Bkg: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Subdominant: Fade'
+        Property: 'WhiteScale: A'
     - rid: 7896456370759403332
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38746,7 +38746,7 @@ MonoBehaviour:
         Name: 'Card: Check: Bkg: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Subdominant: Fade'
+        Property: 'Subdominant: Foggy'
     - rid: 7896456370759403333
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38755,7 +38755,7 @@ MonoBehaviour:
         Name: 'Card: Check: Bkg: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'WhiteScale: B'
+        Property: 'WhiteScale: C'
     - rid: 7896456370759403334
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38791,7 +38791,7 @@ MonoBehaviour:
         Name: 'Card: Check: Border: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: D'
+        Property: 'Subdominant: Dim'
     - rid: 7896456370759403338
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38800,7 +38800,7 @@ MonoBehaviour:
         Name: 'Card: Check: Border: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: D'
+        Property: 'Subdominant: Dark'
     - rid: 7896456370759403339
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38809,7 +38809,7 @@ MonoBehaviour:
         Name: 'Card: Check: Border: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: D'
+        Property: 'Dominant: Tinted'
     - rid: 7896456370759403340
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38863,7 +38863,7 @@ MonoBehaviour:
         Name: 'Card: Check: Mark: Bkg: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Dominant: Default'
+        Property: 'Dominant: Obscure'
     - rid: 7896456370759403346
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38872,7 +38872,7 @@ MonoBehaviour:
         Name: 'Card: Check: Mark: Bkg: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: D'
+        Property: 'Dominant: Tinted'
     - rid: 7896456370759403347
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38890,7 +38890,7 @@ MonoBehaviour:
         Name: 'Card: Check: Mark: Border: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: Transparent
+        Property: 'Dominant: Default'
     - rid: 7896456370759403349
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38899,7 +38899,7 @@ MonoBehaviour:
         Name: 'Card: Check: Mark: Border: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: Transparent
+        Property: 'Dominant: Obscure'
     - rid: 7896456370759403350
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38908,7 +38908,7 @@ MonoBehaviour:
         Name: 'Card: Check: Mark: Border: On: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: Transparent
+        Property: 'Dominant: Tinted'
     - rid: 7896456370759403351
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38980,7 +38980,7 @@ MonoBehaviour:
         Name: 'Card: Check: Title: On: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'CmpA: Default'
+        Property: 'BlackScale: Default'
     - rid: 7896456370759403359
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -38989,7 +38989,7 @@ MonoBehaviour:
         Name: 'Card: Check: Title: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'CmpA: Default'
+        Property: 'BlackScale: A'
     - rid: 7896456370759403360
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -42480,7 +42480,7 @@ MonoBehaviour:
           rid: 7896456370744197132
         Name: 'H: Dialog'
         Reference: 0
-        Value: 700
+        Value: 500
         Property: 
     - rid: 7896456370759403748
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -44776,7 +44776,7 @@ MonoBehaviour:
         Name: 'List: Item: Bkg'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'CmpC: Default'
+        Property: 'WhiteScale: Default'
     - rid: 7896456370759404003
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -44794,7 +44794,7 @@ MonoBehaviour:
         Name: 'List: Item: Separator'
         Reference: 1
         Value: {r: 0.24705882, g: 0.26666668, b: 0.2901961, a: 1}
-        Property: 'Subdominant: Light'
+        Property: 'GreyScale: C'
     - rid: 7896456370759404005
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -44848,7 +44848,7 @@ MonoBehaviour:
         Name: Separator
         Reference: 1
         Value: {r: 1, g: 0, b: 1, a: 1}
-        Property: 'Subdominant: Obscure'
+        Property: 'WhiteScale: B'
     - rid: 7896456370759404011
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -45055,7 +45055,7 @@ MonoBehaviour:
         Name: 'Card: List: Item: Separator'
         Reference: 1
         Value: {r: 1, g: 0, b: 1, a: 1}
-        Property: 'Subdominant: Light'
+        Property: 'WhiteScale: A'
     - rid: 7896456370759404034
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -45100,7 +45100,7 @@ MonoBehaviour:
         Name: 'Card: Separator'
         Reference: 1
         Value: {r: 1, g: 0, b: 1, a: 1}
-        Property: 'Subdominant: Light'
+        Property: 'WhiteScale: A'
     - rid: 7896456370759404039
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
