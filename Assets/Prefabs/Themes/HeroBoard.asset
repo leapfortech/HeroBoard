@@ -28954,7 +28954,7 @@ MonoBehaviour:
         Name: 'List: Item: Text'
         Reference: 1
         Value: 0
-        Property: 'Font: Legible'
+        Property: 'Font: Clear'
     - rid: 7896456370759402276
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -40564,7 +40564,7 @@ MonoBehaviour:
         Name: 'Hpb: List: Bkg: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Identity: Translucent'
+        Property: 'Dominant: Translucent'
     - rid: 7896456370759403653
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
