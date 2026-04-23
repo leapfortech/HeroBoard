@@ -1,0 +1,770 @@
+fileFormatVersion: 2
+guid: 0cd00fd51dfcb674a933765678b5d78a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3943366760284392908
+    second: AMTecIcons_0
+  - first:
+      213: 7479608594252118366
+    second: AMTecIcons_1
+  - first:
+      213: -9093506152215552766
+    second: AMTecIcons_2
+  - first:
+      213: 8404924085583884858
+    second: AMTecIcons_3
+  - first:
+      213: -4477062237807792317
+    second: AMTecIcons_4
+  - first:
+      213: -6355884133986066303
+    second: AMTecIcons_5
+  - first:
+      213: 9182259159491736328
+    second: AMTecIcons_6
+  - first:
+      213: 2987751367350448919
+    second: AMTecIcons_7
+  - first:
+      213: -1745594315014194414
+    second: AMTecIcons_8
+  - first:
+      213: -748528472922535721
+    second: AMTecIcons_9
+  - first:
+      213: 3597614096880206352
+    second: AMTecIcons_10
+  - first:
+      213: -7221531168799196996
+    second: AMTecIcons_11
+  - first:
+      213: 2389686439129132086
+    second: AMTecIcons_12
+  - first:
+      213: -6073487089495672448
+    second: AMTecIcons_13
+  - first:
+      213: -551050758779770694
+    second: AMTecIcons_14
+  - first:
+      213: -3194906927069077941
+    second: AMTecIcons_15
+  - first:
+      213: 7993699828014734720
+    second: AMTecIcons_16
+  - first:
+      213: -2994902381560431899
+    second: AMTecIcons_17
+  - first:
+      213: -2394552812511205333
+    second: AMTecIcons_18
+  - first:
+      213: -6675368597929751955
+    second: AMTecIcons_19
+  - first:
+      213: 4440233336570942361
+    second: AMTecIcons_20
+  - first:
+      213: 4121117967229852195
+    second: AMTecIcons_21
+  - first:
+      213: 5259933478379826700
+    second: AMTecIcons_22
+  - first:
+      213: -4632570880762818961
+    second: AMTecIcons_23
+  - first:
+      213: 4953804941037773855
+    second: AMTecIcons_24
+  - first:
+      213: 1947307442890378127
+    second: AMTecIcons_25
+  - first:
+      213: -2985421896646737968
+    second: AMTecIcons_26
+  - first:
+      213: 4561986188965405168
+    second: AMTecIcons_27
+  - first:
+      213: 8829809841814380357
+    second: AMTecIcons_28
+  - first:
+      213: 3916082329070641275
+    second: AMTecIcons_29
+  - first:
+      213: 7190302617180413547
+    second: AMTecIcons_30
+  - first:
+      213: -2021718578563060126
+    second: AMTecIcons_31
+  - first:
+      213: 7847551211537010300
+    second: AMTecIcons_32
+  - first:
+      213: 2196112741434267989
+    second: AMTecIcons_33
+  - first:
+      213: -6251354966200911559
+    second: AMTecIcons_34
+  - first:
+      213: 6762331973542304146
+    second: AMTecIcons_35
+  - first:
+      213: 7981840388890921131
+    second: AMTecIcons_36
+  - first:
+      213: 8688063659034824160
+    second: AMTecIcons_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AMTecIcons_2
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1437
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ddc5285506dc180800000000000000
+      internalID: -9093506152215552766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_3
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1437
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a323a55bce944a470800000000000000
+      internalID: 8404924085583884858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_4
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 1436
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34fa62e7d974ed1c0800000000000000
+      internalID: -4477062237807792317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_5
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 1436
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18028381e0d5bc7a0800000000000000
+      internalID: -6355884133986066303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcnMenu
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1436
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7137c10f900a67920800000000000000
+      internalID: 2987751367350448919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_10
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1442
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0128b7bc5fa4de130800000000000000
+      internalID: 3597614096880206352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1183
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8ff4dc9a7f7cb90800000000000000
+      internalID: -7221531168799196996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_12
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1182
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c2cd0c72fd92120800000000000000
+      internalID: 2389686439129132086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_13
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1183
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08970babba3a6bba0800000000000000
+      internalID: -6073487089495672448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_14
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 1184
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8e8b521464a58f0800000000000000
+      internalID: -551050758779770694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_15
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 1184
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4edc91c31969a3d0800000000000000
+      internalID: -3194906927069077941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_17
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 1184
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea7e12d628ff66d0800000000000000
+      internalID: -2994902381560431899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_22
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 936
+        width: 51
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ea30951a90ff840800000000000000
+      internalID: 5259933478379826700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_27
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 927
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f16587b44e6f4f30800000000000000
+      internalID: 4561986188965405168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_28
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 928
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f189fc449c98a70800000000000000
+      internalID: 8829809841814380357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_29
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 927
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70a0774128b85630800000000000000
+      internalID: 3916082329070641275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_30
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 927
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e999c622619c360800000000000000
+      internalID: 7190302617180413547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_31
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 928
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ee0f01aa961f3e0800000000000000
+      internalID: -2021718578563060126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_32
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 673
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e8950bf3a18ec60800000000000000
+      internalID: 7847551211537010300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_33
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 673
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55916ef17e82a7e10800000000000000
+      internalID: 2196112741434267989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AMTecIcons_35
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 672
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29951400a11a8dd50800000000000000
+      internalID: 6762331973542304146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e13a1d806004fb1408676926646a55a2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AMTecIcnMenu: 2987751367350448919
+      AMTecIcons_0: 3943366760284392908
+      AMTecIcons_1: 7479608594252118366
+      AMTecIcons_10: 3597614096880206352
+      AMTecIcons_11: -7221531168799196996
+      AMTecIcons_12: 2389686439129132086
+      AMTecIcons_13: -6073487089495672448
+      AMTecIcons_14: -551050758779770694
+      AMTecIcons_15: -3194906927069077941
+      AMTecIcons_16: 7993699828014734720
+      AMTecIcons_17: -2994902381560431899
+      AMTecIcons_18: -2394552812511205333
+      AMTecIcons_19: -6675368597929751955
+      AMTecIcons_2: -9093506152215552766
+      AMTecIcons_20: 4440233336570942361
+      AMTecIcons_21: 4121117967229852195
+      AMTecIcons_22: 5259933478379826700
+      AMTecIcons_23: -4632570880762818961
+      AMTecIcons_24: 4953804941037773855
+      AMTecIcons_25: 1947307442890378127
+      AMTecIcons_26: -2985421896646737968
+      AMTecIcons_27: 4561986188965405168
+      AMTecIcons_28: 8829809841814380357
+      AMTecIcons_29: 3916082329070641275
+      AMTecIcons_3: 8404924085583884858
+      AMTecIcons_30: 7190302617180413547
+      AMTecIcons_31: -2021718578563060126
+      AMTecIcons_32: 7847551211537010300
+      AMTecIcons_33: 2196112741434267989
+      AMTecIcons_34: -6251354966200911559
+      AMTecIcons_35: 6762331973542304146
+      AMTecIcons_36: 7981840388890921131
+      AMTecIcons_37: 8688063659034824160
+      AMTecIcons_4: -4477062237807792317
+      AMTecIcons_5: -6355884133986066303
+      AMTecIcons_6: 9182259159491736328
+      AMTecIcons_8: -1745594315014194414
+      AMTecIcons_9: -748528472922535721
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

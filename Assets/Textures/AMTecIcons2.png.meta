@@ -1,0 +1,680 @@
+fileFormatVersion: 2
+guid: f6daa6ba430e67f4c9fe4161ff289ca4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1009049853055315898
+    second: Icon1_0
+  - first:
+      213: 1923343401224300261
+    second: Icon1_1
+  - first:
+      213: -9113650769040486182
+    second: Icon1_2
+  - first:
+      213: -3829752019772836062
+    second: Icon1_3
+  - first:
+      213: 6230423330885736268
+    second: Icon1_4
+  - first:
+      213: 2209496922979382247
+    second: Icon1_5
+  - first:
+      213: 3027523047140068486
+    second: Icon1_6
+  - first:
+      213: 4164137571980865127
+    second: Icon1_7
+  - first:
+      213: 1691067357428639259
+    second: Icon1_8
+  - first:
+      213: 4112760998811796416
+    second: Icon1_9
+  - first:
+      213: -7090988370135262308
+    second: Icon1_10
+  - first:
+      213: -5718028354509236597
+    second: Icon1_11
+  - first:
+      213: 1751178875598393807
+    second: Icon1_12
+  - first:
+      213: -2909779648785486682
+    second: Icon1_13
+  - first:
+      213: -4547288728164896818
+    second: Icon1_14
+  - first:
+      213: 264785574656209394
+    second: Icon1_15
+  - first:
+      213: 5071263151126582745
+    second: Icon1_16
+  - first:
+      213: -9191171833862589871
+    second: Icon1_17
+  - first:
+      213: -7122609161654952713
+    second: Icon1_18
+  - first:
+      213: 8360175741524803136
+    second: Icon1_19
+  - first:
+      213: 1776577942433553416
+    second: Icon1_20
+  - first:
+      213: 1841002138729572892
+    second: Icon1_21
+  - first:
+      213: -4204516217755285321
+    second: Icon1_22
+  - first:
+      213: 2262871232467166930
+    second: Icon1_23
+  - first:
+      213: -6445827314860430413
+    second: Icon1_24
+  - first:
+      213: -8318319163562677516
+    second: Icon1_25
+  - first:
+      213: -6686223116347934241
+    second: Icon1_26
+  - first:
+      213: 3956081584689455164
+    second: Icon1_27
+  - first:
+      213: -1754206545580957375
+    second: Icon1_28
+  - first:
+      213: -8767751046775136023
+    second: Icon1_29
+  - first:
+      213: 1895815223015576537
+    second: Icon1_30
+  - first:
+      213: 6048893000529893653
+    second: Icon1_31
+  - first:
+      213: -586649664423475730
+    second: Icon1_32
+  - first:
+      213: 7482313628727433153
+    second: Icon1_33
+  - first:
+      213: -3315481268020979579
+    second: Icon1_34
+  - first:
+      213: 4777883126285883773
+    second: Icon1_35
+  - first:
+      213: -1660573709289708590
+    second: Icon1_36
+  - first:
+      213: -4989222986583819029
+    second: Icon1_37
+  - first:
+      213: 5439055512686751083
+    second: Icon1_38
+  - first:
+      213: 6473904539625101091
+    second: Icon1_39
+  - first:
+      213: -3836695852667393606
+    second: Icon1_40
+  - first:
+      213: -4654920843453986255
+    second: Icon1_41
+  - first:
+      213: 153409009781340183
+    second: Icon1_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AmTecIcnDash
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 825
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abfa504ce7dd00e00800000000000000
+      internalID: 1009049853055315898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmTecIcnClient1
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 825
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0506869eec58180800000000000000
+      internalID: -9113650769040486182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmTecIcnResources
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 825
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 227fa9334dcf9dac0800000000000000
+      internalID: -3829752019772836062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmTecIcnConfig
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 825
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4710cd5209e67650800000000000000
+      internalID: 6230423330885736268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmTecIcnDevices
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 620
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b869dd9c18b75a0b0800000000000000
+      internalID: -5718028354509236597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmTecIcnConfigDevice
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 620
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1d532c8ef6d4810800000000000000
+      internalID: 1751178875598393807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmTecIcnBackEnd
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 628
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1527b0df9e5627080800000000000000
+      internalID: -9191171833862589871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmTecIcnCleints2
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 620
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80cdb86d93ca7a810800000000000000
+      internalID: 1776577942433553416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmTecIcnConfigDevice2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 388
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ae5bde0bd8c8910800000000000000
+      internalID: 1841002138729572892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmTecIcnVehicle
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 388
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8c354c6ce86a5c0800000000000000
+      internalID: -4204516217755285321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmTecIcnBusiness
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 388
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bbeb366532db86a0800000000000000
+      internalID: -6445827314860430413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmTecIcnBranch
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 388
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4faa5870bc46f8c80800000000000000
+      internalID: -8318319163562677516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmTecIcnOperator
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 195
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd973153083c533a0800000000000000
+      internalID: -6686223116347934241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmTecIcnLight
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 196
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588d5285a5b0df1d0800000000000000
+      internalID: -3315481268020979579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmTecIcnSkill
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 191
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a0d5cd726666fb0800000000000000
+      internalID: -4654920843453986255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmTecIcnClient2
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 196
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7187c5d7ea4012200800000000000000
+      internalID: 153409009781340183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 31c3dd817af9fae499a56cfa172b4c93
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AmTecIcnBackEnd: -9191171833862589871
+      AmTecIcnBranch: -8318319163562677516
+      AmTecIcnBusiness: -6445827314860430413
+      AmTecIcnCleints2: 1776577942433553416
+      AmTecIcnClient1: -9113650769040486182
+      AmTecIcnClient2: 153409009781340183
+      AmTecIcnConfig: 6230423330885736268
+      AmTecIcnConfigDevice: 1751178875598393807
+      AmTecIcnConfigDevice2: 1841002138729572892
+      AmTecIcnDash: 1009049853055315898
+      AmTecIcnDevices: -5718028354509236597
+      AmTecIcnLight: -3315481268020979579
+      AmTecIcnOperator: -6686223116347934241
+      AmTecIcnResources: -3829752019772836062
+      AmTecIcnSkill: -4654920843453986255
+      AmTecIcnVehicle: -4204516217755285321
+      Icon1_1: 1923343401224300261
+      Icon1_10: -7090988370135262308
+      Icon1_13: -2909779648785486682
+      Icon1_14: -4547288728164896818
+      Icon1_15: 264785574656209394
+      Icon1_16: 5071263151126582745
+      Icon1_18: -7122609161654952713
+      Icon1_19: 8360175741524803136
+      Icon1_23: 2262871232467166930
+      Icon1_27: 3956081584689455164
+      Icon1_28: -1754206545580957375
+      Icon1_29: -8767751046775136023
+      Icon1_30: 1895815223015576537
+      Icon1_31: 6048893000529893653
+      Icon1_32: -586649664423475730
+      Icon1_33: 7482313628727433153
+      Icon1_35: 4777883126285883773
+      Icon1_36: -1660573709289708590
+      Icon1_37: -4989222986583819029
+      Icon1_38: 5439055512686751083
+      Icon1_39: 6473904539625101091
+      Icon1_40: -3836695852667393606
+      Icon1_5: 2209496922979382247
+      Icon1_6: 3027523047140068486
+      Icon1_7: 4164137571980865127
+      Icon1_8: 1691067357428639259
+      Icon1_9: 4112760998811796416
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
