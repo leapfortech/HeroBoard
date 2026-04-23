@@ -101,7 +101,8 @@ public class AppUserAction : MonoBehaviour
 
         lstAppUsers.ApplyValues();
 
-        Display(0);
+        if (identityFulls != null && identityFulls.Count != 0)
+            Display(0);
 
         StateManager.Instance.BoardLoadHide();
     }

@@ -13,8 +13,9 @@ public class IdentityFull
     public String LastNames => LastName1 + (String.IsNullOrEmpty(LastName2) ? "" : (" " + LastName2));
     public String Gender { get; set; }
     public DateTime BirthDate { get; set; }
-    public String OriginCountry { get; set; }
-    public String OriginState { get; set; }
+    public String BirthCountry { get; set; }
+    public String BirthState { get; set; }
+    public String BirthCity { get; set; }
     public String PhonePrefix { get; set; }
     public String Phone { get; set; }
     public String Email { get; set; }
@@ -29,7 +30,7 @@ public class IdentityFull
     }
 
     public IdentityFull(long id, String firstName1, String firstName2, String lastName1, String lastName2,
-                            String gender, DateTime birthDate, String originCountry, String originState,
+                            String gender, DateTime birthDate, String birthCountry, String birthState, String birthCity,
                             String phonePrefix, String phone, String email,
                             DateTime createDateTime, DateTime updateDateTime, int appUserStatusId, int status)
     {
@@ -40,8 +41,9 @@ public class IdentityFull
         LastName2 = lastName2;
         Gender = gender;
         BirthDate = birthDate;
-        OriginCountry = originCountry;
-        OriginState = originState;
+        BirthCountry = birthCountry;
+        BirthState = birthState;
+        BirthCity = birthCity;
         PhonePrefix = phonePrefix;
         Phone = phone;
         Email = email;
@@ -60,8 +62,8 @@ public class IdentityFull
         LastName2 = identityFull.LastName2;
         Gender = identityFull.Gender;
         BirthDate = identityFull.BirthDate;
-        OriginCountry = identityFull.OriginCountry;
-        OriginState = identityFull.OriginState;
+        BirthCountry = identityFull.BirthCountry;
+        BirthState = identityFull.BirthState;
         PhonePrefix = identityFull.PhonePrefix;
         Phone = identityFull.Phone;
         Email = identityFull.Email;
