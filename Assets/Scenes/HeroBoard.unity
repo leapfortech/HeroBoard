@@ -94200,7 +94200,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1094026821316255047, guid: 664c1bd1574bec34e84216bce78a636c, type: 3}
       propertyPath: m_Name
-      value: TxtOriginCountry
+      value: TxtBirthCountry
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255047, guid: 664c1bd1574bec34e84216bce78a636c, type: 3}
       propertyPath: m_IsActive
@@ -103869,7 +103869,7 @@ PrefabInstance:
       objectReference: {fileID: -2094504794991002911, guid: 2d56e54ea2c77174894e52c3f1e5a4ad, type: 2}
     - target: {fileID: 8436609822253491789, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4294967295
+      value: 4286742141
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_Color.a
@@ -137049,7 +137049,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lstAppUsers: {fileID: 1179261196}
   txtAppUsersEmpty: {fileID: 1726935236}
-  sprEmpty: {fileID: 6230423330885736268, guid: f6daa6ba430e67f4c9fe4161ff289ca4, type: 3}
+  sprEmpty: {fileID: 1780925468, guid: dc75f0a3eb3a6ff4a929a04a40ffd74a, type: 3}
+  sprOnboarded: {fileID: 3597614096880206352, guid: 0cd00fd51dfcb674a933765678b5d78a, type: 3}
   dtmIdentityFull: {fileID: 1876902375}
 --- !u!114 &1735018056
 MonoBehaviour:
@@ -157645,7 +157646,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1094026821316255047, guid: 664c1bd1574bec34e84216bce78a636c, type: 3}
       propertyPath: m_Name
-      value: LblOriginCountry
+      value: LblBirthCountry
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255047, guid: 664c1bd1574bec34e84216bce78a636c, type: 3}
       propertyPath: m_IsActive
