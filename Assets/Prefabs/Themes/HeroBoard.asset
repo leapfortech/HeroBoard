@@ -26658,7 +26658,7 @@ MonoBehaviour:
           rid: 7896456370744197126
         Name: Delete
         Reference: 0
-        Value: {fileID: 7336682894201421974, guid: dc75f0a3eb3a6ff4a929a04a40ffd74a, type: 3}
+        Value: {fileID: -1702373267, guid: 2526629794597554da2f9d868af93d76, type: 3}
         Property: 
     - rid: 7896456370759402017
       type: {class: ThemePropertySprite, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
