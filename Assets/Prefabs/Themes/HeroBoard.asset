@@ -40,7 +40,7 @@ MonoBehaviour:
         Name: 'Ids: List: Sort: Icon: On: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: Default'
+        Property: 'Subdominant: Obscure'
     - rid: 6168643244654854503
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -15661,7 +15661,7 @@ MonoBehaviour:
         Name: 'H: Alternate'
         Reference: 1
         Value: 0
-        Property: 'Area: Adequate'
+        Property: 'Area: Tiny'
     - rid: 7896456370744197467
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -18666,7 +18666,7 @@ MonoBehaviour:
           rid: 7896456370744197126
         Name: 'M: Alternate: Title: Y'
         Reference: 0
-        Value: 22
+        Value: 17
         Property: 
     - rid: 7896456370744197801
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -19710,7 +19710,7 @@ MonoBehaviour:
           rid: 7896456370744197126
         Name: 'I: Help: Size'
         Reference: 0
-        Value: 30
+        Value: 50
         Property: 'Area: Mini'
     - rid: 7896456370744197917
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -21700,7 +21700,7 @@ MonoBehaviour:
         Name: 'Alternate: Title: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Subdominant: Default'
+        Property: 'GreyScale: Default'
     - rid: 7896456370744198138
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -40627,7 +40627,7 @@ MonoBehaviour:
         Name: 'Ids: List: Sort: Icon: Off: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Subdominant: Obscure'
+        Property: 'GreyScale: Default'
     - rid: 7896456370759403656
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
