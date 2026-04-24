@@ -179,6 +179,7 @@ public class LoginAction : MonoBehaviour
         loginResponse = response;
         StateManager.Instance.BoardUser = response.BoardUser;
         WebManager.Instance.WebSysUser = response.WebSysUser;
+        StateManager.Instance.Identity = response.Identity;
     }
 
     // SystemToken

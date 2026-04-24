@@ -7,30 +7,32 @@ public class Identity
 {
     public long Id { get; set; }
     [ShowInInspector]
-    public String FirstName1 { get; set; }
+    public String FirstName1 { get; set; } = null;
     [ShowInInspector]
-    public String FirstName2 { get; set; }
+    public String FirstName2 { get; set; } = null;
+    public String FirstNames => FirstName1 + (String.IsNullOrEmpty(FirstName2) ? "" : (" " + FirstName2));
     [ShowInInspector]
-    public String LastName1 { get; set; }
+    public String LastName1 { get; set; } = null;
     [ShowInInspector]
-    public String LastName2 { get; set; }
+    public String LastName2 { get; set; } = null;
+    public String LastNames => LastName1 + (String.IsNullOrEmpty(LastName2) ? "" : (" " + LastName2));
     [ShowInInspector]
-    public long GenderId { get; set; }
+    public long GenderId { get; set; } = 1;
     [ShowInInspector]
-    public DateTime BirthDate { get; set; }
+    public DateTime BirthDate { get; set; } = new DateTime(1753, 1, 1);
     [ShowInInspector]
-    public long BirthCountryId { get; set; }
+    public long BirthCountryId { get; set; } = -1;
     [ShowInInspector]
-    public long BirthStateId { get; set; }
+    public long BirthStateId { get; set; } = -1;
     [ShowInInspector]
     public long BirthCityId { get; set; } = -1;
     [ShowInInspector]
-    public long PhoneCountryId { get; set; }
+    public long PhoneCountryId { get; set; } = -1;
     [ShowInInspector]
-    public String Phone { get; set; }
+    public String Phone { get; set; } = null;
     [ShowInInspector]
-    public String Email { get; set; }
-    public int Status { get; set; }
+    public String Email { get; set; } = null;
+    public int Status { get; set; } = -1;
 
 
     public Identity()

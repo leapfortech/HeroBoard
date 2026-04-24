@@ -56,9 +56,15 @@ public class StateManager : SingletonBehaviour<StateManager>
     [ShowInInspector, HideReferenceObjectPicker, ReadOnly]
     public BoardUser BoardUser { get; set; } = null;
 
+    // Identity
+    [Title("Identity")]
+    [ShowInInspector, HideReferenceObjectPicker, ReadOnly]
+    public Identity Identity { get; set; } = null;
+
     public void ClearAll()
     {
         BoardUser = null;
+        Identity = null;
     }
 
    
