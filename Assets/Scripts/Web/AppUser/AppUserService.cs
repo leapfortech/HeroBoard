@@ -14,6 +14,8 @@ public class AppUserService : MonoBehaviour
 {
     [Serializable]
     public class AppUserEvent : UnityEvent<AppUser> { }
+    [Serializable]
+    public class UserInfosEvent : UnityEvent<List<UserInfo>> { }
 
     [Serializable]
     public class AppUsersEvent : UnityEvent<AppUserNamed[]> { }
@@ -24,6 +26,9 @@ public class AppUserService : MonoBehaviour
 
     [SerializeField]
     private AppUserEvent onAppUserRetreived = null;
+    
+    [SerializeField]
+    private UserInfosEvent onUserInfosRetreived = null;
 
     [SerializeField]
     private AppUsersEvent onAppUsersRetreived = null;
@@ -62,6 +67,27 @@ public class AppUserService : MonoBehaviour
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
             appUserFullsGetOp.Send();
+        }
+        catch (Exception ex)
+        {
+            WebManager.Instance.OnSendError(ex.Message);
+        }
+    }
+
+    public void GetUserInfosByStatus(int status)
+    {
+        UserInfosGetOperation userInfosGetOp = new UserInfosGetOperation();
+        try
+        {
+            userInfosGetOp.status = status;
+            userInfosGetOp["on-complete"] = (Action<UserInfosGetOperation, HttpResponse>)((op, response) =>
+            {
+                if (response != null && !response.HasError)
+                    onUserInfosRetreived.Invoke(op.userInfos);
+                else
+                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+            });
+            userInfosGetOp.Send();
         }
         catch (Exception ex)
         {

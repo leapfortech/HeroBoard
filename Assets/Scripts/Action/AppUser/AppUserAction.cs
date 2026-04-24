@@ -1,30 +1,37 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using UnityEngine;
 
-using Leap.Graphics.Tools;
 using Leap.UI.Elements;
 using Leap.UI.Dialog;
-using Leap.UI.Extensions;
-using Leap.Data.Mapper;
-using Leap.Data.Collections;
 
 using Sirenix.OdinInspector;
 
 public class AppUserAction : MonoBehaviour
 {
-    //[Title("Elements")]
-    //[SerializeField]
-    //ElementValue[] elementValues = null;
+    [Title("Elements")]
+    [SerializeField]
+    Text txtFirstNames = null;
+    [SerializeField]
+    Text txtLastNames = null;
+    [SerializeField]
+    Text txtBirthDate = null;
+    [SerializeField]
+    Text txtGender = null;
+    [SerializeField]
+    Text txtBirthPlace = null;
+    [SerializeField]
+    Text txtAddress = null;
+    [SerializeField]
+    Text txtPhone = null;
+    [SerializeField]
+    Text txtEmail = null;
 
     [Title("AppUsers")]
     [SerializeField]
     ListScroller lstAppUsers = null;
     [SerializeField]
     Text txtAppUsersEmpty = null;
-    //[SerializeField]
-    //Text txtBirthDate = null;
 
     [Title("Sprites")]
     [SerializeField]
@@ -32,119 +39,68 @@ public class AppUserAction : MonoBehaviour
     [SerializeField]
     Sprite sprOnboarded = null;
 
-    [Title("Data")]
-    [SerializeField]
-    DataMapper dtmIdentityFull = null;
-
     public bool Selected { get; set; } = false;
 
-    IdentityService identityService = null;
     AppUserService appUserService = null;
-    List<IdentityFull> identityFulls = null;
+    List<UserInfo> userInfos = new List<UserInfo>();
 
     IdentityFull identityFull = null;
 
     private void Awake()
     {
-        identityService = GetComponent<IdentityService>();
         appUserService = GetComponent<AppUserService>();
     }
 
     public void Clear()
     {
-        //StateManager.Instance.IdentityFulls = new List<IdentityFull>();
-        identityFulls = new List<IdentityFull>();
-        dtmIdentityFull.ClearElements();
+        userInfos = new List<UserInfo>();
     }
 
-    public void GetIdentitys()
+    public void ClearElements()
+    {
+        txtFirstNames.TextValue = "-";
+        txtLastNames.TextValue = "-";
+        txtBirthDate.TextValue = "-";
+        txtGender.TextValue = "-";
+        txtBirthPlace.TextValue = "-";
+        txtAddress.TextValue = "-";
+        txtPhone.TextValue = "-";
+        txtEmail.TextValue = "-";
+    }
+
+    public void GetUserInfos()
     {
         ScreenDialog.Instance.Display();
 
-        //StateManager.Instance.IdentityFulls = new List<IdentityFull>();
-        identityFulls = new List<IdentityFull>();
-        lstAppUsers.ApplyClearValues();
-        txtAppUsersEmpty.gameObject.SetActive(false);
-
-        identityFull = null;
-        identityService.GetFullAll(1);
+        appUserService.GetUserInfosByStatus(1);
     }
 
-    public void FillIdentitys(List<IdentityFull> identityFulls)
+    public void FillUserInfos(List<UserInfo> userInfos)
     {
-        //StateManager.Instance.IdentityFulls = identityFulls;
-        this.identityFulls = identityFulls;
+        this.userInfos = userInfos;
 
-        GetAppUsers();
-    }
-
-    public void GetAppUsers()
-    {
-        appUserService.GetFullsByStatus(1);
-    }
-
-    public void FillAppUsers(List<AppUserFull> appUserFulls)
-    {
-        //if (StateManager.Instance.IdentityFulls == null)
-        if (identityFulls == null)
+        if (userInfos == null)
         {
             lstAppUsers.ApplyClearValues();
             txtAppUsersEmpty.gameObject.SetActive(false);
-            identityFull = null;
-            //StateManager.Instance.IdentityFulls = new List<IdentityFull>(appUserFulls.Count);
-            identityFulls = new List<IdentityFull>(appUserFulls.Count);
+            userInfos = new List<UserInfo>(userInfos.Count);
         }
-
-        AppUserFull a;
-        for (int i = 0; i < appUserFulls.Count; i++)
-        {
-            a = appUserFulls[i];
-
-            //StateManager.Instance.IdentityFulls.Add(new IdentityFull(-1, "-", null, "-", null, "-", DateTime.Now, "-", "-",
-            //                                                         a.PhonePrefix, a.Phone, a.Email, a.CreateDateTime,
-            //                                                         a.UpdateDateTime, a.AppUserStatusId, 0));
-
-            identityFulls.Add(new IdentityFull(-1, "-", null, "-", null, "-", DateTime.Now, "-", "-", "-",
-                                               a.PhonePrefix, a.Phone, a.Email, a.CreateDateTime,
-                                               a.UpdateDateTime, a.AppUserStatusId, 0));
-        }
-
-        //if (StateManager.Instance.IdentityFulls.Count == 0)
-        if (identityFulls.Count == 0)
-        {
-            lstAppUsers.ApplyClearValues();
-            txtAppUsersEmpty.gameObject.SetActive(true);
-            StateManager.Instance.BoardLoadHide();
-            return;
-        }
-
-        //StateManager.Instance.IdentityFulls.Sort((idf1, idf2) => { return idf1.Id.CompareTo(idf2.Id); });
-        identityFulls.Sort((idf1, idf2) => { return idf1.Id.CompareTo(idf2.Id); });
 
         lstAppUsers.ClearValues();
 
         ListScrollerValue lstAppUserValue;
-        //for (int i = 0; i < StateManager.Instance.IdentityFulls.Count; i++)
-        for (int i = 0; i < identityFulls.Count; i++)
+        for (int i = 0; i < userInfos.Count; i++)
         {
             lstAppUserValue = new ListScrollerValue(4, true);
-            //IdentityFull identityFull = StateManager.Instance.IdentityFulls[i];
-            IdentityFull identityFull = identityFulls[i];
+            AppUserFull appUserFull = userInfos[i].AppUserFull;
+            IdentityFull identityFull = userInfos[i].IdentityFull;
 
-            if (identityFull.Status == 0)
-            {
-                lstAppUserValue.SetText(0, identityFull.PhonePrefix + " " + identityFull.Phone);
-                lstAppUserValue.SetText(1, $"{identityFull.Email}");
-                lstAppUserValue.SetSprite(2, sprEmpty);
-                lstAppUserValue.SetSprite(3, sprEmpty);
-            }
-            else
-            {
-                lstAppUserValue.SetText(0, identityFull.BirthCountry);
-                lstAppUserValue.SetText(1, $"{identityFull.FirstNames} {identityFull.LastNames}");
-                lstAppUserValue.SetSprite(2, sprOnboarded);
-                lstAppUserValue.SetSprite(3, sprOnboarded); 
-            }
+            lstAppUserValue.SetText(0, $"{userInfos[i].AppUserFull.Alias}");
+            lstAppUserValue.SetText(1, IsRegisteredPhone(userInfos[i].AppUserFull.Email)
+                                                         ? userInfos[i].AppUserFull.PhonePrefix + " " + userInfos[i].AppUserFull.Phone
+                                                         : userInfos[i].AppUserFull.Email);
+            lstAppUserValue.SetSprite(2, identityFull == null ? sprEmpty : sprOnboarded);
+            lstAppUserValue.SetSprite(3, identityFull == null ? sprEmpty : sprOnboarded);
 
             lstAppUsers.AddValue(lstAppUserValue);
         }
@@ -158,9 +114,82 @@ public class AppUserAction : MonoBehaviour
 
     public void Display(int idx)
     {
-        identityFull = identityFulls[idx];
-        dtmIdentityFull.PopulateClass(identityFull);
+        if (userInfos[idx].IdentityFull == null)
+        {
+            ClearElements();
+            txtPhone.TextValue = IsRegisteredPhone(userInfos[idx].AppUserFull.Email) ? userInfos[idx].AppUserFull.PhonePrefix + " " + userInfos[idx].AppUserFull.Phone : "-";
+            txtEmail.TextValue = !IsRegisteredPhone(userInfos[idx].AppUserFull.Email) ? userInfos[idx].AppUserFull.Email : "-";
+        }
+        else
+        {
+            identityFull = userInfos[idx].IdentityFull;
 
-        //txtBirthDate.TextValue = identityFull.BirthDate;
+            IdentityFull idt = userInfos[idx].IdentityFull;
+            AppUserFull app = userInfos[idx].AppUserFull;
+
+            String firstNames = "";
+
+            if (!String.IsNullOrEmpty(idt.FirstName1))
+                firstNames = idt.FirstName1;
+
+            if (!String.IsNullOrEmpty(idt.FirstName2))
+                firstNames += (firstNames != "" ? " " : "") + idt.FirstName2;
+
+            txtFirstNames.TextValue = firstNames != "" ? firstNames : "-";
+
+            String lastNames = "";
+
+            if (!String.IsNullOrEmpty(idt.LastName1))
+                lastNames = idt.LastName1;
+
+            if (!String.IsNullOrEmpty(idt.LastName2))
+                lastNames += (lastNames != "" ? " " : "") + idt.LastName2;
+
+            txtLastNames.TextValue = lastNames != "" ? lastNames : "-";
+
+            DateTime sqlMinDate = new DateTime(1753, 1, 1);
+
+            txtBirthDate.TextValue = idt.BirthDate > sqlMinDate ? idt.BirthDate.ToString("dd/MM/yyyy") : "-";
+
+            txtGender.TextValue = !String.IsNullOrEmpty(idt.Gender) ? idt.Gender : "-";
+
+            String birthPlace = "";
+
+            if (!String.IsNullOrEmpty(idt.BirthCountry))
+                birthPlace = idt.BirthCountry;
+
+            if (!String.IsNullOrEmpty(idt.BirthState))
+                birthPlace += (birthPlace != "" ? ", " : "") + idt.BirthState;
+
+            if (!String.IsNullOrEmpty(idt.BirthCity))
+                birthPlace += (birthPlace != "" ? ", " : "") + idt.BirthCity;
+
+            txtBirthPlace.TextValue = birthPlace != "" ? birthPlace : "-";
+
+            txtAddress.TextValue = "-";
+
+            bool isPhone = !String.IsNullOrEmpty(app.Email) && IsRegisteredPhone(app.Email);
+
+            String phone = "";
+
+            if (isPhone)
+            {
+                if (!String.IsNullOrEmpty(app.PhonePrefix))
+                    phone = app.PhonePrefix;
+
+                if (!String.IsNullOrEmpty(app.Phone))
+                    phone += (phone != "" ? " " : "") + app.Phone;
+            }
+
+            txtPhone.TextValue = isPhone ? phone : "-";
+            txtEmail.TextValue = !isPhone ? (app.Email ?? "-") : "-";
+        }
+    }
+
+    private static bool IsRegisteredPhone(String email)
+    {
+        return !String.IsNullOrEmpty(email) &&
+               email.StartsWith("hm.", StringComparison.OrdinalIgnoreCase) &&
+               email.EndsWith("@heroesmigrantes.com", StringComparison.OrdinalIgnoreCase);
     }
 }

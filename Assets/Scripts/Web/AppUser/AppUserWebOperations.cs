@@ -24,6 +24,20 @@ public class AppUserFullsGetOperation : HttpOperation
 }
 
 [HttpGET]
+[HttpPathExt(WebServiceType.Main, "/appUser/UserInfoByStatus")]
+[HttpProvider(typeof(HttpUnityWebAzureClient))]
+[HttpAccept("application/json")]
+[HttpFirebaseAuthorization]
+public class UserInfosGetOperation : HttpOperation
+{
+    [HttpQueryString]
+    public int status;
+
+    [HttpResponseJsonBody]
+    public List<UserInfo> userInfos;
+}
+
+[HttpGET]
 [HttpPathExt(WebServiceType.Main, "/appUser/Named")]
 [HttpProvider(typeof(HttpUnityWebAzureClient))]
 [HttpAccept("application/json")]
