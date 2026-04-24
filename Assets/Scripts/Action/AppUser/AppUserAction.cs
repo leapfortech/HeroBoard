@@ -44,8 +44,6 @@ public class AppUserAction : MonoBehaviour
     AppUserService appUserService = null;
     List<UserInfo> userInfos = new List<UserInfo>();
 
-    IdentityFull identityFull = null;
-
     private void Awake()
     {
         appUserService = GetComponent<AppUserService>();
@@ -122,10 +120,9 @@ public class AppUserAction : MonoBehaviour
         }
         else
         {
-            identityFull = userInfos[idx].IdentityFull;
-
-            IdentityFull idt = userInfos[idx].IdentityFull;
             AppUserFull app = userInfos[idx].AppUserFull;
+            IdentityFull idt = userInfos[idx].IdentityFull;
+            AddressFull add = userInfos[idx].AddressFull;
 
             String firstNames = "";
 
@@ -166,7 +163,18 @@ public class AppUserAction : MonoBehaviour
 
             txtBirthPlace.TextValue = birthPlace != "" ? birthPlace : "-";
 
-            txtAddress.TextValue = "-";
+            String addressText = "";
+
+            if (add != null && !String.IsNullOrEmpty(add.Country))
+                addressText = add.Country;
+
+            if (add != null && !String.IsNullOrEmpty(add.State))
+                addressText += (addressText != "" ? ", " : "") + add.State;
+
+            if (add != null && !String.IsNullOrEmpty(add.City))
+                addressText += (addressText != "" ? ", " : "") + add.City;
+
+            txtAddress.TextValue = addressText != "" ? addressText : "-";
 
             bool isPhone = !String.IsNullOrEmpty(app.Email) && IsRegisteredPhone(app.Email);
 
