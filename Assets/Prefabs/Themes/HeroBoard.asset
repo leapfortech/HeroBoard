@@ -28683,7 +28683,7 @@ MonoBehaviour:
           rid: 7896456370744197127
         Name: 'Card: Text: MRZ B'
         Reference: 0
-        Value: {fileID: 11400000, guid: 7f4a398788dc0dd4988f1fa9f1d7609e, type: 2}
+        Value: {fileID: 0}
         Property: 
     - rid: 7896456370759402242
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -28963,7 +28963,7 @@ MonoBehaviour:
         Name: 'List: Item: Title'
         Reference: 1
         Value: 0
-        Property: 'Font: Distinct'
+        Property: 'Font: Large'
     - rid: 7896456370759402273
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -28990,7 +28990,7 @@ MonoBehaviour:
         Name: 'List: Item: Text'
         Reference: 1
         Value: 0
-        Property: 'Font: Clear'
+        Property: 'Font: Distinct'
     - rid: 7896456370759402276
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -29017,7 +29017,7 @@ MonoBehaviour:
         Name: 'List: Item: Date'
         Reference: 1
         Value: 0
-        Property: 'Font: Mini'
+        Property: 'Font: Fluid'
     - rid: 7896456370759402279
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
