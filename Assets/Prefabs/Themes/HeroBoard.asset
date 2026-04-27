@@ -121,7 +121,7 @@ MonoBehaviour:
         Name: 'HM: Crd: Sec: Border'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: Default'
+        Property: 'GreyScale: E'
     - rid: 6168643247209448189
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -28963,7 +28963,7 @@ MonoBehaviour:
         Name: 'List: Item: Title'
         Reference: 1
         Value: 0
-        Property: 'Font: Large'
+        Property: 'Font: Scan'
     - rid: 7896456370759402273
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
