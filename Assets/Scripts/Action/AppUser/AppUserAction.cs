@@ -27,11 +27,32 @@ public class AppUserAction : MonoBehaviour
     [SerializeField]
     Text txtEmail = null;
 
+    [Title("Filters")]
+    [SerializeField]
+    InputField ifdAlias = null;
+    [SerializeField]
+    Button btnFilter = null;
+
+    [SerializeField]
+    ToggleGroup tggSort = null;
+
     [Title("AppUsers")]
     [SerializeField]
     ListScroller lstAppUsers = null;
     [SerializeField]
     Text txtAppUsersEmpty = null;
+
+    [Title("Navigation")]
+    [SerializeField]
+    Button btnNext = null;
+    [SerializeField]
+    Button btnBack = null;
+    [SerializeField]
+    Text txtPage = null;
+
+    [Title("Config")]
+    [SerializeField]
+    int pageSize = 10;
 
     [Title("Sprites")]
     [SerializeField]
@@ -39,19 +60,27 @@ public class AppUserAction : MonoBehaviour
     [SerializeField]
     Sprite sprOnboarded = null;
 
-    public bool Selected { get; set; } = false;
-
     AppUserService appUserService = null;
+
     List<UserInfo> userInfos = new List<UserInfo>();
+    UserInfoAllRsp userInfoAllRsp = null;
+
+    int currentPage = 1;
+    int totalPages = 1;
+
+    string filterAlias = null;
+    int filterStatus = -1;
 
     private void Awake()
     {
         appUserService = GetComponent<AppUserService>();
     }
 
-    public void Clear()
+    private void Start()
     {
-        userInfos = new List<UserInfo>();
+        btnNext?.AddAction(NextPage);
+        btnBack?.AddAction(BackPage);
+        btnFilter?.AddAction(Filter);
     }
 
     public void ClearElements()
@@ -66,50 +95,181 @@ public class AppUserAction : MonoBehaviour
         txtEmail.TextValue = "-";
     }
 
-    public void GetUserInfos()
+    public void LoadFirstPage()
+    {
+        currentPage = 1;
+        filterAlias = null;
+
+        ifdAlias?.ClearValue();
+
+        GetPaged(currentPage);
+    }
+
+    public void Filter()
+    {
+        filterAlias = ifdAlias.Text;
+
+        if (String.IsNullOrWhiteSpace(filterAlias))
+            filterAlias = null;
+
+        currentPage = 1;
+
+        GetPaged(currentPage);
+    }
+
+    public void GetPaged(int page)
     {
         ScreenDialog.Instance.Display();
 
-        txtAppUsersEmpty.gameObject.SetActive(false);
+        currentPage = page;
 
-        appUserService.GetUserInfosByStatus(1);
+        btnNext.Interactable = false;
+        btnBack.Interactable = false;
+
+        UserInfoAllByAlias req = new UserInfoAllByAlias(page, pageSize, filterAlias, filterStatus);
+
+        appUserService.GetUserInfoAllByAlias(req);
     }
 
-    public void FillUserInfos(List<UserInfo> userInfos)
+    public void FillPaged(UserInfoAllRsp rsp)
     {
-        this.userInfos = userInfos;
+        userInfoAllRsp = rsp;
 
-        if (userInfos == null || userInfos.Count == 0)
+        if (rsp == null || rsp.UserInfos == null || rsp.UserInfos.Count == 0)
         {
-            lstAppUsers.ApplyClearValues();
-            txtAppUsersEmpty.gameObject.SetActive(true);
-            userInfos = new List<UserInfo>(userInfos.Count);
+            ShowEmpty();
+            return;
         }
 
-        lstAppUsers.ClearValues();
+        userInfos = rsp.UserInfos;
 
-        ListScrollerValue lstAppUserValue;
+        totalPages = rsp.TotalPages;
+        currentPage = rsp.Page;
+
+        UpdatePagination();
+
+        SortItems(userInfos);
+
+        lstAppUsers.ClearValues();
+        txtAppUsersEmpty.gameObject.SetActive(false);
+
         for (int i = 0; i < userInfos.Count; i++)
         {
-            lstAppUserValue = new ListScrollerValue(4, true);
-            AppUserFull appUserFull = userInfos[i].AppUserFull;
-            IdentityFull identityFull = userInfos[i].IdentityFull;
+            ListScrollerValue value = new ListScrollerValue(4, true);
 
-            lstAppUserValue.SetText(0, $"{userInfos[i].AppUserFull.Alias}");
-            lstAppUserValue.SetText(1, IsRegisteredPhone(userInfos[i].AppUserFull.Email)
-                                                         ? userInfos[i].AppUserFull.PhonePrefix + " " + userInfos[i].AppUserFull.Phone
-                                                         : userInfos[i].AppUserFull.Email);
-            lstAppUserValue.SetSprite(2, identityFull == null ? sprEmpty : sprOnboarded);
-            lstAppUserValue.SetSprite(3, identityFull == null ? sprEmpty : sprOnboarded);
+            AppUserFull app = userInfos[i].AppUserFull;
+            IdentityFull idt = userInfos[i].IdentityFull;
 
-            lstAppUsers.AddValue(lstAppUserValue);
+            value.SetText(0, app.Alias);
+
+            value.SetText(1,
+                IsRegisteredPhone(app.Email)
+                ? app.PhonePrefix + " " + app.Phone
+                : app.Email
+            );
+
+            value.SetSprite(2, idt == null ? sprEmpty : sprOnboarded);
+            value.SetSprite(3, idt == null ? sprEmpty : sprOnboarded);
+
+            lstAppUsers.AddValue(value);
         }
 
         lstAppUsers.ApplyValues();
+        lstAppUsers.CheckToggle(0, true);
 
         Display(0);
 
         StateManager.Instance.BoardLoadHide();
+    }
+
+    public void NextPage()
+    {
+        if (currentPage >= totalPages) return;
+        GetPaged(currentPage + 1);
+    }
+
+    public void BackPage()
+    {
+        if (currentPage <= 1) return;
+        GetPaged(currentPage - 1);
+    }
+
+    public void UpdatePagination()
+    {
+        txtPage.TextValue = $"Página {currentPage} / {Mathf.Max(totalPages, 1)}";
+
+        btnBack.Interactable = currentPage > 1;
+        btnNext.Interactable = currentPage < totalPages;
+    }
+
+    public void ShowEmpty()
+    {
+        txtAppUsersEmpty.gameObject.SetActive(true);
+        lstAppUsers.ApplyClearValues();
+
+        StateManager.Instance.BoardLoadHide();
+    }
+
+    public void SortChanged()
+    {
+        if (userInfoAllRsp != null && userInfoAllRsp.UserInfos != null)
+            FillPaged(userInfoAllRsp);
+    }
+
+    private void SortItems(List<UserInfo> items)
+    {
+        int sortOption = Convert.ToInt32(tggSort.Value);
+
+        for (int i = 0; i < items.Count - 1; i++)
+        {
+            for (int j = i + 1; j < items.Count; j++)
+            {
+                UserInfo a = items[i];
+                UserInfo b = items[j];
+
+                int compare = 0;
+
+                // 1-2 Alias
+                if (sortOption == 1 || sortOption == 2)
+                {
+                    compare = String.Compare(
+                        a.AppUserFull.Alias,
+                        b.AppUserFull.Alias,
+                        StringComparison.OrdinalIgnoreCase);
+                }
+                // 3-4 Email / Phone
+                else if (sortOption == 3 || sortOption == 4)
+                {
+                    string valA = IsRegisteredPhone(a.AppUserFull.Email)
+                        ? a.AppUserFull.Phone
+                        : a.AppUserFull.Email;
+
+                    string valB = IsRegisteredPhone(b.AppUserFull.Email)
+                        ? b.AppUserFull.Phone
+                        : b.AppUserFull.Email;
+
+                    compare = String.Compare(valA, valB, StringComparison.OrdinalIgnoreCase);
+                }
+
+                // DESC
+                if (sortOption % 2 == 0)
+                    compare = -compare;
+
+                if (compare > 0)
+                {
+                    UserInfo temp = items[i];
+                    items[i] = items[j];
+                    items[j] = temp;
+                }
+            }
+        }
+    }
+
+    private static bool IsRegisteredPhone(String email)
+    {
+        return !String.IsNullOrEmpty(email) &&
+               email.StartsWith("hm.", StringComparison.OrdinalIgnoreCase) &&
+               email.EndsWith("@heroesmigrantes.com", StringComparison.OrdinalIgnoreCase);
     }
 
     public void Display(int idx)
@@ -194,12 +354,5 @@ public class AppUserAction : MonoBehaviour
             txtPhone.TextValue = isPhone ? phone : "-";
             txtEmail.TextValue = !isPhone ? (app.Email ?? "-") : "-";
         }
-    }
-
-    private static bool IsRegisteredPhone(String email)
-    {
-        return !String.IsNullOrEmpty(email) &&
-               email.StartsWith("hm.", StringComparison.OrdinalIgnoreCase) &&
-               email.EndsWith("@heroesmigrantes.com", StringComparison.OrdinalIgnoreCase);
     }
 }

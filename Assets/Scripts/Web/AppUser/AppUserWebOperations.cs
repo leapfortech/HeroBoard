@@ -24,20 +24,6 @@ public class AppUserFullsGetOperation : HttpOperation
 }
 
 [HttpGET]
-[HttpPathExt(WebServiceType.Main, "/appUser/UserInfoByStatus")]
-[HttpProvider(typeof(HttpUnityWebAzureClient))]
-[HttpAccept("application/json")]
-[HttpFirebaseAuthorization]
-public class UserInfosGetOperation : HttpOperation
-{
-    [HttpQueryString]
-    public int status;
-
-    [HttpResponseJsonBody]
-    public List<UserInfo> userInfos;
-}
-
-[HttpGET]
 [HttpPathExt(WebServiceType.Main, "/appUser/Named")]
 [HttpProvider(typeof(HttpUnityWebAzureClient))]
 [HttpAccept("application/json")]
@@ -111,6 +97,21 @@ public class AppUserByIdGetOperation : HttpOperation
 
     [HttpResponseJsonBody]
     public AppUser appUser;
+}
+
+[HttpPOST]
+[HttpPathExt(WebServiceType.Main, "/appUser/UserInfoAllByAlias")]
+[HttpProvider(typeof(HttpUnityWebAzureClient))]
+[HttpContentType("application/json")]
+[HttpAccept("application/json")]
+[HttpFirebaseAuthorization]
+public class UserInfoAllByAliasPostOperation : HttpOperation
+{
+    [HttpRequestJsonBody]
+    public UserInfoAllByAlias req;
+
+    [HttpResponseJsonBody]
+    public UserInfoAllRsp rsp;
 }
 
 [HttpPUT]

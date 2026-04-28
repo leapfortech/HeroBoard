@@ -15,7 +15,7 @@ public class AppUserService : MonoBehaviour
     [Serializable]
     public class AppUserEvent : UnityEvent<AppUser> { }
     [Serializable]
-    public class UserInfosEvent : UnityEvent<List<UserInfo>> { }
+    public class UserInfoAllEvent : UnityEvent<UserInfoAllRsp> { }
 
     [Serializable]
     public class AppUsersEvent : UnityEvent<AppUserNamed[]> { }
@@ -28,7 +28,7 @@ public class AppUserService : MonoBehaviour
     private AppUserEvent onAppUserRetreived = null;
     
     [SerializeField]
-    private UserInfosEvent onUserInfosRetreived = null;
+    private UserInfoAllEvent onUserInfoAllRetreived = null;
 
     [SerializeField]
     private AppUsersEvent onAppUsersRetreived = null;
@@ -74,20 +74,20 @@ public class AppUserService : MonoBehaviour
         }
     }
 
-    public void GetUserInfosByStatus(int status)
+    public void GetUserInfoAllByAlias(UserInfoAllByAlias req)
     {
-        UserInfosGetOperation userInfosGetOp = new UserInfosGetOperation();
+        UserInfoAllByAliasPostOperation userInfoAllPostOp = new UserInfoAllByAliasPostOperation();
         try
         {
-            userInfosGetOp.status = status;
-            userInfosGetOp["on-complete"] = (Action<UserInfosGetOperation, HttpResponse>)((op, response) =>
+            userInfoAllPostOp.req = req;
+            userInfoAllPostOp["on-complete"] = (Action<UserInfoAllByAliasPostOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)
-                    onUserInfosRetreived.Invoke(op.userInfos);
+                    onUserInfoAllRetreived.Invoke(op.rsp);
                 else
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
-            userInfosGetOp.Send();
+            userInfoAllPostOp.Send();
         }
         catch (Exception ex)
         {

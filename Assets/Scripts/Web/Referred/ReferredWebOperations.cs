@@ -35,21 +35,6 @@ public class ReferredGetOperation : HttpOperation
     public List<Referred> referreds;
 }
 
-[HttpPOST]
-[HttpPathExt(WebServiceType.Main, "/referred/FullAllByCode")]
-[HttpProvider(typeof(HttpUnityWebAzureClient))]
-[HttpContentType("application/json")]
-[HttpAccept("application/json")]
-[HttpFirebaseAuthorization]
-public class ReferredFullAllByCodePostOperation : HttpOperation
-{
-    [HttpRequestJsonBody]
-    public ReferredAllByCodeReq req;
-
-    [HttpResponseJsonBody]
-    public ReferredFullAllRsp rsp;
-}
-
 //[HttpPOST]
 //[HttpPathExt(WebServiceType.Main, "/referred/History")]
 //[HttpProvider(typeof(HttpUnityWebAzureClient))]
@@ -77,6 +62,21 @@ public class IdByCodeGetOperation : HttpOperation
 
     [HttpResponseTextBody]
     public String response;
+}
+
+[HttpPOST]
+[HttpPathExt(WebServiceType.Main, "/referred/FullAllByCode")]
+[HttpProvider(typeof(HttpUnityWebAzureClient))]
+[HttpContentType("application/json")]
+[HttpAccept("application/json")]
+[HttpFirebaseAuthorization]
+public class ReferredFullAllByCodePostOperation : HttpOperation
+{
+    [HttpRequestJsonBody]
+    public ReferredAllByCodeReq req;
+
+    [HttpResponseJsonBody]
+    public ReferredFullAllRsp rsp;
 }
 
 [HttpPOST]
