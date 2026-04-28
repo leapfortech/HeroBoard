@@ -204,6 +204,8 @@ public class AppUserAction : MonoBehaviour
 
     public void ShowEmpty()
     {
+        ClearElements();
+
         txtAppUsersEmpty.gameObject.SetActive(true);
         lstAppUsers.ApplyClearValues();
 

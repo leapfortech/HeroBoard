@@ -115,6 +115,14 @@ public class BoardUserAction : MonoBehaviour
         btnFilter?.AddAction(Filter);
     }
 
+    public void ClearElements()
+    {
+        txtName.TextValue = "-";
+        txtAuthUserId.TextValue = "-";
+        txtEmail.TextValue = "-";
+        txtPhone.TextValue = "-";
+    }
+
     public void LoadFirstPage()
     {
         currentPage = 1;
@@ -155,9 +163,7 @@ public class BoardUserAction : MonoBehaviour
     {
         if (rsp == null || rsp.BoardUserFulls == null || rsp.BoardUserFulls.Count == 0)
         {
-            lstBoardUsers.ApplyClearValues();
-            txtBoardUsersEmpty.gameObject.SetActive(true);
-            StateManager.Instance.BoardLoadHide();
+            ShowEmpty();
             return;
         }
 
@@ -202,6 +208,17 @@ public class BoardUserAction : MonoBehaviour
 
         btnBack.Interactable = currentPage > 1;
         btnNext.Interactable = currentPage < totalPages;
+    }
+
+    public void ShowEmpty()
+    {
+        ClearElements();
+
+        lstBoardUsers.ApplyClearValues();
+        lstRoles.ApplyClearValues();
+        txtBoardUsersEmpty.gameObject.SetActive(true);
+
+        StateManager.Instance.BoardLoadHide();
     }
 
     public void NextPage()

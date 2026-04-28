@@ -10,6 +10,10 @@ using Sirenix.OdinInspector;
 
 public class ReferredAction : MonoBehaviour
 {
+    [Title("Elements")]
+    [SerializeField]
+    Text[] texts = null;
+
     [Title("Filters")]
     [SerializeField]
     InputField ifdCode = null;
@@ -67,6 +71,12 @@ public class ReferredAction : MonoBehaviour
         btnNext?.AddAction(NextPage);
         btnBack?.AddAction(BackPage);
         btnFilter?.AddAction(Filter);
+    }
+
+    public void ClearElements()
+    {
+        for (int i = 0; i < texts.Length; i++)
+            texts[i].TextValue = "-";
     }
 
     public void LoadFirstPage()
@@ -170,7 +180,7 @@ public class ReferredAction : MonoBehaviour
         dtmReferrer.PopulateClass(referred.Referrer);
     }
 
-    void UpdatePagination()
+    public void UpdatePagination()
     {
         txtPage.TextValue = $"Página {currentPage} / {Mathf.Max(totalPages, 1)}";
 
@@ -178,8 +188,10 @@ public class ReferredAction : MonoBehaviour
         btnNext.Interactable = currentPage < totalPages;
     }
 
-    void ShowEmpty()
+    public void ShowEmpty()
     {
+        ClearElements();
+
         txtReferredsEmpty.gameObject.SetActive(true);
         lstReferreds.ApplyClearValues();
 
