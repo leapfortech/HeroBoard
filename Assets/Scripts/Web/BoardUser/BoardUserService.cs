@@ -15,13 +15,13 @@ public class BoardUserService : MonoBehaviour
     public class BoardUserEvent : UnityEvent<BoardUser> { }
 
     [Serializable]
-    public class BoardUserFullsEvent : UnityEvent<BoardUserFull[]> { }
+    public class BoardUserFullAllEvent : UnityEvent<BoardUserFullAllRsp> { }
 
     [SerializeField]
     private BoardUserEvent onRetreived = null;
 
     [SerializeField]
-    private BoardUserFullsEvent onFullsRetreived = null;
+    private BoardUserFullAllEvent onFullAllRetreived = null;
 
     [SerializeField]
     private UnityIntEvent onCount = null;
@@ -37,46 +37,26 @@ public class BoardUserService : MonoBehaviour
     private UnityStringEvent onResponseError = null;
 
     // GET
-    public void GetFulls()
-    {
-        BoardUserFullsGetOperation boardUsersFullGetOp = new BoardUserFullsGetOperation();
-        try
-        {
-            boardUsersFullGetOp["on-complete"] = (Action<BoardUserFullsGetOperation, HttpResponse>)((op, response) =>
-            {
-                if (response != null && !response.HasError)
-                    onFullsRetreived.Invoke(op.boardUserFulls);
-                else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
-            });
-            boardUsersFullGetOp.Send();
-        }
-        catch (Exception ex)
-        {
-            WebManager.Instance.OnSendError(ex.Message);
-        }
-    }
-
-    public void GetFullsByStatus(int status)
-    {
-        BoardUserFullsByStatusGetOperation boardUsersFullGetOp = new BoardUserFullsByStatusGetOperation();
-        try
-        {
-            boardUsersFullGetOp.status = status;
-            boardUsersFullGetOp["on-complete"] = (Action<BoardUserFullsByStatusGetOperation, HttpResponse>)((op, response) =>
-            {
-                if (response != null && !response.HasError)
-                    onFullsRetreived.Invoke(op.boardUserFulls);
-                else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
-            });
-            boardUsersFullGetOp.Send();
-        }
-        catch (Exception ex)
-        {
-            WebManager.Instance.OnSendError(ex.Message);
-        }
-    }
+    //public void GetFullsByStatus(int status)
+    //{
+    //    BoardUserFullsByStatusGetOperation boardUsersFullGetOp = new BoardUserFullsByStatusGetOperation();
+    //    try
+    //    {
+    //        boardUsersFullGetOp.status = status;
+    //        boardUsersFullGetOp["on-complete"] = (Action<BoardUserFullsByStatusGetOperation, HttpResponse>)((op, response) =>
+    //        {
+    //            if (response != null && !response.HasError)
+    //                onFullsRetreived.Invoke(op.boardUserFulls);
+    //            else
+    //                onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+    //        });
+    //        boardUsersFullGetOp.Send();
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        WebManager.Instance.OnSendError(ex.Message);
+    //    }
+    //}
 
     public void GetById(long boardUserId)
     {
@@ -132,6 +112,27 @@ public class BoardUserService : MonoBehaviour
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
             boardUsersCountGetOp.Send();
+        }
+        catch (Exception ex)
+        {
+            WebManager.Instance.OnSendError(ex.Message);
+        }
+    }
+
+    public void GetFullAllByName(BoardUserAllByNameReq req)
+    {
+        BoardUserFullAllByNamePostOperation boardUserFullAllByNamePostOp = new BoardUserFullAllByNamePostOperation();
+        try
+        {
+            boardUserFullAllByNamePostOp.req = req;
+            boardUserFullAllByNamePostOp["on-complete"] = (Action<BoardUserFullAllByNamePostOperation, HttpResponse>)((op, response) =>
+            {
+                if (response != null && !response.HasError)
+                    onFullAllRetreived.Invoke(op.rsp);
+                else
+                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+            });
+            boardUserFullAllByNamePostOp.Send();
         }
         catch (Exception ex)
         {

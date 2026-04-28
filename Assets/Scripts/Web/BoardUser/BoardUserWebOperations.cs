@@ -10,17 +10,6 @@ using hg.ApiWebKit.authorizations;
 using Leap.Data.Web;
 
 [HttpGET]
-[HttpPathExt(WebServiceType.Main, "/boardUser/Fulls")]
-[HttpProvider(typeof(HttpUnityWebAzureClient))]
-[HttpAccept("application/json")]
-[HttpFirebaseAuthorization]
-public class BoardUserFullsGetOperation : HttpOperation
-{
-    [HttpResponseJsonBody]
-    public BoardUserFull[] boardUserFulls;
-}
-
-[HttpGET]
 [HttpPathExt(WebServiceType.Main, "/boardUser/FullsByStatus")]
 [HttpProvider(typeof(HttpUnityWebAzureClient))]
 [HttpAccept("application/json")]
@@ -71,6 +60,21 @@ public class BoardUsersCountByStatusGetOperation : HttpOperation
 
     [HttpResponseTextBody]
     public String count;
+}
+
+[HttpPOST]
+[HttpPathExt(WebServiceType.Main, "/boardUser/FullAllByName")]
+[HttpProvider(typeof(HttpUnityWebAzureClient))]
+[HttpContentType("application/json")]
+[HttpAccept("application/json")]
+[HttpFirebaseAuthorization]
+public class BoardUserFullAllByNamePostOperation : HttpOperation
+{
+    [HttpRequestJsonBody]
+    public BoardUserAllByNameReq req;
+
+    [HttpResponseJsonBody]
+    public BoardUserFullAllRsp rsp;
 }
 
 [HttpPUT]

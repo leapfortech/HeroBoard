@@ -14,7 +14,7 @@ public class BoardUserAction : MonoBehaviour
     [Serializable]
     public class BoardUserFullEvent : UnityEvent<BoardUserFull> { }
 
-    [Title("Meetings")]
+    [Title("List")]
     [SerializeField]
     ListScroller lstBoardUsers = null;
     [SerializeField]
@@ -30,11 +30,35 @@ public class BoardUserAction : MonoBehaviour
     [SerializeField]
     Text txtPhone = null;
 
-    [Title("Appointments")]
+    [Title("Roles")]
     [SerializeField]
     ListScroller lstRoles = null;
     [SerializeField]
     Text txtRolesEmpty = null;
+
+    [Title("Filters")]
+    [SerializeField]
+    InputField txtFilterName = null;
+    [SerializeField]
+    Button btnFilter = null;
+    //[SerializeField]
+    //ComboAdapter cmbStatus = null;
+
+    [Title("Sort")]
+    [SerializeField]
+    ToggleGroup tggSort = null;
+
+    [Title("Pagination")]
+    [SerializeField]
+    Button btnNext = null;
+    [SerializeField]
+    Button btnBack = null;
+    [SerializeField]
+    Text txtPage = null;
+
+    [Title("Config")]
+    [SerializeField]
+    int pageSize = 10;
 
     [Title("Data")]
     [SerializeField]
@@ -52,12 +76,20 @@ public class BoardUserAction : MonoBehaviour
     [SerializeField]
     BoardUserFullEvent onBoardUserFull = null;
 
+    // State
+    int currentPage = 1;
+    int totalPages = 1;
+
+    string filterName = null;
+    int filterStatus = -1;
+
     public bool Selected { get; set; } = false;
     public long Id { get; set; } = -1;
-    private Dictionary<long, int> Idx = new Dictionary<long, int>();
+
+    //private Dictionary<long, int> Idx = new Dictionary<long, int>();
 
     private BoardUserService boardUserService = null;
-    private BoardUserFull[] boardUserFulls = null;
+    private List<BoardUserFull> boardUserFulls = new List<BoardUserFull>();
 
     private BoardUserFull boardUserFull = null;
     public BoardUserFull BoardUserFull => boardUserFull;
@@ -73,72 +105,165 @@ public class BoardUserAction : MonoBehaviour
 
         trfAdd = btnAdd.GetComponent<RectTransform>();
         posAdd = trfAdd.anchoredPosition;
-
         posUpdate = btnUpdate.GetComponent<RectTransform>().anchoredPosition;
     }
 
-    public void Clear()
+    private void Start()
     {
-        txtName.TextValue = "-";
-        txtAuthUserId.TextValue = "-";
-        txtEmail.TextValue = "-";
-        txtPhone.TextValue = "-";
-
-        roles.Clear();
-        lstRoles.ApplyClearValues();
-        txtRolesEmpty.gameObject.SetActive(false);
+        btnNext?.AddAction(NextPage);
+        btnBack?.AddAction(BackPage);
+        btnFilter?.AddAction(Filter);
     }
 
-    public void GetFulls()
+    public void LoadFirstPage()
+    {
+        currentPage = 1;
+        filterName = null;
+        filterStatus = -1;
+
+        txtFilterName.Clear();
+        //cmbStatus.SelectIndex(0);
+
+        GetPaged(currentPage);
+    }
+
+    public void Filter()
+    {
+        filterName = String.IsNullOrWhiteSpace(txtFilterName.Text) ? null : txtFilterName.Text;
+        //filterStatus = Convert.ToInt32(cmbStatus.GetSelectedId());
+
+        currentPage = 1;
+
+        GetPaged(currentPage);
+    }
+
+    public void GetPaged(int page)
     {
         ScreenDialog.Instance.Display();
 
-        lstBoardUsers.ApplyClearValues();
-        txtBoardUsersEmpty.gameObject.SetActive(false);
+        currentPage = page;
 
-        boardUserFull = null;
-        boardUserService.GetFulls();
+        btnNext.Interactable = false;
+        btnBack.Interactable = false;
+
+        BoardUserAllByNameReq req = new BoardUserAllByNameReq(page, pageSize, filterName, filterStatus);
+
+        boardUserService.GetFullAllByName(req);
     }
 
-    public void FillFulls(BoardUserFull[] boardUsers)
+    public void FillFulls(BoardUserFullAllRsp rsp)
     {
-        boardUserFulls = boardUsers;
-        Idx.Clear();
-
-        if (boardUserFulls.Length == 0)
+        if (rsp == null || rsp.BoardUserFulls == null || rsp.BoardUserFulls.Count == 0)
         {
             lstBoardUsers.ApplyClearValues();
             txtBoardUsersEmpty.gameObject.SetActive(true);
-
-            trfAdd.anchoredPosition = posUpdate;
-            btnUpdate.gameObject.SetActive(false);
-
             StateManager.Instance.BoardLoadHide();
             return;
         }
 
+        boardUserFulls = rsp.BoardUserFulls;
+        totalPages = rsp.TotalPages;
+        currentPage = rsp.Page;
+
+        UpdatePagination();
+
         lstBoardUsers.ClearValues();
 
-        ListScrollerValue lstBoardUserValue;
-        for (int idx = 0; idx < boardUserFulls.Length; idx++)
+        SortItems(boardUserFulls);
+
+        txtBoardUsersEmpty.gameObject.SetActive(false);
+
+        //Idx.Clear();
+
+        for (int i = 0; i < boardUserFulls.Count; i++)
         {
-            Idx[boardUserFulls[idx].BoardUser.Id] = idx;
+            BoardUserFull item = boardUserFulls[i];
 
-            lstBoardUserValue = new ListScrollerValue(4, true);
-            lstBoardUserValue.SetText(0, boardUserFulls[idx].WebSysUser.AuthUserId);
-            lstBoardUserValue.SetText(1, boardUserFulls[idx].Identity.GetFullName());
-            //lstBoardUserValue.SetText(1, vllRole.FindRecordCellString(boardUserFulls[idx].WebSysUser.Roles, 0));
+            //Idx[item.BoardUser.Id] = i;
 
-            lstBoardUsers.AddValue(lstBoardUserValue);
+            ListScrollerValue value = new ListScrollerValue(4, true);
+            value.SetText(0, item.WebSysUser.AuthUserId);
+            value.SetText(1, item.Identity != null ? item.Identity.GetFullName() : "-");
+
+            lstBoardUsers.AddValue(value);
         }
 
         lstBoardUsers.ApplyValues();
+        lstBoardUsers.CheckToggle(0, true);
 
-        trfAdd.anchoredPosition = posAdd;
-        btnUpdate.gameObject.SetActive(true);
-        lstBoardUsers.CheckToggle(Id == -1 ? 0 : Idx[Id], true);
+        Display(0);
 
         StateManager.Instance.BoardLoadHide();
+    }
+
+    public void UpdatePagination()
+    {
+        txtPage.TextValue = $"Página {currentPage} / {Mathf.Max(totalPages, 1)}";
+
+        btnBack.Interactable = currentPage > 1;
+        btnNext.Interactable = currentPage < totalPages;
+    }
+
+    public void NextPage()
+    {
+        if (currentPage >= totalPages) return;
+        GetPaged(currentPage + 1);
+    }
+
+    public void BackPage()
+    {
+        if (currentPage <= 1) return;
+        GetPaged(currentPage - 1);
+    }
+
+    public void SortChanged()
+    {
+        if (boardUserFulls != null)
+            FillFulls(new BoardUserFullAllRsp(currentPage, totalPages, boardUserFulls));
+    }
+
+    private void SortItems(List<BoardUserFull> items)
+    {
+        int sortOption = Convert.ToInt32(tggSort.Value);
+
+        for (int i = 0; i < items.Count - 1; i++)
+        {
+            for (int j = i + 1; j < items.Count; j++)
+            {
+                BoardUserFull a = items[i];
+                BoardUserFull b = items[j];
+
+                int compare = 0;
+
+                // 1-2 Name
+                if (sortOption == 1 || sortOption == 2)
+                {
+                    String nameA = a.Identity != null ? a.Identity.GetFullName() : "";
+                    String nameB = b.Identity != null ? b.Identity.GetFullName() : "";
+
+                    compare = String.Compare(nameA, nameB, StringComparison.OrdinalIgnoreCase);
+                }
+                // 3-4 Alias
+                else if (sortOption == 3 || sortOption == 4)
+                {
+                    compare = String.Compare(
+                    a.BoardUser.Alias,
+                    b.BoardUser.Alias,
+                    StringComparison.OrdinalIgnoreCase);
+                }
+
+                // Desc
+                if (sortOption % 2 == 0)
+                    compare = -compare;
+
+                if (compare > 0)
+                {
+                    BoardUserFull temp = items[i];
+                    items[i] = items[j];
+                    items[j] = temp;
+                }
+            }
+        }
     }
 
     public void Display(int idx)
@@ -146,10 +271,10 @@ public class BoardUserAction : MonoBehaviour
         boardUserFull = boardUserFulls[idx];
         Id = boardUserFull.BoardUser.Id;
 
-        txtName.TextValue = boardUserFull.Identity.GetFullName();
+        txtName.TextValue = boardUserFull.Identity != null ? boardUserFull.Identity.GetFullName() : "-";
         txtAuthUserId.TextValue = boardUserFull.WebSysUser.AuthUserId;
         txtEmail.TextValue = boardUserFull.WebSysUser.Email;
-        txtPhone.TextValue = $"{vllCountry.FindRecordCellString(boardUserFull.WebSysUser.PhoneCountryId, 2)} {boardUserFull.WebSysUser.Phone}";  // "PhonePrefix"
+        txtPhone.TextValue = $"{vllCountry.FindRecordCellString(boardUserFull.WebSysUser.PhoneCountryId, 2)} {boardUserFull.WebSysUser.Phone}";
 
         if (String.IsNullOrEmpty(boardUserFull.WebSysUser.Roles))
         {
@@ -165,13 +290,11 @@ public class BoardUserAction : MonoBehaviour
 
         lstRoles.ClearValues();
 
-        ListScrollerValue lstRolesValue;
         for (int i = 0; i < roles.Count; i++)
         {
-            lstRolesValue = new ListScrollerValue(1, true);
-            lstRolesValue.SetText(0, vllRole.FindRecordCellString(0, roles[i], 1));  // "Code", , "Name"
-
-            lstRoles.AddValue(lstRolesValue);
+            ListScrollerValue value = new ListScrollerValue(1, true);
+            value.SetText(0, vllRole.FindRecordCellString(0, roles[i], 1));
+            lstRoles.AddValue(value);
         }
 
         lstRoles.ApplyValues();

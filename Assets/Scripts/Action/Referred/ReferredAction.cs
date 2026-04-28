@@ -144,7 +144,7 @@ public class ReferredAction : MonoBehaviour
 
         for (int i = 0; i < referreds.Count; i++)
         {
-            var item = referreds[i];
+            ReferredFull item = referreds[i];
 
             ListScrollerValue value = new ListScrollerValue(3, true);
             value.SetText(0, item.Code);
