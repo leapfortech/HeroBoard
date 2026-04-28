@@ -65,7 +65,7 @@ public class ReferredAction : MonoBehaviour
     {
         this.referreds = referreds;
 
-        if (referreds.Count == 0)
+        if (referreds == null || referreds.Count == 0)
         {
             lstReferreds.ApplyClearValues();
             txtReferredsEmpty.gameObject.SetActive(true);

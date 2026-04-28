@@ -557,6 +557,15 @@ MonoBehaviour:
         Reference: 1
         Value: {fileID: 0}
         Property: 'Main: Regular'
+    - rid: 6444590126105362499
+      type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197132
+        Name: 'HM: B: Crd: Sec'
+        Reference: 1
+        Value: 0
+        Property: 'Border: Thin'
     - rid: 7896456370744197125
       type: {class: ThemeElement, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -10535,6 +10544,7 @@ MonoBehaviour:
         - rid: 6168643406991458690
         - rid: 6168643406991458691
         - rid: 6168643406991458693
+        - rid: 6444590126105362499
         DictFloats:
           keys:
           - 'W: Page: Header'
@@ -10828,6 +10838,7 @@ MonoBehaviour:
           - 'C: Card: Status: BottomLeft'
           - 'C: Card: Status: BottomRight'
           - 'B: Card: Status'
+          - 'HM: B: Crd: Sec'
           values:
           - rid: 7896456370759403692
           - rid: 7896456370759403693
@@ -11120,6 +11131,7 @@ MonoBehaviour:
           - rid: 6168643406991458690
           - rid: 6168643406991458691
           - rid: 6168643406991458693
+          - rid: 6444590126105362499
         colors:
         - rid: 7896456370759403977
         - rid: 7896456370759403978

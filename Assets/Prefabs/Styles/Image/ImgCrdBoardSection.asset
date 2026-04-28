@@ -83,7 +83,7 @@ MonoBehaviour:
       data:
         style: {fileID: 11400000}
         ModelProperty: 'B: Width'
-        ThemeProperty: 'B: Photo: Big'
+        ThemeProperty: 'HM: B: Crd: Sec'
     - rid: 6168643247209448156
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:

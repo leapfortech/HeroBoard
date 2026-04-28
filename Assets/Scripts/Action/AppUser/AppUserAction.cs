@@ -70,6 +70,8 @@ public class AppUserAction : MonoBehaviour
     {
         ScreenDialog.Instance.Display();
 
+        txtAppUsersEmpty.gameObject.SetActive(false);
+
         appUserService.GetUserInfosByStatus(1);
     }
 
@@ -77,10 +79,10 @@ public class AppUserAction : MonoBehaviour
     {
         this.userInfos = userInfos;
 
-        if (userInfos == null)
+        if (userInfos == null || userInfos.Count == 0)
         {
             lstAppUsers.ApplyClearValues();
-            txtAppUsersEmpty.gameObject.SetActive(false);
+            txtAppUsersEmpty.gameObject.SetActive(true);
             userInfos = new List<UserInfo>(userInfos.Count);
         }
 
