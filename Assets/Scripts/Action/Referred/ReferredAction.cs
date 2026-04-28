@@ -1,22 +1,23 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using UnityEngine;
 
-using Leap.Graphics.Tools;
 using Leap.UI.Elements;
 using Leap.UI.Dialog;
-using Leap.UI.Extensions;
 using Leap.Data.Mapper;
-using Leap.Data.Collections;
 
 using Sirenix.OdinInspector;
 
 public class ReferredAction : MonoBehaviour
 {
-    //[Title("Elements")]
-    //[SerializeField]
-    //ElementValue[] elementValues = null;
+    [Title("Filters")]
+    [SerializeField]
+    InputField ifdCode = null;
+    [SerializeField]
+    Button btnFilter = null;
+
+    [SerializeField]
+    ToggleGroup tggSort = null;
 
     [Title("Referred")]
     [SerializeField]
@@ -24,68 +25,137 @@ public class ReferredAction : MonoBehaviour
     [SerializeField]
     Text txtReferredsEmpty = null;
 
+    [Title("Navigation")]
+    [SerializeField]
+    Button btnNext = null;
+    [SerializeField]
+    Button btnBack = null;
+    [SerializeField]
+    Text txtPage = null;
+
     [Title("Data")]
     [SerializeField]
     DataMapper dtmReferred = null;
     [SerializeField]
     DataMapper dtmReferrer = null;
 
-    //private readonly CultureInfo cultureInfo = new CultureInfo("en-US");
+    [Title("Config")]
+    [SerializeField]
+    int pageSize = 10;
 
-    public bool Selected { get; set; } = false;
+    // Navigation
+    int currentPage = 1;
+    int totalPages = 1;
+
+    // Filters
+    string filterCode = null;
+    int filterStatus = -1;
 
     ReferredService referredService = null;
-    List<ReferredFull> referreds = null;
+    ReferredFullAllRsp referredFullAllRsp = null;
 
+    List<ReferredFull> referreds = null;
     ReferredFull referred = null;
-    //int referredIdx = -1;
 
     private void Awake()
     {
         referredService = GetComponent<ReferredService>();
     }
 
-    public void Clear()
+    private void Start()
     {
-        dtmReferred.ClearElements();
+        btnNext?.AddAction(NextPage);
+        btnBack?.AddAction(BackPage);
+        btnFilter?.AddAction(Filter);
     }
 
-    public void GetReferreds()
+    public void LoadFirstPage()
+    {
+        currentPage = 1;
+        filterCode = null;
+        filterStatus = -1;
+
+        ifdCode?.ClearValue();
+
+        GetPaged(currentPage);
+    }
+
+    public void Filter()
+    {
+        filterCode = ifdCode.Text;
+
+        if (string.IsNullOrWhiteSpace(filterCode))
+            filterCode = null;
+
+        currentPage = 1;
+
+        GetPaged(currentPage);
+    }
+
+    // Navigation
+    public void NextPage()
+    {
+        if (currentPage >= totalPages) return;
+        GetPaged(currentPage + 1);
+    }
+
+    public void BackPage()
+    {
+        if (currentPage <= 1) return;
+        GetPaged(currentPage - 1);
+    }
+
+    void GetPaged(int page)
     {
         ScreenDialog.Instance.Display();
 
-        lstReferreds.ApplyClearValues();
-        txtReferredsEmpty.gameObject.SetActive(false);
+        currentPage = page;
 
-        referred = null;
-        referredService.GetFullAll();
+        btnNext.Interactable = false;
+        btnBack.Interactable = false;
+
+        var req = new ReferredAllByCodeReq(page, pageSize, filterCode, filterStatus);
+
+        referredService.GetFullAllByCode(req);
     }
 
-    public void FillReferreds(List<ReferredFull> referreds)
+    public void FillPaged(ReferredFullAllRsp rsp)
     {
-        this.referreds = referreds;
+        referredFullAllRsp = rsp;
 
-        if (referreds == null || referreds.Count == 0)
+        if (referredFullAllRsp == null || referredFullAllRsp.ReferredFulls == null || referredFullAllRsp.ReferredFulls.Count == 0)
         {
-            lstReferreds.ApplyClearValues();
-            txtReferredsEmpty.gameObject.SetActive(true);
-            StateManager.Instance.BoardLoadHide();
+            ShowEmpty();
             return;
         }
 
+        referreds = referredFullAllRsp.ReferredFulls;
+
+        totalPages = referredFullAllRsp.TotalPages;
+        currentPage = referredFullAllRsp.Page;
+
+        UpdatePagination();
+
         lstReferreds.ClearValues();
 
-        ListScrollerValue lstReferredValue;
+        SortItems(rsp.ReferredFulls);
+
+        txtReferredsEmpty.gameObject.SetActive(false);
+
         for (int i = 0; i < referreds.Count; i++)
         {
-            lstReferredValue = new ListScrollerValue(2, true);
-            lstReferredValue.SetText(0, referreds[i].Code);
-            lstReferredValue.SetText(1, referreds[i].GetFullName());
+            var item = referreds[i];
 
-            lstReferreds.AddValue(lstReferredValue);
+            ListScrollerValue value = new ListScrollerValue(3, true);
+            value.SetText(0, item.Code);
+            value.SetText(1, $"{item.FirstName1} {item.LastName1}");
+            value.SetText(2, item.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
+
+            lstReferreds.AddValue(value);
         }
 
         lstReferreds.ApplyValues();
+        lstReferreds.CheckToggle(0, true);
 
         Display(0);
 
@@ -95,9 +165,69 @@ public class ReferredAction : MonoBehaviour
     public void Display(int idx)
     {
         referred = referreds[idx];
-        //referredIdx = idx;
 
         dtmReferred.PopulateClass(referred);
         dtmReferrer.PopulateClass(referred.Referrer);
+    }
+
+    void UpdatePagination()
+    {
+        txtPage.TextValue = $"Página {currentPage} / {Mathf.Max(totalPages, 1)}";
+
+        btnBack.Interactable = currentPage > 1;
+        btnNext.Interactable = currentPage < totalPages;
+    }
+
+    void ShowEmpty()
+    {
+        txtReferredsEmpty.gameObject.SetActive(true);
+        lstReferreds.ApplyClearValues();
+
+        StateManager.Instance.BoardLoadHide();
+    }
+
+    public void SortChanged()
+    {
+        if (referredFullAllRsp != null && referredFullAllRsp.ReferredFulls != null)
+            FillPaged(referredFullAllRsp);
+    }
+
+    private void SortItems(List<ReferredFull> items)
+    {
+        int sortOption = Convert.ToInt32(tggSort.Value);
+
+        for (int i = 0; i < items.Count - 1; i++)
+        {
+            for (int j = i + 1; j < items.Count; j++)
+            {
+                ReferredFull a = items[i];
+                ReferredFull b = items[j];
+
+                int compare = 0;
+
+                if (sortOption == 1 || sortOption == 2) // Code
+                {
+                    compare = String.Compare(a.Code, b.Code, StringComparison.OrdinalIgnoreCase);
+                }
+                else if (sortOption == 3 || sortOption == 4) // Name
+                {
+                    String nameA = $"{a.FirstName1} {a.FirstName2} {a.LastName1} {a.LastName2}";
+                    String nameB = $"{b.FirstName1} {b.FirstName2} {b.LastName1} {b.LastName2}";
+
+                    compare = String.Compare(nameA.Trim(), nameB.Trim(), StringComparison.OrdinalIgnoreCase);
+                }
+
+                // Desc
+                if (sortOption % 2 == 0)
+                    compare = -compare;
+
+                if (compare > 0)
+                {
+                    ReferredFull temp = items[i];
+                    items[i] = items[j];
+                    items[j] = temp;
+                }
+            }
+        }
     }
 }

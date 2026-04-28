@@ -15,14 +15,14 @@ public class ReferredService : MonoBehaviour
     [Serializable]
     public class ReferredEvent : UnityEvent<List<Referred>> { }
     [Serializable]
-    public class ReferredFullsEvent : UnityEvent<List<ReferredFull>> { }
+    public class ReferredFullAllEvent : UnityEvent<ReferredFullAllRsp> { }
 
 
     [SerializeField]
     private ReferredEvent onRetreived = null;
 
     [SerializeField]
-    private ReferredFullsEvent onFullsRetreived = null;
+    private ReferredFullAllEvent onFullAllRetreived = null;
 
     [SerializeField]
     private UnityLongEvent onIdRetreived = null;
@@ -60,19 +60,20 @@ public class ReferredService : MonoBehaviour
         }
     }
 
-    public void GetFullAll()
+    public void GetFullAllByCode(ReferredAllByCodeReq req)
     {
-        ReferredFullsGetOperation referredFullsGetOp = new ReferredFullsGetOperation();
+        ReferredFullAllByCodePostOperation referredFullAllPostOp = new ReferredFullAllByCodePostOperation();
         try
         {
-            referredFullsGetOp["on-complete"] = (Action<ReferredFullsGetOperation, HttpResponse>)((op, response) =>
+            referredFullAllPostOp.req = req;
+            referredFullAllPostOp["on-complete"] = (Action<ReferredFullAllByCodePostOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)
-                    onFullsRetreived.Invoke(op.referredFulls);
+                    onFullAllRetreived.Invoke(op.rsp);
                 else
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
-            referredFullsGetOp.Send();
+            referredFullAllPostOp.Send();
         }
         catch (Exception ex)
         {
