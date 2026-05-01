@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 3b7c6c9b29aee954cb553d2de57b5e0f
+guid: 43339ed8c87496a4cabc4389d1a077c1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5949069425273016299
-    second: HeroIcons_0
+      213: -793500635625807244
+    second: XPDIcons_0
   - first:
-      213: 1789515908028460163
-    second: HeroIcons_1
+      213: -21859451503147326
+    second: XPDIcons_1
   - first:
-      213: -8098051589804036030
-    second: HeroIcons_2
-  - first:
-      213: -3302514626030910900
-    second: HeroIcons_3
+      213: 7811183611235105638
+    second: XPDIcons_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -148,7 +145,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HeroIcnSandwich
+      name: IcnSandwich
       rect:
         serializedVersion: 2
         x: 2
@@ -163,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bef098d6f175f8250800000000000000
-      internalID: 5949069425273016299
+      spriteID: 4722a74406becf4f0800000000000000
+      internalID: -793500635625807244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeroIcnHome
+      name: IcnHomeNav
       rect:
         serializedVersion: 2
         x: 88
@@ -185,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38c62f1bc33a5d810800000000000000
-      internalID: 1789515908028460163
+      spriteID: 2c68b26d1f652bff0800000000000000
+      internalID: -21859451503147326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeroIcnSdwWhatsApp
+      name: IcnWhatsApp
       rect:
         serializedVersion: 2
         x: 174
@@ -207,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24071f00cf0fd9f80800000000000000
-      internalID: -8098051589804036030
+      spriteID: 66b7507eb16e66c60800000000000000
+      internalID: 7811183611235105638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeroIcnCrdLocked
+      name: IcnSdwHomeLocked
       rect:
         serializedVersion: 2
         x: 310
@@ -227,10 +224,186 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c4245e1f17c1b22d0800000000000000
-      internalID: -3302514626030910900
+      spriteID: 34353eee6eb0a62479c3ded3138e9b6d
+      internalID: -1172236701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcnSdwRndEvent
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 2
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8bc45a660e2fc47bcd16caffa0da82
+      internalID: 286055951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcnCtaDown
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 2
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da9fc2733053504abbb25732e8d5e28
+      internalID: 546278035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcnCtaRigh
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 22
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2407da03dd04c846a3e256335cc03fc
+      internalID: 1729532813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcnBtnHome
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 88
+        width: 139
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3866f75825fc8c4b923cd2a88584360
+      internalID: 995732989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcnImages
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 124
+        width: 180
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc21cf2a80c61d40bbe77f3e0218267
+      internalID: 1868351779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcnLogin
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 104
+        width: 71
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e10288be4b139f44a6616f3a17e0cc3
+      internalID: 716033611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcnRegister
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 266
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d1fe3b4b74b5647b6e50208b1496b1
+      internalID: 937335296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcnHomeConfig
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 459
+        width: 441
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36125186154d2d14e8a42027ed58aa1b
+      internalID: 1803610830
       vertices: []
       indices: 
       edges: []
@@ -239,7 +412,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 199db4711eede0445aafb1595701bc9c
+    spriteID: c18397714ca0d984093684d9f627e028
     internalID: 0
     vertices: []
     indices: 
@@ -249,10 +422,22 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HeroIcnCrdLocked: -3302514626030910900
-      HeroIcnHome: 1789515908028460163
-      HeroIcnSandwich: 5949069425273016299
-      HeroIcnSdwWhatsApp: -8098051589804036030
+      IcnBtnHome: 995732989
+      IcnCtaDown: 546278035
+      IcnCtaRigh: 1729532813
+      IcnHomeConfig: 1803610830
+      IcnHomeNav: -21859451503147326
+      IcnImages: 1868351779
+      IcnLogin: 716033611
+      IcnPassOff: -2046835116
+      IcnPassOn: -2116692571
+      IcnPhotos: -428848746
+      IcnRegister: 937335296
+      IcnSandwich: -793500635625807244
+      IcnSdwHomeLocked: -1172236701
+      IcnSdwRndContact: 917306813
+      IcnSdwRndEvent: 286055951
+      IcnWhatsApp: 7811183611235105638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
