@@ -12,9 +12,25 @@ using System.Collections.Generic;
 
 public class ServiceWishDisplayAction : MonoBehaviour
 {
+    [Title("Fields")]
+    [SerializeField]
+    Text txtContact = null;
+    [SerializeField]
+    Text txtNames = null;
+    [SerializeField]
+    Text txtBirthPlace = null;
+    [SerializeField]
+    Text txtAddress = null;
+
     [Title("Value")]
     [SerializeField]
     ValueList vllServiceWishType = null;
+    [SerializeField]
+    ValueList vllCountry = null;
+    [SerializeField]
+    ValueList vllState = null;
+    [SerializeField]
+    ValueList vllCity = null;
 
     [Title("Filters")]
     //[SerializeField]
@@ -55,6 +71,7 @@ public class ServiceWishDisplayAction : MonoBehaviour
 
     ServiceWishService serviceWishService = null;
     ServiceWishAllRsp serviceWishAllRsp = null;
+    ServiceWishUser serviceWishUser = null;
 
     private void Awake()
     {
@@ -66,6 +83,14 @@ public class ServiceWishDisplayAction : MonoBehaviour
         btnNext?.AddAction(NextPage);
         btnBack?.AddAction(BackPage);
         //btnFilter?.AddAction(Filter);
+    }
+
+    public void ClearElements()
+    {
+        txtContact.TextValue = "-";
+        txtNames.TextValue = "-";
+        txtBirthPlace.TextValue = "-";
+        txtAddress.TextValue = "-";
     }
 
     public void LoadFirstPage()
@@ -127,7 +152,7 @@ public class ServiceWishDisplayAction : MonoBehaviour
     {
         serviceWishAllRsp = rsp;
 
-        if (serviceWishAllRsp == null || serviceWishAllRsp.ServiceWishs == null || serviceWishAllRsp.ServiceWishs.Count == 0)
+        if (serviceWishAllRsp == null || serviceWishAllRsp.ServiceWishInfos == null || serviceWishAllRsp.ServiceWishInfos.Count == 0)
         {
             ShowEmpty();
             return;
@@ -140,23 +165,25 @@ public class ServiceWishDisplayAction : MonoBehaviour
 
         lstServiceWish.ClearValues();
 
-        SortItems(rsp.ServiceWishs);
+        SortItems(rsp.ServiceWishInfos);
         
         txtEmpty.gameObject.SetActive(false);
 
-        for (int i = 0; i < serviceWishAllRsp.ServiceWishs.Count; i++)
+        for (int i = 0; i < serviceWishAllRsp.ServiceWishInfos.Count; i++)
         {
             ListScrollerValue value = new ListScrollerValue(3, true);
 
-            value.SetText(0, vllServiceWishType.FindRecordCellString(serviceWishAllRsp.ServiceWishs[i].ServiceTypeId, "Name"));
-            value.SetText(1, serviceWishAllRsp.ServiceWishs[i].Comment);
-            value.SetText(2, serviceWishAllRsp.ServiceWishs[i].CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
+            value.SetText(0, vllServiceWishType.FindRecordCellString(serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.ServiceTypeId, "Name"));
+            value.SetText(1, serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.Comment);
+            value.SetText(2, serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
 
             lstServiceWish.AddValue(value);
         }
 
         lstServiceWish.ApplyValues();
         //lstServiceWish.CheckToggle(0, true);
+
+        Display(0);
 
         StateManager.Instance.BoardLoadHide();
     }
@@ -177,13 +204,61 @@ public class ServiceWishDisplayAction : MonoBehaviour
         StateManager.Instance.BoardLoadHide();
     }
 
+    public void Display(int idx)
+    {
+        ClearElements();
+        
+        serviceWishUser = serviceWishAllRsp.ServiceWishInfos[idx].ServiceWishUser;
+
+        bool isPhone = serviceWishAllRsp.ServiceWishInfos[idx].ServiceWishUser.Email.StartsWith("hm.") &&
+                       serviceWishAllRsp.ServiceWishInfos[idx].ServiceWishUser.Email.EndsWith("@heroesmigrantes.com");
+
+        txtContact.TextValue = isPhone ? vllCountry.FindRecordCellString(serviceWishUser.PhoneCountryId, 2) + " " + serviceWishUser.Phone : serviceWishUser.Email;
+        
+        txtNames.TextValue = $"{(String.IsNullOrWhiteSpace(serviceWishUser.FirstName1) ? "" : serviceWishUser.FirstName1 + " ")}" +
+                             $"{(String.IsNullOrWhiteSpace(serviceWishUser.FirstName2) ? "" : serviceWishUser.FirstName2 + " ")}" +
+                             $"{(String.IsNullOrWhiteSpace(serviceWishUser.LastName1) ? "" : serviceWishUser.LastName1 + " ")}" +
+                             $"{(String.IsNullOrWhiteSpace(serviceWishUser.LastName2) ? "" : serviceWishUser.LastName2)}";
+
+        if (String.IsNullOrWhiteSpace(txtNames.TextValue))
+            txtNames.TextValue = "-";
+
+        String birthCountry = vllCountry.FindRecordCellString(serviceWishUser.BirthCountryId, "Name");
+        String birthState = vllState.FindRecordCellString(serviceWishUser.BirthStateId, "Name");
+        String birthCity = vllCity.FindRecordCellString(serviceWishUser.BirthCityId, "Name");
+
+        txtBirthPlace.TextValue = $"{(String.IsNullOrWhiteSpace(birthCountry) ? "" : birthCountry)}" +
+                                  $"{(String.IsNullOrWhiteSpace(birthState) ? "" : ", " + birthState)}" +
+                                  $"{(String.IsNullOrWhiteSpace(birthCity) ? "" : ", " + birthCity)}";
+                                  
+
+        txtBirthPlace.TextValue = txtBirthPlace.TextValue.Trim().Trim(',');
+
+        if (String.IsNullOrWhiteSpace(txtBirthPlace.TextValue))
+            txtBirthPlace.TextValue = "-";
+
+        String country = vllCountry.FindRecordCellString(serviceWishUser.CountryId, "Name");
+        String state = vllState.FindRecordCellString(serviceWishUser.StateId, "Name");
+        String city = vllCity.FindRecordCellString(serviceWishUser.CityId, "Name");
+
+        txtAddress.TextValue = $"{(String.IsNullOrWhiteSpace(country) ? "" : country)}" +
+                               $"{(String.IsNullOrWhiteSpace(state) ? "" : ", " + state)}" +
+                               $"{(String.IsNullOrWhiteSpace(city) ? "" : ", " + city)}";
+
+        txtAddress.TextValue = txtAddress.TextValue.Trim().Trim(',');
+
+        if (String.IsNullOrWhiteSpace(txtAddress.TextValue))
+            txtAddress.TextValue = "-";
+
+    }
+
     public void SortChanged()
     {
-        if (serviceWishAllRsp != null && serviceWishAllRsp.ServiceWishs != null)
+        if (serviceWishAllRsp != null && serviceWishAllRsp.ServiceWishInfos != null)
             FillPaged(serviceWishAllRsp);
     }
 
-    private void SortItems(List<ServiceWish> items)
+    private void SortItems(List<ServiceWishInfo> items)
     {
         int sortOption = Convert.ToInt32(tggSort.Value);
 
@@ -191,8 +266,11 @@ public class ServiceWishDisplayAction : MonoBehaviour
         {
             for (int j = i + 1; j < items.Count; j++)
             {
-                ServiceWish a = items[i];
-                ServiceWish b = items[j];
+                ServiceWishInfo aInfo = items[i];
+                ServiceWishInfo bInfo = items[j];
+
+                ServiceWish a = aInfo.ServiceWish;
+                ServiceWish b = bInfo.ServiceWish;
 
                 int compare = 0;
 
@@ -200,12 +278,27 @@ public class ServiceWishDisplayAction : MonoBehaviour
                 {
                     String nameA = vllServiceWishType.FindRecordCellString(a.ServiceTypeId, "Name");
                     String nameB = vllServiceWishType.FindRecordCellString(b.ServiceTypeId, "Name");
+
                     compare = String.Compare(nameA, nameB, StringComparison.OrdinalIgnoreCase);
                 }
                 else if (sortOption == 3 || sortOption == 4) // Comment
+                {
                     compare = String.Compare(a.Comment, b.Comment, StringComparison.OrdinalIgnoreCase);
+                }
                 else if (sortOption == 5 || sortOption == 6) // Date
+                {
                     compare = DateTime.Compare(a.CreateDateTime, b.CreateDateTime);
+                }
+                else if (sortOption == 7 || sortOption == 8) // User Name
+                {
+                    String fullNameA =
+                        $"{aInfo.ServiceWishUser?.FirstName1} {aInfo.ServiceWishUser?.LastName1}".Trim();
+
+                    String fullNameB =
+                        $"{bInfo.ServiceWishUser?.FirstName1} {bInfo.ServiceWishUser?.LastName1}".Trim();
+
+                    compare = String.Compare(fullNameA, fullNameB, StringComparison.OrdinalIgnoreCase);
+                }
 
                 // Desc
                 if (sortOption % 2 == 0)
@@ -213,7 +306,7 @@ public class ServiceWishDisplayAction : MonoBehaviour
 
                 if (compare > 0)
                 {
-                    ServiceWish temp = items[i];
+                    ServiceWishInfo temp = items[i];
                     items[i] = items[j];
                     items[j] = temp;
                 }

@@ -4,16 +4,16 @@ public class ServiceWishAllRsp
 {
     public int Page { get; set; }
     public int TotalPages { get; set; }
-    public List<ServiceWish> ServiceWishs { get; set; }
+    public List<ServiceWishInfo> ServiceWishInfos { get; set; }
 
     public ServiceWishAllRsp()
     {
     }
 
-    public ServiceWishAllRsp(int page, int totalPages, List<ServiceWish> serviceWishs)
+    public ServiceWishAllRsp(int page, int totalPages, List<ServiceWishInfo> serviceWishInfos)
     {
         Page = page;
         TotalPages = totalPages;
-        ServiceWishs = serviceWishs;
+        ServiceWishInfos = serviceWishInfos;
     }
 }
