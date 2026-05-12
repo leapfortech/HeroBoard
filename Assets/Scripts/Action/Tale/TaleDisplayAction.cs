@@ -18,7 +18,13 @@ public class TaleDisplayAction : MonoBehaviour
     [Space]
     [Title("Details")]
     [SerializeField]
+    Text txtAlias = null;
+    [SerializeField]
+    Text txtPublicationDateTime = null;
+    [SerializeField]
     Text txtTitle = null;
+    [SerializeField]
+    Text txtSummary = null;
     [SerializeField]
     Text txtDescription = null;
 
@@ -73,8 +79,12 @@ public class TaleDisplayAction : MonoBehaviour
         if (taleFull == null)
             return;
 
-        txtTitle.TextValue = taleFull.Title;
-        txtDescription.TextValue = taleFull.Description;
+        // Post
+        txtAlias.TextValue = $"Publicado por: <b>@{taleFull.AppUserAlias}</b>";
+        txtTitle.TextValue = String.IsNullOrWhiteSpace(taleFull.Title) ? "-" : taleFull.Title;
+        txtPublicationDateTime.TextValue = taleFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
+        txtSummary.TextValue = String.IsNullOrWhiteSpace(taleFull.Summary) ? "-" : taleFull.Summary;
+        txtDescription.TextValue = String.IsNullOrWhiteSpace(taleFull.Description) ? "-" : taleFull.Description;
 
         List<Sprite> images = StateManager.Instance.GetTaleImagesById(taleId);
         

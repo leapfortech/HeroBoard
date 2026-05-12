@@ -12,6 +12,8 @@ public class ImageDisplayAction : MonoBehaviour
     [Title("Images")]
     [SerializeField]
     ListScroller lstImage = null;
+    [SerializeField]
+    Sprite emptyImage = null;
 
     [Header("Indicator")]
     [SerializeField]
@@ -39,6 +41,12 @@ public class ImageDisplayAction : MonoBehaviour
         if (images == null || images.Count == 0)
         {
             Clear();
+            
+            ListScrollerValue emptyValue = new ListScrollerValue(1, true);
+            emptyValue.SetSprite(0, emptyImage);
+
+            lstImage.ApplyAddValue(emptyValue);
+
             return;
         }
 
