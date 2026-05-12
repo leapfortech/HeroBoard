@@ -20,7 +20,7 @@ public class TaleDisplayAction : MonoBehaviour
     [SerializeField]
     Text txtAlias = null;
     [SerializeField]
-    Text txtPublicationDateTime = null;
+    Text txtDateTime = null;
     [SerializeField]
     Text txtTitle = null;
     [SerializeField]
@@ -82,7 +82,7 @@ public class TaleDisplayAction : MonoBehaviour
         // Post
         txtAlias.TextValue = $"Publicado por: <b>@{taleFull.AppUserAlias}</b>";
         txtTitle.TextValue = String.IsNullOrWhiteSpace(taleFull.Title) ? "-" : taleFull.Title;
-        txtPublicationDateTime.TextValue = taleFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
+        txtDateTime.TextValue = taleFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
         txtSummary.TextValue = String.IsNullOrWhiteSpace(taleFull.Summary) ? "-" : taleFull.Summary;
         txtDescription.TextValue = String.IsNullOrWhiteSpace(taleFull.Description) ? "-" : taleFull.Description;
 

@@ -51,6 +51,8 @@ public class PostDisplayAction : MonoBehaviour
     PostService postService = null;
     PostFullsPagedResponse postFullsPagedResponse = null;
 
+    bool isFirstDisplay = false;
+
     private void Awake()
     {
         postService = GetComponent<PostService>();
@@ -60,6 +62,15 @@ public class PostDisplayAction : MonoBehaviour
     {
         btnNext?.AddAction(NextPage);
         btnBack?.AddAction(BackPage);
+    }
+
+    public void DisplayFirstPage()
+    {
+        if (!isFirstDisplay)
+        { 
+            isFirstDisplay = true;
+            LoadFirstPage();
+        }
     }
 
     public void LoadFirstPage()
