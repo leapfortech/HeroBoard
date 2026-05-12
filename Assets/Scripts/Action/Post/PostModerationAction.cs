@@ -40,7 +40,7 @@ public class PostModerationAction : MonoBehaviour
             postModerationRequest = new PostModerationRequest();
 
         postModerationRequest.PostId = ids[0];      // PostId
-        postModerationRequest.TypeId = ids[1];      // TypeId
+        postModerationRequest.Id = ids[1];      // TypeId
     }
 
     private void Accept()
