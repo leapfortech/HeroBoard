@@ -33,6 +33,8 @@ public class PostDisplayAction : MonoBehaviour
     [Title("Config")]
     [SerializeField]
     int pageSize = 10;
+    [SerializeField]
+    Sprite emptyImage = null;
 
     [Title("Event")]
     [SerializeField]
@@ -130,7 +132,7 @@ public class PostDisplayAction : MonoBehaviour
 
             value.SetText(0, postFullsPagedResponse.PostFulls[i].Title);
             value.SetText(1, postFullsPagedResponse.PostFulls[i].PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
-            value.SetSprite(2, postFullsPagedResponse.PostFulls[i].ImageCount == 0 ? null : postFullsPagedResponse.PostFulls[i].TitleSprite);
+            value.SetSprite(2, postFullsPagedResponse.PostFulls[i].ImageCount == 0 ? emptyImage : postFullsPagedResponse.PostFulls[i].TitleSprite);
 
             String description = postFullsPagedResponse.PostFulls[i].Description ?? "";
             value.SetText(3, description.Length > 300 ? description.Substring(0, 300) + "..." : description);

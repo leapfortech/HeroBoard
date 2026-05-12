@@ -32,6 +32,15 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 749284460658688111
+      type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197132
+        Name: 'HM: C: Post'
+        Reference: 1
+        Value: 0
+        Property: 'Corner: Bowed'
     - rid: 6168643133511303497
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -10545,6 +10554,7 @@ MonoBehaviour:
         - rid: 6168643406991458691
         - rid: 6168643406991458693
         - rid: 6444590126105362499
+        - rid: 749284460658688111
         DictFloats:
           keys:
           - 'W: Page: Header'
@@ -10839,6 +10849,7 @@ MonoBehaviour:
           - 'C: Card: Status: BottomRight'
           - 'B: Card: Status'
           - 'HM: B: Crd: Sec'
+          - 'HM: C: Post'
           values:
           - rid: 7896456370759403692
           - rid: 7896456370759403693
@@ -11132,6 +11143,7 @@ MonoBehaviour:
           - rid: 6168643406991458691
           - rid: 6168643406991458693
           - rid: 6444590126105362499
+          - rid: 749284460658688111
         colors:
         - rid: 7896456370759403977
         - rid: 7896456370759403978
