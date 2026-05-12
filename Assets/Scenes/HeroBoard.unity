@@ -22770,7 +22770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -22778,7 +22778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 15
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491789, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_text
@@ -81779,23 +81779,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949975912794496753, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 67.576904
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -42.42309
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 33
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -21.211546
+      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 19.3
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491789, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_text
@@ -134405,6 +134405,33 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onUpdated:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1554060289}
+        m_TargetAssemblyTypeName: PostDisplayAction, Assembly-CSharp
+        m_MethodName: LoadFirstPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2083746571}
+        m_TargetAssemblyTypeName: Leap.UI.Page.PanelController, Leap.UI.Page
+        m_MethodName: ChangePanel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1917355091}
+          m_ObjectArgumentAssemblyTypeName: Leap.UI.Page.Panel, Leap.UI.Page
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -230175,7 +230202,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896743369556, guid: 1b65ebf1a70277a448271046c11c5719, type: 3}
       propertyPath: m_text
-      value: 
+      value: 'Publicado por: <b>@rmartinez</b>'
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896743369556, guid: 1b65ebf1a70277a448271046c11c5719, type: 3}
       propertyPath: m_fontSize
@@ -238459,7 +238486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -238467,7 +238494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 15
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491789, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_text

@@ -25,6 +25,8 @@ public class PostModerationAction : MonoBehaviour
     ModerationEvent onAccepted = null;
     [SerializeField]
     ModerationEvent onRejected = null;
+    [SerializeField]
+    UnityEvent onUpdated = null;
 
     PostModerationRequest postModerationRequest = null;
 
@@ -64,5 +66,8 @@ public class PostModerationAction : MonoBehaviour
             ChoiceDialog.Instance.Error("Error", "No se pudo realizar la actualización.");
             return;
         }
+
+        ChoiceDialog.Instance.Info("¡Éxito!", "Estado actualizado exitosamente.", () => onUpdated.Invoke());
+        //StateManager.Instance.BoardLoadHide();
     }
 }
