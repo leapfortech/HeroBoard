@@ -22741,7 +22741,7 @@ MonoBehaviour:
         Name: 'Help: Bkg: Disabled'
         Reference: 1
         Value: {r: 1, g: 0, b: 1, a: 1}
-        Property: 'GreyScale: D'
+        Property: 'WhiteScale: D'
     - rid: 7896456370759401579
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -22795,7 +22795,7 @@ MonoBehaviour:
         Name: 'Help: Icon: Disabled'
         Reference: 1
         Value: {r: 1, g: 0, b: 1, a: 1}
-        Property: 'Identity: Default'
+        Property: 'GreyScale: E'
     - rid: 7896456370759401585
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
