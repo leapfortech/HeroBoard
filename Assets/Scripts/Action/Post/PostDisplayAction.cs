@@ -64,6 +64,14 @@ public class PostDisplayAction : MonoBehaviour
         btnBack?.AddAction(BackPage);
     }
 
+    public void Clear()
+    {
+        isFirstDisplay = false;
+        postFullsPagedResponse = null;
+        txtEmpty.gameObject.SetActive(true);
+        lstPost.Clear();
+    }
+
     public void DisplayFirstPage()
     {
         if (!isFirstDisplay)
