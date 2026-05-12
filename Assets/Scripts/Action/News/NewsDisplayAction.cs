@@ -7,6 +7,7 @@ using Leap.UI.Elements;
 using Leap.UI.Page;
 using Leap.UI.Dialog;
 using Leap.Core.Tools;
+using Leap.Data.Collections;
 
 using Sirenix.OdinInspector;
 
@@ -27,6 +28,21 @@ public class NewsDisplayAction : MonoBehaviour
     Text txtSummary = null;
     [SerializeField]
     Text txtDescription = null;
+    [SerializeField]
+    Text txtCountry = null;
+    [SerializeField]
+    Text txtState = null;
+    [SerializeField]
+    Text txtCity = null;
+
+    [Space]
+    [Title("Values")]
+    [SerializeField]
+    ValueList vllCountry = null;
+    [SerializeField]
+    ValueList vllState = null;
+    //[SerializeField]
+    //ValueList vllCity = null;
 
     [Space]
     [Title("Panel")]
@@ -85,6 +101,10 @@ public class NewsDisplayAction : MonoBehaviour
         txtDateTime.TextValue = newsFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
         txtSummary.TextValue = String.IsNullOrWhiteSpace(newsFull.Summary) ? "-" : newsFull.Summary;
         txtDescription.TextValue = String.IsNullOrWhiteSpace(newsFull.Description) ? "-" : newsFull.Description;
+
+        txtCountry.TextValue = newsFull.PostCountryId == -1 ? "-" : vllCountry.FindRecordCellString(newsFull.PostCountryId, "Name");
+        txtState.TextValue = newsFull.PostStateId == -1 ? "-" : vllState.FindRecordCellString(newsFull.PostStateId, "Name");
+        txtCity.TextValue = "-";
 
         List<Sprite> images = StateManager.Instance.GetNewsImagesById(newsId);
         

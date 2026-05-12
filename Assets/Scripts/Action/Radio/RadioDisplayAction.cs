@@ -7,6 +7,7 @@ using Leap.UI.Elements;
 using Leap.UI.Page;
 using Leap.UI.Dialog;
 using Leap.Core.Tools;
+using Leap.Data.Collections;
 
 using Sirenix.OdinInspector;
 
@@ -27,6 +28,21 @@ public class RadioDisplayAction : MonoBehaviour
     Text txtSummary = null;
     [SerializeField]
     Text txtDescription = null;
+    [SerializeField]
+    Text txtCountry = null;
+    [SerializeField]
+    Text txtState = null;
+    [SerializeField]
+    Text txtCity = null;
+
+    [Space]
+    [Title("Values")]
+    [SerializeField]
+    ValueList vllCountry = null;
+    [SerializeField]
+    ValueList vllState = null;
+    //[SerializeField]
+    //ValueList vllCity = null;
 
     [Space]
     [Title("Panel")]
@@ -85,6 +101,10 @@ public class RadioDisplayAction : MonoBehaviour
         txtDateTime.TextValue = radioFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
         txtSummary.TextValue = String.IsNullOrWhiteSpace(radioFull.Summary) ? "-" : radioFull.Summary;
         txtDescription.TextValue = String.IsNullOrWhiteSpace(radioFull.Description) ? "-" : radioFull.Description;
+
+        txtCountry.TextValue = radioFull.PostCountryId == -1 ? "-" : vllCountry.FindRecordCellString(radioFull.PostCountryId, "Name");
+        txtState.TextValue = radioFull.PostStateId == -1 ? "-" : vllState.FindRecordCellString(radioFull.PostStateId, "Name");
+        txtCity.TextValue = "-";
 
         List<Sprite> images = StateManager.Instance.GetRadioImagesById(radioId);
         

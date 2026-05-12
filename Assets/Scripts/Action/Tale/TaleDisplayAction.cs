@@ -7,6 +7,7 @@ using Leap.UI.Elements;
 using Leap.UI.Page;
 using Leap.UI.Dialog;
 using Leap.Core.Tools;
+using Leap.Data.Collections;
 
 using Sirenix.OdinInspector;
 
@@ -27,6 +28,21 @@ public class TaleDisplayAction : MonoBehaviour
     Text txtSummary = null;
     [SerializeField]
     Text txtDescription = null;
+    [SerializeField]
+    Text txtCountry = null;
+    [SerializeField]
+    Text txtState = null;
+    [SerializeField]
+    Text txtCity = null;
+
+    [Space]
+    [Title("Values")]
+    [SerializeField]
+    ValueList vllCountry = null;
+    [SerializeField]
+    ValueList vllState = null;
+    //[SerializeField]
+    //ValueList vllCity = null;
 
     [Space]
     [Title("Panel")]
@@ -86,6 +102,10 @@ public class TaleDisplayAction : MonoBehaviour
         txtSummary.TextValue = String.IsNullOrWhiteSpace(taleFull.Summary) ? "-" : taleFull.Summary;
         txtDescription.TextValue = String.IsNullOrWhiteSpace(taleFull.Description) ? "-" : taleFull.Description;
 
+        txtCountry.TextValue = taleFull.PostCountryId == -1 ? "-" : vllCountry.FindRecordCellString(taleFull.PostCountryId, "Name");
+        txtState.TextValue = taleFull.PostStateId == -1 ? "-" : vllState.FindRecordCellString(taleFull.PostStateId, "Name");
+        txtCity.TextValue = "-";
+
         List<Sprite> images = StateManager.Instance.GetTaleImagesById(taleId);
         
         onImagesDisplay.Invoke(images);
@@ -94,6 +114,5 @@ public class TaleDisplayAction : MonoBehaviour
         pnlCtr.ChangePanel(pnlDetail);
 
         StateManager.Instance.BoardLoadHide();
-        
     }
 }

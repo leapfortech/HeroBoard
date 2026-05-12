@@ -7,6 +7,7 @@ using Leap.UI.Elements;
 using Leap.UI.Page;
 using Leap.UI.Dialog;
 using Leap.Core.Tools;
+using Leap.Data.Collections;
 
 using Sirenix.OdinInspector;
 
@@ -27,6 +28,21 @@ public class ProductDisplayAction : MonoBehaviour
     Text txtSummary = null;
     [SerializeField]
     Text txtDescription = null;
+    [SerializeField]
+    Text txtCountry = null;
+    [SerializeField]
+    Text txtState = null;
+    [SerializeField]
+    Text txtCity = null;
+
+    [Space]
+    [Title("Values")]
+    [SerializeField]
+    ValueList vllCountry = null;
+    [SerializeField]
+    ValueList vllState = null;
+    //[SerializeField]
+    //ValueList vllCity = null;
 
     [Space]
     [Title("Panel")]
@@ -85,6 +101,11 @@ public class ProductDisplayAction : MonoBehaviour
         txtDateTime.TextValue = productFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
         txtSummary.TextValue = String.IsNullOrWhiteSpace(productFull.Summary) ? "-" : productFull.Summary;
         txtDescription.TextValue = String.IsNullOrWhiteSpace(productFull.Description) ? "-" : productFull.Description;
+
+        // Product
+        txtCountry.TextValue = productFull.SaleCountryId == -1 ? "-" : vllCountry.FindRecordCellString(productFull.SaleCountryId, "Name");
+        txtState.TextValue = productFull.SaleStateId == -1 ? "-" : vllState.FindRecordCellString(productFull.SaleStateId, "Name");
+        txtCity.TextValue = "-";
 
         List<Sprite> images = StateManager.Instance.GetProductImagesById(productId);
         

@@ -7,6 +7,7 @@ using Leap.UI.Elements;
 using Leap.UI.Page;
 using Leap.UI.Dialog;
 using Leap.Core.Tools;
+using Leap.Data.Collections;
 
 using Sirenix.OdinInspector;
 
@@ -27,6 +28,21 @@ public class HappeningDisplayAction : MonoBehaviour
     Text txtSummary = null;
     [SerializeField]
     Text txtDescription = null;
+    [SerializeField]
+    Text txtCountry = null;
+    [SerializeField]
+    Text txtState = null;
+    [SerializeField]
+    Text txtCity = null;
+
+    [Space]
+    [Title("Values")]
+    [SerializeField]
+    ValueList vllCountry = null;
+    [SerializeField]
+    ValueList vllState = null;
+    //[SerializeField]
+    //ValueList vllCity = null;
 
     [Space]
     [Title("Panel")]
@@ -85,6 +101,11 @@ public class HappeningDisplayAction : MonoBehaviour
         txtDateTime.TextValue = happeningFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
         txtSummary.TextValue = String.IsNullOrWhiteSpace(happeningFull.Summary) ? "-" : happeningFull.Summary;
         txtDescription.TextValue = String.IsNullOrWhiteSpace(happeningFull.Description) ? "-" : happeningFull.Description;
+
+        // Happening
+        txtCountry.TextValue = happeningFull.CountryId == -1 ? "-" : vllCountry.FindRecordCellString(happeningFull.CountryId, "Name");
+        txtState.TextValue = happeningFull.StateId == -1 ? "-" : vllState.FindRecordCellString(happeningFull.StateId, "Name");
+        txtCity.TextValue = "-";
 
         List<Sprite> images = StateManager.Instance.GetHappeningImagesById(happeningId);
         
