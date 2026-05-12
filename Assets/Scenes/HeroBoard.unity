@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 2780586}
   - component: {fileID: 2780585}
   m_Layer: 0
-  m_Name: DisplayImages
+  m_Name: DisplayProductImages
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34261,7 +34261,7 @@ GameObject:
   - component: {fileID: 269228288}
   - component: {fileID: 269228287}
   m_Layer: 0
-  m_Name: DisplayDetail
+  m_Name: DisplayTaleDetail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55073,7 +55073,7 @@ GameObject:
   - component: {fileID: 420242542}
   - component: {fileID: 420242543}
   m_Layer: 0
-  m_Name: DisplayListHappening
+  m_Name: DisplayHappeningList
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61204,7 +61204,7 @@ GameObject:
   - component: {fileID: 478225117}
   - component: {fileID: 478225118}
   m_Layer: 0
-  m_Name: DisplayListNews
+  m_Name: DisplayNewsList
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64815,7 +64815,7 @@ GameObject:
   - component: {fileID: 500670553}
   - component: {fileID: 500670554}
   m_Layer: 0
-  m_Name: Moderation
+  m_Name: HappeningModeration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106528,7 +106528,7 @@ GameObject:
   - component: {fileID: 777361166}
   - component: {fileID: 777361165}
   m_Layer: 0
-  m_Name: DisplayDetail
+  m_Name: DisplayRadioDetail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110179,7 +110179,7 @@ GameObject:
   - component: {fileID: 800431740}
   - component: {fileID: 800431739}
   m_Layer: 0
-  m_Name: DisplayImages
+  m_Name: DisplayHappeningImages
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135287,7 +135287,7 @@ GameObject:
   - component: {fileID: 982997420}
   - component: {fileID: 982997421}
   m_Layer: 0
-  m_Name: Moderation
+  m_Name: RadioModeration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -141375,7 +141375,7 @@ GameObject:
   - component: {fileID: 1020798172}
   - component: {fileID: 1020798173}
   m_Layer: 0
-  m_Name: DisplayImages
+  m_Name: DisplayTaleImages
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145602,7 +145602,7 @@ GameObject:
   - component: {fileID: 1053406718}
   - component: {fileID: 1053406717}
   m_Layer: 0
-  m_Name: DisplayImages
+  m_Name: DisplayRadioImages
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168642,7 +168642,7 @@ GameObject:
   - component: {fileID: 1222763322}
   - component: {fileID: 1222763321}
   m_Layer: 0
-  m_Name: Moderation
+  m_Name: TaleModeration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -172509,7 +172509,7 @@ GameObject:
   - component: {fileID: 1254633781}
   - component: {fileID: 1254633782}
   m_Layer: 0
-  m_Name: DisplayListTreatment
+  m_Name: DisplayTreatmentList
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178744,7 +178744,7 @@ GameObject:
   - component: {fileID: 1305286611}
   - component: {fileID: 1305286612}
   m_Layer: 0
-  m_Name: DisplayListRadio
+  m_Name: DisplayRadioList
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181010,7 +181010,7 @@ GameObject:
   - component: {fileID: 1320639182}
   - component: {fileID: 1320639181}
   m_Layer: 0
-  m_Name: DisplayDetail
+  m_Name: DisplayTreatmentDetail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182142,7 +182142,7 @@ GameObject:
   - component: {fileID: 1326985209}
   - component: {fileID: 1326985210}
   m_Layer: 0
-  m_Name: Moderation
+  m_Name: ProductModeration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182301,7 +182301,7 @@ GameObject:
   - component: {fileID: 1327456145}
   - component: {fileID: 1327456146}
   m_Layer: 0
-  m_Name: DisplayListProduct
+  m_Name: DisplayProductList
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192809,7 +192809,7 @@ GameObject:
   - component: {fileID: 1404376561}
   - component: {fileID: 1404376560}
   m_Layer: 0
-  m_Name: DisplayDetail
+  m_Name: DisplayProductDetail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -214763,7 +214763,7 @@ GameObject:
   - component: {fileID: 1554060289}
   - component: {fileID: 1554060291}
   m_Layer: 0
-  m_Name: DisplayListTale
+  m_Name: DisplayTaleList
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -227349,7 +227349,7 @@ GameObject:
   - component: {fileID: 1635827179}
   - component: {fileID: 1635827178}
   m_Layer: 0
-  m_Name: DisplayDetail
+  m_Name: DisplayNewsDetail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -230765,7 +230765,7 @@ GameObject:
   - component: {fileID: 1658492220}
   - component: {fileID: 1658492219}
   m_Layer: 0
-  m_Name: DisplayImages
+  m_Name: DisplayTreatmentImages
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -235755,7 +235755,7 @@ GameObject:
   - component: {fileID: 1695324642}
   - component: {fileID: 1695324643}
   m_Layer: 0
-  m_Name: Moderation
+  m_Name: NewsModeration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -239826,7 +239826,7 @@ GameObject:
   - component: {fileID: 1717287832}
   - component: {fileID: 1717287831}
   m_Layer: 0
-  m_Name: DisplayImages
+  m_Name: DisplayNewsImages
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -262768,7 +262768,7 @@ GameObject:
   - component: {fileID: 1859899907}
   - component: {fileID: 1859899908}
   m_Layer: 0
-  m_Name: Moderation
+  m_Name: TreatmentModeration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -274103,7 +274103,7 @@ GameObject:
   - component: {fileID: 1923254266}
   - component: {fileID: 1923254267}
   m_Layer: 0
-  m_Name: DisplayDetail
+  m_Name: DisplayHappeningDetail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
