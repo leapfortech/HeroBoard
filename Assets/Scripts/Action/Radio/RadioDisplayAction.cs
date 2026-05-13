@@ -25,11 +25,11 @@ public class RadioDisplayAction : MonoBehaviour
     [SerializeField]
     Text txtTitle = null;
     [SerializeField]
+    Text txtPlace = null;
+    [SerializeField]
     Text txtSummary = null;
     [SerializeField]
     Text txtDescription = null;
-    [SerializeField]
-    Text txtPlace = null;
 
     [SerializeField]
     ListScroller lstRadioType = null;
@@ -119,13 +119,14 @@ public class RadioDisplayAction : MonoBehaviour
         // Post
         txtAlias.TextValue = $"Publicado por: <b>@{radioFull.AppUserAlias}</b>";
         txtTitle.TextValue = String.IsNullOrWhiteSpace(radioFull.Title) ? "-" : radioFull.Title;
-        txtDateTime.TextValue = radioFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
-        txtSummary.TextValue = String.IsNullOrWhiteSpace(radioFull.Summary) ? "-" : radioFull.Summary;
-        txtDescription.TextValue = String.IsNullOrWhiteSpace(radioFull.Description) ? "-" : radioFull.Description;
 
         String country = radioFull.PostCountryId == -1 ? "" : vllCountry.FindRecordCellString(radioFull.PostCountryId, "Name");
         String state = radioFull.PostStateId == -1 ? "" : vllState.FindRecordCellString(radioFull.PostStateId, "Name");
         txtPlace.TextValue = country + (!String.IsNullOrWhiteSpace(country) && !String.IsNullOrWhiteSpace(state) ? ", " : "") + state;
+
+        txtDateTime.TextValue = radioFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
+        txtSummary.TextValue = String.IsNullOrWhiteSpace(radioFull.Summary) ? "-" : radioFull.Summary;
+        txtDescription.TextValue = String.IsNullOrWhiteSpace(radioFull.Description) ? "-" : radioFull.Description;
 
         // Radio Type
         for (int i = 0; i < radioFull.RadioTypeFulls.Count; i++)
