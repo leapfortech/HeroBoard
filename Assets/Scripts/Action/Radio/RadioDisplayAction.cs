@@ -35,6 +35,14 @@ public class RadioDisplayAction : MonoBehaviour
     [SerializeField]
     Text txtCity = null;
 
+    [SerializeField]
+    ListScroller lstRadioType = null;
+    [SerializeField]
+    ListScroller lstRadioLanguage = null;
+
+    [SerializeField]
+    Button btnRadio = null;
+
     [Space]
     [Title("Values")]
     [SerializeField]
@@ -43,6 +51,10 @@ public class RadioDisplayAction : MonoBehaviour
     ValueList vllState = null;
     //[SerializeField]
     //ValueList vllCity = null;
+    [SerializeField]
+    ValueList vllRadioType = null;
+    [SerializeField]
+    ValueList vllRadioLanguage = null;
 
     [Space]
     [Title("Panel")]
@@ -60,10 +72,21 @@ public class RadioDisplayAction : MonoBehaviour
     RadioService radioService;
 
     long postId = -1, radioId = -1;
+    String url = null;
 
     private void Awake()
     {
         radioService = GetComponent<RadioService>();
+    }
+
+    private void Start()
+    {
+        btnRadio?.AddAction(OpenRadio);
+    }
+
+    private void OpenRadio()
+    {
+        Application.OpenURL(url);
     }
 
     public void Display(long postId)
@@ -85,6 +108,8 @@ public class RadioDisplayAction : MonoBehaviour
     public void ApplyFull(RadioFull radioFull)
     {
         radioId = radioFull.Id;
+        url = radioFull.LinkFulls[0].Url;
+
         StateManager.Instance.AddRadioFull(radioFull);
         StateManager.Instance.AddRadioImages(radioFull.Id, radioFull.Images);
         Display(radioFull);
@@ -106,13 +131,30 @@ public class RadioDisplayAction : MonoBehaviour
         txtState.TextValue = radioFull.PostStateId == -1 ? "-" : vllState.FindRecordCellString(radioFull.PostStateId, "Name");
         txtCity.TextValue = "-";
 
+        // Radio Type
+        for (int i = 0; i < radioFull.RadioTypeFulls.Count; i++)
+        {
+            ListScrollerValue value = new ListScrollerValue(1, true);
+            value.SetText(0, vllRadioType.FindRecordCellString(radioFull.RadioTypeFulls[i].RadioTypeId, "Name"));
+
+            lstRadioType.AddValue(value);
+        }
+
+        // Radio Language
+        for (int i = 0; i < radioFull.RadioLanguageFulls.Count; i++)
+        {
+            ListScrollerValue value = new ListScrollerValue(1, true);
+            value.SetText(0, vllRadioLanguage.FindRecordCellString(radioFull.RadioLanguageFulls[i].LanguageId, "Name"));
+
+            lstRadioLanguage.AddValue(value);
+        }
+
+        // Images
         List<Sprite> images = StateManager.Instance.GetRadioImagesById(radioId);
-        
         onImagesDisplay.Invoke(images);
         onDisplayed.Invoke(new long[2] {radioFull.PostId, radioFull.Id});
 
         pnlCtr.ChangePanel(pnlDetail);
-
         StateManager.Instance.BoardLoadHide();
     }
 }

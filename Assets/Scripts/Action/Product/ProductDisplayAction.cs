@@ -28,21 +28,48 @@ public class ProductDisplayAction : MonoBehaviour
     Text txtSummary = null;
     [SerializeField]
     Text txtDescription = null;
+
     [SerializeField]
-    Text txtCountry = null;
+    Text txtProductSubtype = null;
     [SerializeField]
-    Text txtState = null;
+    Text txtSaleCountry = null;
     [SerializeField]
-    Text txtCity = null;
+    Text txtSaleState = null;
+    [SerializeField]
+    Text txtSaleCity = null;
+    [SerializeField]
+    Text txtCurrency = null;
+    [SerializeField]
+    Text txtPrice = null;
+    [SerializeField]
+    Text txtDiscountPrice = null;
+    [SerializeField]
+    Text txtDeliveryType = null;
+    [SerializeField]
+    Text txtAnnotation = null;
+    [SerializeField]
+    Text txtContactName = null;
+    [SerializeField]
+    Text txtPhone = null;
+    [SerializeField]
+    Text txtWhatsApp = null;
+    [SerializeField]
+    Text txtEmail = null;
 
     [Space]
     [Title("Values")]
+    [SerializeField]
+    ValueList vllProductSubType = null;
     [SerializeField]
     ValueList vllCountry = null;
     [SerializeField]
     ValueList vllState = null;
     //[SerializeField]
     //ValueList vllCity = null;
+    [SerializeField]
+    ValueList vllCurrency = null;
+    [SerializeField]
+    ValueList vllDeliveryType = null;
 
     [Space]
     [Title("Panel")]
@@ -103,17 +130,51 @@ public class ProductDisplayAction : MonoBehaviour
         txtDescription.TextValue = String.IsNullOrWhiteSpace(productFull.Description) ? "-" : productFull.Description;
 
         // Product
-        txtCountry.TextValue = productFull.SaleCountryId == -1 ? "-" : vllCountry.FindRecordCellString(productFull.SaleCountryId, "Name");
-        txtState.TextValue = productFull.SaleStateId == -1 ? "-" : vllState.FindRecordCellString(productFull.SaleStateId, "Name");
-        txtCity.TextValue = "-";
+        txtProductSubtype.TextValue = vllProductSubType.FindRecordCellString(productFull.ProductSubtypeId, "Name");
+        txtSaleCountry.TextValue = productFull.SaleCountryId == -1 ? "-" : vllCountry.FindRecordCellString(productFull.SaleCountryId, "Name");
+        txtSaleState.TextValue = productFull.SaleStateId == -1 ? "-" : vllState.FindRecordCellString(productFull.SaleStateId, "Name");
+        txtSaleCity.TextValue = "-";
+        txtCurrency.TextValue = vllCurrency.FindRecordCellString(productFull.CurrencyId, "Name");
+        txtPrice.TextValue = productFull.Price.ToString("N2");
+        txtPrice.TextValue = productFull.DiscountPrice.ToString("N2");
+        txtDeliveryType.TextValue = productFull.DeliveryTypeId == -1 ? "-" : vllDeliveryType.FindRecordCellString(productFull.DeliveryTypeId, name);
+        txtAnnotation.TextValue = String.IsNullOrEmpty(productFull.Annotation) ? "-" : productFull.Annotation;
+        txtContactName.TextValue = String.IsNullOrEmpty(productFull.ContactFull.Name) ? "-" : productFull.ContactFull.Name;
 
+        for (int i = 0; i < productFull.LinkFulls.Count; i++)
+        {
+            String url = productFull.LinkFulls[i].Url;
+
+            if (String.IsNullOrWhiteSpace(url))
+                continue;
+
+            String[] split = url.Split('|');
+
+            String fullPhone = null;
+            if (split.Length > 1)
+            {
+                long phoneCountryId = Convert.ToInt64(split[0]);
+                String phone = split[1];
+                String phonePrefix = vllCountry.FindRecordCellString(phoneCountryId, "PhonePrefix");
+                fullPhone = phonePrefix + " " + phone;
+            }
+
+            if (productFull.LinkFulls[i].LinkTypeId == 2)
+                txtPhone.TextValue = fullPhone;
+
+            else if (productFull.LinkFulls[i].LinkTypeId == 3)
+                txtWhatsApp.TextValue = fullPhone;
+
+            else if (productFull.LinkFulls[i].LinkTypeId == 4)
+                txtEmail.TextValue = productFull.LinkFulls[i].Url;
+        }
+
+        // Images
         List<Sprite> images = StateManager.Instance.GetProductImagesById(productId);
-        
         onImagesDisplay.Invoke(images);
         onDisplayed.Invoke(new long[2] {productFull.PostId, productFull.Id});
 
         pnlCtr.ChangePanel(pnlDetail);
-
         StateManager.Instance.BoardLoadHide();
     }
 }

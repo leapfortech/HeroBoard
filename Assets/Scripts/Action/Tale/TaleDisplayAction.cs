@@ -106,13 +106,12 @@ public class TaleDisplayAction : MonoBehaviour
         txtState.TextValue = taleFull.PostStateId == -1 ? "-" : vllState.FindRecordCellString(taleFull.PostStateId, "Name");
         txtCity.TextValue = "-";
 
+        // Images
         List<Sprite> images = StateManager.Instance.GetTaleImagesById(taleId);
-        
         onImagesDisplay.Invoke(images);
         onDisplayed.Invoke(new long[2] {taleFull.PostId, taleFull.Id});
 
         pnlCtr.ChangePanel(pnlDetail);
-
         StateManager.Instance.BoardLoadHide();
     }
 }

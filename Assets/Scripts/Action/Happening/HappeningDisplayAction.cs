@@ -107,13 +107,12 @@ public class HappeningDisplayAction : MonoBehaviour
         txtState.TextValue = happeningFull.StateId == -1 ? "-" : vllState.FindRecordCellString(happeningFull.StateId, "Name");
         txtCity.TextValue = "-";
 
+        // Images
         List<Sprite> images = StateManager.Instance.GetHappeningImagesById(happeningId);
-        
         onImagesDisplay.Invoke(images);
         onDisplayed.Invoke(new long[2] {happeningFull.PostId, happeningFull.Id});
 
         pnlCtr.ChangePanel(pnlDetail);
-
         StateManager.Instance.BoardLoadHide();
     }
 }

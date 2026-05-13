@@ -136,14 +136,11 @@ public class TreatmentDisplayAction : MonoBehaviour
         lstDisease.ApplyValues();
 
         // Images
-
         List<Sprite> images = StateManager.Instance.GetTreatmentImagesById(treatmentId);
-        
         onImagesDisplay.Invoke(images);
         onDisplayed.Invoke(new long[2] {treatmentFull.PostId, treatmentFull.Id});
 
         pnlCtr.ChangePanel(pnlDetail);
-
         StateManager.Instance.BoardLoadHide();
     }
 }
