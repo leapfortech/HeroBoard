@@ -66,6 +66,9 @@ public class ImageDisplayAction : MonoBehaviour
 
     public void UpdateIndicator(int currentIndex)
     {
+        if (indicators == null || indicators.Length == 0)
+            return;
+
         for (int i = 0; i < indicators.Length; i++)
         {
             MPImage indicatorImage = indicators[i].GetComponent<MPImage>();

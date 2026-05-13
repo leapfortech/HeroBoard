@@ -31,6 +31,19 @@ public class RadioDisplayAction : MonoBehaviour
     [SerializeField]
     Text txtDescription = null;
 
+    [Space]
+    [Title("Contents")]
+    [SerializeField]
+    int charsPerLine = 40;
+    [SerializeField]
+    int lineHeight = 15;
+    [SerializeField]
+    float contentPadding = 40f;
+    [Space, SerializeField]
+    RectTransform[] contents = null;
+
+    [Space]
+    [Title("List")]
     [SerializeField]
     ListScroller lstRadioType = null;
     [SerializeField]
@@ -151,7 +164,21 @@ public class RadioDisplayAction : MonoBehaviour
         onImagesDisplay.Invoke(images);
         onDisplayed.Invoke(new long[2] {radioFull.PostId, radioFull.Id});
 
+        RefreshContents();
+
         pnlCtr.ChangePanel(pnlDetail);
         StateManager.Instance.BoardLoadHide();
+    }
+
+    private void RefreshContents()
+    {
+        for (int i = 0; i < contents.Length; i++)
+        {
+            Text txtScroll = contents[i].GetComponentInChildren<Text>();
+            int lineCount = Mathf.CeilToInt((float)txtScroll.TextValue.Length / charsPerLine);
+            float height = lineCount * lineHeight;
+
+            contents[i].sizeDelta = new Vector2(contents[i].sizeDelta.x, height + contentPadding);
+        }
     }
 }

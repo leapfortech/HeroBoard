@@ -53,6 +53,17 @@ public class ProductDisplayAction : MonoBehaviour
     Text txtEmail = null;
 
     [Space]
+    [Title("Contents")]
+    [SerializeField]
+    int charsPerLine = 40;
+    [SerializeField]
+    int lineHeight = 15;
+    [SerializeField]
+    float contentPadding = 40f;
+    [Space, SerializeField]
+    RectTransform[] contents = null;
+
+    [Space]
     [Title("Values")]
     [SerializeField]
     ValueList vllProductSubType = null;
@@ -172,7 +183,21 @@ public class ProductDisplayAction : MonoBehaviour
         onImagesDisplay.Invoke(images);
         onDisplayed.Invoke(new long[2] {productFull.PostId, productFull.Id});
 
+        RefreshContents();
+
         pnlCtr.ChangePanel(pnlDetail);
         StateManager.Instance.BoardLoadHide();
+    }
+
+    private void RefreshContents()
+    {
+        for (int i = 0; i < contents.Length; i++)
+        {
+            Text txtScroll = contents[i].GetComponentInChildren<Text>();
+            int lineCount = Mathf.CeilToInt((float)txtScroll.TextValue.Length / charsPerLine);
+            float height = lineCount * lineHeight;
+
+            contents[i].sizeDelta = new Vector2(contents[i].sizeDelta.x, height + contentPadding);
+        }
     }
 }

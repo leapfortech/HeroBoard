@@ -154,7 +154,7 @@ public class PostDisplayAction : MonoBehaviour
             value.SetSprite(2, postFullsPagedResponse.PostFulls[i].ImageCount == 0 ? emptyImage : postFullsPagedResponse.PostFulls[i].TitleSprite);
 
             String description = postFullsPagedResponse.PostFulls[i].Description ?? "";
-            value.SetText(3, description.Length > 300 ? description.Substring(0, 300) + "..." : description);
+            value.SetText(3, description.Length > 250 ? description.Substring(0, 250) + "..." : description);
 
             lstPost.AddValue(value);
         }
