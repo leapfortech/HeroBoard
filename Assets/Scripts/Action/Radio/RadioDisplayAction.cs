@@ -29,11 +29,7 @@ public class RadioDisplayAction : MonoBehaviour
     [SerializeField]
     Text txtDescription = null;
     [SerializeField]
-    Text txtCountry = null;
-    [SerializeField]
-    Text txtState = null;
-    [SerializeField]
-    Text txtCity = null;
+    Text txtPlace = null;
 
     [SerializeField]
     ListScroller lstRadioType = null;
@@ -127,9 +123,9 @@ public class RadioDisplayAction : MonoBehaviour
         txtSummary.TextValue = String.IsNullOrWhiteSpace(radioFull.Summary) ? "-" : radioFull.Summary;
         txtDescription.TextValue = String.IsNullOrWhiteSpace(radioFull.Description) ? "-" : radioFull.Description;
 
-        txtCountry.TextValue = radioFull.PostCountryId == -1 ? "-" : vllCountry.FindRecordCellString(radioFull.PostCountryId, "Name");
-        txtState.TextValue = radioFull.PostStateId == -1 ? "-" : vllState.FindRecordCellString(radioFull.PostStateId, "Name");
-        txtCity.TextValue = "-";
+        String country = radioFull.PostCountryId == -1 ? "" : vllCountry.FindRecordCellString(radioFull.PostCountryId, "Name");
+        String state = radioFull.PostStateId == -1 ? "" : vllState.FindRecordCellString(radioFull.PostStateId, "Name");
+        txtPlace.TextValue = country + (!String.IsNullOrWhiteSpace(country) && !String.IsNullOrWhiteSpace(state) ? ", " : "") + state;
 
         // Radio Type
         for (int i = 0; i < radioFull.RadioTypeFulls.Count; i++)

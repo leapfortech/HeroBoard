@@ -32,11 +32,7 @@ public class HappeningDisplayAction : MonoBehaviour
     [SerializeField]
     Text txtHappeningType = null;
     [SerializeField]
-    Text txtCountry = null;
-    [SerializeField]
-    Text txtState = null;
-    [SerializeField]
-    Text txtCity = null;
+    Text txtPlace = null;
     [SerializeField]
     Text txtIsPublic = null;
     [SerializeField]
@@ -123,9 +119,11 @@ public class HappeningDisplayAction : MonoBehaviour
 
         // Happening
         txtHappeningType.TextValue = happeningFull.HappeningTypeId == -1 ? "-" : vllHappeningType.FindRecordCellString(happeningFull.HappeningTypeId, "Name");
-        txtCountry.TextValue = happeningFull.CountryId == -1 ? "-" : vllCountry.FindRecordCellString(happeningFull.CountryId, "Name");
-        txtState.TextValue = happeningFull.StateId == -1 ? "-" : vllState.FindRecordCellString(happeningFull.StateId, "Name");
-        txtCity.TextValue = "-";
+
+        String country = happeningFull.PostCountryId == -1 ? "" : vllCountry.FindRecordCellString(happeningFull.PostCountryId, "Name");
+        String state = happeningFull.PostStateId == -1 ? "" : vllState.FindRecordCellString(happeningFull.PostStateId, "Name");
+        txtPlace.TextValue = country + (!String.IsNullOrWhiteSpace(country) && !String.IsNullOrWhiteSpace(state) ? ", " : "") + state;
+
         txtIsPublic.TextValue = happeningFull.IsPublic == -1 ? "-" : happeningFull.IsPublic == 0 ? "No" : "Sí";
         txtHasSignup.TextValue = happeningFull.HasSignup == -1 ? "-" : happeningFull.HasSignup == 0 ? "No" : "Sí";
         txtHasPayment.TextValue = happeningFull.HasPayment == -1 ? "-" : happeningFull.HasPayment == 0 ? "No" : "Sí";

@@ -25,23 +25,19 @@ public class TreatmentDisplayAction : MonoBehaviour
     [SerializeField]
     Text txtTitle = null;
     [SerializeField]
+    Text txtPlace = null;
+    [SerializeField]
     Text txtSummary = null;
     [SerializeField]
     Text txtDescription = null;
-    [SerializeField]
-    Text txtCountry = null;
-    [SerializeField]
-    Text txtState = null;
-    [SerializeField]
-    Text txtCity = null;
     [SerializeField]
     Text txtIngredients = null;
     [SerializeField]
     Text txtPreparation = null;
     [SerializeField]
     Text txtUsage = null;
-    [SerializeField]
-    Text txtAnnotation = null;
+    //[SerializeField]
+    //Text txtAnnotation = null;
     [SerializeField]
     ListScroller lstDisease = null;
 
@@ -114,15 +110,15 @@ public class TreatmentDisplayAction : MonoBehaviour
         txtSummary.TextValue = String.IsNullOrWhiteSpace(treatmentFull.Summary) ? "-" : treatmentFull.Summary;
         txtDescription.TextValue = String.IsNullOrWhiteSpace(treatmentFull.Description) ? "-" : treatmentFull.Description;
 
-        txtCountry.TextValue = treatmentFull.PostCountryId == -1 ? "-" : vllCountry.FindRecordCellString(treatmentFull.PostCountryId, "Name");
-        txtState.TextValue = treatmentFull.PostStateId == -1 ? "-" : vllState.FindRecordCellString(treatmentFull.PostStateId, "Name");
-        txtCity.TextValue = "-";
+        String country = treatmentFull.PostCountryId == -1 ? "" : vllCountry.FindRecordCellString(treatmentFull.PostCountryId, "Name");
+        String state = treatmentFull.PostStateId == -1 ? "" : vllState.FindRecordCellString(treatmentFull.PostStateId, "Name");
+        txtPlace.TextValue = country + (!String.IsNullOrWhiteSpace(country) && !String.IsNullOrWhiteSpace(state) ? ", " : "") + state;
 
         // Treatment
         txtIngredients.TextValue = String.IsNullOrWhiteSpace(treatmentFull.Ingredients) ? "-" : treatmentFull.Ingredients;
         txtPreparation.TextValue = String.IsNullOrWhiteSpace(treatmentFull.Preparation) ? "-" : treatmentFull.Preparation;
         txtUsage.TextValue = String.IsNullOrWhiteSpace(treatmentFull.Usage) ? "-" : treatmentFull.Usage;
-        txtAnnotation.TextValue = String.IsNullOrWhiteSpace(treatmentFull.Annotation) ? "-" : treatmentFull.Annotation;
+        //txtAnnotation.TextValue = String.IsNullOrWhiteSpace(treatmentFull.Annotation) ? "-" : treatmentFull.Annotation;
 
         // Disease
         for (int i = 0; i < treatmentFull.DiseaseFulls.Count; i++)

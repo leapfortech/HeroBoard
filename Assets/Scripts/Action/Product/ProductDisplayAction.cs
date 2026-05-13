@@ -32,11 +32,7 @@ public class ProductDisplayAction : MonoBehaviour
     [SerializeField]
     Text txtProductSubtype = null;
     [SerializeField]
-    Text txtSaleCountry = null;
-    [SerializeField]
-    Text txtSaleState = null;
-    [SerializeField]
-    Text txtSaleCity = null;
+    Text txtPlace = null;
     [SerializeField]
     Text txtCurrency = null;
     [SerializeField]
@@ -131,12 +127,14 @@ public class ProductDisplayAction : MonoBehaviour
 
         // Product
         txtProductSubtype.TextValue = vllProductSubType.FindRecordCellString(productFull.ProductSubtypeId, "Name");
-        txtSaleCountry.TextValue = productFull.SaleCountryId == -1 ? "-" : vllCountry.FindRecordCellString(productFull.SaleCountryId, "Name");
-        txtSaleState.TextValue = productFull.SaleStateId == -1 ? "-" : vllState.FindRecordCellString(productFull.SaleStateId, "Name");
-        txtSaleCity.TextValue = "-";
+
+        String country = productFull.PostCountryId == -1 ? "" : vllCountry.FindRecordCellString(productFull.PostCountryId, "Name");
+        String state = productFull.PostStateId == -1 ? "" : vllState.FindRecordCellString(productFull.PostStateId, "Name");
+        txtPlace.TextValue = country + (!String.IsNullOrWhiteSpace(country) && !String.IsNullOrWhiteSpace(state) ? ", " : "") + state;
+
         txtCurrency.TextValue = vllCurrency.FindRecordCellString(productFull.CurrencyId, "Name");
         txtPrice.TextValue = productFull.Price.ToString("N2");
-        txtPrice.TextValue = productFull.DiscountPrice.ToString("N2");
+        txtDiscountPrice.TextValue = productFull.DiscountPrice.ToString("N2");
         txtDeliveryType.TextValue = productFull.DeliveryTypeId == -1 ? "-" : vllDeliveryType.FindRecordCellString(productFull.DeliveryTypeId, name);
         txtAnnotation.TextValue = String.IsNullOrEmpty(productFull.Annotation) ? "-" : productFull.Annotation;
         txtContactName.TextValue = String.IsNullOrEmpty(productFull.ContactFull.Name) ? "-" : productFull.ContactFull.Name;

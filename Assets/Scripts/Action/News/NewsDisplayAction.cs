@@ -28,12 +28,6 @@ public class NewsDisplayAction : MonoBehaviour
     Text txtSummary = null;
     [SerializeField]
     Text txtDescription = null;
-    [SerializeField]
-    Text txtCountry = null;
-    [SerializeField]
-    Text txtState = null;
-    [SerializeField]
-    Text txtCity = null;
 
     [SerializeField]
     Text txtNewsTypeId = null;
@@ -112,9 +106,10 @@ public class NewsDisplayAction : MonoBehaviour
         txtDateTime.TextValue = newsFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
         txtSummary.TextValue = String.IsNullOrWhiteSpace(newsFull.Summary) ? "-" : newsFull.Summary;
         txtDescription.TextValue = String.IsNullOrWhiteSpace(newsFull.Description) ? "-" : newsFull.Description;
-        txtCountry.TextValue = newsFull.PostCountryId == -1 ? "-" : vllCountry.FindRecordCellString(newsFull.PostCountryId, "Name");
-        txtState.TextValue = newsFull.PostStateId == -1 ? "-" : vllState.FindRecordCellString(newsFull.PostStateId, "Name");
-        txtCity.TextValue = "-";
+
+        String country = newsFull.PostCountryId == -1 ? "" : vllCountry.FindRecordCellString(newsFull.PostCountryId, "Name");
+        String state = newsFull.PostStateId == -1 ? "" : vllState.FindRecordCellString(newsFull.PostStateId, "Name");
+        txtPlace.TextValue = country + (!String.IsNullOrWhiteSpace(country) && !String.IsNullOrWhiteSpace(state) ? ", " : "") + state;
 
         txtNewsTypeId.TextValue = newsFull.NewsTypeId == -1 ? "-" : vllNewsType.FindRecordCellString(newsFull.NewsTypeId, "Name");
         txtPlace.TextValue = String.IsNullOrWhiteSpace(newsFull.Place) ? "-" : newsFull.Place;

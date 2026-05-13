@@ -25,15 +25,11 @@ public class TaleDisplayAction : MonoBehaviour
     [SerializeField]
     Text txtTitle = null;
     [SerializeField]
+    Text txtPlace = null;
+    [SerializeField]
     Text txtSummary = null;
     [SerializeField]
     Text txtDescription = null;
-    [SerializeField]
-    Text txtCountry = null;
-    [SerializeField]
-    Text txtState = null;
-    [SerializeField]
-    Text txtCity = null;
 
     [Space]
     [Title("Values")]
@@ -98,13 +94,14 @@ public class TaleDisplayAction : MonoBehaviour
         // Post
         txtAlias.TextValue = $"Publicado por: <b>@{taleFull.AppUserAlias}</b>";
         txtTitle.TextValue = String.IsNullOrWhiteSpace(taleFull.Title) ? "-" : taleFull.Title;
+
+        String country = taleFull.PostCountryId == -1 ? "" : vllCountry.FindRecordCellString(taleFull.PostCountryId, "Name");
+        String state = taleFull.PostStateId == -1 ? "" : vllState.FindRecordCellString(taleFull.PostStateId, "Name");
+        txtPlace.TextValue = country + (!String.IsNullOrWhiteSpace(country) && !String.IsNullOrWhiteSpace(state) ? ", " : "") + state;
+
         txtDateTime.TextValue = taleFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
         txtSummary.TextValue = String.IsNullOrWhiteSpace(taleFull.Summary) ? "-" : taleFull.Summary;
         txtDescription.TextValue = String.IsNullOrWhiteSpace(taleFull.Description) ? "-" : taleFull.Description;
-
-        txtCountry.TextValue = taleFull.PostCountryId == -1 ? "-" : vllCountry.FindRecordCellString(taleFull.PostCountryId, "Name");
-        txtState.TextValue = taleFull.PostStateId == -1 ? "-" : vllState.FindRecordCellString(taleFull.PostStateId, "Name");
-        txtCity.TextValue = "-";
 
         // Images
         List<Sprite> images = StateManager.Instance.GetTaleImagesById(taleId);
