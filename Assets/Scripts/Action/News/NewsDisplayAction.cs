@@ -35,6 +35,15 @@ public class NewsDisplayAction : MonoBehaviour
     [SerializeField]
     Text txtCity = null;
 
+    [SerializeField]
+    Text txtNewsTypeId = null;
+    [SerializeField]
+    Text txtPlace = null;
+    [SerializeField]
+    Text txtSource = null;
+    [SerializeField]
+    Text txtNewsDateTime = null;
+
     [Space]
     [Title("Values")]
     [SerializeField]
@@ -43,6 +52,8 @@ public class NewsDisplayAction : MonoBehaviour
     ValueList vllState = null;
     //[SerializeField]
     //ValueList vllCity = null;
+    [SerializeField]
+    ValueList vllNewsType = null;
 
     [Space]
     [Title("Panel")]
@@ -101,10 +112,14 @@ public class NewsDisplayAction : MonoBehaviour
         txtDateTime.TextValue = newsFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
         txtSummary.TextValue = String.IsNullOrWhiteSpace(newsFull.Summary) ? "-" : newsFull.Summary;
         txtDescription.TextValue = String.IsNullOrWhiteSpace(newsFull.Description) ? "-" : newsFull.Description;
-
         txtCountry.TextValue = newsFull.PostCountryId == -1 ? "-" : vllCountry.FindRecordCellString(newsFull.PostCountryId, "Name");
         txtState.TextValue = newsFull.PostStateId == -1 ? "-" : vllState.FindRecordCellString(newsFull.PostStateId, "Name");
         txtCity.TextValue = "-";
+
+        txtNewsTypeId.TextValue = newsFull.NewsTypeId == -1 ? "-" : vllNewsType.FindRecordCellString(newsFull.NewsTypeId, "Name");
+        txtPlace.TextValue = String.IsNullOrWhiteSpace(newsFull.Place) ? "-" : newsFull.Place;
+        txtSource.TextValue = String.IsNullOrWhiteSpace(newsFull.Source) ? "-" : newsFull.Source;
+        txtNewsDateTime.TextValue = newsFull.DateTime == null ? "-" : newsFull.DateTime.Value.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
 
         // Images
         List<Sprite> images = StateManager.Instance.GetNewsImagesById(newsId);
