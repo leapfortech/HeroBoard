@@ -134,7 +134,7 @@ public class ServiceWishDisplayAction : MonoBehaviour
         GetPaged(currentPage - 1);
     }
 
-    void GetPaged(int page)
+    public void GetPaged(int page)
     {
         ScreenDialog.Instance.Display();
 
@@ -188,7 +188,7 @@ public class ServiceWishDisplayAction : MonoBehaviour
         StateManager.Instance.BoardLoadHide();
     }
 
-    void UpdatePagination()
+    public void UpdatePagination()
     {
         txtPage.TextValue = $"Página {currentPage} / {Mathf.Max(totalPages, 1)}";
 
@@ -196,7 +196,7 @@ public class ServiceWishDisplayAction : MonoBehaviour
         btnNext.Interactable = currentPage < totalPages;
     }
 
-    void ShowEmpty()
+    public void ShowEmpty()
     {
         txtEmpty.gameObject.SetActive(true);
         lstServiceWish.ApplyClearValues();
