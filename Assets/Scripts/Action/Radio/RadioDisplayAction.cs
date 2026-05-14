@@ -42,13 +42,13 @@ public class RadioDisplayAction : MonoBehaviour
     [Space, SerializeField]
     RectTransform[] contents = null;
 
-    [Space]
-    [Title("List")]
+    [Space, Title("List")]
     [SerializeField]
     ListScroller lstRadioType = null;
     [SerializeField]
     ListScroller lstRadioLanguage = null;
 
+    [Space, Title("Action")]
     [SerializeField]
     Button btnRadio = null;
 

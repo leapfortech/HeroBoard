@@ -34,15 +34,14 @@ public class ProductDisplayAction : MonoBehaviour
     [SerializeField]
     Text txtPlace = null;
     [SerializeField]
-    Text txtCurrency = null;
-    [SerializeField]
     Text txtPrice = null;
     [SerializeField]
     Text txtDiscountPrice = null;
     [SerializeField]
     Text txtDeliveryType = null;
-    [SerializeField]
-    Text txtAnnotation = null;
+    //[SerializeField]
+    //Text txtAnnotation = null;
+    
     [SerializeField]
     Text txtContactName = null;
     [SerializeField]
@@ -66,7 +65,7 @@ public class ProductDisplayAction : MonoBehaviour
     [Space]
     [Title("Values")]
     [SerializeField]
-    ValueList vllProductSubType = null;
+    ValueList vllProductSubtype = null;
     [SerializeField]
     ValueList vllCountry = null;
     [SerializeField]
@@ -137,17 +136,18 @@ public class ProductDisplayAction : MonoBehaviour
         txtDescription.TextValue = String.IsNullOrWhiteSpace(productFull.Description) ? "-" : productFull.Description;
 
         // Product
-        txtProductSubtype.TextValue = vllProductSubType.FindRecordCellString(productFull.ProductSubtypeId, "Name");
+        txtProductSubtype.TextValue = vllProductSubtype.FindRecordCellString(productFull.ProductSubtypeId, "Name");
 
         String country = productFull.PostCountryId == -1 ? "" : vllCountry.FindRecordCellString(productFull.PostCountryId, "Name");
         String state = productFull.PostStateId == -1 ? "" : vllState.FindRecordCellString(productFull.PostStateId, "Name");
         txtPlace.TextValue = country + (!String.IsNullOrWhiteSpace(country) && !String.IsNullOrWhiteSpace(state) ? ", " : "") + state;
 
-        txtCurrency.TextValue = vllCurrency.FindRecordCellString(productFull.CurrencyId, "Name");
-        txtPrice.TextValue = productFull.Price.ToString("N2");
-        txtDiscountPrice.TextValue = productFull.DiscountPrice.ToString("N2");
+        String currencySymbol = vllCurrency.FindRecordCellString(productFull.CurrencyId, "Symbol");
+        txtPrice.TextValue = currencySymbol + " " + productFull.Price.ToString("N2");
+        txtDiscountPrice.TextValue = productFull.DiscountPrice <= 0d ? "-": currencySymbol + " " + productFull.DiscountPrice.ToString("N2");
+        
         txtDeliveryType.TextValue = productFull.DeliveryTypeId == -1 ? "-" : vllDeliveryType.FindRecordCellString(productFull.DeliveryTypeId, name);
-        txtAnnotation.TextValue = String.IsNullOrEmpty(productFull.Annotation) ? "-" : productFull.Annotation;
+        //txtAnnotation.TextValue = String.IsNullOrEmpty(productFull.Annotation) ? "-" : productFull.Annotation;
         txtContactName.TextValue = String.IsNullOrEmpty(productFull.ContactFull.Name) ? "-" : productFull.ContactFull.Name;
 
         for (int i = 0; i < productFull.LinkFulls.Count; i++)

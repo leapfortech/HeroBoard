@@ -30,7 +30,7 @@ public class NewsDisplayAction : MonoBehaviour
     Text txtDescription = null;
 
     [SerializeField]
-    Text txtNewsTypeId = null;
+    Text txtNewsType = null;
     [SerializeField]
     Text txtPlace = null;
     [SerializeField]
@@ -38,8 +38,7 @@ public class NewsDisplayAction : MonoBehaviour
     [SerializeField]
     Text txtNewsDateTime = null;
 
-    [Space]
-    [Title("Contents")]
+    [Space, Title("Contents")]
     [SerializeField]
     int charsPerLine = 40;
     [SerializeField]
@@ -49,8 +48,11 @@ public class NewsDisplayAction : MonoBehaviour
     [Space, SerializeField]
     RectTransform[] contents = null;
 
-    [Space]
-    [Title("Values")]
+    [Space, Title("Action")]
+    [SerializeField]
+    Button btnLink = null;
+
+    [Space, Title("Values")]
     [SerializeField]
     ValueList vllCountry = null;
     [SerializeField]
@@ -60,8 +62,7 @@ public class NewsDisplayAction : MonoBehaviour
     [SerializeField]
     ValueList vllNewsType = null;
 
-    [Space]
-    [Title("Panel")]
+    [Space, Title("Panel")]
     [SerializeField]
     PanelController pnlCtr = null;
     [SerializeField]
@@ -76,10 +77,33 @@ public class NewsDisplayAction : MonoBehaviour
     NewsService newsService;
 
     long postId = -1, newsId = -1;
+    String url = null;
 
     private void Awake()
     {
         newsService = GetComponent<NewsService>();
+    }
+
+    private void Start()
+    {
+        btnLink?.AddAction(OpenLink);
+    }
+
+    private void OpenLink()
+    {
+        if (String.IsNullOrWhiteSpace(url))
+        {
+            ChoiceDialog.Instance.Info("Link de noticia", "No se registró ninguna fuente externa.");
+            return;
+        }
+
+        if (!Uri.IsWellFormedUriString(url, UriKind.Absolute))
+        {
+            ChoiceDialog.Instance.Info("Link de noticia", "La URL no es válida.");
+            return;
+        }
+
+        Application.OpenURL(url);
     }
 
     public void Display(long postId)
@@ -101,6 +125,8 @@ public class NewsDisplayAction : MonoBehaviour
     public void ApplyFull(NewsFull newsFull)
     {
         newsId = newsFull.Id;
+        url = newsFull.LinkFulls[0].Url;
+
         StateManager.Instance.AddNewsFull(newsFull);
         StateManager.Instance.AddNewsImages(newsFull.Id, newsFull.Images);
         Display(newsFull);
@@ -122,7 +148,7 @@ public class NewsDisplayAction : MonoBehaviour
         String state = newsFull.PostStateId == -1 ? "" : vllState.FindRecordCellString(newsFull.PostStateId, "Name");
         txtPlace.TextValue = country + (!String.IsNullOrWhiteSpace(country) && !String.IsNullOrWhiteSpace(state) ? ", " : "") + state;
 
-        txtNewsTypeId.TextValue = newsFull.NewsTypeId == -1 ? "-" : vllNewsType.FindRecordCellString(newsFull.NewsTypeId, "Name");
+        txtNewsType.TextValue = newsFull.NewsTypeId == -1 ? "-" : vllNewsType.FindRecordCellString(newsFull.NewsTypeId, "Name");
         txtPlace.TextValue = String.IsNullOrWhiteSpace(newsFull.Place) ? "-" : newsFull.Place;
         txtSource.TextValue = String.IsNullOrWhiteSpace(newsFull.Source) ? "-" : newsFull.Source;
         txtNewsDateTime.TextValue = newsFull.DateTime == null ? "-" : newsFull.DateTime.Value.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
