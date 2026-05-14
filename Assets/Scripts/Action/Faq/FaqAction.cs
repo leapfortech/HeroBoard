@@ -42,6 +42,8 @@ public class FaqAction : MonoBehaviour
     Button btnRegister = null;
     [SerializeField]
     Button btnUpdate = null;
+    [SerializeField]
+    Button btnDelete = null;
 
     FaqService faqService = null;
 
@@ -60,6 +62,7 @@ public class FaqAction : MonoBehaviour
     {
         btnRegister?.AddAction(NewFaq);
         btnUpdate?.AddAction(UpdateFaq);
+        btnDelete?.AddAction(AskDeleteFaq);
     }
 
     public void Clear()
@@ -146,6 +149,8 @@ public class FaqAction : MonoBehaviour
         txtFaqEmpty.gameObject.SetActive(true);
         lstFaq.ApplyClearValues();
 
+        dtmFaq.ClearElements();
+
         StateManager.Instance.BoardLoadHide();
     }
 
@@ -156,7 +161,6 @@ public class FaqAction : MonoBehaviour
     }
 
     // New
-
     public void NewFaq()
     {
         if (!ElementHelper.Validate(newFaqElementValues))
@@ -212,6 +216,37 @@ public class FaqAction : MonoBehaviour
         Display(faqIdx);
 
         ChoiceDialog.Instance.Info("Actualizar pregunta", "Pregunta actualizada satisfactoriamente.");
+
+        StateManager.Instance.BoardLoadHide();
+    }
+
+    // Delete
+    public void AskDeleteFaq()
+    {
+        ChoiceDialog.Instance.Info("Eliminar pregunta", "¿Estás seguro de eliminar la pregunta?", DeleteFaq, null, "Sí", "No");
+        return;
+    }
+
+
+    public void DeleteFaq()
+    {
+        ScreenDialog.Instance.Display();
+
+        Faq faq = faqs[faqTypeId][faqIdx];
+
+        faqService.UpdateStatus(faq.Id, 0);
+    }
+
+    public void ApplyDeleteFaq(bool response)
+    {
+        faqs[faqTypeId].RemoveAt(faqIdx);
+
+        if (faqs[faqTypeId].Count == 0)
+            ShowEmpty();
+        else
+            DisplayQuestions((int)faqTypeId - 1);
+
+        ChoiceDialog.Instance.Info("Eliminar pregunta", "Pregunta eliminada satisfactoriamente.");
 
         StateManager.Instance.BoardLoadHide();
     }
