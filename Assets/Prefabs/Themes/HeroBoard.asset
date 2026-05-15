@@ -15883,7 +15883,7 @@ MonoBehaviour:
         Name: 'H: Card: Events'
         Reference: 1
         Value: 0
-        Property: 'Area: Adequate'
+        Property: 'Area: Tiny'
     - rid: 7896456370744197489
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -16880,36 +16880,36 @@ MonoBehaviour:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Card: Events: TopLeft'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: 'Corner: Bowed'
+        Property: 'Corner: Soft'
     - rid: 7896456370744197600
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Card: Events: TopRight'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: 'Corner: Bowed'
+        Property: 'Corner: Soft'
     - rid: 7896456370744197601
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Card: Events: BottomLeft'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: 'Corner: Bowed'
+        Property: 'Corner: Soft'
     - rid: 7896456370744197602
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         themeElement:
           rid: 7896456370744197126
         Name: 'C: Card: Events: BottomRight'
-        Reference: 0
+        Reference: 1
         Value: -50
-        Property: 'Corner: Bowed'
+        Property: 'Corner: Soft'
     - rid: 7896456370744197603
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -19185,7 +19185,7 @@ MonoBehaviour:
           rid: 7896456370744197126
         Name: 'M: Card: Events: Title: Y'
         Reference: 0
-        Value: 22
+        Value: 17
         Property: 
     - rid: 7896456370744197856
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
