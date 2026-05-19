@@ -31,7 +31,7 @@ public class FaqAction : MonoBehaviour
     [SerializeField]
     ValueList vllFaqType = null;
 
-    [Title("Date")]
+    [Title("Data")]
     [SerializeField]
     DataMapper dtmFaq = null;
     [SerializeField]
@@ -50,7 +50,7 @@ public class FaqAction : MonoBehaviour
     Dictionary<long, List<Faq>> faqs = new Dictionary<long, List<Faq>>();
 
     int faqIdx = -1;
-    long faqTypeId = -1;
+    long faqTypeId = -1L;
     Faq newFaq = null;
 
     private void Awake()
@@ -139,7 +139,10 @@ public class FaqAction : MonoBehaviour
 
         lstFaq.ApplyValues();
 
-        Display(0);
+        if (faqIdx >= 0 && faqIdx < faqsType.Count)
+            lstFaq.CheckToggle(faqIdx, true);
+        else
+            lstFaq.CheckToggle(0, true);
 
         StateManager.Instance.BoardLoadHide();
     }
@@ -185,6 +188,8 @@ public class FaqAction : MonoBehaviour
 
         dtmNewFaq.ClearElements();
 
+        faqIdx = faqs[faqTypeId].Count - 1;
+
         DisplayQuestions((int)faqTypeId - 1);
 
         ChoiceDialog.Instance.Info("Nueva pregunta", "Pregunta registrada satisfactoriamente.");
@@ -192,7 +197,7 @@ public class FaqAction : MonoBehaviour
         StateManager.Instance.BoardLoadHide();
     }
 
-    // Upadte
+    // Update
     public void UpdateFaq()
     {
         if (!ElementHelper.Validate(updateFaqElementValues))
@@ -213,7 +218,7 @@ public class FaqAction : MonoBehaviour
     {
         faqs[faqTypeId][faqIdx] = newFaq;
 
-        Display(faqIdx);
+        DisplayQuestions((int)faqTypeId - 1);
 
         ChoiceDialog.Instance.Info("Actualizar pregunta", "Pregunta actualizada satisfactoriamente.");
 
@@ -244,7 +249,10 @@ public class FaqAction : MonoBehaviour
         if (faqs[faqTypeId].Count == 0)
             ShowEmpty();
         else
+        {
+            faqIdx = 0;
             DisplayQuestions((int)faqTypeId - 1);
+        }
 
         ChoiceDialog.Instance.Info("Eliminar pregunta", "Pregunta eliminada satisfactoriamente.");
 
