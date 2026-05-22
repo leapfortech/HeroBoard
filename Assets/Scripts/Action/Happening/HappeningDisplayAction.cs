@@ -105,7 +105,7 @@ public class HappeningDisplayAction : MonoBehaviour
         }
 
         ScreenDialog.Instance.Display();
-        happeningService.GetFullByPostId(postId);
+        happeningService.GetFullByPostId(postId, -1);
     }
 
     public void ApplyFull(HappeningFull happeningFull)

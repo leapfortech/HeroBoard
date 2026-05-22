@@ -20,7 +20,7 @@ public class TreatmentFull : PostFull
     public TreatmentFull(long id, long postId, long appUserId, String appUserAlias,
                             long postSubtypeId, long postCountryId, long postStateId,
                             String title, String titleImage, String summary, String description,
-                            int imageCount, int likeCount, DateTime publicationDateTime,
+                            int imageCount, int favorite, int like, int likeCount, DateTime publicationDateTime,
                             int postStatusId,
                             ContactFull contactFull,
                             List<LinkFull> linkFulls,
@@ -30,7 +30,7 @@ public class TreatmentFull : PostFull
                             String[] images)
         : base(postId, appUserId, appUserAlias, postSubtypeId,
                 postCountryId, postStateId, title, titleImage, summary, description,
-                imageCount, likeCount, publicationDateTime, postStatusId,
+                imageCount, favorite, like, likeCount, publicationDateTime, postStatusId,
                 contactFull, linkFulls, commentFulls)
     {
         Id = id;

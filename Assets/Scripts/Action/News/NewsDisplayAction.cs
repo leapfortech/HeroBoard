@@ -119,7 +119,7 @@ public class NewsDisplayAction : MonoBehaviour
         }
 
         ScreenDialog.Instance.Display();
-        newsService.GetFullByPostId(postId);
+        newsService.GetFullByPostId(postId, -1);
     }
 
     public void ApplyFull(NewsFull newsFull)

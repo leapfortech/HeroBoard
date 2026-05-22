@@ -111,7 +111,7 @@ public class RadioDisplayAction : MonoBehaviour
         }
 
         ScreenDialog.Instance.Display();
-        radioService.GetFullByPostId(postId);
+        radioService.GetFullByPostId(postId, -1);
     }
 
     public void ApplyFull(RadioFull radioFull)

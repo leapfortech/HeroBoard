@@ -112,7 +112,7 @@ public class ProductDisplayAction : MonoBehaviour
         }
 
         ScreenDialog.Instance.Display();
-        productService.GetFullByPostId(postId);
+        productService.GetFullByPostId(postId, -1);
     }
 
     public void ApplyFull(ProductFull productFull)
