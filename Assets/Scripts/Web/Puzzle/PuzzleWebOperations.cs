@@ -56,6 +56,22 @@ public class PuzzleGetFullsOperation : HttpOperation
     public List<PuzzleFull> puzzleFulls;
 }
 
+// POST
+[HttpPOST]
+[HttpPathExt(WebServiceType.Main, "/puzzle/AllByDifficulty")]
+[HttpProvider(typeof(HttpUnityWebAzureClient))]
+[HttpContentType("application/json")]
+[HttpAccept("application/json")]
+[HttpFirebaseAuthorization]
+public class AllByDifficultyPostOperation : HttpOperation
+{
+    [HttpRequestJsonBody]
+    public PuzzleAllByDifficultyReq req;
+
+    [HttpResponseJsonBody]
+    public PuzzleAllRsp rsp;
+}
+
 // REGISTER
 [HttpPOST]
 [HttpPathExt(WebServiceType.Main, "/puzzle/register")]

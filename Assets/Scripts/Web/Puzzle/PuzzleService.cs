@@ -13,6 +13,11 @@ using Sirenix.OdinInspector;
 public class PuzzleService : MonoBehaviour
 {
     [Serializable]
+    public class AllByDifficultyEvent : UnityEvent<PuzzleAllRsp> { }
+
+    [SerializeField]
+    private AllByDifficultyEvent onAllRetreived = null;
+    [Serializable]
     public class PuzzleFullEvent : UnityEvent<PuzzleFull> { }
 
     [Serializable]
@@ -95,6 +100,27 @@ public class PuzzleService : MonoBehaviour
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
             puzzleFullsGetOp.Send();
+        }
+        catch (Exception ex)
+        {
+            WebManager.Instance.OnSendError(ex.Message);
+        }
+    }
+
+    public void GetAllByDifficulty(PuzzleAllByDifficultyReq req)
+    {
+        AllByDifficultyPostOperation AllByDifficultyPostOp = new AllByDifficultyPostOperation();
+        try
+        {
+            AllByDifficultyPostOp.req = req;
+            AllByDifficultyPostOp["on-complete"] = (Action<AllByDifficultyPostOperation, HttpResponse>)((op, response) =>
+            {
+                if (response != null && !response.HasError)
+                    onAllRetreived.Invoke(op.rsp);
+                else
+                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+            });
+            AllByDifficultyPostOp.Send();
         }
         catch (Exception ex)
         {

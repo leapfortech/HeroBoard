@@ -9,6 +9,7 @@ public class Puzzle
     public String Question { get; set; }
     public String Hint { get; set; }
     public int Difficulty { get; set; }
+    public int Delay { get; set; }
     public int Points { get; set; }
     public int PlayCount { get; set; }
     public int Status { get; set; }
@@ -16,7 +17,7 @@ public class Puzzle
     public Puzzle() { }
 
     public Puzzle(long id, long postId, long puzzleSubtypeId, long countryId, String question, String hint,
-                    int difficulty, int points, int playCount, int status)
+                    int difficulty, int delay, int points, int playCount, int status)
     {
         Id = id;
         PostId = postId;
@@ -25,6 +26,7 @@ public class Puzzle
         Question = question;
         Hint = hint;
         Difficulty = difficulty;
+        Delay = delay;
         Points = points;
         PlayCount = playCount;
         Status = status;
@@ -39,6 +41,7 @@ public class Puzzle
         Question = puzzleFull.Question;
         Hint = puzzleFull.Hint;
         Difficulty = puzzleFull.Difficulty;
+        Delay = puzzleFull.Delay;
         Points = puzzleFull.Points;
         PlayCount = puzzleFull.PlayCount;
         Status = puzzleFull.Status;
@@ -51,6 +54,7 @@ public class Puzzle
         Question = puzzle.Question;
         Hint = puzzle.Hint;
         Difficulty = puzzle.Difficulty;
+        Delay = puzzle.Delay;
         Points = puzzle.Points;
         PlayCount = puzzle.PlayCount;
     }

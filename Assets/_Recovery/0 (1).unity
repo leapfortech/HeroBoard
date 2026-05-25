@@ -31797,7 +31797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -31805,7 +31805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 22
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491789, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_text
@@ -110886,7 +110886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5489034156934104874, guid: c4c397f6e3d30324ba50518f1b47c954, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6408604092579021079, guid: c4c397f6e3d30324ba50518f1b47c954, type: 3}
       propertyPath: onDisplay.m_PersistentCalls.m_Calls.Array.size
@@ -138084,7 +138084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 923867949926966376, guid: cc2ccd24fef42814d805d3b01dd0ac36, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135085506501363253, guid: cc2ccd24fef42814d805d3b01dd0ac36, type: 3}
       propertyPath: firstPanel
@@ -216026,7 +216026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.0000019073
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -265141,7 +265141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3626599243492655151, guid: d863785378f154048ae9367e5f2af2d6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3733480406416781641, guid: d863785378f154048ae9367e5f2af2d6, type: 3}
       propertyPath: m_Enabled
