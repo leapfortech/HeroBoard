@@ -41,6 +41,159 @@ MonoBehaviour:
         Reference: 1
         Value: 0
         Property: 'Corner: Bowed'
+    - rid: 749284776979988480
+      type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: M: Game: Title: Y'
+        Reference: 0
+        Value: 65
+        Property: 
+    - rid: 749284776979988481
+      type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: C: Game: TopLeft'
+        Reference: 1
+        Value: 0
+        Property: 'Corner: Angular'
+    - rid: 749284776979988482
+      type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: C: Game: TopRight'
+        Reference: 1
+        Value: 0
+        Property: 'Corner: Angular'
+    - rid: 749284776979988483
+      type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: C: Game: BottomLeft'
+        Reference: 1
+        Value: 0
+        Property: 'Corner: Angular'
+    - rid: 749284776979988484
+      type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: C: Game: BottomRight'
+        Reference: 1
+        Value: 0
+        Property: 'Corner: Angular'
+    - rid: 749284776979988485
+      type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: B: Game: Off: Default'
+        Reference: 1
+        Value: 0
+        Property: 'Border: Slim'
+    - rid: 749284776979988486
+      type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: B: Game: On'
+        Reference: 1
+        Value: 0
+        Property: 'Border: Slim'
+    - rid: 749284776979988487
+      type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: F: Game'
+        Reference: 1
+        Value: 0
+        Property: 'Font: Large'
+    - rid: 749284776979988488
+      type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: O: Game: Alignment'
+        Reference: 1
+        Value: 0
+        Property: 'O: Alignment: Center'
+    - rid: 749284776979988489
+      type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: O: Game: Icon: Place'
+        Reference: 1
+        Value: 0
+        Property: 'O: Icon: Left'
+    - rid: 749284776979988490
+      type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: Game: Bkg: Off: Default'
+        Reference: 1
+        Value: {r: 0, g: 0, b: 0, a: 0}
+        Property: 'WhiteScale: Default'
+    - rid: 749284776979988491
+      type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: Game: Border: Off: Default'
+        Reference: 1
+        Value: {r: 1, g: 1, b: 1, a: 1}
+        Property: 'GreyScale: Opaque'
+    - rid: 749284776979988492
+      type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: Game: Title: Off: Default'
+        Reference: 1
+        Value: {r: 0, g: 0, b: 0, a: 0}
+        Property: 'BlackScale: A'
+    - rid: 749284776979988493
+      type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: Game: Bkg: On: Pressed'
+        Reference: 1
+        Value: {r: 0, g: 0, b: 0, a: 0}
+        Property: 'WhiteScale: Default'
+    - rid: 749284776979988494
+      type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: Game: Border: On: Pressed'
+        Reference: 1
+        Value: {r: 0, g: 0, b: 0, a: 0}
+        Property: 'Dominant: Default'
+    - rid: 749284776979988495
+      type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: Game: Bkg: Off: Disabled'
+        Reference: 1
+        Value: {r: 0, g: 0, b: 0, a: 0}
+        Property: 'WhiteScale: Default'
+    - rid: 749284776979988496
+      type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
+      data:
+        themeElement:
+          rid: 7896456370744197131
+        Name: 'HM: Game: Border: Off: Disabled'
+        Reference: 1
+        Value: {r: 0, g: 0, b: 0, a: 0}
+        Property: 'GreyScale: Default'
     - rid: 6168643133511303497
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -8108,6 +8261,16 @@ MonoBehaviour:
         - rid: 7896456370759403168
         - rid: 7896456370759403169
         - rid: 7896456370759403170
+        - rid: 749284776979988480
+        - rid: 749284776979988481
+        - rid: 749284776979988482
+        - rid: 749284776979988483
+        - rid: 749284776979988484
+        - rid: 749284776979988485
+        - rid: 749284776979988486
+        - rid: 749284776979988487
+        - rid: 749284776979988488
+        - rid: 749284776979988489
         DictFloats:
           keys:
           - 'W: Button'
@@ -8455,6 +8618,16 @@ MonoBehaviour:
           - 'Ids: O: List: Sort: Alignment'
           - 'Ids: O: List: Sort: Icon: Place'
           - 'Ids : B: List: Sort'
+          - 'HM: M: Game: Title: Y'
+          - 'HM: C: Game: TopLeft'
+          - 'HM: C: Game: TopRight'
+          - 'HM: C: Game: BottomLeft'
+          - 'HM: C: Game: BottomRight'
+          - 'HM: B: Game: Off: Default'
+          - 'HM: B: Game: On'
+          - 'HM: F: Game'
+          - 'HM: O: Game: Alignment'
+          - 'HM: O: Game: Icon: Place'
           values:
           - rid: 7896456370759402808
           - rid: 7896456370759402809
@@ -8801,6 +8974,16 @@ MonoBehaviour:
           - rid: 7896456370759403168
           - rid: 7896456370759403169
           - rid: 7896456370759403170
+          - rid: 749284776979988480
+          - rid: 749284776979988481
+          - rid: 749284776979988482
+          - rid: 749284776979988483
+          - rid: 749284776979988484
+          - rid: 749284776979988485
+          - rid: 749284776979988486
+          - rid: 749284776979988487
+          - rid: 749284776979988488
+          - rid: 749284776979988489
         colors:
         - rid: 7896456370759403171
         - rid: 7896456370759403172
@@ -9250,6 +9433,13 @@ MonoBehaviour:
         - rid: 7896456370759403655
         - rid: 6168643133511303497
         - rid: 7896456370759403656
+        - rid: 749284776979988490
+        - rid: 749284776979988491
+        - rid: 749284776979988492
+        - rid: 749284776979988493
+        - rid: 749284776979988494
+        - rid: 749284776979988495
+        - rid: 749284776979988496
         DictColors:
           keys:
           - 'Main: Bkg: On: Default'
@@ -9700,6 +9890,13 @@ MonoBehaviour:
           - 'HM: Menu: Border: Off: Default'
           - 'HM: Menu: Border: On: Pressed'
           - 'HM: Menu: Border: Off: Disabled'
+          - 'HM: Game: Bkg: Off: Default'
+          - 'HM: Game: Border: Off: Default'
+          - 'HM: Game: Title: Off: Default'
+          - 'HM: Game: Bkg: On: Pressed'
+          - 'HM: Game: Border: On: Pressed'
+          - 'HM: Game: Bkg: Off: Disabled'
+          - 'HM: Game: Border: Off: Disabled'
           values:
           - rid: 7896456370759403171
           - rid: 7896456370759403172
@@ -10149,6 +10346,13 @@ MonoBehaviour:
           - rid: 6168643270465815160
           - rid: 6168643270465815161
           - rid: 6168643270465815162
+          - rid: 749284776979988490
+          - rid: 749284776979988491
+          - rid: 749284776979988492
+          - rid: 749284776979988493
+          - rid: 749284776979988494
+          - rid: 749284776979988495
+          - rid: 749284776979988496
         fonts:
         - rid: 7896456370759403657
         - rid: 7896456370759403658
