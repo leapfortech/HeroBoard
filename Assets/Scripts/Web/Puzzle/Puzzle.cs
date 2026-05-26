@@ -12,12 +12,13 @@ public class Puzzle
     public int Delay { get; set; }
     public int Points { get; set; }
     public int PlayCount { get; set; }
+    public DateTime CreateDateTime { get; set; }
     public int Status { get; set; }
 
     public Puzzle() { }
 
     public Puzzle(long id, long postId, long puzzleSubtypeId, long countryId, String question, String hint,
-                    int difficulty, int delay, int points, int playCount, int status)
+                    int difficulty, int delay, int points, int playCount, DateTime createDateTime, int status)
     {
         Id = id;
         PostId = postId;
@@ -29,6 +30,7 @@ public class Puzzle
         Delay = delay;
         Points = points;
         PlayCount = playCount;
+        CreateDateTime = createDateTime;
         Status = status;
     }
 
@@ -57,5 +59,6 @@ public class Puzzle
         Delay = puzzle.Delay;
         Points = puzzle.Points;
         PlayCount = puzzle.PlayCount;
+        CreateDateTime = puzzle.CreateDateTime;
     }
 }

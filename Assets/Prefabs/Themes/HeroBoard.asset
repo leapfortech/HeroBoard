@@ -26383,7 +26383,7 @@ MonoBehaviour:
         Name: 'Small: Bkg: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'Auxiliar: Fade'
+        Property: 'GreyScale: E'
     - rid: 7896456370759401961
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -26401,7 +26401,7 @@ MonoBehaviour:
         Name: 'Small: Icon: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'WhiteScale: Default'
+        Property: 'GreyScale: Default'
     - rid: 7896456370759401963
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:

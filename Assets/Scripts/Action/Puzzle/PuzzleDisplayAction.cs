@@ -7,8 +7,6 @@ using Leap.UI.Extensions;
 using Leap.Data.Collections;
 
 using Sirenix.OdinInspector;
-using System.Collections.Generic;
-
 
 public class PuzzleDisplayAction : MonoBehaviour
 {
@@ -16,21 +14,13 @@ public class PuzzleDisplayAction : MonoBehaviour
     [SerializeField]
     long subtype = -1;
 
-    [Title("Fields")]
-    //[SerializeField]
-    //Text txtContact = null;
-    //[SerializeField]
-    //Text txtNames = null;
-    //[SerializeField]
-    //Text txtBirthPlace = null;
-    //[SerializeField]
-    //Text txtAddress = null;
-
     [Title("Value")]
     [SerializeField]
-    ValueList vllPuzzleSubtype = null;
+    ValueList vllCountryFlag = null;
     [SerializeField]
-    ValueList vllCountry = null;
+    ValueList vllPuzzleDifficulty = null;
+    [SerializeField]
+    ValueList vllPuzzleStatus = null;
     //[SerializeField]
     //ValueList vllState = null;
     //[SerializeField]
@@ -43,9 +33,6 @@ public class PuzzleDisplayAction : MonoBehaviour
     ComboAdapter cmbDifficulty = null;
     //[SerializeField]
     //Button btnFilter = null;
-
-    [SerializeField]
-    ToggleGroup tggSort = null;
 
     [Title("List")]
     [SerializeField]
@@ -86,14 +73,6 @@ public class PuzzleDisplayAction : MonoBehaviour
         btnNext?.AddAction(NextPage);
         btnBack?.AddAction(BackPage);
         //btnFilter?.AddAction(Filter);
-    }
-
-    public void ClearElements()
-    {
-        //txtContact.TextValue = "-";
-        //txtNames.TextValue = "-";
-        //txtBirthPlace.TextValue = "-";
-        //txtAddress.TextValue = "-";
     }
 
     public void LoadFirstPage()
@@ -172,18 +151,23 @@ public class PuzzleDisplayAction : MonoBehaviour
 
         for (int i = 0; i < puzzleAllRsp.PuzzleInfos.Count; i++)
         {
-            ListScrollerValue value = new ListScrollerValue(3, true);
+            ListScrollerValue value = new ListScrollerValue(9, true);
 
-            value.SetText(0, "");
-            value.SetText(1, "");
-            value.SetText(2, "");   //puzzleAllRsp.PuzzleInfos[i].Puzzle.PuzzleSubtypeId);
+            value.SetText(0, puzzleAllRsp.PuzzleInfos[i].Puzzle.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
+            value.SetSprite(1, vllCountryFlag.FindRecordCellSprite(puzzleAllRsp.PuzzleInfos[i].Puzzle.CountryId, "Flag"));
+            value.SetText(2, vllCountryFlag.FindRecordCellString(puzzleAllRsp.PuzzleInfos[i].Puzzle.CountryId, "Name"));
+            value.SetText(3, puzzleAllRsp.PuzzleInfos[i].Puzzle.Question);
+            value.SetText(4, puzzleAllRsp.PuzzleInfos[i].PuzzleAnswers[0].Description);
+            value.SetText(5, puzzleAllRsp.PuzzleInfos[i].PuzzleAnswers[1].Description);
+            value.SetText(6, puzzleAllRsp.PuzzleInfos[i].PuzzleAnswers[2].Description);
+            value.SetText(7, vllPuzzleDifficulty.FindRecordCellString(puzzleAllRsp.PuzzleInfos[i].Puzzle.Difficulty, "Name"));
+            value.SetText(8, vllPuzzleStatus.FindRecordCellString(puzzleAllRsp.PuzzleInfos[i].Puzzle.Status, "Name"));
+
 
             lstPuzzle.AddValue(value);
         }
 
         lstPuzzle.ApplyValues();
-
-        Display(0);
 
         StateManager.Instance.BoardLoadHide();
     }
@@ -202,10 +186,5 @@ public class PuzzleDisplayAction : MonoBehaviour
         lstPuzzle.ApplyClearValues();
 
         StateManager.Instance.BoardLoadHide();
-    }
-
-    public void Display(int idx)
-    {
-        ClearElements();
     }
 }
