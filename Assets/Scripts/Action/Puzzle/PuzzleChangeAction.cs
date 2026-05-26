@@ -77,7 +77,7 @@ public class PuzzleChangeAction : MonoBehaviour
 
     private void RegisterPuzzle()
     {
-        if (!dtmPuzzle.ValidateElements() || !ifdAnswerOk.Validate() || !ifdAnswerNok1.Validate() || !ifdAnswerNok2.Validate())
+        if (!dtmPuzzle.ValidateElements() || !ElementHelper.Validate(ifdAnswerOk) || !ElementHelper.Validate(ifdAnswerNok1) || !ElementHelper.Validate(ifdAnswerNok2))
             return;
 
         ScreenDialog.Instance.Display();
@@ -120,7 +120,7 @@ public class PuzzleChangeAction : MonoBehaviour
 
     private void UpdatePuzzle()
     {
-        if (!dtmPuzzle.ValidateElements() || !ifdAnswerOk.Validate() || !ifdAnswerNok1.Validate() || !ifdAnswerNok2.Validate())
+        if (!dtmPuzzle.ValidateElements() || !ElementHelper.Validate(ifdAnswerOk) || !ElementHelper.Validate(ifdAnswerNok1) || !ElementHelper.Validate(ifdAnswerNok2))
             return;
 
         ScreenDialog.Instance.Display();
