@@ -25,10 +25,6 @@ public class PuzzleDisplayAction : MonoBehaviour
     ValueList vllPuzzleDifficulty = null;
     [SerializeField]
     ValueList vllPuzzleStatus = null;
-    //[SerializeField]
-    //ValueList vllState = null;
-    //[SerializeField]
-    //ValueList vllCity = null;
 
     [Title("Filters")]
     [SerializeField]
@@ -55,7 +51,6 @@ public class PuzzleDisplayAction : MonoBehaviour
     [Title("Config")]
     [SerializeField]
     int pageSize = 10;
-
 
     [Title("Event")]
     [SerializeField]
@@ -89,11 +84,10 @@ public class PuzzleDisplayAction : MonoBehaviour
         currentPage = 1;
         filterStatus = -1;
         filterSubType = subtype;
+        filterDifficulty = -1;
 
         cmbDifficulty.Clear();
-
-        cmbStatus.SelectIndex(0);
-        
+        cmbStatus.Clear();
 
         GetPaged(currentPage);
     }
@@ -141,13 +135,13 @@ public class PuzzleDisplayAction : MonoBehaviour
 
     public void FillPaged(PuzzleAllRsp rsp)
     {
-        puzzleAllRsp = rsp;
-
-        if (puzzleAllRsp == null || puzzleAllRsp.PuzzleInfos == null || puzzleAllRsp.PuzzleInfos.Count == 0)
+        if (rsp == null || rsp.PuzzleInfos == null || rsp.PuzzleInfos.Count == 0)
         {
             ShowEmpty();
             return;
         }
+
+        puzzleAllRsp = rsp;
 
         totalPages = puzzleAllRsp.TotalPages;
         currentPage = puzzleAllRsp.Page;

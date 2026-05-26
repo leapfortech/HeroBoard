@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 using Leap.Data.Mapper;
 using Leap.UI.Elements;
@@ -10,6 +11,10 @@ using Sirenix.OdinInspector;
 
 public class PuzzleChangeAction : MonoBehaviour
 {
+    [Title("Data")]
+    [SerializeField]
+    DataMapper dtmPuzzle = null;
+
     [Title("Fields")]
     [SerializeField]
     InputField ifdAnswerOk = null;
@@ -20,13 +25,13 @@ public class PuzzleChangeAction : MonoBehaviour
     [SerializeField]
     GameObject imgPuzzleChange = null;
 
-    [Title("Data")]
-    [SerializeField]
-    DataMapper dtmPuzzle = null;
-
     [Title("Actions")]
     [SerializeField]
     Button btnChange = null;
+
+    [Title("Event")]
+    [SerializeField]
+    UnityEvent onChanged = null;
 
     PuzzleService puzzleService = null;
 
@@ -45,7 +50,7 @@ public class PuzzleChangeAction : MonoBehaviour
         ifdAnswerNok2.Clear();
     }
 
-    public void ChangeUserBoard()
+    public void ChangePuzzle()
     {
         if (btnChange.Title[0] == 'A')
             RegisterPuzzle();
@@ -172,5 +177,6 @@ public class PuzzleChangeAction : MonoBehaviour
     private void CloseModal()
     {
         imgPuzzleChange.gameObject.SetActive(false);
+        onChanged.Invoke();
     }
 }

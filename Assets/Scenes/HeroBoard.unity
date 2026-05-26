@@ -62890,8 +62890,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 465391202}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
+      propertyPath: lengthMax
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: contentType
-      value: 2
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: modelPrefab
@@ -73592,11 +73596,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_ContentType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_KeyboardType
-      value: 2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
+      propertyPath: m_CharacterLimit
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_SelectionColor.a
@@ -73616,7 +73624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_CharacterValidation
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955409, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_Color.b
@@ -95528,6 +95536,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
+      propertyPath: m_CharacterLimit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_SelectionColor.a
       value: 0.4
       objectReference: {fileID: 0}
@@ -97376,11 +97388,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_ContentType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_KeyboardType
-      value: 2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
+      propertyPath: m_CharacterLimit
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_SelectionColor.a
@@ -97400,7 +97416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_CharacterValidation
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955409, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_Color.b
@@ -105857,11 +105873,11 @@ PrefabInstance:
       objectReference: {fileID: 1390816651}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: lengthMax
-      value: 0
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: contentType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: modelPrefab
@@ -130050,11 +130066,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_ContentType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_KeyboardType
-      value: 2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
+      propertyPath: m_CharacterLimit
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_SelectionColor.a
@@ -130074,7 +130094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_CharacterValidation
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955409, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_Color.b
@@ -132658,6 +132678,10 @@ PrefabInstance:
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_KeyboardType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
+      propertyPath: m_CharacterLimit
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_SelectionColor.a
@@ -157592,11 +157616,11 @@ PrefabInstance:
       objectReference: {fileID: 2105486728}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: lengthMax
-      value: 0
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: contentType
-      value: 1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: modelPrefab
@@ -165117,8 +165141,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 609661577}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
+      propertyPath: lengthMax
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: contentType
-      value: 2
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: modelPrefab
@@ -223257,6 +223285,10 @@ PrefabInstance:
       value: MdlIfdMultiSized
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_CharacterLimit
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955408, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
       propertyPath: m_SelectionColor.b
       value: 0.50980395
       objectReference: {fileID: 0}
@@ -227872,6 +227904,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 803923351}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
+      propertyPath: lengthMax
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: contentType
       value: 2
       objectReference: {fileID: 0}
@@ -231931,12 +231967,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799af8e94a2dda045b5fa758378dda60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleChangeAction
+  dtmPuzzle: {fileID: 847628327}
   ifdAnswerOk: {fileID: 1002932549}
   ifdAnswerNok1: {fileID: 1441345555}
   ifdAnswerNok2: {fileID: 398526968}
   imgPuzzleChange: {fileID: 289638184}
-  dtmPuzzle: {fileID: 847628327}
   btnChange: {fileID: 1701046818}
+  onChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1849046927}
+        m_TargetAssemblyTypeName: PuzzleDisplayAction, Assembly-CSharp
+        m_MethodName: LoadFirstPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1432922272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231973,18 +232024,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1849046927}
-        m_TargetAssemblyTypeName: PuzzleDisplayAction, Assembly-CSharp
-        m_MethodName: LoadFirstPage
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   onUpdated:
     m_PersistentCalls:
       m_Calls:
@@ -231992,18 +232031,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: PuzzleChangeAction, Assembly-CSharp
         m_MethodName: ApplyUpdate
         m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1849046927}
-        m_TargetAssemblyTypeName: PuzzleDisplayAction, Assembly-CSharp
-        m_MethodName: LoadFirstPage
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -234828,8 +234855,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 790754614}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
+      propertyPath: lengthMax
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: contentType
-      value: 2
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: modelPrefab
@@ -252138,6 +252169,10 @@ PrefabInstance:
       propertyPath: ifdModel
       value: 
       objectReference: {fileID: 597011750}
+    - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
+      propertyPath: lengthMax
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: contentType
       value: 2
@@ -277250,9 +277285,9 @@ MonoBehaviour:
   actions:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BoardUserChangeAction, Assembly-CSharp
-        m_MethodName: ChangeUserBoard
+      - m_Target: {fileID: 1432922271}
+        m_TargetAssemblyTypeName: PuzzleChangeAction, Assembly-CSharp
+        m_MethodName: ChangePuzzle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -351516,6 +351551,10 @@ PrefabInstance:
     - target: {fileID: 4452337896361883359, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
       propertyPath: m_Name
       value: MdlIfdMultiSized
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955408, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_CharacterLimit
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
       propertyPath: m_SelectionColor.b
