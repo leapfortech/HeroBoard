@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 using Leap.UI.Elements;
 using Leap.UI.Dialog;
@@ -10,6 +11,9 @@ using Sirenix.OdinInspector;
 
 public class PuzzleDisplayAction : MonoBehaviour
 {
+    [Serializable]
+    public class PuzzleInfoEvent : UnityEvent<PuzzleInfo> { }
+
     [Title("Params")]
     [SerializeField]
     long subtype = -1;
@@ -51,6 +55,11 @@ public class PuzzleDisplayAction : MonoBehaviour
     [Title("Config")]
     [SerializeField]
     int pageSize = 10;
+
+
+    [Title("Event")]
+    [SerializeField]
+    PuzzleInfoEvent onSelected = null;
 
     // Navigation
     int currentPage = 1;
@@ -170,6 +179,11 @@ public class PuzzleDisplayAction : MonoBehaviour
         lstPuzzle.ApplyValues();
 
         StateManager.Instance.BoardLoadHide();
+    }
+
+    public void Select(int idx)
+    {
+        onSelected.Invoke(puzzleAllRsp.PuzzleInfos[idx]);
     }
 
     public void UpdatePagination()

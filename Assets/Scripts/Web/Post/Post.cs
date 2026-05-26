@@ -2,20 +2,20 @@ using System;
 
 public class Post
 {
-    public long Id { get; set; }
-    public long AppUserId { get; set; }
-    public long PostTypeId { get; set; }
-    public long CountryId { get; set; }
-    public long StateId { get; set; }
-    public String Title { get; set; }
-    public String Summary { get; set; }
-    public String Description { get; set; }
-    public int ImageCount { get; set; }
-    public int LikeCount { get; set; }
+    public long Id { get; set; } = -1L;
+    public long AppUserId { get; set; } = -1L;
+    public long PostTypeId { get; set; } = -1L;
+    public long CountryId { get; set; } = -1L;
+    public long StateId { get; set; } = -1L;
+    public String Title { get; set; } = null;
+    public String Summary { get; set; } = null;
+    public String Description { get; set; } = null;
+    public int ImageCount { get; set; } = -1;
+    public int LikeCount { get; set; } = 0;
     public DateTime PublicationDateTime { get; set; }
-    public DateTime? ApprovalDateTime { get; set; }
-    public DateTime? ExpirationDateTime { get; set; }
-    public int Status { get; set; }
+    public DateTime? ApprovalDateTime { get; set; } = null;
+    public DateTime? ExpirationDateTime { get; set; } = null;
+    public int Status { get; set; } = -1;
 
     public Post() { }
 
