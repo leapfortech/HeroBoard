@@ -104,7 +104,10 @@ public class PuzzleChangeAction : MonoBehaviour
     {
         btnChange.Title = "Guardar";
 
-        // Populate
+        dtmPuzzle.PopulateClass<Puzzle>(puzzleInfo.Puzzle);
+        ifdAnswerOk.Text = puzzleInfo.PuzzleAnswers[0].Description;
+        ifdAnswerNok1.Text = puzzleInfo.PuzzleAnswers[1].Description;
+        ifdAnswerNok2.Text = puzzleInfo.PuzzleAnswers[2].Description;
 
         imgPuzzleChange.gameObject.SetActive(true);
     }
