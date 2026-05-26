@@ -114,6 +114,10 @@ public class PuzzleChangeAction : MonoBehaviour
         ifdAnswerNok1.Text = puzzleInfo.PuzzleAnswers[1].Description;
         ifdAnswerNok2.Text = puzzleInfo.PuzzleAnswers[2].Description;
 
+        ifdAnswerOk.Revalidate(true);
+        ifdAnswerNok1.Revalidate(true);
+        ifdAnswerNok2.Revalidate(true);
+
         imgPuzzleChange.gameObject.SetActive(true);
     }
 

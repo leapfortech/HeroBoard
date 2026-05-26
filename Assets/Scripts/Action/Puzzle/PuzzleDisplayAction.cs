@@ -94,8 +94,15 @@ public class PuzzleDisplayAction : MonoBehaviour
 
     public void Filter()
     {
-        filterStatus = Convert.ToInt32(cmbStatus.GetSelectedId());
-        filterDifficulty = Convert.ToInt32(cmbDifficulty.GetSelectedId());
+        if (!cmbDifficulty.Combo.IsEmpty())
+            filterDifficulty = Convert.ToInt32(cmbDifficulty.GetSelectedId());
+        else
+            filterDifficulty = -1;
+
+        if (!cmbStatus.Combo.IsEmpty())
+            filterStatus = Convert.ToInt32(cmbStatus.GetSelectedId());
+        else
+            filterStatus = -1;
 
         currentPage = 1;
 
