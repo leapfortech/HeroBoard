@@ -206,8 +206,6 @@ public class PuzzleChangeAction : MonoBehaviour
 
     public void ApplyUpdateStatus(bool response)
     {
-        ScreenDialog.Instance.Display();
-
         onChanged.Invoke();
     }
 }
