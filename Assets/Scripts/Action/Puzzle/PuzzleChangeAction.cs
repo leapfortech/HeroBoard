@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -11,6 +12,9 @@ using Sirenix.OdinInspector;
 
 public class PuzzleChangeAction : MonoBehaviour
 {
+    [Serializable]
+    public class PuzzleEventEvent : UnityEvent<int, PuzzleInfo> { }
+
     [Title("Data")]
     [SerializeField]
     DataMapper dtmPuzzle = null;
@@ -31,11 +35,16 @@ public class PuzzleChangeAction : MonoBehaviour
 
     [Title("Event")]
     [SerializeField]
-    UnityEvent onChanged = null;
+    UnityEvent onRegistered = null;
+    [SerializeField]
+    PuzzleEventEvent onUpdated = null;
 
     PuzzleService puzzleService = null;
 
     PuzzleInfo puzzleInfo = null;
+
+    PuzzleInfo puzzleInfoRequest = null;
+    int idx = -1, statusRequest = -1;
 
     private void Awake()
     {
@@ -52,9 +61,10 @@ public class PuzzleChangeAction : MonoBehaviour
     }
 
     // Set
-    public void SetPuzzle(PuzzleInfo info)
+    public void SetPuzzle(int index, PuzzleInfo info)
     {
         puzzleInfo = info;
+        idx = index;
     }
 
     public void ChangePuzzle()
@@ -102,7 +112,7 @@ public class PuzzleChangeAction : MonoBehaviour
 
     public void ApplyRegister(long puzzleId)
     {
-        ChoiceDialog.Instance.Info("Nuevo reto", "Reto agregado exitosamente.", () => CloseModal());
+        ChoiceDialog.Instance.Info("Nuevo reto", "Reto agregado exitosamente.", () => CloseModal(true));
     }
 
     // Update
@@ -171,19 +181,27 @@ public class PuzzleChangeAction : MonoBehaviour
             }
         };
 
+        puzzleInfoRequest = new PuzzleInfo(post, puzzle, puzzleAnswers);
+
         puzzleService.UpdatePuzzle(new RegisterPuzzleRequest(new RegisterPostRequest(post, null, null, null),
                                                                                      puzzle, puzzleAnswers));
     }
 
     public void ApplyUpdate(bool response)
     {
-        ChoiceDialog.Instance.Info("Actualización de reto", "Reto actualizado exitosamente.", () => CloseModal());
+        puzzleInfo = puzzleInfoRequest;
+
+        ChoiceDialog.Instance.Info("Actualización de reto", "Reto actualizado exitosamente.", () => CloseModal(false));
     }
 
-    private void CloseModal()
+    private void CloseModal(bool isRegister)
     {
         imgPuzzleChange.gameObject.SetActive(false);
-        onChanged.Invoke();
+
+        if (isRegister)
+            onRegistered.Invoke();
+        else
+            onUpdated.Invoke(idx, puzzleInfo);
     }
 
     // UpdateStatus
@@ -199,6 +217,8 @@ public class PuzzleChangeAction : MonoBehaviour
 
     private void UpdateStatus(int status)
     {
+        statusRequest = status;
+
         ScreenDialog.Instance.Display();
         
         puzzleService.UpdateStatus(puzzleInfo.Post.Id, puzzleInfo.Puzzle.Id, status);
@@ -206,6 +226,9 @@ public class PuzzleChangeAction : MonoBehaviour
 
     public void ApplyUpdateStatus(bool response)
     {
-        onChanged.Invoke();
+        puzzleInfo.Post.Status = statusRequest;
+        puzzleInfo.Puzzle.Status = statusRequest;
+
+        onUpdated.Invoke(idx, puzzleInfo);
     }
 }

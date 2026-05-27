@@ -232087,13 +232087,28 @@ MonoBehaviour:
   ifdAnswerNok2: {fileID: 398526968}
   imgPuzzleChange: {fileID: 289638184}
   btnChange: {fileID: 1701046818}
-  onChanged:
+  onRegistered:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1849046927}
         m_TargetAssemblyTypeName: PuzzleDisplayAction, Assembly-CSharp
         m_MethodName: LoadFirstPage
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onUpdated:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1849046927}
+        m_TargetAssemblyTypeName: PuzzleDisplayAction, Assembly-CSharp
+        m_MethodName: RefreshValue
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

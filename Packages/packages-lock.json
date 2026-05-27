@@ -128,7 +128,7 @@
       "dependencies": {
         "com.lefortech.core.tools": "https://github.com/leapfortech/LeapCoreTools.git"
       },
-      "hash": "2389d33aed15a0e3a73b06b2006e8ed4000cfc0b"
+      "hash": "a94b802b1b55b39158e46183a08a8b60386b1f3c"
     },
     "com.lefortech.ui.extensions": {
       "version": "https://github.com/leapfortech/LeapUIExtensions.git",

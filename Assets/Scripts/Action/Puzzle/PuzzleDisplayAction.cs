@@ -12,7 +12,7 @@ using Sirenix.OdinInspector;
 public class PuzzleDisplayAction : MonoBehaviour
 {
     [Serializable]
-    public class PuzzleInfoEvent : UnityEvent<PuzzleInfo> { }
+    public class PuzzleEventEvent : UnityEvent<int, PuzzleInfo> { }
 
     [Title("Params")]
     [SerializeField]
@@ -54,7 +54,7 @@ public class PuzzleDisplayAction : MonoBehaviour
 
     [Title("Event")]
     [SerializeField]
-    PuzzleInfoEvent onSelected = null;
+    PuzzleEventEvent onSelected = null;
 
     int currentPage = 1;
     int totalPages = 1;
@@ -156,32 +156,23 @@ public class PuzzleDisplayAction : MonoBehaviour
         UpdatePagination();
 
         lstPuzzle.ClearValues();
-        
         txtEmpty.gameObject.SetActive(false);
 
         for (int i = 0; i < puzzleAllRsp.PuzzleInfos.Count; i++)
-        {
-            ListScrollerValue value = new ListScrollerValue(12, true);
-
-            value.SetText(0, puzzleAllRsp.PuzzleInfos[i].Puzzle.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
-            value.SetSprite(1, vllCountryFlag.FindRecordCellSprite(puzzleAllRsp.PuzzleInfos[i].Puzzle.CountryId, "Flag"));
-            value.SetText(2, vllCountryFlag.FindRecordCellString(puzzleAllRsp.PuzzleInfos[i].Puzzle.CountryId, "Name"));
-            value.SetText(3, puzzleAllRsp.PuzzleInfos[i].Puzzle.Question);
-            value.SetText(4, puzzleAllRsp.PuzzleInfos[i].PuzzleAnswers[0].Description);
-            value.SetText(5, puzzleAllRsp.PuzzleInfos[i].PuzzleAnswers[1].Description);
-            value.SetText(6, puzzleAllRsp.PuzzleInfos[i].PuzzleAnswers[2].Description);
-            value.SetText(7, vllPuzzleDifficulty.FindRecordCellString(puzzleAllRsp.PuzzleInfos[i].Puzzle.Difficulty, "Name"));
-            
-            value.SetText(8, puzzleAllRsp.PuzzleInfos[i].Puzzle.Status == 0 ? vllPuzzleStatus.FindRecordCellString(puzzleAllRsp.PuzzleInfos[i].Puzzle.Status, "Name") : "");
-            value.SetText(9, puzzleAllRsp.PuzzleInfos[i].Puzzle.Status != 0 ? vllPuzzleStatus.FindRecordCellString(puzzleAllRsp.PuzzleInfos[i].Puzzle.Status, "Name") : "");
-
-            value.SetActive(10, puzzleAllRsp.PuzzleInfos[i].Puzzle.Status != 0);
-            value.SetActive(11, puzzleAllRsp.PuzzleInfos[i].Puzzle.Status == 0);
-
-            lstPuzzle.AddValue(value);
-        }
+            lstPuzzle.AddValue(CreateValue(puzzleAllRsp.PuzzleInfos[i]));
 
         lstPuzzle.ApplyValues();
+
+        StateManager.Instance.BoardLoadHide();
+    }
+
+    public void RefreshValue(int idx, PuzzleInfo puzzleInfo)
+    {
+        puzzleAllRsp.PuzzleInfos[idx] = puzzleInfo;
+
+        lstPuzzle[idx] = CreateValue(puzzleInfo);
+
+        lstPuzzle.RefreshVisibleValues();
 
         StateManager.Instance.BoardLoadHide();
     }
@@ -192,6 +183,26 @@ public class PuzzleDisplayAction : MonoBehaviour
 
         btnBack.Interactable = currentPage > 1;
         btnNext.Interactable = currentPage < totalPages;
+    }
+
+    private ListScrollerValue CreateValue(PuzzleInfo puzzleInfo)
+    {
+        ListScrollerValue value = new ListScrollerValue(12, true);
+
+        value.SetText(0, puzzleInfo.Puzzle.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
+        value.SetSprite(1, vllCountryFlag.FindRecordCellSprite(puzzleInfo.Puzzle.CountryId, "Flag"));
+        value.SetText(2, vllCountryFlag.FindRecordCellString(puzzleInfo.Puzzle.CountryId, "Name"));
+        value.SetText(3, puzzleInfo.Puzzle.Question);
+        value.SetText(4, puzzleInfo.PuzzleAnswers[0].Description);
+        value.SetText(5, puzzleInfo.PuzzleAnswers[1].Description);
+        value.SetText(6, puzzleInfo.PuzzleAnswers[2].Description);
+        value.SetText(7, vllPuzzleDifficulty.FindRecordCellString(puzzleInfo.Puzzle.Difficulty, "Name"));
+        value.SetText(8, puzzleInfo.Puzzle.Status == 0 ? vllPuzzleStatus.FindRecordCellString(puzzleInfo.Puzzle.Status, "Name") : "");
+        value.SetText(9, puzzleInfo.Puzzle.Status != 0 ? vllPuzzleStatus.FindRecordCellString(puzzleInfo.Puzzle.Status, "Name") : "");
+        value.SetActive(10, puzzleInfo.Puzzle.Status != 0);
+        value.SetActive(11, puzzleInfo.Puzzle.Status == 0);
+
+        return value;
     }
 
     public void ShowEmpty()
@@ -205,6 +216,6 @@ public class PuzzleDisplayAction : MonoBehaviour
     // Select
     public void Select(int idx)
     {
-        onSelected.Invoke(puzzleAllRsp.PuzzleInfos[idx]);
+        onSelected.Invoke(idx, puzzleAllRsp.PuzzleInfos[idx]);
     }
 }
