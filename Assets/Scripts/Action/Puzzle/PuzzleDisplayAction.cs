@@ -161,7 +161,7 @@ public class PuzzleDisplayAction : MonoBehaviour
 
         for (int i = 0; i < puzzleAllRsp.PuzzleInfos.Count; i++)
         {
-            ListScrollerValue value = new ListScrollerValue(9, true);
+            ListScrollerValue value = new ListScrollerValue(12, true);
 
             value.SetText(0, puzzleAllRsp.PuzzleInfos[i].Puzzle.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
             value.SetSprite(1, vllCountryFlag.FindRecordCellSprite(puzzleAllRsp.PuzzleInfos[i].Puzzle.CountryId, "Flag"));
@@ -171,7 +171,12 @@ public class PuzzleDisplayAction : MonoBehaviour
             value.SetText(5, puzzleAllRsp.PuzzleInfos[i].PuzzleAnswers[1].Description);
             value.SetText(6, puzzleAllRsp.PuzzleInfos[i].PuzzleAnswers[2].Description);
             value.SetText(7, vllPuzzleDifficulty.FindRecordCellString(puzzleAllRsp.PuzzleInfos[i].Puzzle.Difficulty, "Name"));
-            value.SetText(8, vllPuzzleStatus.FindRecordCellString(puzzleAllRsp.PuzzleInfos[i].Puzzle.Status, "Name"));
+            
+            value.SetText(8, puzzleAllRsp.PuzzleInfos[i].Puzzle.Status == 0 ? vllPuzzleStatus.FindRecordCellString(puzzleAllRsp.PuzzleInfos[i].Puzzle.Status, "Name") : "");
+            value.SetText(9, puzzleAllRsp.PuzzleInfos[i].Puzzle.Status != 0 ? vllPuzzleStatus.FindRecordCellString(puzzleAllRsp.PuzzleInfos[i].Puzzle.Status, "Name") : "");
+
+            value.SetActive(10, puzzleAllRsp.PuzzleInfos[i].Puzzle.Status != 0);
+            value.SetActive(11, puzzleAllRsp.PuzzleInfos[i].Puzzle.Status == 0);
 
             lstPuzzle.AddValue(value);
         }

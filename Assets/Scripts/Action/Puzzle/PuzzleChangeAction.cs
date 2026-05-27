@@ -187,7 +187,7 @@ public class PuzzleChangeAction : MonoBehaviour
     }
 
     // UpdateStatus
-    public void Inactivate()
+    public void Deactivate()
     {
         ChoiceDialog.Instance.Error("Eliminar reto", "¿Estás seguro que deseas elimnar el reto?", () => UpdateStatus(0), null, "Sí" , "Regresar");
     }

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2730450887187334824}
   - component: {fileID: 1914185303728754170}
+  - component: {fileID: 332289254455689327}
   m_Layer: 0
   m_Name: LstItmProjectImage
   m_TagString: Untagged
@@ -57,6 +58,26 @@ MonoBehaviour:
   buttons:
   - {fileID: 1338040169482270459}
   toggle: {fileID: 0}
+--- !u!114 &332289254455689327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2730450887187334825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.LayoutElement
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1001 &1414312939915765661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -196,18 +217,18 @@ PrefabInstance:
     - target: {fileID: 8436609822253491789, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 2d218a335ec21a24cb631c421c2e6ab2, type: 2}
+      objectReference: {fileID: 11400000, guid: 2d56e54ea2c77174894e52c3f1e5a4ad, type: 2}
     - target: {fileID: 8436609822253491789, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_fontColor.b
-      value: 0.2
+      value: 0.50980395
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491789, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_fontColor.g
-      value: 0.2
+      value: 0.33333334
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491789, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_fontColor.r
-      value: 0.2
+      value: 0.007843138
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491789, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_fontSizeBase
@@ -216,7 +237,7 @@ PrefabInstance:
     - target: {fileID: 8436609822253491789, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 8233133237803743529, guid: 2d218a335ec21a24cb631c421c2e6ab2, type: 2}
+      objectReference: {fileID: -2094504794991002911, guid: 2d56e54ea2c77174894e52c3f1e5a4ad, type: 2}
     - target: {fileID: 8436609823093871509, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_Color.a
       value: 0.003921569
@@ -239,19 +260,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_Rectangle.m_CornerRadius.w
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_Rectangle.m_CornerRadius.x
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_Rectangle.m_CornerRadius.y
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8436609823093871509, guid: f8ecfef2a164d184587a9839784c524a, type: 3}
       propertyPath: m_Rectangle.m_CornerRadius.z
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
