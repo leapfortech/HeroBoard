@@ -146,6 +146,7 @@ public class PuzzleChangeAction : MonoBehaviour
         puzzle.PostId = puzzleInfo.Puzzle.PostId;
         puzzle.PuzzleSubtypeId = puzzleInfo.Puzzle.PuzzleSubtypeId;
         puzzle.PlayCount = puzzleInfo.Puzzle.PlayCount;
+        puzzle.CreateDateTime = puzzleInfo.Puzzle.CreateDateTime;
         puzzle.Status = puzzleInfo.Puzzle.Status;
 
         List<PuzzleAnswer> puzzleAnswers = new List<PuzzleAnswer>()
