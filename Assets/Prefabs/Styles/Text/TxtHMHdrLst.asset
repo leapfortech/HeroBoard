@@ -56,7 +56,7 @@ MonoBehaviour:
       data:
         style: {fileID: 11400000}
         ModelProperty: 'F: Text'
-        ThemeProperty: 
+        ThemeProperty: HdrLst
     - rid: 6444590032472244874
       type: {class: StylePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -74,10 +74,10 @@ MonoBehaviour:
       data:
         style: {fileID: 11400000}
         ModelProperty: Text
-        ThemeProperty: 
+        ThemeProperty: HdrLst
     - rid: 6444590032472244877
       type: {class: StylePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
         style: {fileID: 11400000}
         ModelProperty: Text
-        ThemeProperty: 
+        ThemeProperty: HdrLst

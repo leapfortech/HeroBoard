@@ -15,6 +15,10 @@ public class PuzzleChangeAction : MonoBehaviour
     [Serializable]
     public class PuzzleEventEvent : UnityEvent<int, PuzzleInfo> { }
 
+    [Title("Params")]
+    [SerializeField]
+    long subtype = -1;
+
     [Title("Data")]
     [SerializeField]
     DataMapper dtmPuzzle = null;
@@ -91,7 +95,7 @@ public class PuzzleChangeAction : MonoBehaviour
         Post post = new Post() {PostTypeId = 8};
 
         Puzzle puzzle = dtmPuzzle.BuildClass<Puzzle>();
-        puzzle.PuzzleSubtypeId = 1;
+        puzzle.PuzzleSubtypeId = subtype;
 
         List<PuzzleAnswer> puzzleAnswers = new List<PuzzleAnswer>()
         {
