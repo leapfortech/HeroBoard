@@ -54,7 +54,7 @@ public class PuzzleDisplayAction : MonoBehaviour
 
     [Title("Event")]
     [SerializeField]
-    PuzzleEventEvent onSelected = null;
+    PuzzleEventEvent onUpdateRequested = null;
 
     int currentPage = 1;
     int totalPages = 1;
@@ -62,8 +62,10 @@ public class PuzzleDisplayAction : MonoBehaviour
     int filterStatus = -1, filterDifficulty = -1;
     long filterSubType = -1L;
 
+    int idxRequest = -1;
+
     PuzzleService puzzleService = null;
-    PuzzleAllRsp puzzleAllRsp = null;
+    PuzzleAllRsp puzzlePage = null;
 
     private void Awake()
     {
@@ -148,41 +150,22 @@ public class PuzzleDisplayAction : MonoBehaviour
             return;
         }
 
-        puzzleAllRsp = rsp;
+        puzzlePage = rsp;
 
-        totalPages = puzzleAllRsp.TotalPages;
-        currentPage = puzzleAllRsp.Page;
+        totalPages = rsp.TotalPages;
+        currentPage = rsp.Page;
 
         UpdatePagination();
 
         lstPuzzle.ClearValues();
         txtEmpty.gameObject.SetActive(false);
 
-        for (int i = 0; i < puzzleAllRsp.PuzzleInfos.Count; i++)
-            lstPuzzle.AddValue(CreateValue(puzzleAllRsp.PuzzleInfos[i]));
+        for (int i = 0; i < rsp.PuzzleInfos.Count; i++)
+            lstPuzzle.AddValue(CreateValue(rsp.PuzzleInfos[i]));
 
         lstPuzzle.ApplyValues();
 
         StateManager.Instance.BoardLoadHide();
-    }
-
-    public void RefreshValue(int idx, PuzzleInfo puzzleInfo)
-    {
-        puzzleAllRsp.PuzzleInfos[idx] = puzzleInfo;
-
-        lstPuzzle[idx] = CreateValue(puzzleInfo);
-
-        lstPuzzle.RefreshVisibleValues();
-
-        StateManager.Instance.BoardLoadHide();
-    }
-
-    public void UpdatePagination()
-    {
-        txtPage.TextValue = $"Página {currentPage} / {Mathf.Max(totalPages, 1)}";
-
-        btnBack.Interactable = currentPage > 1;
-        btnNext.Interactable = currentPage < totalPages;
     }
 
     private ListScrollerValue CreateValue(PuzzleInfo puzzleInfo)
@@ -205,6 +188,34 @@ public class PuzzleDisplayAction : MonoBehaviour
         return value;
     }
 
+    public void ApplyValue(int idx, PuzzleInfo puzzleInfo)
+    {
+        puzzlePage.PuzzleInfos[idx] = puzzleInfo;
+
+        ListScrollerValue value = lstPuzzle[idx];
+
+        value.SetText(0, puzzleInfo.Puzzle.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
+        value.SetSprite(1, vllCountryFlag.FindRecordCellSprite(puzzleInfo.Puzzle.CountryId, "Flag"));
+        value.SetText(2, vllCountryFlag.FindRecordCellString(puzzleInfo.Puzzle.CountryId, "Name"));
+        value.SetText(3, puzzleInfo.Puzzle.Question);
+        value.SetText(4, puzzleInfo.PuzzleAnswers[0].Description);
+        value.SetText(5, puzzleInfo.PuzzleAnswers[1].Description);
+        value.SetText(6, puzzleInfo.PuzzleAnswers[2].Description);
+        value.SetText(7, vllPuzzleDifficulty.FindRecordCellString(puzzleInfo.Puzzle.Difficulty, "Name"));
+
+        lstPuzzle.RefreshVisibleValues();
+
+        StateManager.Instance.BoardLoadHide();
+    }
+
+    public void UpdatePagination()
+    {
+        txtPage.TextValue = $"Página {currentPage} / {Mathf.Max(totalPages, 1)}";
+
+        btnBack.Interactable = currentPage > 1;
+        btnNext.Interactable = currentPage < totalPages;
+    }
+
     public void ShowEmpty()
     {
         txtEmpty.gameObject.SetActive(true);
@@ -213,9 +224,45 @@ public class PuzzleDisplayAction : MonoBehaviour
         StateManager.Instance.BoardLoadHide();
     }
 
-    // Select
-    public void Select(int idx)
+    // UpdatePuzzle
+
+    public void UpdatePuzzle(int idx)
     {
-        onSelected.Invoke(idx, puzzleAllRsp.PuzzleInfos[idx]);
+        onUpdateRequested.Invoke(idx, puzzlePage.PuzzleInfos[idx]);
+    }
+
+    // UpdateStatus
+    public void Deactivate(int idx)
+    {
+        ChoiceDialog.Instance.Error("Eliminar reto", "¿Estás seguro que deseas eliminar el reto?", () => UpdateStatus(idx, 0), null, "Sí", "Regresar");
+    }
+
+    public void Activate(int idx)
+    {
+        ChoiceDialog.Instance.Info("Activar reto", "¿Estás seguro que deseas activar el reto?", () => UpdateStatus(idx, 1), null, "Sí", "Regresar");
+    }
+
+    private void UpdateStatus(int idx, int status)
+    {
+        idxRequest = idx;
+
+        ScreenDialog.Instance.Display();
+
+        puzzleService.UpdateStatus(puzzlePage.PuzzleInfos[idx].Post.Id, puzzlePage.PuzzleInfos[idx].Puzzle.Id, status);
+    }
+
+    public void ApplyUpdateStatus(bool response)
+    {
+        ListScrollerValue value = lstPuzzle[idxRequest];
+
+        bool activated = value.GetActive(11);
+        value.SetText(8, !activated ? vllPuzzleStatus.FindRecordCellString(0, "Name") : "");
+        value.SetText(9, activated ? vllPuzzleStatus.FindRecordCellString(1, "Name") : "");
+        value.SetActive(10, activated);
+        value.SetActive(11, !activated);
+
+        lstPuzzle.RefreshVisibleValues();
+
+        StateManager.Instance.BoardLoadHide();
     }
 }

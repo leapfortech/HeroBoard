@@ -44,7 +44,7 @@ public class PuzzleChangeAction : MonoBehaviour
     PuzzleInfo puzzleInfo = null;
 
     PuzzleInfo puzzleInfoRequest = null;
-    int idx = -1, statusRequest = -1;
+    int idx = -1;
 
     private void Awake()
     {
@@ -61,12 +61,6 @@ public class PuzzleChangeAction : MonoBehaviour
     }
 
     // Set
-    public void SetPuzzle(int index, PuzzleInfo info)
-    {
-        puzzleInfo = info;
-        idx = index;
-    }
-
     public void ChangePuzzle()
     {
         if (btnChange.Title[0] == 'A')
@@ -117,8 +111,11 @@ public class PuzzleChangeAction : MonoBehaviour
 
     // Update
 
-    public void DisplayUpdate()
+    public void DisplayUpdate(int index, PuzzleInfo info)
     {
+        puzzleInfo = info;
+        idx = index;
+
         btnChange.Title = "Guardar";
 
         dtmPuzzle.PopulateClass<Puzzle>(puzzleInfo.Puzzle);
@@ -202,33 +199,5 @@ public class PuzzleChangeAction : MonoBehaviour
             onRegistered.Invoke();
         else
             onUpdated.Invoke(idx, puzzleInfo);
-    }
-
-    // UpdateStatus
-    public void Deactivate()
-    {
-        ChoiceDialog.Instance.Error("Eliminar reto", "¿Estás seguro que deseas elimnar el reto?", () => UpdateStatus(0), null, "Sí" , "Regresar");
-    }
-
-    public void Activate()
-    {
-        ChoiceDialog.Instance.Info("Activar reto", "¿Estás seguro que deseas activar el reto?", () => UpdateStatus(1), null, "Sí", "Regresar");
-    }
-
-    private void UpdateStatus(int status)
-    {
-        statusRequest = status;
-
-        ScreenDialog.Instance.Display();
-        
-        puzzleService.UpdateStatus(puzzleInfo.Post.Id, puzzleInfo.Puzzle.Id, status);
-    }
-
-    public void ApplyUpdateStatus(bool response)
-    {
-        puzzleInfo.Post.Status = statusRequest;
-        puzzleInfo.Puzzle.Status = statusRequest;
-
-        onUpdated.Invoke(idx, puzzleInfo);
     }
 }
