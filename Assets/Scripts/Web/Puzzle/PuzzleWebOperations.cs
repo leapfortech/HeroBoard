@@ -134,3 +134,22 @@ public class PuzzleRejectPutOperation : HttpOperation
     public bool response;
 }
 
+[HttpPUT]
+[HttpPathExt(WebServiceType.Main, "/puzzle/UpdateStatus")]
+[HttpProvider(typeof(HttpUnityWebAzureClient))]
+[HttpContentType("application/json")]
+[HttpAccept("application/json")]
+[HttpFirebaseAuthorization]
+public class PuzzleUpdateStatusPutOperation : HttpOperation
+{
+    [HttpQueryString]
+    public long postId;
+    [HttpQueryString]
+    public long puzzleId;
+    [HttpQueryString]
+    public int status;
+
+    [HttpResponseTextBody]
+    public bool response;
+}
+

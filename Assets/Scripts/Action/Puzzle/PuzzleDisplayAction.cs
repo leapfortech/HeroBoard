@@ -56,11 +56,9 @@ public class PuzzleDisplayAction : MonoBehaviour
     [SerializeField]
     PuzzleInfoEvent onSelected = null;
 
-    // Navigation
     int currentPage = 1;
     int totalPages = 1;
 
-    // Filters
     int filterStatus = -1, filterDifficulty = -1;
     long filterSubType = -1L;
 
@@ -79,19 +77,7 @@ public class PuzzleDisplayAction : MonoBehaviour
         //btnFilter?.AddAction(Filter);
     }
 
-    public void LoadFirstPage()
-    {
-        currentPage = 1;
-        filterStatus = -1;
-        filterSubType = subtype;
-        filterDifficulty = -1;
-
-        cmbDifficulty.Clear();
-        cmbStatus.Clear();
-
-        GetPaged(currentPage);
-    }
-
+    // Filter
     public void Filter()
     {
         if (!cmbDifficulty.Combo.IsEmpty())
@@ -109,7 +95,20 @@ public class PuzzleDisplayAction : MonoBehaviour
         GetPaged(currentPage);
     }
 
-    // Navigation
+    // Load
+    public void LoadFirstPage()
+    {
+        currentPage = 1;
+        filterStatus = -1;
+        filterSubType = subtype;
+        filterDifficulty = -1;
+
+        cmbDifficulty.Clear();
+        cmbStatus.Clear();
+
+        GetPaged(currentPage);
+    }
+
     public void NextPage()
     {
         if (currentPage >= totalPages)
@@ -140,6 +139,7 @@ public class PuzzleDisplayAction : MonoBehaviour
         puzzleService.GetAllByDifficulty(req);
     }
 
+    // Display
     public void FillPaged(PuzzleAllRsp rsp)
     {
         if (rsp == null || rsp.PuzzleInfos == null || rsp.PuzzleInfos.Count == 0)
@@ -173,18 +173,12 @@ public class PuzzleDisplayAction : MonoBehaviour
             value.SetText(7, vllPuzzleDifficulty.FindRecordCellString(puzzleAllRsp.PuzzleInfos[i].Puzzle.Difficulty, "Name"));
             value.SetText(8, vllPuzzleStatus.FindRecordCellString(puzzleAllRsp.PuzzleInfos[i].Puzzle.Status, "Name"));
 
-
             lstPuzzle.AddValue(value);
         }
 
         lstPuzzle.ApplyValues();
 
         StateManager.Instance.BoardLoadHide();
-    }
-
-    public void Select(int idx)
-    {
-        onSelected.Invoke(puzzleAllRsp.PuzzleInfos[idx]);
     }
 
     public void UpdatePagination()
@@ -201,5 +195,11 @@ public class PuzzleDisplayAction : MonoBehaviour
         lstPuzzle.ApplyClearValues();
 
         StateManager.Instance.BoardLoadHide();
+    }
+
+    // Select
+    public void Select(int idx)
+    {
+        onSelected.Invoke(puzzleAllRsp.PuzzleInfos[idx]);
     }
 }

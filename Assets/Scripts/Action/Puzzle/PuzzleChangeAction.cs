@@ -42,6 +42,7 @@ public class PuzzleChangeAction : MonoBehaviour
         puzzleService = GetComponent<PuzzleService>();
     }
 
+    // Clear
     public void Clear()
     {
         dtmPuzzle.ClearElements();
@@ -50,17 +51,18 @@ public class PuzzleChangeAction : MonoBehaviour
         ifdAnswerNok2.Clear();
     }
 
+    // Set
+    public void SetPuzzle(PuzzleInfo info)
+    {
+        puzzleInfo = info;
+    }
+
     public void ChangePuzzle()
     {
         if (btnChange.Title[0] == 'A')
             RegisterPuzzle();
         else
             UpdatePuzzle();
-    }
-
-    public void SetPuzzle(PuzzleInfo info)
-    {
-        puzzleInfo = info;
     }
 
     // Add
@@ -181,6 +183,31 @@ public class PuzzleChangeAction : MonoBehaviour
     private void CloseModal()
     {
         imgPuzzleChange.gameObject.SetActive(false);
+        onChanged.Invoke();
+    }
+
+    // UpdateStatus
+    public void Inactivate()
+    {
+        ChoiceDialog.Instance.Error("Eliminar reto", "¿Estás seguro que deseas elimnar el reto?", () => UpdateStatus(0), null, "Sí" , "Regresar");
+    }
+
+    public void Activate()
+    {
+        ChoiceDialog.Instance.Info("Activar reto", "¿Estás seguro que deseas activar el reto?", () => UpdateStatus(1), null, "Sí", "Regresar");
+    }
+
+    private void UpdateStatus(int status)
+    {
+        ScreenDialog.Instance.Display();
+        
+        puzzleService.UpdateStatus(puzzleInfo.Post.Id, puzzleInfo.Puzzle.Id, status);
+    }
+
+    public void ApplyUpdateStatus(bool response)
+    {
+        ScreenDialog.Instance.Display();
+
         onChanged.Invoke();
     }
 }

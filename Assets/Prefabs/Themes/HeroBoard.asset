@@ -671,8 +671,8 @@ MonoBehaviour:
         themeElement:
           rid: 7896456370744197126
         Name: 'W: Small: Area'
-        Reference: 1
-        Value: 0
+        Reference: 0
+        Value: 42
         Property: 'Area: Slim'
     - rid: 6168643444634289147
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -680,8 +680,8 @@ MonoBehaviour:
         themeElement:
           rid: 7896456370744197126
         Name: 'H: Small: Area'
-        Reference: 1
-        Value: 0
+        Reference: 0
+        Value: 42
         Property: 'Area: Slim'
     - rid: 6444590012555329968
       type: {class: ThemePropertyFloat, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
@@ -26356,7 +26356,7 @@ MonoBehaviour:
         Name: 'Small: Bkg: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'WhiteScale: Default'
+        Property: 'Identity: Default'
     - rid: 7896456370759401958
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -26374,7 +26374,7 @@ MonoBehaviour:
         Name: 'Small: Icon: Default'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: Default'
+        Property: 'WhiteScale: Default'
     - rid: 7896456370759401960
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -26383,7 +26383,7 @@ MonoBehaviour:
         Name: 'Small: Bkg: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: E'
+        Property: 'Identity: Dark'
     - rid: 7896456370759401961
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -26401,7 +26401,7 @@ MonoBehaviour:
         Name: 'Small: Icon: Pressed'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'GreyScale: Default'
+        Property: 'WhiteScale: Default'
     - rid: 7896456370759401963
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -26410,7 +26410,7 @@ MonoBehaviour:
         Name: 'Small: Bkg: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'WhiteScale: D'
+        Property: 'GreyScale: B'
     - rid: 7896456370759401964
       type: {class: ThemePropertyColor, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:
@@ -26428,7 +26428,7 @@ MonoBehaviour:
         Name: 'Small: Icon: Disabled'
         Reference: 1
         Value: {r: 1, g: 1, b: 1, a: 1}
-        Property: 'WhiteScale: B'
+        Property: 'WhiteScale: E'
     - rid: 7896456370759401966
       type: {class: ThemePropertyFont, ns: Leap.UI.Elements, asm: Leap.UI.Elements}
       data:

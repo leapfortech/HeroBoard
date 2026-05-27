@@ -35,6 +35,9 @@ public class PuzzleService : MonoBehaviour
     [SerializeField]
     private UnityBoolEvent onUpdated = null;
 
+    [SerializeField]
+    private UnityBoolEvent onStatusUpdated = null;
+
 
     [Title("Error")]
     [SerializeField]
@@ -207,6 +210,29 @@ public class PuzzleService : MonoBehaviour
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });
             rejectPutOp.Send();
+        }
+        catch (Exception ex)
+        {
+            WebManager.Instance.OnSendError(ex.Message);
+        }
+    }
+
+    public void UpdateStatus(long postId, long puzzleId, int status)
+    {
+        PuzzleUpdateStatusPutOperation updateStatusPutOp = new PuzzleUpdateStatusPutOperation();
+        try
+        {
+            updateStatusPutOp.postId = postId;
+            updateStatusPutOp.puzzleId = puzzleId;
+            updateStatusPutOp.status = status;
+            updateStatusPutOp["on-complete"] = (Action<PuzzleUpdateStatusPutOperation, HttpResponse>)((op, response) =>
+            {
+                if (response != null && !response.HasError)
+                    onStatusUpdated.Invoke(op.response);
+                else
+                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+            });
+            updateStatusPutOp.Send();
         }
         catch (Exception ex)
         {
