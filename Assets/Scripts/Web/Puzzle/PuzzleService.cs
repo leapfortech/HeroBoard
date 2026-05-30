@@ -163,7 +163,7 @@ public class PuzzleService : MonoBehaviour
             referredPutOp["on-complete"] = (Action<PuzzlePutOperation, HttpResponse>)((op, response) =>
             {
                 if (response != null && !response.HasError)
-                    onUpdated.Invoke(op.response);
+                    onUpdated.Invoke(Convert.ToBoolean(op.response));
                 else
                     onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
             });

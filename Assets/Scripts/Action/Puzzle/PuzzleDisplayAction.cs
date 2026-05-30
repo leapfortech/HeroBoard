@@ -16,7 +16,7 @@ public class PuzzleDisplayAction : MonoBehaviour
 
     [Title("Params")]
     [SerializeField]
-    long subtype = -1;
+    long puzzleGameId = -1;
 
     [Title("Value")]
     [SerializeField]
@@ -102,7 +102,7 @@ public class PuzzleDisplayAction : MonoBehaviour
     {
         currentPage = 1;
         filterStatus = -1;
-        filterSubType = subtype;
+        filterSubType = puzzleGameId;
         filterDifficulty = -1;
 
         cmbDifficulty.Clear();

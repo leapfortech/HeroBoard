@@ -101,7 +101,7 @@ public class PuzzlePutOperation : HttpOperation
     public RegisterPuzzleRequest registerPuzzleRequest;
 
     [HttpResponseTextBody]
-    public bool response;
+    public String response;
 }
 
 [HttpPUT]

@@ -84873,7 +84873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6bf7356fb26c2448c76d3744a60def, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleDisplayAction
-  subtype: 2
+  puzzleGameId: 2
   vllCountryFlag: {fileID: 11400000, guid: 39cab8f2cf059ce4abfc432b1b615e60, type: 2}
   vllPuzzleDifficulty: {fileID: 11400000, guid: 8e37820e811e010429b445f8cb3dc37b, type: 2}
   vllPuzzleStatus: {fileID: 11400000, guid: 243e5968608798840a277c132b90e61b, type: 2}
@@ -118630,13 +118630,13 @@ MonoBehaviour:
     dataBuildInMap:
       rid: -2
     dataClassMap:
-      rid: 749284816793633005
+      rid: 749284870056575039
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 749284816793633005
+    - rid: 749284870056575039
       type: {class: DataClassMap, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataClass: {fileID: 11400000, guid: a4b0bd9794e1cd040a115198628de3c2, type: 2}
@@ -118653,7 +118653,7 @@ MonoBehaviour:
           dataFieldSource:
             rid: -2
           ItemIdx: -1
-        - FieldName: PuzzleSubtypeId
+        - FieldName: PuzzleGameId
           FieldTypeName: System.Int64
           dataSourceType: 0
           dataFieldSource:
@@ -118663,37 +118663,37 @@ MonoBehaviour:
           FieldTypeName: System.Int64
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633006
+            rid: 749284870056575040
           ItemIdx: -1
         - FieldName: Question
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633007
+            rid: 749284870056575041
           ItemIdx: -1
         - FieldName: Hint
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633008
+            rid: 749284870056575042
           ItemIdx: -1
         - FieldName: Difficulty
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633009
+            rid: 749284870056575043
           ItemIdx: -1
         - FieldName: Delay
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633010
+            rid: 749284870056575044
           ItemIdx: -1
         - FieldName: Points
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633011
+            rid: 749284870056575045
           ItemIdx: -1
         - FieldName: PlayCount
           FieldTypeName: System.Int32
@@ -118713,7 +118713,7 @@ MonoBehaviour:
           dataFieldSource:
             rid: -2
           ItemIdx: -1
-    - rid: 749284816793633006
+    - rid: 749284870056575040
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -118721,11 +118721,11 @@ MonoBehaviour:
           FieldTypeName: System.Int64
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633006
+            rid: 749284870056575040
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 1500272845}
-    - rid: 749284816793633007
+    - rid: 749284870056575041
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -118733,11 +118733,11 @@ MonoBehaviour:
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633007
+            rid: 749284870056575041
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 323592440}
-    - rid: 749284816793633008
+    - rid: 749284870056575042
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -118745,11 +118745,11 @@ MonoBehaviour:
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633008
+            rid: 749284870056575042
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 606799972}
-    - rid: 749284816793633009
+    - rid: 749284870056575043
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -118757,11 +118757,11 @@ MonoBehaviour:
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633009
+            rid: 749284870056575043
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 113314906}
-    - rid: 749284816793633010
+    - rid: 749284870056575044
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -118769,11 +118769,11 @@ MonoBehaviour:
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633010
+            rid: 749284870056575044
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 427994526}
-    - rid: 749284816793633011
+    - rid: 749284870056575045
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -118781,7 +118781,7 @@ MonoBehaviour:
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633011
+            rid: 749284870056575045
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 84887771}
@@ -125208,7 +125208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799af8e94a2dda045b5fa758378dda60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleChangeAction
-  subtype: 2
+  puzzleGameId: 2
   dtmPuzzle: {fileID: 2059466952}
   ifdAnswerOk: {fileID: 160945321}
   ifdAnswerNok1: {fileID: 645558745}
@@ -128717,7 +128717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6bf7356fb26c2448c76d3744a60def, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleDisplayAction
-  subtype: 3
+  puzzleGameId: 3
   vllCountryFlag: {fileID: 11400000, guid: 39cab8f2cf059ce4abfc432b1b615e60, type: 2}
   vllPuzzleDifficulty: {fileID: 11400000, guid: 8e37820e811e010429b445f8cb3dc37b, type: 2}
   vllPuzzleStatus: {fileID: 11400000, guid: 243e5968608798840a277c132b90e61b, type: 2}
@@ -152091,13 +152091,13 @@ MonoBehaviour:
     dataBuildInMap:
       rid: -2
     dataClassMap:
-      rid: 749284778952622145
+      rid: 749284870056575024
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 749284778952622145
+    - rid: 749284870056575024
       type: {class: DataClassMap, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataClass: {fileID: 11400000, guid: a4b0bd9794e1cd040a115198628de3c2, type: 2}
@@ -152114,7 +152114,7 @@ MonoBehaviour:
           dataFieldSource:
             rid: -2
           ItemIdx: -1
-        - FieldName: PuzzleSubtypeId
+        - FieldName: PuzzleGameId
           FieldTypeName: System.Int64
           dataSourceType: 0
           dataFieldSource:
@@ -152124,37 +152124,37 @@ MonoBehaviour:
           FieldTypeName: System.Int64
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284778952622146
+            rid: 749284870056575025
           ItemIdx: -1
         - FieldName: Question
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284778952622147
+            rid: 749284870056575026
           ItemIdx: -1
         - FieldName: Hint
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284778952622148
+            rid: 749284870056575027
           ItemIdx: -1
         - FieldName: Difficulty
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284778952622149
+            rid: 749284870056575028
           ItemIdx: -1
         - FieldName: Delay
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284778952622150
+            rid: 749284870056575029
           ItemIdx: -1
         - FieldName: Points
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284778952622151
+            rid: 749284870056575030
           ItemIdx: -1
         - FieldName: PlayCount
           FieldTypeName: System.Int32
@@ -152174,7 +152174,7 @@ MonoBehaviour:
           dataFieldSource:
             rid: -2
           ItemIdx: -1
-    - rid: 749284778952622146
+    - rid: 749284870056575025
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -152182,11 +152182,11 @@ MonoBehaviour:
           FieldTypeName: System.Int64
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284778952622146
+            rid: 749284870056575025
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 900351002}
-    - rid: 749284778952622147
+    - rid: 749284870056575026
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -152194,11 +152194,11 @@ MonoBehaviour:
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284778952622147
+            rid: 749284870056575026
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 654485345}
-    - rid: 749284778952622148
+    - rid: 749284870056575027
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -152206,11 +152206,11 @@ MonoBehaviour:
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284778952622148
+            rid: 749284870056575027
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 952690689}
-    - rid: 749284778952622149
+    - rid: 749284870056575028
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -152218,11 +152218,11 @@ MonoBehaviour:
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284778952622149
+            rid: 749284870056575028
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 234800442}
-    - rid: 749284778952622150
+    - rid: 749284870056575029
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -152230,11 +152230,11 @@ MonoBehaviour:
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284778952622150
+            rid: 749284870056575029
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 1553813944}
-    - rid: 749284778952622151
+    - rid: 749284870056575030
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -152242,7 +152242,7 @@ MonoBehaviour:
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284778952622151
+            rid: 749284870056575030
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 1413892642}
@@ -250057,7 +250057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799af8e94a2dda045b5fa758378dda60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleChangeAction
-  subtype: 1
+  puzzleGameId: 1
   dtmPuzzle: {fileID: 847628327}
   ifdAnswerOk: {fileID: 1002932549}
   ifdAnswerNok1: {fileID: 1441345555}
@@ -281897,7 +281897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799af8e94a2dda045b5fa758378dda60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleChangeAction
-  subtype: 3
+  puzzleGameId: 3
   dtmPuzzle: {fileID: 665774818}
   ifdAnswerOk: {fileID: 272572160}
   ifdAnswerNok1: {fileID: 1319088835}
@@ -328639,7 +328639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6bf7356fb26c2448c76d3744a60def, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleDisplayAction
-  subtype: 1
+  puzzleGameId: 1
   vllCountryFlag: {fileID: 11400000, guid: 39cab8f2cf059ce4abfc432b1b615e60, type: 2}
   vllPuzzleDifficulty: {fileID: 11400000, guid: 8e37820e811e010429b445f8cb3dc37b, type: 2}
   vllPuzzleStatus: {fileID: 11400000, guid: 243e5968608798840a277c132b90e61b, type: 2}
@@ -367471,13 +367471,13 @@ MonoBehaviour:
     dataBuildInMap:
       rid: -2
     dataClassMap:
-      rid: 749284816793632998
+      rid: 749284870056575031
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 749284816793632998
+    - rid: 749284870056575031
       type: {class: DataClassMap, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataClass: {fileID: 11400000, guid: a4b0bd9794e1cd040a115198628de3c2, type: 2}
@@ -367494,7 +367494,7 @@ MonoBehaviour:
           dataFieldSource:
             rid: -2
           ItemIdx: -1
-        - FieldName: PuzzleSubtypeId
+        - FieldName: PuzzleGameId
           FieldTypeName: System.Int64
           dataSourceType: 0
           dataFieldSource:
@@ -367504,37 +367504,37 @@ MonoBehaviour:
           FieldTypeName: System.Int64
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793632999
+            rid: 749284870056575032
           ItemIdx: -1
         - FieldName: Question
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633000
+            rid: 749284870056575033
           ItemIdx: -1
         - FieldName: Hint
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633001
+            rid: 749284870056575038
           ItemIdx: -1
         - FieldName: Difficulty
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633002
+            rid: 749284870056575035
           ItemIdx: -1
         - FieldName: Delay
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633003
+            rid: 749284870056575036
           ItemIdx: -1
         - FieldName: Points
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633004
+            rid: 749284870056575037
           ItemIdx: -1
         - FieldName: PlayCount
           FieldTypeName: System.Int32
@@ -367554,7 +367554,7 @@ MonoBehaviour:
           dataFieldSource:
             rid: -2
           ItemIdx: -1
-    - rid: 749284816793632999
+    - rid: 749284870056575032
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -367562,11 +367562,11 @@ MonoBehaviour:
           FieldTypeName: System.Int64
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793632999
+            rid: 749284870056575032
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 1654331819}
-    - rid: 749284816793633000
+    - rid: 749284870056575033
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -367574,23 +367574,11 @@ MonoBehaviour:
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633000
+            rid: 749284870056575033
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 621114355}
-    - rid: 749284816793633001
-      type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
-      data:
-        dataFieldValue:
-          FieldName: Hint
-          FieldTypeName: System.String
-          dataSourceType: 1
-          dataFieldSource:
-            rid: 749284816793633001
-          ItemIdx: -1
-        NeedsItem: 0
-        elementValue: {fileID: 900790952}
-    - rid: 749284816793633002
+    - rid: 749284870056575035
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -367598,11 +367586,11 @@ MonoBehaviour:
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633002
+            rid: 749284870056575035
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 1332009633}
-    - rid: 749284816793633003
+    - rid: 749284870056575036
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -367610,11 +367598,11 @@ MonoBehaviour:
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633003
+            rid: 749284870056575036
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 1076647232}
-    - rid: 749284816793633004
+    - rid: 749284870056575037
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -367622,10 +367610,22 @@ MonoBehaviour:
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284816793633004
+            rid: 749284870056575037
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 1506817758}
+    - rid: 749284870056575038
+      type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
+      data:
+        dataFieldValue:
+          FieldName: Hint
+          FieldTypeName: System.String
+          dataSourceType: 1
+          dataFieldSource:
+            rid: 749284870056575038
+          ItemIdx: -1
+        NeedsItem: 0
+        elementValue: {fileID: 900790952}
 --- !u!4 &2059466953
 Transform:
   m_ObjectHideFlags: 0

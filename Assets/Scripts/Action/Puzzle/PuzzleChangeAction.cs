@@ -17,7 +17,7 @@ public class PuzzleChangeAction : MonoBehaviour
 
     [Title("Params")]
     [SerializeField]
-    long subtype = -1;
+    long puzzleGameId = -1;
 
     [Title("Data")]
     [SerializeField]
@@ -95,7 +95,7 @@ public class PuzzleChangeAction : MonoBehaviour
         Post post = new Post() {PostTypeId = 8};
 
         Puzzle puzzle = dtmPuzzle.BuildClass<Puzzle>();
-        puzzle.PuzzleSubtypeId = subtype;
+        puzzle.PuzzleGameId = puzzleGameId;
 
         List<PuzzleAnswer> puzzleAnswers = new List<PuzzleAnswer>()
         {
@@ -148,7 +148,7 @@ public class PuzzleChangeAction : MonoBehaviour
 
         puzzle.Id = puzzleInfo.Puzzle.Id;
         puzzle.PostId = puzzleInfo.Puzzle.PostId;
-        puzzle.PuzzleSubtypeId = puzzleInfo.Puzzle.PuzzleSubtypeId;
+        puzzle.PuzzleGameId = puzzleInfo.Puzzle.PuzzleGameId;
         puzzle.PlayCount = puzzleInfo.Puzzle.PlayCount;
         puzzle.CreateDateTime = puzzleInfo.Puzzle.CreateDateTime;
         puzzle.Status = puzzleInfo.Puzzle.Status;
