@@ -175,6 +175,7 @@ public class PostDisplayAction : MonoBehaviour
     void ShowEmpty()
     {
         txtEmpty.gameObject.SetActive(true);
+        txtPageIndex.TextValue = $"Página 0/0";
         lstPost.ApplyClearValues();
 
         StateManager.Instance.BoardLoadHide();
