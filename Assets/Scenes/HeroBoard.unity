@@ -36537,7 +36537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -36545,7 +36545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 15
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491789, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_text
@@ -135062,23 +135062,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949975912794496753, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 67.576904
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -42.42309
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 33
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -21.211546
+      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 19.3
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491789, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_text
@@ -157158,7 +157158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7949567787677415651, guid: d863785378f154048ae9367e5f2af2d6, type: 3}
       propertyPath: onDisplay.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7949567787677415651, guid: d863785378f154048ae9367e5f2af2d6, type: 3}
       propertyPath: onGotFocus.m_PersistentCalls.m_Calls.Array.size
@@ -157211,11 +157211,11 @@ PrefabInstance:
     - target: {fileID: 7949567787677415651, guid: d863785378f154048ae9367e5f2af2d6, type: 3}
       propertyPath: onDisplay.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2090632180}
+      objectReference: {fileID: 789381945}
     - target: {fileID: 7949567787677415651, guid: d863785378f154048ae9367e5f2af2d6, type: 3}
       propertyPath: onDisplay.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 789381945}
+      objectReference: {fileID: 555001833}
     - target: {fileID: 7949567787677415651, guid: d863785378f154048ae9367e5f2af2d6, type: 3}
       propertyPath: onDisplay.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -157266,11 +157266,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7949567787677415651, guid: d863785378f154048ae9367e5f2af2d6, type: 3}
       propertyPath: onDisplay.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AuthLogOut
+      value: Display
       objectReference: {fileID: 0}
     - target: {fileID: 7949567787677415651, guid: d863785378f154048ae9367e5f2af2d6, type: 3}
       propertyPath: onDisplay.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Display
+      value: ClearAll
       objectReference: {fileID: 0}
     - target: {fileID: 7949567787677415651, guid: d863785378f154048ae9367e5f2af2d6, type: 3}
       propertyPath: onDisplay.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -157302,11 +157302,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7949567787677415651, guid: d863785378f154048ae9367e5f2af2d6, type: 3}
       propertyPath: onDisplay.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Leap.Data.Web.FirebaseManager, Leap.Data.Web
+      value: LoginAction, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7949567787677415651, guid: d863785378f154048ae9367e5f2af2d6, type: 3}
       propertyPath: onDisplay.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: LoginAction, Assembly-CSharp
+      value: StateManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7949567787677415651, guid: d863785378f154048ae9367e5f2af2d6, type: 3}
       propertyPath: onDisplay.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -373081,6 +373081,7 @@ MonoBehaviour:
   loginStartToken: 1
   loginDelay: 20
   registerDelay: 20
+  refreshTokenDelay: 50
   onStartTokenLogged:
     m_PersistentCalls:
       m_Calls:

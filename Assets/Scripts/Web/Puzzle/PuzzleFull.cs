@@ -23,23 +23,21 @@ public class PuzzleFull : PostFull
     }
 
     public PuzzleFull(long id, long postId, long appUserId, String appUserAlias,
-                        long postSubtypeId,
+                        long postTypeId,
                         long postCountryId, long postStateId,
                         String title, String titleImage, String summary, String description,
-                        int imageCount, int favorite, int like, int likeCount, DateTime publicationDateTime,
-                        int postStatus,
-                        ContactFull contactFull,
-                        List<LinkFull> linkFulls,
-                        List<CommentFull> commentFulls,
+                        int imageCount, int favorite, int like, int likeCount, long reactionPhraseId,
+                        DateTime publicationDateTime, int postStatus,
+                        ContactFull contactFull, List<LinkFull> linkFulls, List<CommentFull> commentFulls,
                         long puzzleGameId, long countryId,
                         String question, String hint,
                         int difficulty, int delay, int points, int playCount,
                         int status,
                         List<PuzzleAnswerFull> puzzleAnswerFulls,
                         String[] images)
-        : base(postId, appUserId, appUserAlias, postSubtypeId,
+        : base(postId, appUserId, appUserAlias, postTypeId,
                 postCountryId, postStateId, title, titleImage, summary, description,
-                imageCount, favorite, like, likeCount, publicationDateTime, postStatus,
+                imageCount, favorite, like, likeCount, reactionPhraseId, publicationDateTime, postStatus,
                 contactFull, linkFulls, commentFulls)
     {
         Id = id;
