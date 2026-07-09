@@ -274078,6 +274078,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f10fbb63e26274db9d66687cf13145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pagLoading: {fileID: 1640951583}
+  loadingAnimator: {fileID: 1642975}
+  vllFiltered: []
   onLoadData:
     m_PersistentCalls:
       m_Calls:
@@ -333139,7 +333142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14c16c242d342244b7286c11e5e93ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getLostDelay: 0.1
   onNotAvailable:
     m_PersistentCalls:
       m_Calls: []
@@ -373130,6 +373132,21 @@ MonoBehaviour:
   onTokenReceived:
     m_PersistentCalls:
       m_Calls: []
+  onFocusRefreshToken:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1570873013}
+        m_TargetAssemblyTypeName: AppManager, Assembly-CSharp
+        m_MethodName: CheckVersion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   emailError: "No confirmaste todav\xEDa tu correo electr\xF3nico. Por favor, busca
     en tu correo y presiona el enlace de confirmaci\xF3n. Si no lo encuentras el
     correo, busca en tu carpeta de Spams.\r"

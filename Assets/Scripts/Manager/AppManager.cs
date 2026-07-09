@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 using Leap.Core.Tools;
 using Leap.Core.Debug;
-using Leap.Core.Security;
+using Leap.Data.Collections;
 using Leap.Data.Web;
 using Leap.UI.Page;
 using Leap.UI.Dialog;
@@ -14,9 +14,15 @@ using Sirenix.OdinInspector;
 
 public class AppManager : SingletonBehaviour<AppManager>
 {
-    //[Title("Temporary")]
-    //[SerializeField]
-    //private ValueList valueList = null;
+    [Title("Loaing")]
+    [SerializeField]
+    private Page pagLoading = null;
+    [SerializeField]
+    private Animator loadingAnimator = null;
+
+    [Title("ValueLists Filtered")]
+    [SerializeField, LabelText(" ")]
+    private ValueList[] vllFiltered = null;
 
     [Title("Event")]
     [SerializeField]
@@ -44,6 +50,11 @@ public class AppManager : SingletonBehaviour<AppManager>
         startService.StartBoard(publicKey, Application.version);
     }
 
+    public void CheckVersion()
+    {
+        startService.StartBoard(null, Application.version);
+    }
+
     public void ApplyStart(StartResponse response)
     {
         startResponse = response;
@@ -66,29 +77,19 @@ public class AppManager : SingletonBehaviour<AppManager>
 
     private void GoToLink()
     {
+        loadingAnimator.enabled = false;
+        PageManager.Instance.ChangePage(pagLoading);
+        LaunchLink();
+    }
+
+    private void LaunchLink()
+    {
         if (startResponse.Link == null)
             return;
 
-        String[] links = startResponse.Link.Split('|');
-
-#if UNITY_IOS
-        if (links.Length > 1)
-        {
-            if (links[1] == "<None>")
-                return;
-            Application.OpenURL(links[1]);
-        }
-        else
-        {
-            if (links[0] == "<None>")
-                return;
-            Application.OpenURL(links[0]);
-        }
-#else
-        if (links[0] == "<None>")
+        if (startResponse.Link == "<None>")
             return;
-        Application.OpenURL(links[0]);
-#endif
+        Application.OpenURL(startResponse.Link);
     }
 
     private void StartLink()
@@ -132,6 +133,9 @@ public class AppManager : SingletonBehaviour<AppManager>
     // Start
     public void StartBoard()
     {
+        for (int i = 0; i < vllFiltered.Length; i++)
+            vllFiltered[i].RefreshRecords();
+
         onStart.Invoke();
     }
 
