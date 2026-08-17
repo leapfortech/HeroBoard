@@ -68,7 +68,7 @@
         "com.lefortech.core.tools": "https://github.com/leapfortech/LeapCoreTools.git",
         "com.lefortech.core.security": "https://github.com/leapfortech/LeapCoreSecurity.git"
       },
-      "hash": "8a69def38f7d631627417c9b58e457313d3173e1"
+      "hash": "d0c07f7e508baa782ea07c2804b1f0fb7703bb66"
     },
     "com.lefortech.graphics.collections": {
       "version": "https://github.com/leapfortech/LeapGraphicsCollections.git",
