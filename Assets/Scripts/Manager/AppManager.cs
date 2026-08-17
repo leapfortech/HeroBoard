@@ -100,6 +100,9 @@ public class AppManager : SingletonBehaviour<AppManager>
 
     private void ContinueStart()
     {
+        if (startResponse.Certificates == null)
+            return;
+
         CertificateManager.Instance.SetCertificate(startResponse.Certificates);
     }
 
