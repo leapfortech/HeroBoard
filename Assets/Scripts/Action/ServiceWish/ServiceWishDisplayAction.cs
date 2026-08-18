@@ -171,7 +171,7 @@ public class ServiceWishDisplayAction : MonoBehaviour
 
         for (int i = 0; i < serviceWishAllRsp.ServiceWishInfos.Count; i++)
         {
-            ListScrollerValue value = new ListScrollerValue(3, true);
+            ListScrollerValue value = new ListScrollerValue(lstServiceWish.ListItem, true);
 
             value.SetText(0, vllServiceWishType.FindRecordCellString(serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.ServiceTypeId, "Name"));
             value.SetText(1, serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.Comment);

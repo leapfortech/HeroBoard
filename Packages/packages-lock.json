@@ -46,7 +46,7 @@
         "com.lefortech.ui.elements": "https://github.com/leapfortech/LeapUIElements.git",
         "com.lefortech.ui.page": "https://github.com/leapfortech/LeapUIPage.git"
       },
-      "hash": "a598d72a740d7f356b7106aa70c48b374f3801a2"
+      "hash": "0dec3aea906b97f81a9c96d02721417efd66ce03"
     },
     "com.lefortech.data.remote": {
       "version": "https://github.com/leapfortech/LeapDataRemote.git",
@@ -58,7 +58,7 @@
         "com.lefortech.data.collections": "https://github.com/leapfortech/LeapDataCollections.git",
         "com.lefortech.data.web": "https://github.com/leapfortech/LeapDataWeb.git"
       },
-      "hash": "0829969a00cf9e0c82f4149c79e8dfa62e7b93ea"
+      "hash": "bc2f2d00729e8860ca08c22a2bb226e2ba36ca5a"
     },
     "com.lefortech.data.web": {
       "version": "https://github.com/leapfortech/LeapDataWeb.git",
@@ -68,7 +68,7 @@
         "com.lefortech.core.tools": "https://github.com/leapfortech/LeapCoreTools.git",
         "com.lefortech.core.security": "https://github.com/leapfortech/LeapCoreSecurity.git"
       },
-      "hash": "d0c07f7e508baa782ea07c2804b1f0fb7703bb66"
+      "hash": "7746000cf1f4c91162f09049a273f74df4a9b8a2"
     },
     "com.lefortech.graphics.collections": {
       "version": "https://github.com/leapfortech/LeapGraphicsCollections.git",
@@ -99,7 +99,7 @@
         "com.lefortech.ui.elements": "https://github.com/leapfortech/LeapUIElements.git#1.5.8",
         "com.lefortech.ui.page": "https://github.com/leapfortech/LeapUIPage.git#1.2.3"
       },
-      "hash": "67b89a35923e26d0204c787b7be7aa35fde80c27"
+      "hash": "379af8d8be566d156fedb9aa9e3f194b51467026"
     },
     "com.lefortech.ui.elements": {
       "version": "https://github.com/leapfortech/LeapUIElements.git",
@@ -108,7 +108,7 @@
       "dependencies": {
         "com.lefortech.core.tools": "https://github.com/leapfortech/LeapCoreTools.git"
       },
-      "hash": "e19d2fa1bdf98bc6a441668b20ea362da4ac9a9b"
+      "hash": "7dc9e81a850b835e6e6c06e0859375644e6267ed"
     },
     "com.lefortech.ui.extensions": {
       "version": "https://github.com/leapfortech/LeapUIExtensions.git",
@@ -123,7 +123,7 @@
         "com.lefortech.ui.dialog": "https://github.com/leapfortech/LeapUIDialog.git",
         "com.lefortech.ui.page": "https://github.com/leapfortech/LeapUIPage.git"
       },
-      "hash": "bf947ba739fc7f00ed93a34ba7f3d172d7e81ab1"
+      "hash": "3e62cf9213b4b407108eb2b797d5375eb6e4a3c9"
     },
     "com.lefortech.ui.page": {
       "version": "https://github.com/leapfortech/LeapUIPage.git",

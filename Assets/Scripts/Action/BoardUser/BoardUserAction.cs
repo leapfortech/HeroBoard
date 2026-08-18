@@ -187,7 +187,7 @@ public class BoardUserAction : MonoBehaviour
 
             //Idx[item.BoardUser.Id] = i;
 
-            ListScrollerValue value = new ListScrollerValue(4, true);
+            ListScrollerValue value = new ListScrollerValue(lstBoardUsers.ListItem, true);
             value.SetText(0, item.WebSysUser.AuthUserId);
             value.SetText(1, item.Identity != null ? item.Identity.GetFullName() : "-");
 
@@ -309,7 +309,7 @@ public class BoardUserAction : MonoBehaviour
 
         for (int i = 0; i < roles.Count; i++)
         {
-            ListScrollerValue value = new ListScrollerValue(1, true);
+            ListScrollerValue value = new ListScrollerValue(lstRoles.ListItem, true);
             value.SetText(0, vllRole.FindRecordCellString(0, roles[i], 1));
             lstRoles.AddValue(value);
         }
