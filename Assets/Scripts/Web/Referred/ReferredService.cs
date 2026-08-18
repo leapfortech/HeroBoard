@@ -34,9 +34,12 @@ public class ReferredService : MonoBehaviour
     private UnityLongEvent onUpdated = null;
 
 
-    [Title("Error")]
+    [Title("Errors")]
     [SerializeField]
     private UnityStringEvent onResponseError = null;
+
+    [SerializeField]
+    private UnityStringEvent onTimeoutError = null;
 
 
     // GET
@@ -50,7 +53,7 @@ public class ReferredService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onRetreived.Invoke(op.referreds);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             referredsGetOp.Send();
         }
@@ -71,7 +74,7 @@ public class ReferredService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onFullAllRetreived.Invoke(op.rsp);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             referredFullAllPostOp.Send();
         }
@@ -92,7 +95,7 @@ public class ReferredService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onRetreived.Invoke(op.referreds);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             referredGetOp.Send();
         }
@@ -113,7 +116,7 @@ public class ReferredService : MonoBehaviour
     //            if (response != null && !response.HasError)
     //                onRetreived.Invoke(op.referreds);
     //            else
-    //                onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+    //                WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
     //        });
     //        historyGetOp.Send();
     //    }
@@ -134,7 +137,7 @@ public class ReferredService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onIdRetreived.Invoke(Convert.ToInt64(op.response));
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             idByCodeGetOp.Send();
         }
@@ -156,7 +159,7 @@ public class ReferredService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onRegistered.Invoke(op.referredIds);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             referredRegisterOp.Send();
         }
@@ -178,7 +181,7 @@ public class ReferredService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onUpdated.Invoke(op.referredlId);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             referredPutOp.Send();
         }

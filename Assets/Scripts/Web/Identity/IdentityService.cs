@@ -37,9 +37,12 @@ public class IdentityService : MonoBehaviour
     [SerializeField]
     private UnityEvent onPortraitUpdated = null;
 
-    [Title("Error")]
+    [Title("Errors")]
     [SerializeField]
     private UnityStringEvent onResponseError = null;
+
+    [SerializeField]
+    private UnityStringEvent onTimeoutError = null;
 
     // GET
     public void GetAll(int status)
@@ -53,7 +56,7 @@ public class IdentityService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onIdentitysRetreived.Invoke(op.identitys);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             identitysGetOp.Send();
         }
@@ -74,7 +77,7 @@ public class IdentityService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onIdentityFullsRetreived.Invoke(op.identityFulls);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             identityFullsGetOp.Send();
         }
@@ -95,7 +98,7 @@ public class IdentityService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onIdentityRetreived.Invoke(op.identity);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             identityGetOp.Send();
         }
@@ -117,7 +120,7 @@ public class IdentityService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onIdentityRetreived.Invoke(op.identity);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             identityAppUserGetOp.Send();
         }
@@ -138,7 +141,7 @@ public class IdentityService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onPortraitRetreived.Invoke(op.portrait[1..(op.portrait.Length - 1)]);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             portraitAppUserGetOp.Send();
         }
@@ -163,7 +166,7 @@ public class IdentityService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onPortraitUpdated.Invoke();
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             identityPortraitPutOp.Send();
         }

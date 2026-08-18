@@ -6448,19 +6448,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &31640071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9067,19 +9058,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &41006250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23202,6 +23184,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 133297697}
+        m_TargetAssemblyTypeName: Leap.Data.Remote.CatalogManager, Leap.Data.Remote
+        m_MethodName: OnGenValuesResponseError
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 328842198}
+        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
+        m_MethodName: Info
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &133297702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23230,6 +23239,21 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   onResponseError:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 133297702}
+        m_TargetAssemblyTypeName: AppParamService, Assembly-CSharp
+        m_MethodName: GetParams
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onTimeoutError:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 133297702}
@@ -45521,19 +45545,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &269228288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74595,19 +74610,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &420242544
 RectTransform:
   m_ObjectHideFlags: 0
@@ -83707,19 +83713,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &478225119
 RectTransform:
   m_ObjectHideFlags: 0
@@ -84848,19 +84845,10 @@ MonoBehaviour:
         m_CallState: 2
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &482299098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88311,19 +88299,10 @@ MonoBehaviour:
         m_CallState: 2
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &502047889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -125320,19 +125299,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &712255337 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1094026821316255048, guid: 82dab54e5336f1d4ca787b8742acccd9, type: 3}
@@ -128800,19 +128770,10 @@ MonoBehaviour:
         m_CallState: 2
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &727181043
 RectTransform:
   m_ObjectHideFlags: 0
@@ -139494,19 +139455,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &777361166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141368,19 +141320,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &789381953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141416,19 +141359,10 @@ MonoBehaviour:
         m_CallState: 2
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &789381956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141488,19 +141422,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &790101132 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -5495360666246659268, guid: debaa669a57363b41ac8c04ce894af12, type: 3}
@@ -175041,19 +174966,10 @@ MonoBehaviour:
         m_CallState: 2
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &983097565 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1094026821316255048, guid: 82dab54e5336f1d4ca787b8742acccd9, type: 3}
@@ -188576,6 +188492,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1066486788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208923,6 +208842,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1188863418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214500,19 +214422,10 @@ MonoBehaviour:
         m_CallState: 2
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1222763322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219095,19 +219008,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &1254633783
 RectTransform:
   m_ObjectHideFlags: 0
@@ -226455,19 +226359,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &1305286613
 RectTransform:
   m_ObjectHideFlags: 0
@@ -229327,19 +229222,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1319444808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229443,19 +229329,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1320639182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230790,19 +230667,10 @@ MonoBehaviour:
         m_CallState: 2
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1327456144
 GameObject:
   m_ObjectHideFlags: 0
@@ -230895,19 +230763,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &1327456147
 RectTransform:
   m_ObjectHideFlags: 0
@@ -243086,19 +242945,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1404376561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244641,19 +244491,10 @@ MonoBehaviour:
         m_CallState: 2
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1410642011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244707,19 +244548,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1411465648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -250150,19 +249982,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &1432922273
 RectTransform:
   m_ObjectHideFlags: 0
@@ -271438,19 +271261,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1555119104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -274178,6 +273992,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1571590865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -281993,19 +281810,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &1611547597
 RectTransform:
   m_ObjectHideFlags: 0
@@ -286870,19 +286678,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1635827179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297423,19 +297222,10 @@ MonoBehaviour:
         m_CallState: 2
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1695592247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -305721,19 +305511,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &1735039959 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1094026821316255048, guid: 664c1bd1574bec34e84216bce78a636c, type: 3}
@@ -316300,19 +316081,10 @@ MonoBehaviour:
         m_CallState: 2
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1787625003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328617,19 +328389,10 @@ MonoBehaviour:
         m_CallState: 2
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1849046927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329825,19 +329588,10 @@ MonoBehaviour:
         m_CallState: 2
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1860218570
 GameObject:
   m_ObjectHideFlags: 0
@@ -333130,6 +332884,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1870247433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333148,7 +332905,10 @@ MonoBehaviour:
   onAppleBrowser:
     m_PersistentCalls:
       m_Calls: []
-  onDenied:
+  onInitDenied:
+    m_PersistentCalls:
+      m_Calls: []
+  onStatus:
     m_PersistentCalls:
       m_Calls: []
   onTokenReceived:
@@ -343785,19 +343545,10 @@ MonoBehaviour:
       m_Calls: []
   onResponseError:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 328842198}
-        m_TargetAssemblyTypeName: Leap.UI.Dialog.ChoiceDialog, Leap.UI.Dialog
-        m_MethodName: Error
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1925942929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -373068,6 +372819,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2090632180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373234,7 +372988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   environment: 0
   logLevel: 100
-  defaultTimeout: 30
+  timeoutDelay: 30
   mainSettings: {fileID: 11400000, guid: 60472fcb14ff01f47b9119b532f5f407, type: 2}
   firebaseSettings: {fileID: 11400000, guid: e03a4e432d06efd4990e509d2bb322f9, type: 2}
   cybersourceSettings: {fileID: 0}
@@ -373268,10 +373022,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onTimeoutError:
+    m_PersistentCalls:
+      m_Calls: []
   noInternetError: "No cuentas con conexi\xF3n a Internet.\r\nRev\xEDsala y prueba
     de nuevo."
   baseConnectionError: "Fall\xF3 la Comunicaci\xF3n con el Servidor.\r\nPor favor,
     intenta de nuevo."
+  timeoutError: "La petici\xF3n excedi\xF3 el tiempo de expera.\nRevisa tu conexi\xF3n
+    a Internet y prueba de nuevo."
 --- !u!4 &2090632184
 Transform:
   m_ObjectHideFlags: 0
