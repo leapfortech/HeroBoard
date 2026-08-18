@@ -32,9 +32,12 @@ public class BoardUserService : MonoBehaviour
     [SerializeField]
     private UnityEvent onStatusUpdated = null;
 
-    [Title("Error")]
+    [Title("Errors")]
     [SerializeField]
     private UnityStringEvent onResponseError = null;
+
+    [SerializeField]
+    private UnityStringEvent onTimeoutError = null;
 
     // GET
     //public void GetFullsByStatus(int status)
@@ -48,7 +51,7 @@ public class BoardUserService : MonoBehaviour
     //            if (response != null && !response.HasError)
     //                onFullsRetreived.Invoke(op.boardUserFulls);
     //            else
-    //                onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+    //                WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
     //        });
     //        boardUsersFullGetOp.Send();
     //    }
@@ -69,7 +72,7 @@ public class BoardUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onRetreived.Invoke(op.boardUser);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             boardUserGetOp.Send();
         }
@@ -89,7 +92,7 @@ public class BoardUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onCount.Invoke(Convert.ToInt32(op.count));
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             boardUsersCountGetOp.Send();
         }
@@ -109,7 +112,7 @@ public class BoardUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onCount.Invoke(Convert.ToInt32(op.count));
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             boardUsersCountGetOp.Send();
         }
@@ -130,7 +133,7 @@ public class BoardUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onFullAllRetreived.Invoke(op.rsp);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             boardUserFullAllByNamePostOp.Send();
         }
@@ -152,7 +155,7 @@ public class BoardUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onUpdated.Invoke();
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             boardUserFullPutOp.Send();
         }
@@ -173,7 +176,7 @@ public class BoardUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onUpdated.Invoke();
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             boardUserPutOp.Send();
         }
@@ -195,7 +198,7 @@ public class BoardUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onStatusUpdated.Invoke();
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             statusPutOp.Send();
         }

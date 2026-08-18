@@ -48,9 +48,12 @@ public class AppUserService : MonoBehaviour
     [SerializeField]
     private UnityEvent onStatusUpdated = null;
 
-    [Title("Error")]
+    [Title("Errors")]
     [SerializeField]
     private UnityStringEvent onResponseError = null;
+
+    [SerializeField]
+    private UnityStringEvent onTimeoutError = null;
 
     // GET
     public void GetFullsByStatus(int status)
@@ -64,7 +67,7 @@ public class AppUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onAppUserFullsRetreived.Invoke(op.appUserFulls);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             appUserFullsGetOp.Send();
         }
@@ -85,7 +88,7 @@ public class AppUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onUserInfoAllRetreived.Invoke(op.rsp);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             userInfoAllPostOp.Send();
         }
@@ -105,7 +108,7 @@ public class AppUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onAppUsersCount.Invoke(Convert.ToInt32(op.count));
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             appUsersCountGetOp.Send();
         }
@@ -128,7 +131,7 @@ public class AppUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onAppUsersRetreived.Invoke(op.appUsersNamed);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             appUsersGetOp.Send();
         }
@@ -148,7 +151,7 @@ public class AppUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onAppUsersCount.Invoke(Convert.ToInt32(op.count));
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             appUsersCountGetOp.Send();
         }
@@ -169,7 +172,7 @@ public class AppUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onAppUserRetreived.Invoke(op.appUser);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             appUserGetOp.Send();
         }
@@ -191,7 +194,7 @@ public class AppUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onUpdated.Invoke();
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             appUserPutOp.Send();
         }
@@ -212,7 +215,7 @@ public class AppUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onPhoneUpdated.Invoke();
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             phonePutOp.Send();
         }
@@ -234,7 +237,7 @@ public class AppUserService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onStatusUpdated.Invoke();
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             statusPutOp.Send();
         }

@@ -26,9 +26,12 @@ public class AddressService : MonoBehaviour
     [SerializeField]
     private UnityLongEvent onUpdated = null;
 
-    [Title("Error")]
+    [Title("Errors")]
     [SerializeField]
     private UnityStringEvent onResponseError = null;
+
+    [SerializeField]
+    private UnityStringEvent onTimeoutError = null;
 
 
     // GET
@@ -43,7 +46,7 @@ public class AddressService : MonoBehaviour
     //            if (response != null && !response.HasError)
     //                onRetreived.Invoke(op.address);
     //            else
-    //                onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+    //                WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
     //        });
     //        addressGetOp.Send();
     //    }
@@ -66,7 +69,7 @@ public class AddressService : MonoBehaviour
     //            if (response != null && !response.HasError)
     //                onRegistered.Invoke(Convert.ToInt32(op.id));
     //            else
-    //                onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+    //                WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
     //        });
     //        addressRegisterPostOp.Send();
     //    }
@@ -88,7 +91,7 @@ public class AddressService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onAdded.Invoke(Convert.ToInt32(op.id));
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             addressPostOp.Send();
         }
@@ -112,7 +115,7 @@ public class AddressService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onUpdated.Invoke(Convert.ToInt64(op.id));
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             addressPutOp.Send();
         }

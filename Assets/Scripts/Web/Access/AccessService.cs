@@ -22,9 +22,12 @@ public class AccessService : MonoBehaviour
     [SerializeField]
     private UnityLongEvent onRegistered = null;
 
-    [Title("Error")]
+    [Title("Errors")]
     [SerializeField]
     private UnityStringEvent onResponseError = null;
+
+    [SerializeField]
+    private UnityStringEvent onTimeoutError = null;
 
     public void LoginBoard(String email, String version)
     {
@@ -37,7 +40,7 @@ public class AccessService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onLogged.Invoke(op.loginResponse);
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             loginPostOp.Send();
         }
@@ -59,7 +62,7 @@ public class AccessService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onRegistered.Invoke(long.Parse(op.customerId));
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             registerPostOp.Send();
         }

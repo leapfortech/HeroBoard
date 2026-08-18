@@ -18,9 +18,12 @@ public class PhoneService : MonoBehaviour
     [SerializeField]
     private UnityStringEvent onValidated = null;
 
-    [Title("Error")]
+    [Title("Errors")]
     [SerializeField]
     private UnityStringEvent onResponseError = null;
+
+    [SerializeField]
+    private UnityStringEvent onTimeoutError = null;
 
     // REGISTER
     public void RegisterPhone(long phoneCountryId, String phoneNumber)
@@ -36,7 +39,7 @@ public class PhoneService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onRegistered.Invoke(registerPhonePostOp.result.Replace("\"", ""));
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             registerPhonePostOp.Send();
         }
@@ -59,7 +62,7 @@ public class PhoneService : MonoBehaviour
                 if (response != null && !response.HasError)
                     onValidated.Invoke(validateCodePostOp.result.Replace("\"", ""));
                 else
-                    onResponseError.Invoke(response.Text.Length == 0 ? response.Error : response.Text);
+                    WebManager.Instance.OnResponseError(response, onResponseError, onTimeoutError);
             });
             validateCodePostOp.Send();
         }
