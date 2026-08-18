@@ -159,7 +159,6 @@ public class ReferredAction : MonoBehaviour
             ListScrollerValue value = new ListScrollerValue(lstReferreds.ListItem, true);
             value.SetText(0, item.Code);
             value.SetText(1, $"{item.FirstName1} {item.LastName1}");
-            value.SetText(2, item.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
 
             lstReferreds.AddValue(value);
         }

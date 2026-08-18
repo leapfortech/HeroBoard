@@ -56,6 +56,7 @@ MonoBehaviour:
   - {fileID: 4125566168736354237}
   - {fileID: 8546078708215872405}
   buttons: []
+  toggles: []
   toggle: {fileID: 3598043188102524547}
 --- !u!114 &7387712778041804329
 MonoBehaviour:
