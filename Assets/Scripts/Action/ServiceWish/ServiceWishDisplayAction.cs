@@ -174,7 +174,7 @@ public class ServiceWishDisplayAction : MonoBehaviour
             ListScrollerValue value = new ListScrollerValue(lstServiceWish.ListItem, true);
 
             value.SetText(0, vllServiceWishType.FindRecordCellString(serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.ServiceTypeId, "Name"));
-            value.SetText(1, serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.Comment);
+            value.SetText(1, serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.Wish);
             value.SetText(2, serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
 
             lstServiceWish.AddValue(value);
@@ -283,7 +283,7 @@ public class ServiceWishDisplayAction : MonoBehaviour
                 }
                 else if (sortOption == 3 || sortOption == 4) // Comment
                 {
-                    compare = String.Compare(a.Comment, b.Comment, StringComparison.OrdinalIgnoreCase);
+                    compare = String.Compare(a.Wish, b.Wish, StringComparison.OrdinalIgnoreCase);
                 }
                 else if (sortOption == 5 || sortOption == 6) // Date
                 {
