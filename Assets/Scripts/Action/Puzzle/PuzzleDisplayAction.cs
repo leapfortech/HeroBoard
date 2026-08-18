@@ -161,16 +161,16 @@ public class PuzzleDisplayAction : MonoBehaviour
         txtEmpty.gameObject.SetActive(false);
 
         for (int i = 0; i < rsp.PuzzleInfos.Count; i++)
-            lstPuzzle.AddValue(CreateValue(rsp.PuzzleInfos[i]));
+            lstPuzzle.AddValue(CreateValue(lstPuzzle.ListItem, rsp.PuzzleInfos[i]));
 
         lstPuzzle.ApplyValues();
 
         StateManager.Instance.BoardLoadHide();
     }
 
-    private ListScrollerValue CreateValue(PuzzleInfo puzzleInfo)
+    private ListScrollerValue CreateValue(ListItem listItem, PuzzleInfo puzzleInfo)
     {
-        ListScrollerValue value = new ListScrollerValue(12, true);
+        ListScrollerValue value = new ListScrollerValue(listItem, true);
 
         value.SetText(0, puzzleInfo.Puzzle.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
         value.SetSprite(1, vllCountryFlag.FindRecordCellSprite(puzzleInfo.Puzzle.CountryId, "Flag"));

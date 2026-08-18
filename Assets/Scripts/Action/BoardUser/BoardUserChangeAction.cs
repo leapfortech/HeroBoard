@@ -186,7 +186,7 @@ public class BoardUserChangeAction : MonoBehaviour
         {
             //Idx[lstRoles[idx].Id] = idx;
 
-            lstRoleValue = new ListScrollerValue(1, true);
+            lstRoleValue = new ListScrollerValue(lstRoles.ListItem, true);
             lstRoleValue.SetText(0, vllRole.FindRecordCellString(0, roles[idx], 1));
 
             lstRoles.AddValue(lstRoleValue);

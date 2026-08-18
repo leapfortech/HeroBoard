@@ -155,17 +155,16 @@ public class AppUserAction : MonoBehaviour
 
         for (int i = 0; i < userInfos.Count; i++)
         {
-            ListScrollerValue value = new ListScrollerValue(4, true);
+            ListScrollerValue value = new ListScrollerValue(lstAppUsers.ListItem, true);
 
             AppUserFull app = userInfos[i].AppUserFull;
             IdentityFull idt = userInfos[i].IdentityFull;
 
             value.SetText(0, app.Alias);
 
-            value.SetText(1,
-                IsRegisteredPhone(app.Email)
-                ? app.PhonePrefix + " " + app.Phone
-                : app.Email
+            value.SetText(1, IsRegisteredPhone(app.Email)
+                                ? app.PhonePrefix + " " + app.Phone
+                                : app.Email
             );
 
             value.SetSprite(2, idt == null ? sprEmpty : sprOnboarded);

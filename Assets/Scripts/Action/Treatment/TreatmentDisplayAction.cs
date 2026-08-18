@@ -137,7 +137,7 @@ public class TreatmentDisplayAction : MonoBehaviour
         // Disease
         for (int i = 0; i < treatmentFull.DiseaseFulls.Count; i++)
         {
-            ListScrollerValue value = new ListScrollerValue(1, true);
+            ListScrollerValue value = new ListScrollerValue(lstDisease.ListItem, true);
             value.SetText(0, vllDisease.FindRecordCellString(treatmentFull.DiseaseFulls[i].DiseaseTypeId, "Name"));
 
             lstDisease.AddValue(value);

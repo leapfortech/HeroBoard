@@ -147,7 +147,7 @@ public class PostDisplayAction : MonoBehaviour
 
         for (int i = 0; i < postFullsPagedResponse.PostFulls.Count; i++)
         {
-            ListScrollerValue value = new ListScrollerValue(4, true);
+            ListScrollerValue value = new ListScrollerValue(lstPost.ListItem, true);
 
             value.SetText(0, postFullsPagedResponse.PostFulls[i].Title);
             value.SetText(1, postFullsPagedResponse.PostFulls[i].PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
