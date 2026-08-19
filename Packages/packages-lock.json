@@ -23,7 +23,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "1ca3c065ec139be502f5d81470836367e0f29886"
+      "hash": "af409c029c3c3184e1c7f8ede6e0ff7885d1d025"
     },
     "com.lefortech.data.collections": {
       "version": "https://github.com/leapfortech/LeapDataCollections.git",
@@ -68,7 +68,7 @@
         "com.lefortech.core.tools": "https://github.com/leapfortech/LeapCoreTools.git",
         "com.lefortech.core.security": "https://github.com/leapfortech/LeapCoreSecurity.git"
       },
-      "hash": "7746000cf1f4c91162f09049a273f74df4a9b8a2"
+      "hash": "8d86396adea923015c8acc8749e9de8f9b87a593"
     },
     "com.lefortech.graphics.collections": {
       "version": "https://github.com/leapfortech/LeapGraphicsCollections.git",
@@ -108,7 +108,7 @@
       "dependencies": {
         "com.lefortech.core.tools": "https://github.com/leapfortech/LeapCoreTools.git"
       },
-      "hash": "7dc9e81a850b835e6e6c06e0859375644e6267ed"
+      "hash": "dfa6786eac53f45ff6e2b33171aa64368ec956ac"
     },
     "com.lefortech.ui.extensions": {
       "version": "https://github.com/leapfortech/LeapUIExtensions.git",
