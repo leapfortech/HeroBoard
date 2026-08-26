@@ -122,12 +122,9 @@ public class StateManager : SingletonBehaviour<StateManager>
     }
 
     private Dictionary<long, List<Sprite>> taleImagesDic = new Dictionary<long, List<Sprite>>();
-    public void AddTaleImages(long taleId, String[] stgImages)
+    public void AddTaleImages(long taleId, List<Sprite> images)
     {
-        List<Sprite> taleImages = new List<Sprite>();
-        for (int i = 0; i < stgImages.Length; i++)
-            taleImages.Add(stgImages[i].CreateSprite($"TaleImages_{i}"));
-        taleImagesDic.Add(taleId, taleImages);
+        taleImagesDic.Add(taleId, images);
     }
 
     // Treatment
@@ -190,12 +187,9 @@ public class StateManager : SingletonBehaviour<StateManager>
     }
 
     private Dictionary<long, List<Sprite>> treatmentImagesDic = new Dictionary<long, List<Sprite>>();
-    public void AddTreatmentImages(long treatmentId, String[] stgImages)
+    public void AddTreatmentImages(long treatmentId, List<Sprite> images)
     {
-        List<Sprite> treatmentImages = new List<Sprite>();
-        for (int i = 0; i < stgImages.Length; i++)
-            treatmentImages.Add(stgImages[i].CreateSprite($"TreatmentImages_{i}"));
-        treatmentImagesDic.Add(treatmentId, treatmentImages);
+        treatmentImagesDic.Add(treatmentId, images);
     }
 
     // Radio
@@ -258,12 +252,9 @@ public class StateManager : SingletonBehaviour<StateManager>
     }
 
     private Dictionary<long, List<Sprite>> radioImagesDic = new Dictionary<long, List<Sprite>>();
-    public void AddRadioImages(long radioId, String[] stgImages)
+    public void AddRadioImages(long radioId, List<Sprite> images)
     {
-        List<Sprite> radioImages = new List<Sprite>();
-        for (int i = 0; i < stgImages.Length; i++)
-            radioImages.Add(stgImages[i].CreateSprite($"RadioImages_{i}"));
-        radioImagesDic.Add(radioId, radioImages);
+        radioImagesDic.Add(radioId, images);
     }
 
     // Product
@@ -326,12 +317,9 @@ public class StateManager : SingletonBehaviour<StateManager>
     }
 
     private Dictionary<long, List<Sprite>> productImagesDic = new Dictionary<long, List<Sprite>>();
-    public void AddProductImages(long productId, String[] stgImages)
+    public void AddProductImages(long productId, List<Sprite> images)
     {
-        List<Sprite> productImages = new List<Sprite>();
-        for (int i = 0; i < stgImages.Length; i++)
-            productImages.Add(stgImages[i].CreateSprite($"ProductImages_{i}"));
-        productImagesDic.Add(productId, productImages);
+        productImagesDic.Add(productId, images);
     }
 
     // Happening
@@ -394,12 +382,9 @@ public class StateManager : SingletonBehaviour<StateManager>
     }
 
     private Dictionary<long, List<Sprite>> happeningImagesDic = new Dictionary<long, List<Sprite>>();
-    public void AddHappeningImages(long happeningId, String[] stgImages)
+    public void AddHappeningImages(long happeningId, List<Sprite> images)
     {
-        List<Sprite> happeningImages = new List<Sprite>();
-        for (int i = 0; i < stgImages.Length; i++)
-            happeningImages.Add(stgImages[i].CreateSprite($"HappeningImages_{i}"));
-        happeningImagesDic.Add(happeningId, happeningImages);
+        happeningImagesDic.Add(happeningId, images);
     }
 
     // News
@@ -462,12 +447,9 @@ public class StateManager : SingletonBehaviour<StateManager>
     }
 
     private Dictionary<long, List<Sprite>> newsImagesDic = new Dictionary<long, List<Sprite>>();
-    public void AddNewsImages(long newsId, String[] stgImages)
+    public void AddNewsImages(long newsId, List<Sprite> images)
     {
-        List<Sprite> newsImages = new List<Sprite>();
-        for (int i = 0; i < stgImages.Length; i++)
-            newsImages.Add(stgImages[i].CreateSprite($"NewsImages_{i}"));
-        newsImagesDic.Add(newsId, newsImages);
+        newsImagesDic.Add(newsId, images);
     }
 
     // Puzzle

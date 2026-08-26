@@ -93,7 +93,7 @@ public class TaleDisplayAction : MonoBehaviour
     {
         taleId = taleFull.Id;
         StateManager.Instance.AddTaleFull(taleFull);
-        StateManager.Instance.AddTaleImages(taleFull.Id, taleFull.Images);
+        StateManager.Instance.AddTaleImages(taleFull.Id, taleFull.ImageSprites);
         Display(taleFull);
     }
 

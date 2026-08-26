@@ -119,7 +119,7 @@ public class ProductDisplayAction : MonoBehaviour
     {
         productId = productFull.Id;
         StateManager.Instance.AddProductFull(productFull);
-        StateManager.Instance.AddProductImages(productFull.Id, productFull.Images);
+        StateManager.Instance.AddProductImages(productFull.Id, productFull.ImageSprites);
         Display(productFull);
     }
 

@@ -108,7 +108,7 @@ public class TreatmentDisplayAction : MonoBehaviour
     {
         treatmentId = treatmentFull.Id;
         StateManager.Instance.AddTreatmentFull(treatmentFull);
-        StateManager.Instance.AddTreatmentImages(treatmentFull.Id, treatmentFull.Images);
+        StateManager.Instance.AddTreatmentImages(treatmentFull.Id, treatmentFull.ImageSprites);
         Display(treatmentFull);
     }
 

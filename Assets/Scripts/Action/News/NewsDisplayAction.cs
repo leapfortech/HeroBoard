@@ -128,7 +128,7 @@ public class NewsDisplayAction : MonoBehaviour
         url = newsFull.LinkFulls[0].Url;
 
         StateManager.Instance.AddNewsFull(newsFull);
-        StateManager.Instance.AddNewsImages(newsFull.Id, newsFull.Images);
+        StateManager.Instance.AddNewsImages(newsFull.Id, newsFull.ImageSprites);
         Display(newsFull);
     }
 
