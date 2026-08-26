@@ -26,6 +26,8 @@ public class ServiceWishDisplayAction : MonoBehaviour
     [SerializeField]
     ValueList vllServiceWishType = null;
     [SerializeField]
+    ValueList vllServiceWishOption = null;
+    [SerializeField]
     ValueList vllCountry = null;
     [SerializeField]
     ValueList vllState = null;
@@ -166,16 +168,18 @@ public class ServiceWishDisplayAction : MonoBehaviour
         lstServiceWish.ClearValues();
 
         SortItems(rsp.ServiceWishInfos);
-        
+
         txtEmpty.gameObject.SetActive(false);
 
         for (int i = 0; i < serviceWishAllRsp.ServiceWishInfos.Count; i++)
         {
             ListScrollerValue value = new ListScrollerValue(lstServiceWish.ListItem, true);
 
+            long sWOptionId = serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.ServiceOptionId;
             value.SetText(0, vllServiceWishType.FindRecordCellString(serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.ServiceTypeId, "Name"));
-            value.SetText(1, serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.Wish);
-            value.SetText(2, serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
+            value.SetText(1, sWOptionId == -1 ? "" : $"<b>Opción:</b> {vllServiceWishOption.FindRecordCellString(sWOptionId, "Name")}");
+            value.SetText(2, serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.Wish);
+            value.SetText(3, serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
 
             lstServiceWish.AddValue(value);
         }
