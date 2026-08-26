@@ -120,7 +120,7 @@ public class RadioDisplayAction : MonoBehaviour
         url = radioFull.LinkFulls[0].Url;
 
         StateManager.Instance.AddRadioFull(radioFull);
-        StateManager.Instance.AddRadioImages(radioFull.Id, radioFull.Images);
+        StateManager.Instance.AddRadioImages(radioFull.Id, radioFull.ImageSprites);
         Display(radioFull);
     }
 

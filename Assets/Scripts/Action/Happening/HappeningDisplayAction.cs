@@ -112,7 +112,7 @@ public class HappeningDisplayAction : MonoBehaviour
     {
         happeningId = happeningFull.Id;
         StateManager.Instance.AddHappeningFull(happeningFull);
-        StateManager.Instance.AddHappeningImages(happeningFull.Id, happeningFull.Images);
+        StateManager.Instance.AddHappeningImages(happeningFull.Id, happeningFull.ImageSprites);
         Display(happeningFull);
     }
 
