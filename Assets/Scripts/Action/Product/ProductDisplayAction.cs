@@ -25,8 +25,6 @@ public class ProductDisplayAction : MonoBehaviour
     [SerializeField]
     Text txtTitle = null;
     [SerializeField]
-    Text txtSummary = null;
-    [SerializeField]
     Text txtDescription = null;
 
     [SerializeField]
@@ -132,7 +130,6 @@ public class ProductDisplayAction : MonoBehaviour
         txtAlias.TextValue = $"Publicado por: <b>@{productFull.AppUserAlias}</b>";
         txtTitle.TextValue = String.IsNullOrWhiteSpace(productFull.Title) ? "-" : productFull.Title;
         txtDateTime.TextValue = productFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
-        txtSummary.TextValue = String.IsNullOrWhiteSpace(productFull.Summary) ? "-" : productFull.Summary;
         txtDescription.TextValue = String.IsNullOrWhiteSpace(productFull.Description) ? "-" : productFull.Description;
 
         // Product

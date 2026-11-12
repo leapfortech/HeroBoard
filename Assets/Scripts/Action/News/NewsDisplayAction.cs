@@ -25,8 +25,6 @@ public class NewsDisplayAction : MonoBehaviour
     [SerializeField]
     Text txtTitle = null;
     [SerializeField]
-    Text txtSummary = null;
-    [SerializeField]
     Text txtDescription = null;
 
     [SerializeField]
@@ -141,7 +139,6 @@ public class NewsDisplayAction : MonoBehaviour
         txtAlias.TextValue = $"Publicado por: <b>@{newsFull.AppUserAlias}</b>";
         txtTitle.TextValue = String.IsNullOrWhiteSpace(newsFull.Title) ? "-" : newsFull.Title;
         txtDateTime.TextValue = newsFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
-        txtSummary.TextValue = String.IsNullOrWhiteSpace(newsFull.Summary) ? "-" : newsFull.Summary;
         txtDescription.TextValue = String.IsNullOrWhiteSpace(newsFull.Description) ? "-" : newsFull.Description;
 
         String country = newsFull.PostCountryId == -1 ? "" : vllCountry.FindRecordCellString(newsFull.PostCountryId, "Name");

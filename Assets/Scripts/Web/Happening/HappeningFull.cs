@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-using UnityEngine;
-using Leap.Graphics.Tools;
-
 public class HappeningFull : PostFull
 {
     public long Id { get; set; }
@@ -19,41 +16,27 @@ public class HappeningFull : PostFull
     public String Location { get; set; }
     public double? Latitude { get; set; }
     public double? Longitude { get; set; }
+    public int Favorite { get; set; } = 0;
+    public int Selected { get; set; } = 0;
     public int Status { get; set; }
-    public String[] Images
-    {
-        get => null;
-        set
-        {
-            ImageSprites = new List<Sprite>();
-            for (int i = 0; i < value.Length; i++)
-                if (value[i] != null)
-                    ImageSprites.Add(value[i].CreateSprite("Happening_" + i.ToString("D02")));
-        }
-    }
-    public List<Sprite> ImageSprites { get; set; }
+
 
     public HappeningFull()
     {
     }
 
     public HappeningFull(long id, long postId, long appUserId, String appUserAlias,
-                            long postSubtypeId,
-                            long postCountryId, long postStateId,
-                            String title, String titleImage, String summary, String description,
-                            int imageCount, int favorite, int like, int likeCount, long reactionPhraseId,
-                            DateTime publicationDateTime, int postStatus,
-                            ContactFull contactFull, List<LinkFull> linkFulls, List<CommentFull> commentFulls,
-                            long happeningTypeId, long countryId, long stateId,
-                            int isPublic, int hasSignup, int hasPayment, String paymentDetails,
-                            DateTime? startDateTime, DateTime? endDateTime,
-                            String location, double? latitude, double? longitude,
-                            int status,
-                            String[] images)
-        : base(postId, appUserId, appUserAlias, postSubtypeId,
-                countryId, stateId, title, titleImage, summary, description,
-                imageCount, favorite, like, likeCount, reactionPhraseId, publicationDateTime, postStatus,
-                contactFull, linkFulls, commentFulls)
+                         long postTypeId, long postCountryId, long postStateId,
+                         String title, String titleImage, String description,
+                         int imageCount, int favoriteCount, int[] reactionCounts, long reactionPhraseId, int commentCount,
+                         DateTime publicationDateTime, int postStatus,
+                         AppUserInfo appUserInfo, ContactFull contactFull, List<LinkFull> linkFulls, List<CommentFull> commentFulls, String[] images,
+                         long happeningTypeId, long countryId, long stateId, int isPublic, int hasSignup, int hasPayment, String paymentDetails,
+                         DateTime? startDateTime, DateTime? endDateTime, String location, double? latitude, double? longitude,
+                         int favorite, int selected, int status)
+        : base(postId, appUserId, appUserAlias, postTypeId, postCountryId, postStateId, title, titleImage, description,
+               imageCount, favoriteCount, reactionCounts, reactionPhraseId, commentCount, publicationDateTime, postStatus,
+               appUserInfo, contactFull, linkFulls, commentFulls, images)
     {
         Id = id;
         HappeningTypeId = happeningTypeId;
@@ -68,8 +51,24 @@ public class HappeningFull : PostFull
         Location = location;
         Latitude = latitude;
         Longitude = longitude;
+        Favorite = favorite;
+        Selected = selected;
         Status = status;
-        Images = images;
+    }
+
+    public void Update(HappeningFull happeningFull)
+    {
+        Title = happeningFull.Title;
+        Description = happeningFull.Description;
+
+        HappeningTypeId = happeningFull.HappeningTypeId;
+
+        PostCountryId = happeningFull.PostCountryId;
+        PostStateId = happeningFull.PostStateId;
+
+        PaymentDetails = happeningFull.PaymentDetails;
+        StartDateTime = happeningFull.StartDateTime;
+        EndDateTime = happeningFull.EndDateTime;
+        Location = happeningFull.Location;
     }
 }
-

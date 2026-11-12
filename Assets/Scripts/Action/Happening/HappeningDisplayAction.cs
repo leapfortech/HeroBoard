@@ -25,8 +25,6 @@ public class HappeningDisplayAction : MonoBehaviour
     [SerializeField]
     Text txtTitle = null;
     [SerializeField]
-    Text txtSummary = null;
-    [SerializeField]
     Text txtDescription = null;
 
     [SerializeField]
@@ -125,7 +123,6 @@ public class HappeningDisplayAction : MonoBehaviour
         txtAlias.TextValue = $"Publicado por: <b>@{happeningFull.AppUserAlias}</b>";
         txtTitle.TextValue = String.IsNullOrWhiteSpace(happeningFull.Title) ? "-" : happeningFull.Title;
         txtDateTime.TextValue = happeningFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm");
-        txtSummary.TextValue = String.IsNullOrWhiteSpace(happeningFull.Summary) ? "-" : happeningFull.Summary;
         txtDescription.TextValue = String.IsNullOrWhiteSpace(happeningFull.Description) ? "-" : happeningFull.Description;
 
         // Happening

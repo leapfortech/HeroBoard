@@ -21,6 +21,8 @@ public class ServiceWishDisplayAction : MonoBehaviour
     Text txtBirthPlace = null;
     [SerializeField]
     Text txtAddress = null;
+    [SerializeField]
+    Text txtFullComment = null;
 
     [Title("Value")]
     [SerializeField]
@@ -178,7 +180,12 @@ public class ServiceWishDisplayAction : MonoBehaviour
             long sWOptionId = serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.ServiceOptionId;
             value.SetText(0, vllServiceWishType.FindRecordCellString(serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.ServiceTypeId, "Name"));
             value.SetText(1, sWOptionId == -1 ? "" : $"<b>Opción:</b> {vllServiceWishOption.FindRecordCellString(sWOptionId, "Name")}");
-            value.SetText(2, serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.Wish);
+
+            String wish = serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.Wish ?? "";
+            String[] lines = wish.Split('\n');
+
+            value.SetText(2, lines.Length > 3 ? String.Join("\n", lines, 0, 3) + "...": wish);
+
             value.SetText(3, serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
 
             lstServiceWish.AddValue(value);
@@ -254,6 +261,7 @@ public class ServiceWishDisplayAction : MonoBehaviour
         if (String.IsNullOrWhiteSpace(txtAddress.TextValue))
             txtAddress.TextValue = "-";
 
+        txtFullComment.TextValue = String.IsNullOrWhiteSpace(serviceWishAllRsp.ServiceWishInfos[idx].ServiceWish.Wish) ? "-" : serviceWishAllRsp.ServiceWishInfos[idx].ServiceWish.Wish;
     }
 
     public void SortChanged()
