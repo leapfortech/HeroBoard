@@ -2,10 +2,10 @@
 
 public class PuzzleAnswerFull
 {
-    public long Id { get; set; }
-    public String Description { get; set; }
-    public int IsCorrect { get; set; }
-    public int Status { get; set; }
+    public long Id { get; set; } = -1L;
+    public String Description { get; set; } = null;
+    public int IsCorrect { get; set; } = -1;
+    public int Status { get; set; } = -1;
 
     public PuzzleAnswerFull()
     {

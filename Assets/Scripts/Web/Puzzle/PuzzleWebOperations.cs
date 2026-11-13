@@ -82,7 +82,7 @@ public class AllByDifficultyPostOperation : HttpOperation
 public class PuzzleRegisterOperation : HttpOperation
 {
     [HttpRequestJsonBody]
-    public RegisterPuzzleRequest registerPuzzleRequest;
+    public PuzzleFull puzzleFull;
 
     [HttpResponseTextBody]
     public String id;
@@ -98,7 +98,7 @@ public class PuzzleRegisterOperation : HttpOperation
 public class PuzzlePutOperation : HttpOperation
 {
     [HttpRequestJsonBody]
-    public RegisterPuzzleRequest registerPuzzleRequest;
+    public PuzzleFull puzzleFull;
 
     [HttpResponseTextBody]
     public String response;

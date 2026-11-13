@@ -7,8 +7,8 @@ using hg.LitJson;
 
 public class AppUserInfo
 {
-    public long Id { get; set; }
-    public String Alias { get; set; }
+    public long Id { get; set; } = -1L;
+    public String Alias { get; set; } = null;
     public String Thumbnail
     {
         get => null;
@@ -16,8 +16,8 @@ public class AppUserInfo
     }
     [JsonIgnore]
     public Sprite ThumbnailSprite { get; set; } = null;
-    public LocalityFull InterestLocality { get; set; }
-    public LocalityFull CurrentLocality { get; set; }
+    public LocalityFull InterestLocality { get; set; } = null;
+    public LocalityFull CurrentLocality { get; set; } = null;
 
     public AppUserInfo()
     {

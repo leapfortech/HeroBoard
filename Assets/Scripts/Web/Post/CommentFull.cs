@@ -5,11 +5,11 @@ public class CommentFull
     public long Id { get; set; } = -1L;
     public long PostId { get; set; } = -1L;
     public long AppUserId { get; set; } = -1L;
-    public String AppUserAlias { get; set; }
-    public String Message { get; set; }
+    public String AppUserAlias { get; set; } = null;
+    public String Message { get; set; } = null;
     public DateTime PublicationDateTime { get; set; } = new DateTime(1753, 1, 1);
-    public DateTime CreateDateTime { get; set; }
-    public DateTime UpdateDateTime { get; set; }
+    public DateTime CreateDateTime { get; set; } = new DateTime(1753, 1, 1);
+    public DateTime UpdateDateTime { get; set; } = new DateTime(1753, 1, 1);
     public int Status { get; set; } = -1;
 
     public CommentFull()

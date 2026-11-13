@@ -13,7 +13,7 @@ using Sirenix.OdinInspector;
 public class PuzzleChangeAction : MonoBehaviour
 {
     [Serializable]
-    public class PuzzleEventEvent : UnityEvent<int, PuzzleInfo> { }
+    public class PuzzleEventEvent : UnityEvent<int, PuzzleFull> { }
 
     [Title("Params")]
     [SerializeField]
@@ -21,7 +21,7 @@ public class PuzzleChangeAction : MonoBehaviour
 
     [Title("Data")]
     [SerializeField]
-    DataMapper dtmPuzzle = null;
+    DataMapper dtmPuzzleFull = null;
 
     [Title("Fields")]
     [SerializeField]
@@ -45,9 +45,9 @@ public class PuzzleChangeAction : MonoBehaviour
 
     PuzzleService puzzleService = null;
 
-    PuzzleInfo puzzleInfo = null;
+    PuzzleFull puzzleFullUpdate = null;
 
-    PuzzleInfo puzzleInfoRequest = null;
+    //PuzzleFull puzzleFullRequest = null;
     int idx = -1;
 
     private void Awake()
@@ -58,7 +58,7 @@ public class PuzzleChangeAction : MonoBehaviour
     // Clear
     public void Clear()
     {
-        dtmPuzzle.ClearElements();
+        dtmPuzzleFull.ClearElements();
         ifdAnswerOk.Clear();
         ifdAnswerNok1.Clear();
         ifdAnswerNok2.Clear();
@@ -87,25 +87,25 @@ public class PuzzleChangeAction : MonoBehaviour
 
     private void RegisterPuzzle()
     {
-        if (!dtmPuzzle.ValidateElements() || !ElementHelper.Validate(ifdAnswerOk) || !ElementHelper.Validate(ifdAnswerNok1) || !ElementHelper.Validate(ifdAnswerNok2))
+        if (!dtmPuzzleFull.ValidateElements() || !ElementHelper.Validate(ifdAnswerOk) || !ElementHelper.Validate(ifdAnswerNok1) || !ElementHelper.Validate(ifdAnswerNok2))
             return;
 
         ScreenDialog.Instance.Display();
 
-        Post post = new Post() {PostTypeId = 8};
+        //PostFull postFull = new PostFull() {PostTypeId = 8};
 
-        Puzzle puzzle = dtmPuzzle.BuildClass<Puzzle>();
-        puzzle.PuzzleGameId = puzzleGameId;
+        PuzzleFull puzzleFull = dtmPuzzleFull.BuildClass<PuzzleFull>();
+        puzzleFull.PuzzleGameId = puzzleGameId;
+        puzzleFull.PostTypeId = 8;
 
-        List<PuzzleAnswer> puzzleAnswers = new List<PuzzleAnswer>()
+        puzzleFull.PuzzleAnswerFulls = new PuzzleAnswerFull[]
         {
-            new PuzzleAnswer() {Description = ifdAnswerOk.Text, IsCorrect = 1},
-            new PuzzleAnswer() {Description = ifdAnswerNok1.Text, IsCorrect = 0},
-            new PuzzleAnswer() {Description = ifdAnswerNok2.Text, IsCorrect = 0}
+            new() { Description = ifdAnswerOk.Text, IsCorrect = 1 },
+            new() { Description = ifdAnswerNok1.Text, IsCorrect = 0 },
+            new() { Description = ifdAnswerNok2.Text, IsCorrect = 0 }
         };
 
-        puzzleService.Register(new RegisterPuzzleRequest(new RegisterPostRequest(post, null, null, null),
-                                                         puzzle, puzzleAnswers));
+        puzzleService.Register(puzzleFull);
     }
 
     public void ApplyRegister(long puzzleId)
@@ -115,17 +115,17 @@ public class PuzzleChangeAction : MonoBehaviour
 
     // Update
 
-    public void DisplayUpdate(int index, PuzzleInfo info)
+    public void DisplayUpdate(int index, PuzzleFull puzzleFull)
     {
-        puzzleInfo = info;
+        puzzleFullUpdate = puzzleFull;
         idx = index;
 
         btnChange.Title = "Guardar";
 
-        dtmPuzzle.PopulateClass<Puzzle>(puzzleInfo.Puzzle);
-        ifdAnswerOk.Text = puzzleInfo.PuzzleAnswers[0].Description;
-        ifdAnswerNok1.Text = puzzleInfo.PuzzleAnswers[1].Description;
-        ifdAnswerNok2.Text = puzzleInfo.PuzzleAnswers[2].Description;
+        dtmPuzzleFull.PopulateClass<PuzzleFull>(puzzleFull);
+        ifdAnswerOk.Text = puzzleFull.PuzzleAnswerFulls[0].Description;
+        ifdAnswerNok1.Text = puzzleFull.PuzzleAnswerFulls[1].Description;
+        ifdAnswerNok2.Text = puzzleFull.PuzzleAnswerFulls[2].Description;
 
         ifdAnswerOk.Revalidate(true);
         ifdAnswerNok1.Revalidate(true);
@@ -137,62 +137,48 @@ public class PuzzleChangeAction : MonoBehaviour
 
     private void UpdatePuzzle()
     {
-        if (!dtmPuzzle.ValidateElements() || !ElementHelper.Validate(ifdAnswerOk) || !ElementHelper.Validate(ifdAnswerNok1) || !ElementHelper.Validate(ifdAnswerNok2))
+        if (!dtmPuzzleFull.ValidateElements() || !ElementHelper.Validate(ifdAnswerOk) || !ElementHelper.Validate(ifdAnswerNok1) || !ElementHelper.Validate(ifdAnswerNok2))
             return;
 
         ScreenDialog.Instance.Display();
 
-        Post post = puzzleInfo.Post;
+        puzzleFullUpdate.Update(dtmPuzzleFull.BuildClass<PuzzleFull>());
 
-        Puzzle puzzle = dtmPuzzle.BuildClass<Puzzle>();
+        if (puzzleFullUpdate.PuzzleAnswerFulls == null)
+            puzzleFullUpdate.PuzzleAnswerFulls = new PuzzleAnswerFull[0];
 
-        puzzle.Id = puzzleInfo.Puzzle.Id;
-        puzzle.PostId = puzzleInfo.Puzzle.PostId;
-        puzzle.PuzzleGameId = puzzleInfo.Puzzle.PuzzleGameId;
-        puzzle.PlayCount = puzzleInfo.Puzzle.PlayCount;
-        puzzle.CreateDateTime = puzzleInfo.Puzzle.CreateDateTime;
-        puzzle.Status = puzzleInfo.Puzzle.Status;
-
-        List<PuzzleAnswer> puzzleAnswers = new List<PuzzleAnswer>()
+        PuzzleAnswerFull[] puzzleAnswerFulls = new PuzzleAnswerFull[]
         {
-            new PuzzleAnswer()
+            new()
             {
-                Id = puzzleInfo.PuzzleAnswers.Count > 0 ? puzzleInfo.PuzzleAnswers[0].Id : -1,
-                PuzzleId = puzzleInfo.Puzzle.Id,
+                Id = puzzleFullUpdate.PuzzleAnswerFulls.Length > 0 ? puzzleFullUpdate.PuzzleAnswerFulls[0].Id : -1,
                 Description = ifdAnswerOk.Text,
                 IsCorrect = 1,
                 Status = 1
             },
-
-            new PuzzleAnswer()
+            new()
             {
-                Id = puzzleInfo.PuzzleAnswers.Count > 1 ? puzzleInfo.PuzzleAnswers[1].Id : -1,
-                PuzzleId = puzzleInfo.Puzzle.Id,
+                Id = puzzleFullUpdate.PuzzleAnswerFulls.Length > 1 ? puzzleFullUpdate.PuzzleAnswerFulls[1].Id : -1,
                 Description = ifdAnswerNok1.Text,
                 IsCorrect = 0,
                 Status = 1
             },
-
-            new PuzzleAnswer()
+            new()
             {
-                Id = puzzleInfo.PuzzleAnswers.Count > 2 ? puzzleInfo.PuzzleAnswers[2].Id : -1,
-                PuzzleId = puzzleInfo.Puzzle.Id,
+                Id = puzzleFullUpdate.PuzzleAnswerFulls.Length > 2 ? puzzleFullUpdate.PuzzleAnswerFulls[2].Id : -1,
                 Description = ifdAnswerNok2.Text,
                 IsCorrect = 0,
                 Status = 1
             }
         };
 
-        puzzleInfoRequest = new PuzzleInfo(post, puzzle, puzzleAnswers);
+        puzzleFullUpdate.PuzzleAnswerFulls = puzzleAnswerFulls;
 
-        puzzleService.UpdatePuzzle(new RegisterPuzzleRequest(new RegisterPostRequest(post, null, null, null),
-                                                                                     puzzle, puzzleAnswers));
+        puzzleService.UpdatePuzzle(puzzleFullUpdate);
     }
 
     public void ApplyUpdate(bool response)
     {
-        puzzleInfo = puzzleInfoRequest;
-
         ChoiceDialog.Instance.Info("Actualización de reto", "Reto actualizado exitosamente.", () => CloseModal(false));
     }
 
@@ -203,6 +189,6 @@ public class PuzzleChangeAction : MonoBehaviour
         if (isRegister)
             onRegistered.Invoke();
         else
-            onUpdated.Invoke(idx, puzzleInfo);
+            onUpdated.Invoke(idx, puzzleFullUpdate);
     }
 }

@@ -88,7 +88,7 @@
       "dependencies": {
         "com.lefortech.core.tools": "https://github.com/leapfortech/LeapCoreTools.git"
       },
-      "hash": "c97ee0f0197d357454e62084dda51612f614696c"
+      "hash": "f4da4ba7c09265f75cd2910852ce44b15aac22c3"
     },
     "com.lefortech.ui.dialog": {
       "version": "https://github.com/leapfortech/LeapUIDialog.git",
@@ -99,7 +99,7 @@
         "com.lefortech.ui.elements": "https://github.com/leapfortech/LeapUIElements.git#1.5.8",
         "com.lefortech.ui.page": "https://github.com/leapfortech/LeapUIPage.git#1.2.3"
       },
-      "hash": "8da563727579b0995d7d8138f72eed750ab3af57"
+      "hash": "f1900ca3af803de5bd64b0700fa271a3ae037a68"
     },
     "com.lefortech.ui.elements": {
       "version": "https://github.com/leapfortech/LeapUIElements.git",
@@ -108,7 +108,7 @@
       "dependencies": {
         "com.lefortech.core.tools": "https://github.com/leapfortech/LeapCoreTools.git"
       },
-      "hash": "701e6520476ec7c4ef0030dce265f64b86e413e0"
+      "hash": "9efc81061d6fe148ccbb44bda44201ae74178402"
     },
     "com.lefortech.ui.extensions": {
       "version": "https://github.com/leapfortech/LeapUIExtensions.git",

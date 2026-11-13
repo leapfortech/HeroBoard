@@ -58,7 +58,7 @@ public class PostFull
         }
     }
     [JsonIgnore]
-    public List<Sprite> ImageSprites { get; set; }
+    public List<Sprite> ImageSprites { get; set; } = null;
 
     public PostFull()
     {

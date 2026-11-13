@@ -2,10 +2,10 @@ using System;
 
 public class LocalityFull
 {
-    public long LocalityTypeId { get; set; }
-    public long CountryId { get; set; }
-    public long StateId { get; set; }
-    public long CityId { get; set; }
+    public long LocalityTypeId { get; set; } = -1L;
+    public long CountryId { get; set; } = -1L;
+    public long StateId { get; set; } = -1L;
+    public long CityId { get; set; } = -1L;
 
 
     public LocalityFull()

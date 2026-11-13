@@ -2,10 +2,10 @@
 
 public class ContactFull
 {
-    public long Id { get; set; }
-    public long PostId { get; set; }
-    public String Name { get; set; }
-    public int Status { get; set; }
+    public long Id { get; set; } = -1L;
+    public long PostId { get; set; } = -1L;
+    public String Name { get; set; } = null;
+    public int Status { get; set; } = -1;
 
     public ContactFull()
     {

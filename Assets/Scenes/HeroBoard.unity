@@ -19090,8 +19090,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 30, y: -52.499752}
-  m_SizeDelta: {x: -60, y: -165.00049}
+  m_AnchoredPosition: {x: 30, y: -40}
+  m_SizeDelta: {x: -60, y: -140}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1001 &101142635
 PrefabInstance:
@@ -19830,6 +19830,8 @@ MonoBehaviour:
   MPImage: {fileID: 0}
   MPImageB: {fileID: 0}
   UImage: {fileID: 0}
+  MPMask: {fileID: 0}
+  MPBorder: {fileID: 0}
   empty: {fileID: 0}
 --- !u!1001 &108086940
 PrefabInstance:
@@ -23537,6 +23539,283 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
+--- !u!1001 &128912901
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 654485344}
+    m_Modifications:
+    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_text
+      value: Ingresa reto
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontSize
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1e308feedcbaaf643b9a3751ef4ed653, type: 2}
+    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.57254905
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.54901963
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.54509807
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5712954698410460563, guid: 1e308feedcbaaf643b9a3751ef4ed653, type: 2}
+    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4287794315
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896361883359, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_Name
+      value: MdlIfdMultiSized
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955408, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_SelectionColor.b
+      value: 0.50980395
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955408, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_SelectionColor.g
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955408, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_SelectionColor.r
+      value: 0.007843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_OutlineWidth
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_OutlineColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_OutlineColor.b
+      value: 0.8901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_OutlineColor.g
+      value: 0.8745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_OutlineColor.r
+      value: 0.87058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_Rectangle.m_CornerRadius.w
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_Rectangle.m_CornerRadius.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_Rectangle.m_CornerRadius.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_Rectangle.m_CornerRadius.z
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_text
+      value: Reto
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 1e308feedcbaaf643b9a3751ef4ed653, type: 2}
+    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.43529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.43137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5712954698410460563, guid: 1e308feedcbaaf643b9a3751ef4ed653, type: 2}
+    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4285689710
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896743369559, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896743369559, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896743369559, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337896743369559, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 4.9999976
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337897124988284, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontSize
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337897124988284, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2d56e54ea2c77174894e52c3f1e5a4ad, type: 2}
+    - target: {fileID: 4452337897124988284, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.1764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337897124988284, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.11764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337897124988284, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452337897124988284, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2094504794991002911, guid: 2d56e54ea2c77174894e52c3f1e5a4ad, type: 2}
+    - target: {fileID: 4452337897124988284, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281146882
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
 --- !u!1 &129104111
 GameObject:
   m_ObjectHideFlags: 0
@@ -29083,6 +29362,7 @@ GameObject:
   - component: {fileID: 158082492}
   - component: {fileID: 158082493}
   - component: {fileID: 158082494}
+  - component: {fileID: 158082495}
   m_Layer: 0
   m_Name: DataManager
   m_TagString: Untagged
@@ -29142,6 +29422,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f4f1049210e35458ba0b620ef9b02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &158082495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158082491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2f822a46c5ad94a82a6955552e314f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FeedHelper
+  vllCountry: {fileID: 11400000, guid: a390f8e6d897ce940a78fc1a332944dd, type: 2}
+  vllState: {fileID: 11400000, guid: a8593e9c316fb884587d8346fe5c9b28, type: 2}
+  vllCurrency: {fileID: 11400000, guid: 402e9b542f0ca8840aea2c2564960012, type: 2}
+  vllNewsType: {fileID: 11400000, guid: 267cb7483e17d4c4b9731c453b6344f9, type: 2}
+  vllHappeningType: {fileID: 11400000, guid: 02ff2fd298044ff4cadc8f496ee7979e, type: 2}
+  vllProductSubtype: {fileID: 11400000, guid: f1d504bdbcc41be4eb4ff8420c8ab4d8, type: 2}
+  vllRadioType: {fileID: 11400000, guid: fa5a0aa8c822a7f4ba08f80e07f27bb8, type: 2}
+  vllRadioLanguage: {fileID: 11400000, guid: 1022e9d98c9222740b8ce1e17722c970, type: 2}
+  dataClass: {fileID: 11400000, guid: 572301bb1fabbf040b26a12437fda1ff, type: 2}
 --- !u!1001 &158533955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30249,7 +30550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -510
+      value: -574
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -47932,7 +48233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -510
+      value: -574
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -58178,7 +58479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 104
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58214,7 +58515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -202
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -72549,7 +72850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -612
+      value: -676
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -77122,7 +77423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 923867949926966376, guid: cc2ccd24fef42814d805d3b01dd0ac36, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135085506501363253, guid: cc2ccd24fef42814d805d3b01dd0ac36, type: 3}
       propertyPath: firstPanel
@@ -96038,8 +96339,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 30, y: -52.499752}
-  m_SizeDelta: {x: -60, y: -165.00049}
+  m_AnchoredPosition: {x: 30, y: -40}
+  m_SizeDelta: {x: -60, y: -140}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &519665396
 GameObject:
@@ -110686,7 +110987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 104
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -110722,7 +111023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -356
+      value: -390
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -113536,7 +113837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 104
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -113572,7 +113873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -202
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -114804,7 +115105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5489034156934104874, guid: c4c397f6e3d30324ba50518f1b47c954, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6408604092579021079, guid: c4c397f6e3d30324ba50518f1b47c954, type: 3}
       propertyPath: onDisplay.m_PersistentCalls.m_Calls.Array.size
@@ -118348,7 +118649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -510
+      value: -574
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -121262,7 +121563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 104
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -121298,7 +121599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -202
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -121327,10 +121628,10 @@ PrefabInstance:
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: ifdModel
       value: 
-      objectReference: {fileID: 1390816651}
+      objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: lengthMax
-      value: 500
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255049, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: contentType
@@ -121349,7 +121650,7 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1390816650}
+      addedObject: {fileID: 1198915986}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
 --- !u!224 &654485344 stripped
@@ -123655,7 +123956,7 @@ GameObject:
   - component: {fileID: 665774817}
   - component: {fileID: 665774818}
   m_Layer: 0
-  m_Name: DtmPhrase
+  m_Name: DtmPhraseFull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123691,28 +123992,22 @@ MonoBehaviour:
   dataMapping:
     dataMapType: 3
     dataBuiltInTarget: <None>
-    dataClassTarget: {fileID: 11400000, guid: a4b0bd9794e1cd040a115198628de3c2, type: 2}
+    dataClassTarget: {fileID: 11400000, guid: f3828356aa99389498b254f7e530fa96, type: 2}
     dataBuildInMap:
       rid: -2
     dataClassMap:
-      rid: 749284870056575039
+      rid: 3712647539901857806
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 749284870056575039
+    - rid: 3712647539901857806
       type: {class: DataClassMap, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
-        dataClass: {fileID: 11400000, guid: a4b0bd9794e1cd040a115198628de3c2, type: 2}
+        dataClass: {fileID: 11400000, guid: f3828356aa99389498b254f7e530fa96, type: 2}
         dataFieldValues:
         - FieldName: Id
-          FieldTypeName: System.Int64
-          dataSourceType: 0
-          dataFieldSource:
-            rid: -2
-          ItemIdx: -1
-        - FieldName: PostId
           FieldTypeName: System.Int64
           dataSourceType: 0
           dataFieldSource:
@@ -123728,46 +124023,40 @@ MonoBehaviour:
           FieldTypeName: System.Int64
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575040
+            rid: 3712647539901857807
           ItemIdx: -1
         - FieldName: Question
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575041
+            rid: 3712647539901857808
           ItemIdx: -1
         - FieldName: Hint
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575042
+            rid: 3712647539901857809
           ItemIdx: -1
         - FieldName: Difficulty
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575043
+            rid: 3712647539901857810
           ItemIdx: -1
         - FieldName: Delay
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575044
+            rid: 3712647539901857811
           ItemIdx: -1
         - FieldName: Points
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575045
+            rid: 3712647539901857812
           ItemIdx: -1
         - FieldName: PlayCount
           FieldTypeName: System.Int32
-          dataSourceType: 0
-          dataFieldSource:
-            rid: -2
-          ItemIdx: -1
-        - FieldName: CreateDateTime
-          FieldTypeName: System.DateTime
           dataSourceType: 0
           dataFieldSource:
             rid: -2
@@ -123778,7 +124067,136 @@ MonoBehaviour:
           dataFieldSource:
             rid: -2
           ItemIdx: -1
-    - rid: 749284870056575040
+        - FieldName: PostId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: AppUserId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: AppUserAlias
+          FieldTypeName: System.String
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: PostTypeId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: PostCountryId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: PostStateId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: Title
+          FieldTypeName: System.String
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: TitleImage
+          FieldTypeName: System.String
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: TitleSprite
+          FieldTypeName: UnityEngine.Sprite
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: Description
+          FieldTypeName: System.String
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: ImageCount
+          FieldTypeName: System.Int32
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: FavoriteCount
+          FieldTypeName: System.Int32
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: ReactionPhraseId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: CommentCount
+          FieldTypeName: System.Int32
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: PublicationDateTime
+          FieldTypeName: System.DateTime
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: PostStatus
+          FieldTypeName: System.Int32
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: AppUserInfo
+          FieldTypeName: AppUserInfo
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: ContactFull
+          FieldTypeName: ContactFull
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: LinkFulls
+          FieldTypeName: 'System.Collections.Generic.List`1[[LinkFull, Assembly-CSharp,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: CommentFulls
+          FieldTypeName: 'System.Collections.Generic.List`1[[CommentFull, Assembly-CSharp,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: ImageSprites
+          FieldTypeName: 'System.Collections.Generic.List`1[[UnityEngine.Sprite,
+            UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+    - rid: 3712647539901857807
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -123786,11 +124204,11 @@ MonoBehaviour:
           FieldTypeName: System.Int64
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575040
+            rid: 3712647539901857807
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 1500272845}
-    - rid: 749284870056575041
+    - rid: 3712647539901857808
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -123798,11 +124216,11 @@ MonoBehaviour:
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575041
+            rid: 3712647539901857808
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 323592440}
-    - rid: 749284870056575042
+    - rid: 3712647539901857809
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -123810,11 +124228,11 @@ MonoBehaviour:
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575042
+            rid: 3712647539901857809
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 606799972}
-    - rid: 749284870056575043
+    - rid: 3712647539901857810
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -123822,11 +124240,11 @@ MonoBehaviour:
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575043
+            rid: 3712647539901857810
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 113314906}
-    - rid: 749284870056575044
+    - rid: 3712647539901857811
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -123834,11 +124252,11 @@ MonoBehaviour:
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575044
+            rid: 3712647539901857811
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 427994526}
-    - rid: 749284870056575045
+    - rid: 3712647539901857812
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -123846,7 +124264,7 @@ MonoBehaviour:
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575045
+            rid: 3712647539901857812
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 84887771}
@@ -123928,7 +124346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -612
+      value: -676
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -130274,7 +130692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleChangeAction
   puzzleGameId: 2
-  dtmPuzzle: {fileID: 2059466952}
+  dtmPuzzleFull: {fileID: 2059466952}
   ifdAnswerOk: {fileID: 160945321}
   ifdAnswerNok1: {fileID: 645558745}
   ifdAnswerNok2: {fileID: 1824452761}
@@ -150411,7 +150829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_CharacterLimit
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4452337896741955408, guid: 2075330e910adf84fa82c9a48997d535, type: 3}
       propertyPath: m_SelectionColor.a
@@ -155755,7 +156173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 923867949926966376, guid: cc2ccd24fef42814d805d3b01dd0ac36, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7135085506501363253, guid: cc2ccd24fef42814d805d3b01dd0ac36, type: 3}
       propertyPath: firstPanel
@@ -158232,7 +158650,7 @@ GameObject:
   - component: {fileID: 847628326}
   - component: {fileID: 847628327}
   m_Layer: 0
-  m_Name: DtmSlang
+  m_Name: DtmSlangFull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158268,28 +158686,22 @@ MonoBehaviour:
   dataMapping:
     dataMapType: 3
     dataBuiltInTarget: <None>
-    dataClassTarget: {fileID: 11400000, guid: a4b0bd9794e1cd040a115198628de3c2, type: 2}
+    dataClassTarget: {fileID: 11400000, guid: f3828356aa99389498b254f7e530fa96, type: 2}
     dataBuildInMap:
       rid: -2
     dataClassMap:
-      rid: 749284870056575024
+      rid: 3712647539901857792
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 749284870056575024
+    - rid: 3712647539901857792
       type: {class: DataClassMap, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
-        dataClass: {fileID: 11400000, guid: a4b0bd9794e1cd040a115198628de3c2, type: 2}
+        dataClass: {fileID: 11400000, guid: f3828356aa99389498b254f7e530fa96, type: 2}
         dataFieldValues:
         - FieldName: Id
-          FieldTypeName: System.Int64
-          dataSourceType: 0
-          dataFieldSource:
-            rid: -2
-          ItemIdx: -1
-        - FieldName: PostId
           FieldTypeName: System.Int64
           dataSourceType: 0
           dataFieldSource:
@@ -158305,46 +158717,40 @@ MonoBehaviour:
           FieldTypeName: System.Int64
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575025
+            rid: 3712647539901857793
           ItemIdx: -1
         - FieldName: Question
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575026
+            rid: 3712647539901857794
           ItemIdx: -1
         - FieldName: Hint
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575027
+            rid: 3712647539901857795
           ItemIdx: -1
         - FieldName: Difficulty
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575028
+            rid: 3712647539901857796
           ItemIdx: -1
         - FieldName: Delay
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575029
+            rid: 3712647539901857797
           ItemIdx: -1
         - FieldName: Points
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575030
+            rid: 3712647539901857798
           ItemIdx: -1
         - FieldName: PlayCount
           FieldTypeName: System.Int32
-          dataSourceType: 0
-          dataFieldSource:
-            rid: -2
-          ItemIdx: -1
-        - FieldName: CreateDateTime
-          FieldTypeName: System.DateTime
           dataSourceType: 0
           dataFieldSource:
             rid: -2
@@ -158355,7 +158761,136 @@ MonoBehaviour:
           dataFieldSource:
             rid: -2
           ItemIdx: -1
-    - rid: 749284870056575025
+        - FieldName: PostId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: AppUserId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: AppUserAlias
+          FieldTypeName: System.String
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: PostTypeId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: PostCountryId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: PostStateId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: Title
+          FieldTypeName: System.String
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: TitleImage
+          FieldTypeName: System.String
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: TitleSprite
+          FieldTypeName: UnityEngine.Sprite
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: Description
+          FieldTypeName: System.String
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: ImageCount
+          FieldTypeName: System.Int32
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: FavoriteCount
+          FieldTypeName: System.Int32
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: ReactionPhraseId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: CommentCount
+          FieldTypeName: System.Int32
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: PublicationDateTime
+          FieldTypeName: System.DateTime
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: PostStatus
+          FieldTypeName: System.Int32
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: AppUserInfo
+          FieldTypeName: AppUserInfo
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: ContactFull
+          FieldTypeName: ContactFull
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: LinkFulls
+          FieldTypeName: 'System.Collections.Generic.List`1[[LinkFull, Assembly-CSharp,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: CommentFulls
+          FieldTypeName: 'System.Collections.Generic.List`1[[CommentFull, Assembly-CSharp,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: ImageSprites
+          FieldTypeName: 'System.Collections.Generic.List`1[[UnityEngine.Sprite,
+            UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+    - rid: 3712647539901857793
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -158363,11 +158898,11 @@ MonoBehaviour:
           FieldTypeName: System.Int64
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575025
+            rid: 3712647539901857793
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 900351002}
-    - rid: 749284870056575026
+    - rid: 3712647539901857794
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -158375,11 +158910,11 @@ MonoBehaviour:
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575026
+            rid: 3712647539901857794
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 654485345}
-    - rid: 749284870056575027
+    - rid: 3712647539901857795
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -158387,11 +158922,11 @@ MonoBehaviour:
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575027
+            rid: 3712647539901857795
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 952690689}
-    - rid: 749284870056575028
+    - rid: 3712647539901857796
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -158399,11 +158934,11 @@ MonoBehaviour:
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575028
+            rid: 3712647539901857796
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 234800442}
-    - rid: 749284870056575029
+    - rid: 3712647539901857797
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -158411,11 +158946,11 @@ MonoBehaviour:
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575029
+            rid: 3712647539901857797
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 1553813944}
-    - rid: 749284870056575030
+    - rid: 3712647539901857798
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -158423,7 +158958,7 @@ MonoBehaviour:
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575030
+            rid: 3712647539901857798
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 1413892642}
@@ -168855,7 +169390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5489034156934104874, guid: c4c397f6e3d30324ba50518f1b47c954, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6408604092579021079, guid: c4c397f6e3d30324ba50518f1b47c954, type: 3}
       propertyPath: onDisplay.m_PersistentCalls.m_Calls.Array.size
@@ -169873,7 +170408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 104
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -169909,7 +170444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -356
+      value: -390
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -177558,7 +178093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 104
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -177594,7 +178129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -356
+      value: -390
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -185367,7 +185902,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -510
+      value: -574
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -218821,6 +219356,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1094026821316255048, guid: 664c1bd1574bec34e84216bce78a636c, type: 3}
   m_PrefabInstance: {fileID: 1197420947}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &1198915986 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
+  m_PrefabInstance: {fileID: 128912901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1199298353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -230318,8 +230858,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 30, y: -52.499752}
-  m_SizeDelta: {x: -60, y: -165.00049}
+  m_AnchoredPosition: {x: 30, y: -40}
+  m_SizeDelta: {x: -60, y: -140}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1001 &1269772530
 PrefabInstance:
@@ -239101,7 +239641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -510
+      value: -574
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -250938,327 +251478,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d85c41c725f91c40b45c19720bcf171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1390816649
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 654485344}
-    m_Modifications:
-    - target: {fileID: 4452337896328828033, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -40
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896328828033, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -38
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896328828033, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_text
-      value: Ingresa reto
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontSize
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 1e308feedcbaaf643b9a3751ef4ed653, type: 2}
-    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontColor.b
-      value: 0.57254905
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0.54901963
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontColor.r
-      value: 0.54509807
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 5712954698410460563, guid: 1e308feedcbaaf643b9a3751ef4ed653, type: 2}
-    - target: {fileID: 4452337896328828039, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4287794315
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896361883359, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_Name
-      value: MdlIfdMultiSized
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955408, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_CharacterLimit
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955408, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_SelectionColor.b
-      value: 0.50980395
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955408, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_SelectionColor.g
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955408, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_SelectionColor.r
-      value: 0.007843138
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_OutlineWidth
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_OutlineColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_OutlineColor.b
-      value: 0.8901961
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_OutlineColor.g
-      value: 0.8745098
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_OutlineColor.r
-      value: 0.87058824
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_Rectangle.m_CornerRadius.w
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_Rectangle.m_CornerRadius.x
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_Rectangle.m_CornerRadius.y
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896741955409, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_Rectangle.m_CornerRadius.z
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_text
-      value: Reto
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontSize
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 1e308feedcbaaf643b9a3751ef4ed653, type: 2}
-    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontColor.b
-      value: 0.44705883
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0.43529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontColor.r
-      value: 0.43137255
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 5712954698410460563, guid: 1e308feedcbaaf643b9a3751ef4ed653, type: 2}
-    - target: {fileID: 4452337896743369556, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4285689710
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896743369559, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896743369559, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896743369559, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337896743369559, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 4.9999995
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337897124988284, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontSize
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337897124988284, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 2d56e54ea2c77174894e52c3f1e5a4ad, type: 2}
-    - target: {fileID: 4452337897124988284, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontColor.b
-      value: 0.1764706
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337897124988284, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0.11764706
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337897124988284, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337897124988284, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -2094504794991002911, guid: 2d56e54ea2c77174894e52c3f1e5a4ad, type: 2}
-    - target: {fileID: 4452337897124988284, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4281146882
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337897124988287, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -40
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337897124988287, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -38
-      objectReference: {fileID: 0}
-    - target: {fileID: 4452337897124988287, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
---- !u!224 &1390816650 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4452337896361883356, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-  m_PrefabInstance: {fileID: 1390816649}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1390816651 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4452337896361883357, guid: 9a97673bc73f5fa4bbecfd0201acd793, type: 3}
-  m_PrefabInstance: {fileID: 1390816649}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1dc13015a92bde4ba926bd992386f07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1392110405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -260778,7 +260997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleChangeAction
   puzzleGameId: 1
-  dtmPuzzle: {fileID: 847628327}
+  dtmPuzzleFull: {fileID: 847628327}
   ifdAnswerOk: {fileID: 1002932549}
   ifdAnswerNok1: {fileID: 1441345555}
   ifdAnswerNok2: {fileID: 398526968}
@@ -263652,7 +263871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -510
+      value: -574
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -294243,7 +294462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleChangeAction
   puzzleGameId: 3
-  dtmPuzzle: {fileID: 665774818}
+  dtmPuzzleFull: {fileID: 665774818}
   ifdAnswerOk: {fileID: 272572160}
   ifdAnswerNok1: {fileID: 1319088835}
   ifdAnswerNok2: {fileID: 665876139}
@@ -337330,7 +337549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -612
+      value: -676
       objectReference: {fileID: 0}
     - target: {fileID: 1094026821316255048, guid: 6392076a38c4a2047821ae7f5beadce7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -346413,23 +346632,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6949975912794496753, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -96.32292
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -260
+      value: -163.67708
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 42.000004
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 130
+      value: 81.83854
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491788, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 65
+      value: 55.199997
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491789, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_text
@@ -383495,7 +383714,7 @@ GameObject:
   - component: {fileID: 2059466953}
   - component: {fileID: 2059466952}
   m_Layer: 0
-  m_Name: DtmClue
+  m_Name: DtmClueFull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -383516,28 +383735,22 @@ MonoBehaviour:
   dataMapping:
     dataMapType: 3
     dataBuiltInTarget: <None>
-    dataClassTarget: {fileID: 11400000, guid: a4b0bd9794e1cd040a115198628de3c2, type: 2}
+    dataClassTarget: {fileID: 11400000, guid: f3828356aa99389498b254f7e530fa96, type: 2}
     dataBuildInMap:
       rid: -2
     dataClassMap:
-      rid: 749284870056575031
+      rid: 3712647539901857799
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 749284870056575031
+    - rid: 3712647539901857799
       type: {class: DataClassMap, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
-        dataClass: {fileID: 11400000, guid: a4b0bd9794e1cd040a115198628de3c2, type: 2}
+        dataClass: {fileID: 11400000, guid: f3828356aa99389498b254f7e530fa96, type: 2}
         dataFieldValues:
         - FieldName: Id
-          FieldTypeName: System.Int64
-          dataSourceType: 0
-          dataFieldSource:
-            rid: -2
-          ItemIdx: -1
-        - FieldName: PostId
           FieldTypeName: System.Int64
           dataSourceType: 0
           dataFieldSource:
@@ -383553,46 +383766,40 @@ MonoBehaviour:
           FieldTypeName: System.Int64
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575032
+            rid: 3712647539901857800
           ItemIdx: -1
         - FieldName: Question
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575033
+            rid: 3712647539901857801
           ItemIdx: -1
         - FieldName: Hint
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575038
+            rid: 3712647539901857802
           ItemIdx: -1
         - FieldName: Difficulty
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575035
+            rid: 3712647539901857803
           ItemIdx: -1
         - FieldName: Delay
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575036
+            rid: 3712647539901857804
           ItemIdx: -1
         - FieldName: Points
           FieldTypeName: System.Int32
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575037
+            rid: 3712647539901857805
           ItemIdx: -1
         - FieldName: PlayCount
           FieldTypeName: System.Int32
-          dataSourceType: 0
-          dataFieldSource:
-            rid: -2
-          ItemIdx: -1
-        - FieldName: CreateDateTime
-          FieldTypeName: System.DateTime
           dataSourceType: 0
           dataFieldSource:
             rid: -2
@@ -383603,7 +383810,136 @@ MonoBehaviour:
           dataFieldSource:
             rid: -2
           ItemIdx: -1
-    - rid: 749284870056575032
+        - FieldName: PostId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: AppUserId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: AppUserAlias
+          FieldTypeName: System.String
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: PostTypeId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: PostCountryId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: PostStateId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: Title
+          FieldTypeName: System.String
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: TitleImage
+          FieldTypeName: System.String
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: TitleSprite
+          FieldTypeName: UnityEngine.Sprite
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: Description
+          FieldTypeName: System.String
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: ImageCount
+          FieldTypeName: System.Int32
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: FavoriteCount
+          FieldTypeName: System.Int32
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: ReactionPhraseId
+          FieldTypeName: System.Int64
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: CommentCount
+          FieldTypeName: System.Int32
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: PublicationDateTime
+          FieldTypeName: System.DateTime
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: PostStatus
+          FieldTypeName: System.Int32
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: AppUserInfo
+          FieldTypeName: AppUserInfo
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: ContactFull
+          FieldTypeName: ContactFull
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: LinkFulls
+          FieldTypeName: 'System.Collections.Generic.List`1[[LinkFull, Assembly-CSharp,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: CommentFulls
+          FieldTypeName: 'System.Collections.Generic.List`1[[CommentFull, Assembly-CSharp,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+        - FieldName: ImageSprites
+          FieldTypeName: 'System.Collections.Generic.List`1[[UnityEngine.Sprite,
+            UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'
+          dataSourceType: 0
+          dataFieldSource:
+            rid: -2
+          ItemIdx: -1
+    - rid: 3712647539901857800
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -383611,11 +383947,11 @@ MonoBehaviour:
           FieldTypeName: System.Int64
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575032
+            rid: 3712647539901857800
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 1654331819}
-    - rid: 749284870056575033
+    - rid: 3712647539901857801
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -383623,47 +383959,11 @@ MonoBehaviour:
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575033
+            rid: 3712647539901857801
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 621114355}
-    - rid: 749284870056575035
-      type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
-      data:
-        dataFieldValue:
-          FieldName: Difficulty
-          FieldTypeName: System.Int32
-          dataSourceType: 1
-          dataFieldSource:
-            rid: 749284870056575035
-          ItemIdx: -1
-        NeedsItem: 0
-        elementValue: {fileID: 1332009633}
-    - rid: 749284870056575036
-      type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
-      data:
-        dataFieldValue:
-          FieldName: Delay
-          FieldTypeName: System.Int32
-          dataSourceType: 1
-          dataFieldSource:
-            rid: 749284870056575036
-          ItemIdx: -1
-        NeedsItem: 0
-        elementValue: {fileID: 1076647232}
-    - rid: 749284870056575037
-      type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
-      data:
-        dataFieldValue:
-          FieldName: Points
-          FieldTypeName: System.Int32
-          dataSourceType: 1
-          dataFieldSource:
-            rid: 749284870056575037
-          ItemIdx: -1
-        NeedsItem: 0
-        elementValue: {fileID: 1506817758}
-    - rid: 749284870056575038
+    - rid: 3712647539901857802
       type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
       data:
         dataFieldValue:
@@ -383671,10 +383971,46 @@ MonoBehaviour:
           FieldTypeName: System.String
           dataSourceType: 1
           dataFieldSource:
-            rid: 749284870056575038
+            rid: 3712647539901857802
           ItemIdx: -1
         NeedsItem: 0
         elementValue: {fileID: 900790952}
+    - rid: 3712647539901857803
+      type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
+      data:
+        dataFieldValue:
+          FieldName: Difficulty
+          FieldTypeName: System.Int32
+          dataSourceType: 1
+          dataFieldSource:
+            rid: 3712647539901857803
+          ItemIdx: -1
+        NeedsItem: 0
+        elementValue: {fileID: 1332009633}
+    - rid: 3712647539901857804
+      type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
+      data:
+        dataFieldValue:
+          FieldName: Delay
+          FieldTypeName: System.Int32
+          dataSourceType: 1
+          dataFieldSource:
+            rid: 3712647539901857804
+          ItemIdx: -1
+        NeedsItem: 0
+        elementValue: {fileID: 1076647232}
+    - rid: 3712647539901857805
+      type: {class: DataFieldElement, ns: Leap.Data.Mapper, asm: Leap.Data.Mapper}
+      data:
+        dataFieldValue:
+          FieldName: Points
+          FieldTypeName: System.Int32
+          dataSourceType: 1
+          dataFieldSource:
+            rid: 3712647539901857805
+          ItemIdx: -1
+        NeedsItem: 0
+        elementValue: {fileID: 1506817758}
 --- !u!4 &2059466953
 Transform:
   m_ObjectHideFlags: 0
@@ -387421,7 +387757,7 @@ PrefabInstance:
       objectReference: {fileID: -2094504794991002911, guid: 2d56e54ea2c77174894e52c3f1e5a4ad, type: 2}
     - target: {fileID: 8436609822253491789, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4279176975
+      value: 4284023014
       objectReference: {fileID: 0}
     - target: {fileID: 8436609822253491789, guid: 5481935f17072f64ea7663fc0bfdd261, type: 3}
       propertyPath: m_HorizontalAlignment

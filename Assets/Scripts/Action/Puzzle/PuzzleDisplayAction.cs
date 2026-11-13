@@ -12,7 +12,7 @@ using Sirenix.OdinInspector;
 public class PuzzleDisplayAction : MonoBehaviour
 {
     [Serializable]
-    public class PuzzleEventEvent : UnityEvent<int, PuzzleInfo> { }
+    public class PuzzleEventEvent : UnityEvent<int, PuzzleFull> { }
 
     [Title("Params")]
     [SerializeField]
@@ -144,7 +144,7 @@ public class PuzzleDisplayAction : MonoBehaviour
     // Display
     public void FillPaged(PuzzleAllRsp rsp)
     {
-        if (rsp == null || rsp.PuzzleInfos == null || rsp.PuzzleInfos.Count == 0)
+        if (rsp == null || rsp.PuzzleFulls == null || rsp.PuzzleFulls.Count == 0)
         {
             ShowEmpty();
             return;
@@ -160,48 +160,48 @@ public class PuzzleDisplayAction : MonoBehaviour
         lstPuzzle.ClearValues();
         txtEmpty.gameObject.SetActive(false);
 
-        for (int i = 0; i < rsp.PuzzleInfos.Count; i++)
-            lstPuzzle.AddValue(CreateValue(lstPuzzle.ListItem, rsp.PuzzleInfos[i]));
+        for (int i = 0; i < rsp.PuzzleFulls.Count; i++)
+            lstPuzzle.AddValue(CreateValue(lstPuzzle.ListItem, rsp.PuzzleFulls[i]));
 
         lstPuzzle.ApplyValues();
 
         StateManager.Instance.BoardLoadHide();
     }
 
-    private ListScrollerValue CreateValue(ListItem listItem, PuzzleInfo puzzleInfo)
+    private ListScrollerValue CreateValue(ListItem listItem, PuzzleFull puzzleFull)
     {
         ListScrollerValue value = new ListScrollerValue(listItem, true);
 
-        value.SetText(0, puzzleInfo.Puzzle.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
-        value.SetSprite(1, vllCountryFlag.FindRecordCellSprite(puzzleInfo.Puzzle.CountryId, "Flag"));
-        value.SetText(2, vllCountryFlag.FindRecordCellString(puzzleInfo.Puzzle.CountryId, "Name"));
-        value.SetText(3, puzzleInfo.Puzzle.Question);
-        value.SetText(4, puzzleInfo.PuzzleAnswers[0].Description);
-        value.SetText(5, puzzleInfo.PuzzleAnswers[1].Description);
-        value.SetText(6, puzzleInfo.PuzzleAnswers[2].Description);
-        value.SetText(7, vllPuzzleDifficulty.FindRecordCellString(puzzleInfo.Puzzle.Difficulty, "Name"));
-        value.SetText(8, puzzleInfo.Puzzle.Status == 0 ? vllPuzzleStatus.FindRecordCellString(puzzleInfo.Puzzle.Status, "Name") : "");
-        value.SetText(9, puzzleInfo.Puzzle.Status != 0 ? vllPuzzleStatus.FindRecordCellString(puzzleInfo.Puzzle.Status, "Name") : "");
-        value.SetActive(10, puzzleInfo.Puzzle.Status != 0);
-        value.SetActive(11, puzzleInfo.Puzzle.Status == 0);
+        value.SetText(0, puzzleFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
+        value.SetSprite(1, vllCountryFlag.FindRecordCellSprite(puzzleFull.CountryId, "Flag"));
+        value.SetText(2, vllCountryFlag.FindRecordCellString(puzzleFull.CountryId, "Name"));
+        value.SetText(3, puzzleFull.Question);
+        value.SetText(4, puzzleFull.PuzzleAnswerFulls[0].Description);
+        value.SetText(5, puzzleFull.PuzzleAnswerFulls[1].Description);
+        value.SetText(6, puzzleFull.PuzzleAnswerFulls[2].Description);
+        value.SetText(7, vllPuzzleDifficulty.FindRecordCellString(puzzleFull.Difficulty, "Name"));
+        value.SetText(8, puzzleFull.Status == 0 ? vllPuzzleStatus.FindRecordCellString(puzzleFull.Status, "Name") : "");
+        value.SetText(9, puzzleFull.Status != 0 ? vllPuzzleStatus.FindRecordCellString(puzzleFull.Status, "Name") : "");
+        value.SetActive(10, puzzleFull.Status != 0);
+        value.SetActive(11, puzzleFull.Status == 0);
 
         return value;
     }
 
-    public void ApplyValue(int idx, PuzzleInfo puzzleInfo)
+    public void ApplyValue(int idx, PuzzleFull puzzleFull)
     {
-        puzzlePage.PuzzleInfos[idx] = puzzleInfo;
+        puzzlePage.PuzzleFulls[idx] = puzzleFull;
 
         ListScrollerValue value = lstPuzzle[idx];
 
-        value.SetText(0, puzzleInfo.Puzzle.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
-        value.SetSprite(1, vllCountryFlag.FindRecordCellSprite(puzzleInfo.Puzzle.CountryId, "Flag"));
-        value.SetText(2, vllCountryFlag.FindRecordCellString(puzzleInfo.Puzzle.CountryId, "Name"));
-        value.SetText(3, puzzleInfo.Puzzle.Question);
-        value.SetText(4, puzzleInfo.PuzzleAnswers[0].Description);
-        value.SetText(5, puzzleInfo.PuzzleAnswers[1].Description);
-        value.SetText(6, puzzleInfo.PuzzleAnswers[2].Description);
-        value.SetText(7, vllPuzzleDifficulty.FindRecordCellString(puzzleInfo.Puzzle.Difficulty, "Name"));
+        value.SetText(0, puzzleFull.PublicationDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
+        value.SetSprite(1, vllCountryFlag.FindRecordCellSprite(puzzleFull.CountryId, "Flag"));
+        value.SetText(2, vllCountryFlag.FindRecordCellString(puzzleFull.CountryId, "Name"));
+        value.SetText(3, puzzleFull.Question);
+        value.SetText(4, puzzleFull.PuzzleAnswerFulls[0].Description);
+        value.SetText(5, puzzleFull.PuzzleAnswerFulls[1].Description);
+        value.SetText(6, puzzleFull.PuzzleAnswerFulls[2].Description);
+        value.SetText(7, vllPuzzleDifficulty.FindRecordCellString(puzzleFull.Difficulty, "Name"));
 
         lstPuzzle.RefreshVisibleValues();
 
@@ -228,7 +228,7 @@ public class PuzzleDisplayAction : MonoBehaviour
 
     public void UpdatePuzzle(int idx)
     {
-        onUpdateRequested.Invoke(idx, puzzlePage.PuzzleInfos[idx]);
+        onUpdateRequested.Invoke(idx, puzzlePage.PuzzleFulls[idx]);
     }
 
     // UpdateStatus
@@ -248,7 +248,7 @@ public class PuzzleDisplayAction : MonoBehaviour
 
         ScreenDialog.Instance.Display();
 
-        puzzleService.UpdateStatus(puzzlePage.PuzzleInfos[idx].Post.Id, puzzlePage.PuzzleInfos[idx].Puzzle.Id, status);
+        puzzleService.UpdateStatus(puzzlePage.PuzzleFulls[idx].PostId, puzzlePage.PuzzleFulls[idx].Id, status);
     }
 
     public void ApplyUpdateStatus(bool response)
