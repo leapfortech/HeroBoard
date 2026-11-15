@@ -177,21 +177,47 @@ public class ServiceWishDisplayAction : MonoBehaviour
         {
             ListScrollerValue value = new ListScrollerValue(lstServiceWish.ListItem, true);
 
-            long sWOptionId = serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.ServiceOptionId;
-            value.SetText(0, vllServiceWishType.FindRecordCellString(serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.ServiceTypeId, "Name"));
-            value.SetText(1, sWOptionId == -1 ? "" : $"<b>Opción:</b> {vllServiceWishOption.FindRecordCellString(sWOptionId, "Name")}");
+            long sWType = serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.ServiceTypeId;
+            int sWOptions = serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.ServiceOptions;
 
-            String wish = serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.Wish ?? "";
-            String[] lines = wish.Split('\n');
+            value.SetText(0, serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
+            value.SetText(1, vllServiceWishType.FindRecordCellString(sWType, "Name"));
 
-            value.SetText(2, lines.Length > 3 ? String.Join("\n", lines, 0, 3) + "...": wish);
+            int optionIndex = 0;
+            int bitIndex = 0;
 
-            value.SetText(3, serviceWishAllRsp.ServiceWishInfos[i].ServiceWish.CreateDateTime.ToLocalTime().ToString("dd/MM/yyyy HH:mm"));
+            for (int j = 0; j < vllServiceWishOption.RecordCount; j++)
+            {
+                long optionTypeId = Convert.ToInt64(vllServiceWishOption.GetRecordCellString(j, "ServiceWishTypeId"));
+
+                if (optionTypeId != sWType)
+                    continue;
+
+                long optionId = vllServiceWishOption.GetRecordId(j);
+
+                bool selected = (sWOptions & (1 << bitIndex)) != 0;
+
+                if (selected)
+                {
+                    if (optionIndex >= 6)
+                        break;
+
+                    value.SetText(optionIndex + 2, "[+] " + vllServiceWishOption.FindRecordCellString(optionId, "Name"));
+
+                    optionIndex++;
+                }
+
+                bitIndex++;
+            }
+
+            for (int j = optionIndex; j < 6; j++)
+                value.SetText(j + 2, "");
 
             lstServiceWish.AddValue(value);
         }
 
         lstServiceWish.ApplyValues();
+
         //lstServiceWish.CheckToggle(0, true);
 
         Display(0);
